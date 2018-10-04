@@ -1,4 +1,7 @@
 *.pyc
-/**/_My*/*
+*.wav
+*.aif
+*.aiff
 .DS_Store
+/**/_My*/*
 before*
