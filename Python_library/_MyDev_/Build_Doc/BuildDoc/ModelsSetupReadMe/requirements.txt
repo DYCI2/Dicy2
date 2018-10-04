@@ -1,0 +1,9 @@
+beautifultable==0.3.0
+enum34==1.1.6
+joblib==0.11
+numexpr==2.6.2
+numpy==1.13.1
+opt-einsum==1.0.1
+pyaml==16.12.2
+PyYAML==3.12
+scipy==0.19.1

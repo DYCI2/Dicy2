@@ -1,0 +1,5 @@
+<map id="inheritance05ef6ef9ec" name="inheritance05ef6ef9ec">
+<area shape="rect" id="node1" href="#Model.FactorOracle" target="_top" title="**Factor Oracle automaton class.**" alt="" coords="125,53,224,77"/>
+<area shape="rect" id="node2" href="#Model.Model" target="_top" title="The class :class:`Model.Model` is an **abstract class**. " alt="" coords="5,53,77,77"/>
+<area shape="rect" id="node4" href="#Navigator.Navigator" target="_top" title="The class :class:`Navigator.Navigator` implements parameters and methods that are used to navigate through a model of sequence. " alt="" coords="135,5,214,29"/>
+</map>
