@@ -42,8 +42,13 @@ Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI
 
 2 The audio files corresponding to the Max tutorials can be downloaded here: [(data_tutorials)](http://repmus.ircam.fr/nika/dyci2_library 
 
-3 When opening a Max tutorial in MaxPatches/_Tutorials_ the python script corresponding to this patch (X agents in the patch --> "python OSCAgentTutorial_X.py") is automatically launched in background.
+3 When opening a Max tutorial in MaxPatches/_Tutorials_ the Python script corresponding to this patch (X agents in the patch --> "python OSCAgentTutorial_X.py") is automatically launched in background.
 
+The reactive listening modules (Tutorials "B...") require the __Mubu for Max__ package. In Max 7:
+
+* File / Show Package Manager
+* Search "Mubu for Max"
+* Install
 
 ------
 ### To use you own annotated musical memories
