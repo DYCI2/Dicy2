@@ -1,2 +1,4 @@
 *.pyc
 /**/_My*/*
+.DS_Store
+before*
