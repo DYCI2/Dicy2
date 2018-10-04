@@ -5,7 +5,7 @@ This repository contains:
 
 * The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory "MaxPatches" and the Readme file to download sound examples).
 
-__ Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), & DYCI2 partners. 
+__Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), & DYCI2 partners. 
 
 ------
 ### Configuration and installation
