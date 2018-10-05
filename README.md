@@ -1,9 +1,9 @@
 # DYCI2_library
 
 This repository contains: 
-* The __Python DYCI2 library__ defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the root directory).
+* The __Python DYCI2 library__ defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the "Python_library" directory).
 
-* The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory "MaxPatches" and the Readme file to download sound examples).
+* The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory "Max_library/_Tutorials_" and the Readme file to download sound examples).
 
 __Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), & DYCI2 partners. 
 
