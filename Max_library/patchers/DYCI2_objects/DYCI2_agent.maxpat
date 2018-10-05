@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 277.0, 397.0, 1693.0, 814.0 ],
+		"rect" : [ -1591.0, 636.0, 1693.0, 814.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.321569 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1417.0, 324.0, 202.0, 22.0 ],
+					"style" : "",
+					"text" : "print RECEIVED_FROM_PRESET1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -306,7 +318,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 540.599976, 70.0, 22.0 ],
+					"patching_rect" : [ 287.0, 540.599976, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0_online"
 				}
@@ -331,7 +343,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.0, 645.599976, 72.0, 22.0 ],
+					"patching_rect" : [ 211.0, 645.599976, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0_online"
 				}
@@ -394,7 +406,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1237.0, 951.0, 51.0, 49.0 ],
 					"style" : "",
-					"text" : "/param /tempo 120."
+					"text" : "/param /pulsed 0"
 				}
 
 			}
@@ -417,7 +429,7 @@
 					"comment" : "Pos_in_impro",
 					"hint" : "Pos_in_impro",
 					"id" : "obj-36",
-					"index" : 0,
+					"index" : 8,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -611,6 +623,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
+					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -627,7 +640,7 @@
 					"comment" : "Sync",
 					"hint" : "Sync",
 					"id" : "obj-47",
-					"index" : 0,
+					"index" : 9,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -646,7 +659,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 860.075012, 862.800049, 234.0, 35.0 ],
 					"style" : "",
-					"text" : "/time_beat 0 /time_event -1 /time_ms 279145"
+					"text" : "/time_beat 0 /time_event -1 /time_ms 8022"
 				}
 
 			}
@@ -659,7 +672,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 764.650024, 188.800049, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -698,7 +711,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 135.5, 861.800049, 250.0, 22.0 ],
 					"style" : "",
-					"text" : "load_buffer_Voice#1 online_Buffer"
+					"text" : "load_buffer_Voice1 Audio_NoPulse_Voice"
 				}
 
 			}
@@ -762,7 +775,7 @@
 					"comment" : "Memory",
 					"hint" : "Memory",
 					"id" : "obj-42",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -816,7 +829,7 @@
 					"comment" : "ToRenderer",
 					"hint" : "ToRenderer",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1124,13 +1137,14 @@
 					"presentation_rect" : [ 7.0, 113.199982, 18.0, 34.0 ],
 					"size" : 2,
 					"style" : "",
-					"value" : 0
+					"value" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-59",
+					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -1185,7 +1199,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 227.0, 336.0, 1011.0, 680.0 ],
+						"rect" : [ -1404.0, 91.0, 1011.0, 680.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3625,7 +3639,7 @@
 					"comment" : "Output DYCI2_time",
 					"hint" : "Output DYCI2_time",
 					"id" : "obj-55",
-					"index" : 0,
+					"index" : 7,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3728,7 +3742,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.5, 10.0, 379.0, 20.0 ],
 									"style" : "",
-									"text" : "Control parameters agent #1"
+									"text" : "Control parameters agent 1"
 								}
 
 							}
@@ -4455,7 +4469,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.5, 83.0, 140.0, 20.0 ],
 									"style" : "",
-									"text" : "none"
+									"text" : "max_continuity"
 								}
 
 							}
@@ -4601,7 +4615,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.5, 60.0, 140.0, 20.0 ],
 									"style" : "",
-									"text" : "none"
+									"text" : "avoid_repetitions_mode"
 								}
 
 							}
@@ -5697,7 +5711,7 @@
 					"comment" : "sync/event/beat or DYCI2_time or preset",
 					"hint" : "sync/event/beat or DYCI2_time or preset",
 					"id" : "obj-40",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5735,14 +5749,17 @@
 					"fontsize" : 10.0,
 					"gradient" : 1,
 					"id" : "obj-48",
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 631.450012, 101.199982, 166.0, 20.0 ],
+					"patching_rect" : [ 631.450012, 101.199982, 166.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 39.0, 431.799988, 20.0 ],
-					"style" : ""
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 3.0, 39.0, 431.799988, 31.0 ],
+					"style" : "",
+					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_/Audio_NoPulse_Voice.json"
 				}
 
 			}
@@ -5797,7 +5814,7 @@
 					"comment" : "OutputInfo",
 					"hint" : "OutputInfo",
 					"id" : "obj-28",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5813,7 +5830,7 @@
 					"comment" : "ContentKey",
 					"hint" : "ContentKey",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5828,7 +5845,7 @@
 					"comment" : "LabelKey",
 					"hint" : "LabelKey",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5843,7 +5860,7 @@
 					"comment" : "OutputLastRun",
 					"hint" : "OutputLastRun",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5858,7 +5875,7 @@
 					"comment" : "TotalBufferedImpro",
 					"hint" : "TotalBufferedImpro",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -5873,7 +5890,7 @@
 					"comment" : "Queries",
 					"hint" : "Queries",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5889,7 +5906,7 @@
 					"comment" : "Events to learn: label content",
 					"hint" : "Events to learn: label content",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -6813,7 +6830,8 @@
 					"patching_rect" : [ 447.650024, 101.199982, 166.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 229.650024, 87.0, 205.0, 20.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "state"
 				}
 
 			}
@@ -6838,7 +6856,8 @@
 					"patching_rect" : [ 266.0, 101.199982, 166.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 86.800018, 205.0, 20.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "ListLabel"
 				}
 
 			}
@@ -6985,36 +7004,42 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-10",
+													"linecount" : 9,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1187.0, 220.0, 322.0, 22.0 ],
-													"style" : ""
+													"style" : "",
+													"text" : "load_dates_Voice 340587. 342464. 342986. 343495. 345696. 346666. 348760. 348848. 349800. 350775. 351729. 353265. 355611. 357040. 357433. 357921. 358383. 358895. 359082. 359953. 361915. 364437. 364606. 366278. 366793. 367383. 367958. 369981. 371833. 372622. 373715. 375251. 375452. 376120. 378419. 379057. 381223. 382716. 383079. 383457. 383893. 385305. 386530. 387213. 388904. 389604. 392215. 394463. 395573. 395672. 397098."
 												}
 
 											}
 , 											{
 												"box" : 												{
 													"id" : "obj-8",
+													"linecount" : 18,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1522.0, 120.0, 266.0, 22.0 ],
-													"style" : ""
+													"style" : "",
+													"text" : "load_labels_Voice \"A l hi v f\" \"C s hi None f\" \"C s hi None f\" \"A l me nv p\" \"C m me None p\" \"M m None None None\" X \"C m hi None p\" \"C m hi None p\" \"C m hi None mf\" \"B m me None p\" \"A l me nv mf\" \"B m me None p\" \"C s lo None p\" \"C s lo None p\" \"C s lo None p\" \"C s lo None p\" X \"F s None None None\" \"M m None None None\" \"A m me mv mf\" X \"A m me nv mf\" \"C s hi None mf\" \"C s hi None mf\" \"C s hi None mf\" \"A l hi nv mf\" \"A l hi mv mf\" \"C s hi None mf\" \"F m None None None\" \"M l None None None\" X \"C s hi None mf\" \"A l me nv mf\" \"C s hi None mf\" \"A l me nv mf\" \"A m me mv mf\" \"C s me None p\" \"C s me None p\" \"C s me None p\" \"F None None None None\" \"M s None None None\" \"C s lo None p\" \"A m lo nv p\" \"C s lo None p\" X \"A m me v mf\" \"B m me None mf\" X \"A m me nv p\" \"A m me v p\""
 												}
 
 											}
 , 											{
 												"box" : 												{
 													"id" : "obj-4",
+													"linecount" : 5,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1791.0, 230.0, 317.0, 22.0 ],
-													"style" : ""
+													"style" : "",
+													"text" : "load_pos_in_scenario_Voice 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350"
 												}
 
 											}
@@ -8230,7 +8255,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 97.0, 4.0, 185.0, 20.0 ],
 					"style" : "",
-					"text" : "Agent #1: #2 #3 #4"
+					"text" : "Agent 1: 127.0.0.1 4567 1234"
 				}
 
 			}
@@ -9195,7 +9220,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 73.0, 69.0, 337.0, 22.0 ],
-									"style" : ""
+									"style" : "",
+									"text" : "/query query15856 0 evt abs 100 evt"
 								}
 
 							}
@@ -9865,7 +9891,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 492.0, 221.0, 914.0, 738.0 ],
+						"rect" : [ -1597.0, 130.0, 1205.0, 738.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -9892,7 +9918,32 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 936.0, 117.0, 132.0, 22.0 ],
+									"style" : "",
+									"text" : "print offline_OUTPUT3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 761.0, 129.0, 132.0, 22.0 ],
+									"style" : "",
+									"text" : "print offline_OUTPUT2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
@@ -9926,8 +9977,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 122.0, 328.0, 703.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 122.0, 328.0, 979.0, 22.0 ],
+									"style" : "",
+									"text" : "/load_memory_from_json /Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_/Audio_NoPulse_Voice.json ListLabel state"
 								}
 
 							}
@@ -10051,7 +10103,20 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-26",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 934.0, 337.0, 202.0, 22.0 ],
+													"style" : "",
+													"text" : "print RECEIVED_FROM_PRESET2"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-23",
 													"maxclass" : "newobj",
@@ -10270,7 +10335,7 @@
 													"presentation_linecount" : 3,
 													"presentation_rect" : [ 3.733327, 49.133366, 160.0, 39.0 ],
 													"style" : "",
-													"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+													"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
 												}
 
 											}
@@ -10446,8 +10511,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 146.149963, 723.0, 823.200012, 22.0 ],
-													"style" : ""
+													"patching_rect" : [ 146.149963, 723.0, 841.200012, 22.0 ],
+													"style" : "",
+													"text" : "/load_memory_from_json /Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_/Audio_NoPulse_Voice.json ListLabel state"
 												}
 
 											}
@@ -10568,7 +10634,7 @@
 													"presentation_linecount" : 4,
 													"presentation_rect" : [ 195.733337, 49.133366, 151.0, 49.0 ],
 													"style" : "",
-													"text" : "/Users/jnika/Documents/Git/DYCI2_library/MaxPatches/_Tutorials_/_ExamplesCorpus_/2-Audio-jsonMemoryFiles/Audio_NoPulse_Voice.json"
+													"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_/Audio_NoPulse_Voice.json"
 												}
 
 											}
@@ -10604,7 +10670,8 @@
 													"patching_rect" : [ 424.100006, 525.799988, 165.200012, 22.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 194.833328, 139.899963, 177.800003, 22.0 ],
-													"style" : ""
+													"style" : "",
+													"text" : "state"
 												}
 
 											}
@@ -10628,7 +10695,8 @@
 													"patching_rect" : [ 161.449982, 522.599976, 165.199997, 22.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 3.733323, 139.899963, 184.0, 22.0 ],
-													"style" : ""
+													"style" : "",
+													"text" : "ListLabel"
 												}
 
 											}
@@ -11347,7 +11415,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 515.0, 56.599976, 396.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11374,7 +11442,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 279.0, 279.0, 413.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11472,7 +11540,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-8",
-																	"items" : [ "ExampleDictMemory.json", ",", "Fox_LucidDreams_Drums.json", ",", "Female-Voice-singing.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "SS1_AufLid_00_mrk.json", ",", "AHR_Rec2_Vibr_01.json", ",", "Audio_NoPulse_Voice.json" ],
+																	"items" : "Audio_NoPulse_Voice.json",
 																	"maxclass" : "umenu",
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
@@ -11506,7 +11574,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 57.299988, 412.400024, 91.200012, 89.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11777,7 +11845,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-73",
-													"items" : [ "ExampleDictMemory.json", ",", "Fox_LucidDreams_Drums.json", ",", "Female-Voice-singing.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "SS1_AufLid_00_mrk.json", ",", "AHR_Rec2_Vibr_01.json", ",", "Audio_NoPulse_Voice.json" ],
+													"items" : "Audio_NoPulse_Voice.json",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -12018,7 +12086,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-26", 0 ],
+													"order" : 0,
+													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-37", 0 ],
+													"order" : 1,
 													"source" : [ "obj-3", 0 ]
 												}
 
@@ -12256,6 +12333,7 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
+									"order" : 1,
 									"source" : [ "obj-118", 2 ]
 								}
 
@@ -12263,7 +12341,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-118", 1 ]
 								}
 
@@ -12273,6 +12351,22 @@
 									"destination" : [ "obj-4", 1 ],
 									"order" : 0,
 									"source" : [ "obj-118", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 1,
+									"source" : [ "obj-118", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
+									"source" : [ "obj-118", 2 ]
 								}
 
 							}
@@ -12514,6 +12608,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 1 ]
 				}
 
@@ -13030,27 +13133,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "DYCI2_time.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mysend.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
-				"patcherrelativepath" : "../tools",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
