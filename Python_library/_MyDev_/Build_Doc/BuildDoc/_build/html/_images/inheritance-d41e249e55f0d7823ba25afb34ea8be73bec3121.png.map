@@ -1,6 +1,0 @@
-<map id="inheritance05ef6ef9ec" name="inheritance05ef6ef9ec">
-<area shape="rect" id="node1" href="#Model.FactorOracle" target="_top" title="Factor Oracle automaton class." alt="" coords="125,53,224,77"/>
-<area shape="rect" id="node3" href="#FactorOracleNavigator.FactorOracleNavigator" target="_top" title="Factor Oracle Navigator class, inheriting from the Factor Oracle class." alt="" coords="273,29,428,53"/>
-<area shape="rect" id="node2" href="#Model.Model" target="_top" title="TODO" alt="" coords="5,53,77,77"/>
-<area shape="rect" id="node4" href="#Navigator.Navigator" target="_top" title="TODO" alt="" coords="135,5,214,29"/>
-</map>
