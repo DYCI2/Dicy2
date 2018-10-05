@@ -1,0 +1,39 @@
+AVEC Cython
+-----------
+
+
+http://sametmax.com/peut-on-compiler-un-programme-python/
+
+install cython
+pip3 install Cython --install-option="--no-cython-compile"
+
+(install dépendances ???)
+pip3 install requests docopt path.py
+
+faire fichier c
+cython3 MONFICHIER.py -o MONFICHIER.c --embed
+
+TROUVER LE PATH DE PYTHON.H (pour le mettre ".../python3.5m" ci-dessous)
+python3-config --
+
+ET LES BONS FLAGS
+python3-config --ldflags
+
+compiler
+gcc -Os -I /Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m  FactorOracleNavigator_tutorial.c -o TEST -lpython3.4m -lpthread -lm -lutil -ldl
+
+
+
+gcc -Os -I /Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m  FactorOracleNavigator_tutorial.c -o TEST -L/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/config-3.5m -lpython3.5m -ldl -framework CoreFoundation
+
+PROBLEME:
+PAS VRAIMENT UN STANDALONE
+NE CONTIENT PAS LES DEPENDANCES, ie, modules importés !!!
+
+PY2APP
+-------
+
+https://py2app.readthedocs.io/en/latest/
+
+
+pip install -U py2app

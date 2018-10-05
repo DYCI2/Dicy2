@@ -1,0 +1,14 @@
+In Dyci2Lib_jn
+-----------
+Move the .aif/.json/.csv files in Max_library/_Tutorials_/_ExamplesCorpus_
+To Max_library/_Tutorials_/_ExamplesCorpus_/MyExamples
+(LET THE README FILE !!!)
+
+Commit and pull Dyci2Lib_jn WITHOUT GIT_IGNORE (NOT CHECKED)
+
+Using GitHub desktop
+Branch / Create pull request
+
+On the webpage
+Create pull request
+Give a title then Create pull request
