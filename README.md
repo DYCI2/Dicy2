@@ -40,7 +40,7 @@ Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI
 
 1 Make sure that the path of the Max_library is set in the file preferences in Max.
 
-2 The audio files corresponding to the Max tutorials can be downloaded here: [(data_tutorials)](http://repmus.ircam.fr/nika/dyci2_library 
+2 The audio files corresponding to the Max tutorials can be downloaded here: http://repmus.ircam.fr/nika/dyci2_library 
 
 3 When opening a Max tutorial in MaxPatches/_Tutorials_ the Python script corresponding to this patch (X agents in the patch --> "python OSCAgentTutorial_X.py") is automatically launched in background.
 
