@@ -11,4 +11,4 @@ Branch / Create pull request
 
 On the webpage
 Create pull request
-Give a title and Create pull request
+Give a title then Create pull request
