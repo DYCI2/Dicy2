@@ -2,3 +2,9 @@
 *.wav
 *.aif
 *.aiff
+*/*/*/*/_My*
+*/*/*/_My*
+*/*/_My*
+*/_My*
+_My*
+before*
