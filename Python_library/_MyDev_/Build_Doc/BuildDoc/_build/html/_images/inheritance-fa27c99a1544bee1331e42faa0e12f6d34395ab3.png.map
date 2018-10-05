@@ -1,4 +1,0 @@
-<map id="inheritance0e448b24c7" name="inheritance0e448b24c7">
-<area shape="rect" id="node1" href="#Generator.GenerationHandler" target="_top" title="The class **GenerationHandler** introduces time management and planning for interactive applications and adds a pool of query, concurrency (e.g. processing of concurrent queries), the use of an execution trace etc. to the class :class:`~Generator.Generator`." alt="" coords="136,5,270,29"/>
-<area shape="rect" id="node2" href="#Generator.Generator" target="_top" title="The class **Generator** embeds a **model navigator** as &quot;memory&quot; (cf. metaclass :class:`~MetaModelNavigator.MetaModelNavigator`) and processes **queries** (class :class:`~Query.Query`) to generate new sequences. This class uses pattern matching techniques (cf. :mod:`PrefixIndexing`) to enrich the navigation and generation methods offered by the chosen model with anticipative behaviour." alt="" coords="6,5,87,29"/>
-</map>
