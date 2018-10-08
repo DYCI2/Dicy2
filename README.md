@@ -24,17 +24,6 @@ Use your terminal:
 
     $ pip install -r requirements.txt
 
-
-------
-### Autonomous use of the Python modules
-
-See the tutorials corresponding to the different modules. For example in the directory Python_library:
-
-	$ python Generator_tutorial.py
-
-Html doc: http://support.ircam.fr/docs/DYCI2_library/
-Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI2_Modules/BuildDoc/_build/latex/DYCI2.pdf
-
 ------
 ### Max library of musical agents
 
@@ -50,6 +39,17 @@ The reactive listening modules (Tutorials "B...") require the __Mubu for Max__ p
 * Search "Mubu for Max"
 * Install
 
+
+------
+### Autonomous use of the Python modules
+
+See the tutorials corresponding to the different modules. For example in the directory Python_library:
+
+	$ python Generator_tutorial.py
+
+Html doc: http://support.ircam.fr/docs/DYCI2_library/
+Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI2_Modules/BuildDoc/_build/latex/DYCI2.pdf
+
 ------
 ### To use you own annotated musical memories
 
@@ -57,10 +57,11 @@ Use the __Max tutorial "A5"__ or:
 
 1 Create a .csv / .txt annotation file with the following format:
 
-start_date_event_1_in_ms ; label_1_1 [SPACE] ... [SPACE] label_1_j
-...
-start_date_event_i_in_ms ; label_i_1 [SPACE] ... [SPACE] label_i_j
-date_end_file_in_ms ; X
+* start_date_event_1_in_ms ; label_1_1 [SPACE] ... [SPACE] label_1_j
+* ...
+* start_date_event_i_in_ms ; label_i_1 [SPACE] ... [SPACE] label_i_j
+* ...
+* date_end_file_in_ms ; X
 
 See the example of Female-Voice-singing.csv --> Female-Voice-singing.json (annotation for Female-Voice-singing.aiff)
 
