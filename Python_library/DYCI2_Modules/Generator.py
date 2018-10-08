@@ -483,9 +483,20 @@ class Generator (object):
 
 		#print("LOOKING FOR PREFIXES OF {}".format(list_of_labels))
 		
+
+		if not self.memory.label_type is None and self.use_intervals():
+			make_sequence_of_intervals_from_sequence_of_labels = self.memory.label_type.make_sequence_of_intervals_from_sequence_of_labels
+			equiv_mod_interval = self.memory.label_type.equiv_mod_interval
+		else : 
+			make_sequence_of_intervals_from_sequence_of_labels = None
+			equiv_mod_interval = None
+
 		s,t,length_selected_prefix = self.memory.find_prefix_matching_with_labels(self.use_intervals(), self.memory.labels, list_of_labels, self.continuity_with_future, authorized_indexes,
-			self.authorized_tranformations, self.memory.label_type.make_sequence_of_intervals_from_sequence_of_labels,
-			self.memory.label_type.equiv_mod_interval, self.memory.equiv)
+			self.authorized_tranformations, make_sequence_of_intervals_from_sequence_of_labels,
+			equiv_mod_interval, self.memory.equiv)
+
+
+
 		##############################
 
 		#print("SCENARIO ONE PHASE 3")

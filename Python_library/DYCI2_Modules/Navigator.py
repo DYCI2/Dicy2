@@ -587,7 +587,7 @@ class Navigator(object):
 
 		#### NEW 27/09/18 KEN
 
-	def find_prefix_matching_with_labels(self, use_intervals, labels, list_of_labels, continuity_with_future, authorized_indexes, authorized_transformations, sequence_to_interval_fun, equiv_interval, equiv, ):
+	def find_prefix_matching_with_labels(self, use_intervals, labels, list_of_labels, continuity_with_future, authorized_indexes, authorized_transformations, sequence_to_interval_fun, equiv_interval, equiv):
 		
 		#print("LOOKING FOR PREFIXES OF {}".format(list_of_labels))
 
