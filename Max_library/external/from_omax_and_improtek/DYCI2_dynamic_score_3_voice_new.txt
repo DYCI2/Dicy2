@@ -370,10 +370,10 @@ whenever ($pos_in_scenario == $pos_in_scenario)
 	whenever($MemoryOfVoice)
 	{
 		printAnte $renderer $VoiceName "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°MODIF MEMORY OF VOICE !!!°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°"
-		forall $k, $v in $MemoryOfVoice 
-		{
-			printAnte $renderer $VoiceName "MEMORYOFVOICE" $k $v
-		}
+		;forall $k, $v in $MemoryOfVoice 
+		;{
+		;	printAnte $renderer $VoiceName "MEMORYOFVOICE" $k $v
+		;}
 	}
 
 	whenever ($synctempo == $synctempo)
@@ -655,13 +655,13 @@ whenever ($pos_in_scenario == $pos_in_scenario)
 		}
 		else ;;; NEXT EVENT IS DEFINED
 		{
-			printAnte $renderer $VoiceName "FRITESAAAAAAAAAAAAAAAAAAAAAAAAAA $next_idx_to_play_in_memory :" $next_idx_to_play_in_memory
+			printAnte $renderer $VoiceName "CURRENT AND NEXT EVENT DEFINED $next_idx_to_play_in_memory :" $next_idx_to_play_in_memory
 			printAnte $renderer $VoiceName "(play_pos" " *" $pos_process "* " $date_process $VoiceName ")"  "$next_idx_to_play_in_memory :" $next_idx_to_play_in_memory "$next_impro_segment :" $next_impro_segment
 			
 			;TEST CONTENU MEMOIRE
-			forall $k, $v in $MemoryOfVoice {
-				printAnte $renderer $VoiceName "MEMORYOFVOICE" $k $v
-			}
+			;forall $k, $v in $MemoryOfVoice {
+			;	printAnte $renderer $VoiceName "MEMORYOFVOICE" $k $v
+			;}
 
 
 			;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;printAnte $renderer global $VoiceName "LAPIN $next_idx_to_play_in_memory" $next_idx_to_play_in_memory
@@ -674,19 +674,19 @@ whenever ($pos_in_scenario == $pos_in_scenario)
 
 			if($jump_at_next_pos) ;;; DISCONTINUITY HANDLED AT NEXT EVENT
 			{
-				printAnte $renderer $VoiceName "FRITESBBBBBBBBBBBBBBBBBBBBBBBBBB "
+				printAnte $renderer $VoiceName "DISCONTINUITY HANDLED AT NEXT EVENT "
 				$testDEF := (!(@is_undef($start_segment_in_memory)) && !(@is_undef($end_segment_in_memory)))
 
 				if (!$testDEF )	
 				{
-					printAnte $renderer $VoiceName "FRITESCCCCCCCCCCCCCCCCCCCCCCCCCCC $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
+					printAnte $renderer $VoiceName "DATES NEXT SEGMENT NOT DEF $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
 					printAnte $renderer $VoiceName "(play_pos" " *" $pos_process "* " $date_process $VoiceName ")"  "FINALLY NOTHING FOR NEXT EVENT : Segment in the memory at this index is undefined"
 					$next_event_anticipated := 0
 					$start_rendering_launched_at_last_event := 0
 				} 
 				else 
 				{
-					printAnte $renderer $VoiceName "FRITESDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
+					printAnte $renderer $VoiceName "DATES NEXT SEGMENT DEF $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
 					;printAnte $renderer global $VoiceName "LAPIN3 $end_segment_in_memory[0]" ($end_segment_in_memory[0])
 					$date_start_segment_in_memory := $start_segment_in_memory[0]
 					$date_end_segment_in_memory := $end_segment_in_memory[0] - 1
@@ -707,7 +707,7 @@ whenever ($pos_in_scenario == $pos_in_scenario)
 			
 			else ;;; CONTINUOUS AT NEXT EVENT
 			{
-				printAnte $renderer $VoiceName "FRITESEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
+				printAnte $renderer $VoiceName "CONTINUOUS AT NEXT EVENT $start_segment_in_memory = " $start_segment_in_memory "$end_segment_in_memory =" $end_segment_in_memory
 				;BURGER FINALE
 				;printAnte $renderer global $VoiceName "LAPIN4 $end_segment_in_memory[0]" ($end_segment_in_memory[0])
 				$date_start_segment_in_memory := $start_segment_in_memory[0]
@@ -1462,9 +1462,9 @@ whenever ($cpt_load_memory_Voice4 == 4)
 
 	printAnte $renderer Voice4 "*****MEMORY Voice4 LOADED*****" ($currentVoice4.$MemoryOfVoice)
 	;TEST CONTENU MEMOIRE
-			forall $k, $v in $currentVoice4.$MemoryOfVoice {
-				printAnte $renderer Voice4 "MEMORYOFVOICE" $k $v
-			}
+	;		forall $k, $v in $currentVoice4.$MemoryOfVoice {
+	;			printAnte $renderer Voice4 "MEMORYOFVOICE" $k $v
+	;		}
 
 }
 
