@@ -14,6 +14,7 @@ __Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCA
 Use your terminal:      
     
     $ python --version
+   
     $ pip --version
 
 2. If not, download and install the last version of Python 2 (https://www.python.org/downloads) and pip if necessary: 
