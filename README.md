@@ -37,7 +37,7 @@ The audio files corresponding to the Max tutorials can be downloaded here: http:
 
 See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_:
 
-	$ `python Generator_tutorial.py`
+    $ `python Generator_tutorial.py`
 
 Html doc: http://support.ircam.fr/docs/DYCI2_library/
 Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI2_Modules/BuildDoc/_build/latex/DYCI2.pdf
@@ -45,23 +45,23 @@ Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI
 ------
 ### To create your own annotated musical memories
 
-Use the __Max tutorial "A5"__,
+Use the __Max tutorial "A5"__ (_Max\_library/\_Tutorials\__).
 
-or:
+Or:
 
 1. Create a .csv / .txt annotation file with the following format:
 
-* start_date_event_1_in_ms ; label_1_1 [SPACE] ... [SPACE] label_1_j
+* `start_date_event_1_in_ms` `;` `label_1_1` [SPACE] `...` [SPACE] `label_1_j`
 * ...
-* start_date_event_i_in_ms ; label_i_1 [SPACE] ... [SPACE] label_i_j
+* `start_date_event_i_in_ms` `;` `label_i_1` [SPACE] `...` [SPACE] `label_i_j`
 * ...
-* date_end_file_in_ms ; X
+* `date_end_file_in_ms` `;` `X`
 
 See the example of `Female-Voice-singing.csv` --> `Female-Voice-singing.json` (annotation for `Female-Voice-singing.aiff`).
 
 2. Use the script `FromTextToDYCI2json_script` (__no "." in the whole path of the file except for the extension__), for example:
 
-	$ `python FromTextToDYCI2json_script.py [path\_annotation\_file]`
+	$ `python FromTextToDYCI2json_script.py [path\_annotation\_file]
 
 3. Move the _.json_ file and your _.aiff_ sound file in _/MaxPatches/\_Tutorials\_/\_ExamplesCorpus\__
 
