@@ -7,44 +7,35 @@ This repository contains:
 
 __Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), & DYCI2 partners. 
 
+__Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
+
 ------
 ### Configuration and installation
 
-1. Verify that your version of Python is >= 2.7 and < 3 (DYCI2 for Python 3 coming soon), and that "pip" for Python (>= 2.7 and < 3) is installed. 
-Use your terminal:      
-    
-    $ python --version
-   
-    $ pip --version
+1. Download and install the last version of Python 2 (https://www.python.org/downloads).
 
-2. If not, download and install the last version of Python 2 (https://www.python.org/downloads) and pip if necessary: 
-	
-	$ sudo easy-install pip
-
-3. Install the dependencies: use your terminal in the directory DYCI2_library/Python_library
+2. Use your terminal in the directory _DYCI2\_library/Python\_library_ to install the dependencies:
 
     $ pip install -r requirements.txt
 
-4. To use the Max library of musical agents: make sure that the path of the directory _Max_library_ is set in the file preferences in Max.
+(If _pip_ is not installed: `sudo easy-install pip`.)
 
 ------
 ### Max library of musical agents
 
-Make sure that the path of the directory _Max_library_ is set in the file preferences in Max.
-
-The audio files corresponding to the Max tutorials can be downloaded here: http://repmus.ircam.fr/nika/dyci2_library 
+Make sure that the path of the directory _Max\_library_ is set in the file preferences in Max.
 
 The reactive listening modules (Tutorials "B...") require the __Mubu for Max__ package. In Max 7:
-
 * File / Show Package Manager
 * Search "Mubu for Max"
 * Install
 
+The audio files corresponding to the Max tutorials can be downloaded here: http://repmus.ircam.fr/nika/dyci2_library. 
 
 ------
 ### Autonomous use of the Python modules
 
-See the tutorials corresponding to the different modules. For example in the directory Python_library:
+See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_:
 
 	$ python Generator_tutorial.py
 
@@ -52,9 +43,11 @@ Html doc: http://support.ircam.fr/docs/DYCI2_library/
 Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI2_Modules/BuildDoc/_build/latex/DYCI2.pdf
 
 ------
-### To use you own annotated musical memories
+### To create your own annotated musical memories
 
-Use the __Max tutorial "A5"__ or:
+Use the __Max tutorial "A5"__,
+
+or:
 
 1. Create a .csv / .txt annotation file with the following format:
 
@@ -64,13 +57,13 @@ Use the __Max tutorial "A5"__ or:
 * ...
 * date_end_file_in_ms ; X
 
-See the example of Female-Voice-singing.csv --> Female-Voice-singing.json (annotation for Female-Voice-singing.aiff)
+See the example of `Female-Voice-singing.csv` --> `Female-Voice-singing.json` (annotation for `Female-Voice-singing.aiff`).
 
-2. Use the script FromTextToDYCI2json_script (/!\ no "." in the whole path of the file except for the extension /!\ ), for example:
+2. Use the script `FromTextToDYCI2json_script` (__no "." in the whole path of the file except for the extension__), for example:
 
 	$ python FromTextToDYCI2json_script.py [absolute path to the .csv/.txt file]
 
-3. Move the .json file and your .aiff sound file in /MaxPatches/_Tutorials_/_ExamplesCorpus_
+3. Move the _.json_ file and your _.aiff_ sound file in _/MaxPatches/\_Tutorials\_/\_ExamplesCorpus\__
 
 N.B.: Some playing modes (scenarios of descriptors and reactive listening) do not require annotated files since they perform analysis and clustering automatically (see Max tutorials "B"). 
 
@@ -84,8 +77,8 @@ are available at https://github.com/DYCI2/om-dyci2.
 ------
 ### Notes
 *  This library aims at gathering in its successive versions the results of the DYCI2 project [(website)](http://repmus.ircam.fr/dyci2/home) 
-*  Python2 (Python3 coming soon !)
-*  Requires Max7 64 bit (Max8 coming soon !)
+*  Python2 (>=2.7, Python3 coming soon !)
+*  Max7 64 bit (Max8 coming soon !)
 *  Externals: Antescofo, Mubu, and CatarT
 *  Conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document)
 
