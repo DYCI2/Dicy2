@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 499.0, 147.0, 869.0, 418.0 ],
+		"rect" : [ -1497.0, -35.0, 858.0, 453.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,37 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "handle for 5th dimension label (/5)",
+					"comment" : "handle for 5th dimension label (/5)",
+					"hint" : "handle for 5th dimension label (/5)",
+					"id" : "obj-2",
+					"index" : 4,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 919.0, 34.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 919.0, 104.0, 336.0, 23.0 ],
+					"style" : "",
+					"text" : "regexp (\\\\w+) @substitute \\\"None None None None %1\\\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"annotation" : "handle for 4rd dimension label (/4)",
 					"comment" : "handle for 4rd dimension label (/4)",
@@ -161,6 +192,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -177,6 +215,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}

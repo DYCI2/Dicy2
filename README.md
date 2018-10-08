@@ -16,7 +16,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 
 2. Use your terminal in the directory _DYCI2\_library/Python\_library_ to install the dependencies:
 
-    $ `pip install -r requirements.txt`
+    $ pip install -r requirements.txt
 
 (If _pip_ is not installed: `sudo easy-install pip`.)
 
@@ -37,7 +37,7 @@ The audio files corresponding to the Max tutorials can be downloaded here: http:
 
 See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_:
 
-    $ `python Generator_tutorial.py`
+    $ python Generator_tutorial.py
 
 Html doc: http://support.ircam.fr/docs/DYCI2_library/
 Download PDF doc: https://forge.ircam.fr/p/DYCI2_library/source/tree/master/DYCI2_Modules/BuildDoc/_build/latex/DYCI2.pdf
@@ -57,13 +57,16 @@ Or:
 * ...
 * `date_end_file_in_ms` `;` `X`
 
+
+
+2. Use the script `FromTextToDYCI2json_script` (__no "." or " " in the whole path of the file except for the extension__), for example:
+
+	$ python FromTextToDYCI2json_script.py [path\_annotation\_file]
+
+3. Move the _.json_ file and your _.aif_ sound file in _/MaxPatches/\_Tutorials\_/\_ExamplesCorpus\__
+
+
 See the example of `Female-Voice-singing.csv` --> `Female-Voice-singing.json` (annotation for `Female-Voice-singing.aiff`).
-
-2. Use the script `FromTextToDYCI2json_script` (__no "." in the whole path of the file except for the extension__), for example:
-
-	$ `python FromTextToDYCI2json_script.py [path\_annotation\_file]
-
-3. Move the _.json_ file and your _.aiff_ sound file in _/MaxPatches/\_Tutorials\_/\_ExamplesCorpus\__
 
 N.B.: Some playing modes (scenarios of descriptors and reactive listening) do not require annotated files since they perform analysis and clustering automatically (see Max tutorials "B"). 
 

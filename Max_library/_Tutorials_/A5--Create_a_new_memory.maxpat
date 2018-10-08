@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1487.0, 136.0, 677.0, 345.0 ],
+		"rect" : [ -1476.0, -15.0, 677.0, 345.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -79,9 +79,9 @@
 					"patching_rect" : [ 4.5, 196.25, 683.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 4.5, 196.25, 683.0, 36.0 ],
+					"presentation_rect" : [ 3.5, 188.75, 683.0, 36.0 ],
 					"style" : "",
-					"text" : "2) Drop your .csv / .txt annotation file here\n/!\\ No \".\" in the whole path of the file (except extension) /!\\"
+					"text" : "2) Drop your .csv / .txt annotation file here\n/!\\ No \".\" or \" \" in the whole path of the file (except extension) /!\\"
 				}
 
 			}
@@ -115,7 +115,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -146,7 +146,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-31",
@@ -270,8 +269,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 516.0, 1170.0, 22.0 ],
-									"style" : "",
-									"text" : "cd /Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_\\; cd ../..\\; cd Python_library\\; python FromTextToDYCI2json_script.py /Users/nika/Desktop/DYCI2_L3.3.2_DatasetExamples/Female-Voice-singing.csv"
+									"style" : ""
 								}
 
 							}
@@ -541,7 +539,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 4.5, 167.5, 397.75, 78.5 ],
+					"patching_rect" : [ 4.5, 167.5, 402.75, 77.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.5, 167.5, 397.75, 78.5 ]
 				}
