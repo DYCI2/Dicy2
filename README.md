@@ -1,5 +1,7 @@
 # DYCI2_library
 
+This library aims at gathering in its successive versions the results of the DYCI2 project [(website)](http://repmus.ircam.fr/dyci2/home), a conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
+
 This repository contains: 
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the _Python\_library_ directory).
 
@@ -79,11 +81,9 @@ are available at https://github.com/DYCI2/om-dyci2.
 
 ------
 ### Notes
-*  This library aims at gathering in its successive versions the results of the DYCI2 project [(website)](http://repmus.ircam.fr/dyci2/home) 
-*  Python2 (>=2.7, Python3 coming soon !)
-*  Max7 64 bit (Max8 coming soon !)
-*  Externals: Antescofo, Mubu, and CatarT
-*  Conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document)
+* Python2 (>=2.7, Python3 coming soon !)
+* Max7 64 bit (Max8 coming soon !)
+* Externals: Antescofo, Mubu, and CatarT
 
 ------
 ### Development
