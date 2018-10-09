@@ -290,7 +290,11 @@ class Generator (object):
 
 
 		"""
-
+		print("************************************")
+		print("RECEIVE QUERY: QUERY = ")
+		print("************************************")
+		print(query)
+		query.start_type="absolute"
 		self.process_query(query,print_info)
 
 	def process_query(self,query,print_info = False):
@@ -306,7 +310,10 @@ class Generator (object):
 
 
 		"""
-
+		print("************************************")
+		print("PROCESS QUERY: QUERY = ")
+		print("************************************")
+		print(query)
 		self.current_generation_query = query
 		#print("PROCESS GENERATOR 1")
 		self.generation_matching_query(query = self.current_generation_query,  print_info = print_info)
@@ -329,6 +336,10 @@ class Generator (object):
 
 
 		"""
+		print("************************************")
+		print("GENERATION MATCHING QUERY: QUERY = ")
+		print("************************************")
+		print(query)
 
 		output = None
 		self.transfo_current_generation_output = []
