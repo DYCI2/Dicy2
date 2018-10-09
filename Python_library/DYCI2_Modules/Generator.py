@@ -42,6 +42,7 @@ Main classes: :class:`~Generator.Generator` (oriented towards offline generation
 from Query import *
 from ModelNavigator import *
 from Intervals import *
+import copy
 
 
 class Generator (object):
@@ -294,7 +295,7 @@ class Generator (object):
 		print("RECEIVE QUERY: QUERY = ")
 		print("************************************")
 		print(query)
-		query.start_type="absolute"
+		query.start["type"]="absolute"
 		self.process_query(query,print_info)
 
 	def process_query(self,query,print_info = False):
@@ -314,7 +315,7 @@ class Generator (object):
 		print("PROCESS QUERY: QUERY = ")
 		print("************************************")
 		print(query)
-		self.current_generation_query = query
+		self.current_generation_query = deepcopy(query)
 		#print("PROCESS GENERATOR 1")
 		self.generation_matching_query(query = self.current_generation_query,  print_info = print_info)
 		#print("PROCESS GENERATOR 2")
