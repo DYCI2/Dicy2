@@ -146,8 +146,8 @@ class Navigator(object):
 
 		"""
 		#print("Record history_and_taboos for index {} in sequence.\nPREVIOUSLY:\n{}".format(index_in_sequence, self.history_and_taboos))
-
-		self.history_and_taboos[index_in_sequence] += 1
+		if not self.history_and_taboos[index_in_sequence] is None:
+			self.history_and_taboos[index_in_sequence] += 1
 		#print("Increases history of selected index.\nNew self.history_and_taboos = {}".format(self.history_and_taboos))
 		previous_continuity = None
 		previous_position_in_sequence = None
