@@ -121,8 +121,17 @@ class Query:
 
 
 def new_temporal_query_sequence_of_events(handle = [], label_type = None, start_date = 0, start_type = "relative", behaviour = "replace"):
-	return Query(start_date = start_date, start_unit = "event", start_type = start_type, handle = handle, label_type = label_type, scope_duration = len(handle), scope_unit = "event", behaviour = behaviour)
-
+	if type(handle) == int:
+		q = new_temporal_query_free_sequence_of_events(handle)
+	elif len(handle) == 1 and type(handle[0]) == int:
+		q = new_temporal_query_free_sequence_of_events(handle[0])
+	elif type(handle) == str:
+		q = new_temporal_query_free_sequence_of_events(int(handle))
+	elif len(handle) == 1 and type(handle[0]) == str:
+		q = new_temporal_query_free_sequence_of_events(int(handle[0])) 
+	else:
+		q = Query(start_date = start_date, start_unit = "event", start_type = start_type, handle = handle, label_type = label_type, scope_duration = len(handle), scope_unit = "event", behaviour = behaviour)
+	return q
 
 def new_temporal_query_free_sequence_of_events(length = 1, start_date = 0, start_type = "relative", behaviour = "replace"):
 	return Query(start_date = start_date, start_unit = "event", start_type = start_type, handle = [None], scope_duration = length, scope_unit = "event", behaviour = behaviour)
