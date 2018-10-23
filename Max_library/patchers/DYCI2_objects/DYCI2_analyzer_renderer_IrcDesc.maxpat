@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1886.0, 79.0, 971.0, 800.0 ],
+		"rect" : [ 607.0, 249.0, 971.0, 800.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -151,7 +151,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -1749.0, 79.0, 1658.0, 885.0 ],
+						"rect" : [ 507.0, 132.0, 364.0, 200.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -12093,7 +12093,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 82.0, 477.0, 142.0 ],
+						"rect" : [ 0.0, 82.0, 487.0, 194.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -12120,8 +12120,33 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-75",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 185.0, 80.0, 32.0, 22.0 ],
+									"style" : "",
+									"text" : "> -1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-78",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 281.0, 30.0, 49.0, 22.0 ],
+									"style" : "",
+									"text" : "play $1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-76",
 									"maxclass" : "button",
@@ -12227,7 +12252,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 185.0, 115.0, 70.0, 22.0 ],
+									"patching_rect" : [ 165.0, 44.0, 70.0, 22.0 ],
 									"style" : "",
 									"text" : "route None"
 								}
@@ -12241,7 +12266,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 479.0, 114.0, 66.0, 22.0 ],
+									"patching_rect" : [ 479.0, 114.0, 66.0, 49.0 ],
 									"style" : "",
 									"text" : "cursor 0.729449 0.574286"
 								}
@@ -13957,7 +13982,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 743.0, 323.0, 427.0, 558.0 ],
+										"rect" : [ 401.0, 160.0, 715.0, 584.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -14017,9 +14042,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 270.0, 90.0, 61.0, 22.0 ],
+													"patching_rect" : [ 270.0, 90.0, 65.0, 22.0 ],
 													"style" : "",
-													"text" : "append 0"
+													"text" : "append -1"
 												}
 
 											}
@@ -14094,7 +14119,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 220.0, 307.0, 74.0, 22.0 ],
 													"style" : "",
-													"text" : "1 1 0"
+													"text" : "1 1 -1"
 												}
 
 											}
@@ -15708,6 +15733,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-75", 0 ],
+									"order" : 2,
+									"source" : [ "obj-64", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-69", 0 ]
 								}
@@ -15737,6 +15770,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"source" : [ "obj-75", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-45", 0 ],
 									"source" : [ "obj-76", 0 ]
 								}
@@ -15756,6 +15796,13 @@
 									"destination" : [ "obj-28", 5 ],
 									"order" : 1,
 									"source" : [ "obj-77", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-49", 0 ],
+									"source" : [ "obj-78", 0 ]
 								}
 
 							}
@@ -15836,7 +15883,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-64", 0 ],
-									"midpoints" : [ 314.5, 490.0, 133.0, 490.0, 133.0, 146.0, 194.5, 146.0 ],
+									"midpoints" : [ 314.5, 490.0, 133.0, 490.0, 133.0, 146.0, 174.5, 146.0 ],
 									"source" : [ "obj-96", 0 ]
 								}
 
@@ -16266,104 +16313,104 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-61::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
-			"obj-61::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
-			"obj-61::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
-			"obj-61::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
-			"obj-61::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
 			"obj-61::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
-			"obj-61::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
-			"obj-61::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
-			"obj-61::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
-			"obj-61::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
-			"obj-61::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
-			"obj-61::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
-			"obj-61::obj-134::obj-53" : [ "NKpot5", "NKpot5", 0 ],
-			"obj-61::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
-			"obj-61::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
-			"obj-61::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
-			"obj-61::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
-			"obj-61::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
-			"obj-61::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
-			"obj-61::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
-			"obj-61::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
-			"obj-61::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
-			"obj-61::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
-			"obj-61::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
-			"obj-61::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
-			"obj-61::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
-			"obj-61::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
-			"obj-61::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
-			"obj-61::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
+			"obj-61::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
+			"obj-61::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
 			"obj-61::obj-134::obj-41" : [ "NKslider7", "NKslider7", 0 ],
 			"obj-61::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ],
-			"obj-61::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
-			"obj-61::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
 			"obj-61::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
-			"obj-61::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
-			"obj-61::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
-			"obj-61::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
-			"obj-61::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
-			"obj-61::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
-			"obj-61::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
-			"obj-61::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
-			"obj-61::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
-			"obj-61::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
-			"obj-61::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
+			"obj-61::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
+			"obj-61::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
 			"obj-61::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
+			"obj-61::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
+			"obj-61::obj-134::obj-53" : [ "NKpot5", "NKpot5", 0 ],
+			"obj-61::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
+			"obj-61::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
+			"obj-61::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
+			"obj-61::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
+			"obj-61::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
 			"obj-61::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
-			"obj-61::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
-			"obj-61::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
-			"obj-61::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
+			"obj-61::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
+			"obj-61::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
+			"obj-61::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
+			"obj-61::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
+			"obj-61::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
+			"obj-61::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
+			"obj-61::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
+			"obj-61::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
+			"obj-61::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
+			"obj-61::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
+			"obj-61::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
 			"obj-61::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
-			"obj-61::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ]
+			"obj-61::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
+			"obj-61::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
+			"obj-61::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
+			"obj-61::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
+			"obj-61::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
+			"obj-61::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
+			"obj-61::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
+			"obj-61::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
+			"obj-61::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
+			"obj-61::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
+			"obj-61::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
+			"obj-61::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
+			"obj-61::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
+			"obj-61::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
+			"obj-61::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
+			"obj-61::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
+			"obj-61::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
+			"obj-61::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
+			"obj-61::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
+			"obj-61::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
+			"obj-61::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
+			"obj-61::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_text_query.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Audio-Outputgb2Bb.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
 				"patcherrelativepath" : "../../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr_arg.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"patcherrelativepath" : "../tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SliceLevelP.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"patcherrelativepath" : "../tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_MasterLevelP.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"patcherrelativepath" : "../tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru2.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"patcherrelativepath" : "../tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NanoK2b_.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
 				"patcherrelativepath" : "../tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
@@ -16376,22 +16423,22 @@
 			}
 , 			{
 				"name" : "NK2b_Player.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
 				"patcherrelativepath" : "../tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SVPPlayer.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
 				"patcherrelativepath" : "../tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.menu.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/external/catart-mubu/patches/lib",
-				"patcherrelativepath" : "../../external/catart-mubu/patches/lib",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/catart",
+				"patcherrelativepath" : "../../external/catart",
 				"type" : "JSON",
 				"implicit" : 1
 			}

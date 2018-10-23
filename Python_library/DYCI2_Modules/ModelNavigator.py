@@ -87,6 +87,7 @@ def reinit_navigation_param(factor_oracle_navigator):
 	factor_oracle_navigator.current_continuity = 0
 	factor_oracle_navigator.current_position_in_sequence = -1
 	factor_oracle_navigator.current_navigation_index = - 1	
+	factor_oracle_navigator.no_empty_event = True
 
 dict_methods["reinit_navigation_param"] = reinit_navigation_param
 
@@ -264,7 +265,9 @@ def free_navigation(factor_oracle_navigator, length, new_max_continuity = None, 
 				#factor_oracle_navigator.current_position_in_sequence = s
 			else:
 				#print("FREE GENERATION 3.{}.5".format(i))
-				s = factor_oracle_navigator.navigate_without_continuation(factor_oracle_navigator.filter_using_history_and_taboos(init_continuations))	
+				#s = factor_oracle_navigator.navigate_without_continuation(factor_oracle_navigator.filter_using_history_and_taboos(init_continuations))	
+				#LAST 15/10
+				s = factor_oracle_navigator.follow_continuation_with_jump(range(factor_oracle_navigator.index_last_state()))
 				if not s is None:
 					str_print_info += " xxnothingxx - random: {}".format(s)
 					#factor_oracle_navigator.current_position_in_sequence = s

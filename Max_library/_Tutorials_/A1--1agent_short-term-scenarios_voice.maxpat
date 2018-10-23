@@ -2795,7 +2795,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 95.0, 244.0, 50.0, 169.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -2928,7 +2928,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 318.150024, 257.0, 220.0, 49.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib_jn/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -4824,263 +4824,263 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-25::obj-134::obj-41" : [ "NKslider7", "NKslider7", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ],
-			"obj-25::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
-			"obj-25::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
-			"obj-25::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
 			"obj-25::obj-134::obj-53" : [ "NKpot5", "NKpot5", 0 ],
-			"obj-25::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
-			"obj-25::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
-			"obj-25::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
-			"obj-25::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
-			"obj-25::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-19::obj-11" : [ "live.gain~[6]", "level", 0 ],
-			"obj-25::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
-			"obj-25::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
-			"obj-25::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
-			"obj-25::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
-			"obj-25::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
-			"obj-25::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
-			"obj-25::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
-			"obj-25::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
-			"obj-25::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
-			"obj-25::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
-			"obj-25::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-89::obj-11" : [ "live.gain~[5]", "level", 0 ],
-			"obj-25::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
-			"obj-25::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
-			"obj-25::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
-			"obj-25::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
-			"obj-25::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
-			"obj-25::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
-			"obj-25::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
-			"obj-25::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
-			"obj-25::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
-			"obj-25::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
-			"obj-25::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
-			"obj-25::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
-			"obj-25::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
-			"obj-25::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
-			"obj-25::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
-			"obj-25::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
-			"obj-25::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
 			"obj-25::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ],
-			"obj-25::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
-			"obj-25::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
-			"obj-25::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
+			"obj-25::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
 			"obj-25::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
+			"obj-25::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
+			"obj-25::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
+			"obj-25::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
+			"obj-25::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
 			"obj-25::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
-			"obj-25::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
-			"obj-25::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
-			"obj-25::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
-			"obj-25::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
+			"obj-25::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
+			"obj-25::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
+			"obj-25::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
+			"obj-25::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
+			"obj-25::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
+			"obj-25::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
 			"obj-25::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
+			"obj-25::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
+			"obj-25::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
+			"obj-25::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
+			"obj-25::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
+			"obj-25::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
+			"obj-25::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
+			"obj-25::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
+			"obj-25::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
+			"obj-25::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
+			"obj-25::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
+			"obj-25::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
+			"obj-25::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
+			"obj-25::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
+			"obj-25::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
+			"obj-25::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
 			"obj-25::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
-			"obj-25::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ]
+			"obj-25::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
+			"obj-25::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
+			"obj-25::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-89::obj-11" : [ "live.gain~[5]", "level", 0 ],
+			"obj-25::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
+			"obj-25::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
+			"obj-25::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
+			"obj-25::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
+			"obj-25::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
+			"obj-25::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
+			"obj-25::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
+			"obj-25::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
+			"obj-25::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
+			"obj-25::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ],
+			"obj-25::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
+			"obj-25::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
+			"obj-25::obj-134::obj-41" : [ "NKslider7", "NKslider7", 0 ],
+			"obj-25::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
+			"obj-25::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
+			"obj-25::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-19::obj-11" : [ "live.gain~[6]", "level", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_agent_preset.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_format_query.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "append_lists.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_agent.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_time.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mysend.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_audio_renderer_1_voice.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects/AudioRenderer",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects/AudioRenderer",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/AudioRenderer",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/AudioRenderer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "disable_past_jammatrix.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "all_indexes_jammatrix.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "borders_jammatrix.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "output_jammatrix.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "local_voice_idx-message.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Voice03_gn.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Antescofo-SVP.Player01gn.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "crossfade~.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external",
+				"patcherrelativepath" : "../external",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tbp2.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tfbr2.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "register.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru2.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "this.parentpatcher.name.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "superfusion.js",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Audio-Outputgb2Bb.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr_arg.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SliceLevelP.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_MasterLevelP.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "local_voice_idx-list.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voice_idx_to_local_idx.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "r&route.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NanoK2b_.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5092,64 +5092,64 @@
 			}
 , 			{
 				"name" : "NK2b_Player.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SVPPlayer.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/tools/NanoKontroler",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Audio-Monitor.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.SaveLoad_MODIF.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Audio-Input2IK.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Record.stIK.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/external/from_omax_and_improtek",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_text_query.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_Python_lib.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_launch_python_server.maxpat",
-				"bootpath" : "~/.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../../.Trash/Dyci2Lib_jn 16-00-09-120/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}

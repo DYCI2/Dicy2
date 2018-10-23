@@ -631,7 +631,17 @@ class Navigator(object):
 		#print(index_delta_prefixes)
 		if len(index_delta_prefixes.keys()) > 0:
 			#TODO : MAX PAS FORCEMENT BONNE IDEE
-			#length_selected_prefix = index_delta_prefixes.keys()[random.randint(0, len(index_delta_prefixes.keys())-1)]		
+			#length_selected_prefix = index_delta_prefixes.keys()[random.randint(0, len(index_delta_prefixes.keys())-1)]	
+
+			max_length = max(index_delta_prefixes.keys())
+			# print(max_length)
+			# accepted_lengths = [l for l in index_delta_prefixes.keys() if l > int(0.33*max_length)]
+			# print(accepted_lengths)
+			# length_selected_prefix = accepted_lengths[random.randint(0,len(accepted_lengths)-1)]
+			# print(length_selected_prefix)
+			# s = index_delta_prefixes[length_selected_prefix][random.randint(0, len(index_delta_prefixes[length_selected_prefix])-1)]
+			# print(s)
+
 			length_selected_prefix = max(index_delta_prefixes.keys())
 			s = index_delta_prefixes[length_selected_prefix][random.randint(0, len(index_delta_prefixes[length_selected_prefix])-1)]
 			if type(s) == list:

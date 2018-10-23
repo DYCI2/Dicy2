@@ -162,19 +162,23 @@ class OSCAgent(Server):
 		print(received_elements)
 		dict_memory = received_elements[0]
 		keys_label = received_elements[1]
-		keys_contents = received_elements[2]
+		keys_content = received_elements[2]
 		label_type = Label
 		#TODO : FAIRE TRY POUR VOIR SI CETTE CLASSE EST CONNUE
 		exec("%s = %s" % ("label_type",keys_label))
+		content_type = None
+		if keys_content != "state":
+			exec("%s = %s" % ("content_type",keys_content))
 
 		#TODO : GERER LES AUTRES PARAMETRES DEPUIS MAX
 		#self.generation_handler = new_generation_handler_from_json_file(dict_memory, keys_label, contents_label)
 		self.generation_handler = new_generation_handler_from_json_file(path_json_file = dict_memory, keys_labels = keys_label, 
-			keys_contents = keys_contents, 
+			keys_contents = keys_content, 
 			model_navigator = "FactorOracleNavigator", #TODO : GERER AUSSI DEPUIS MAX 
 			label_type = label_type, #TODO : AUTRE CHOSE QUE JUSTE KEYSLABEL ? PAR EXEMPLE POUR GERER DEPTH DANS LISTLABEL
 			authorized_tranformations = [0], #TODO : GERER AUSSI DEPUIS MAX
-			continuity_with_future = [0.0, 1.0]) #TODO : GERER AUSSI DEPUIS MAXn (pas prioritaire)
+			continuity_with_future = [0.0, 1.0], #TODO : GERER AUSSI DEPUIS MAX (pas prioritaire)
+			content_type = content_type) 
 
 
 		message = OSC.OSCMessage("/new_generator_built_from_memory")
@@ -244,15 +248,19 @@ class OSCAgent(Server):
 		received_elements = args[2]
 		print(received_elements)
 		keys_label = received_elements[0]
-		keys_contents = received_elements[1]
+		keys_content = received_elements[1]
 		label_type = Label
 		#TODO : FAIRE TRY POUR VOIR SI CETTE CLASSE EST CONNUE
 		exec("%s = %s" % ("label_type",keys_label))
+		content_type = None
+		if keys_content != "state":
+			exec("%s = %s" % ("content_type",keys_content))
+	
 
 		self.generation_handler = GenerationHandler(model_navigator = "FactorOracleNavigator", equiv = (lambda x,y : x == y),
-			label_type = label_type, #content_type = content_type, 
+			label_type = label_type, 
 			authorized_tranformations = [0], 
-			continuity_with_future = [0.0, 1.0])
+			continuity_with_future = [0.0, 1.0], content_type = content_type )
 
 
 		message = OSC.OSCMessage("/new_empty_memory")
@@ -274,6 +282,9 @@ class OSCAgent(Server):
 		label_type = Label
 		#TODO : FAIRE TRY POUR VOIR SI CETTE CLASSE EST CONNUE
 		exec("%s = %s" % ("label_type",keys_label))
+		content_type = None
+		if keys_content != "state":
+			exec("%s = %s" % ("content_type",keys_content))
 
 		self.generation_handler.learn_event(state = value_content, label = value_label)
 		#self.generation_handler.memory.print_model()

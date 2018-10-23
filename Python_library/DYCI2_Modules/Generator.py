@@ -452,13 +452,15 @@ class Generator (object):
 				i+= l	
 			else:
 				#print("SCENARIO BASED GENERATION 1.{}.2.1".format(i))
-				if self.memory.no_empty_event and self.current_position_in_sequence < self.memory.index_last_state():
-					generated_sequence.append(self.memory.sequence[self.current_position_in_sequence + 1])
+				if self.memory.no_empty_event and self.memory.current_position_in_sequence < self.memory.index_last_state():
+					print("NO EMPTY EVENT")
+					generated_sequence.append(self.memory.sequence[self.memory.current_position_in_sequence + 1])
 					#print("\n\n-->HANDLE WHEN NO EMPTY EVENT MODE SETS POSITION: {}<--".format(self.memory.sequence[self.current_position_in_sequence + 1]))
-					self.memory.current_position_in_sequence = self.memory.sequence[self.current_position_in_sequence + 1]
+					self.memory.current_position_in_sequence = self.memory.current_position_in_sequence + 1
 
 					# TODO : + TRANSFORMATION POUR TRANSPO SI NECESSAIRE
 				else:
+					print("EMPTY EVENT")
 					generated_sequence.append(None)
 					###### RELEASE
 					self.memory.current_position_in_sequence = 0
@@ -564,8 +566,8 @@ class Generator (object):
 
 			# print("---------END handle_scenario_based")	
 			# return generated_sequence ####  # TODO : + TRANSFORMATION POUR TRANSPO SI NECESSAIRE
-		print("---------END handle_scenario_based ->> Return {}".format(generated_sequence))	
-		return generated_sequence ####  # TODO : + TRANSFORMATION POUR TRANSPO SI NECESSAIRE
+			print("---------END handle_scenario_based ->> Return {}".format(generated_sequence))	
+			return generated_sequence ####  # TODO : + TRANSFORMATION POUR TRANSPO SI NECESSAIRE
 
 	#################################AJOUT POUR LE C
 	def fonction_test(self):
