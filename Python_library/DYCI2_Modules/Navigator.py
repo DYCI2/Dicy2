@@ -89,7 +89,7 @@ class Navigator(object):
 		self.sequence = sequence
 		self.labels = labels
 		self.equiv = equiv
-		self.no_empty_event = False
+		self.no_empty_event = True
 		self.max_continuity = max_continuity
 		self.avoid_repetitions_mode = 0
 		self.execution_trace = {}
