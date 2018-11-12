@@ -11,7 +11,7 @@ This repository contains:
 
 __Author:__ Jérôme Nika (IRCAM STMS LAB).
 
-__ Contributors:__ Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB). 
+__Contributors:__ Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB). 
 
 __DYCI2 project coordination:__ Gérard Assayag (Ircam), Marc Chemillier (EHESS), Jérôme Nika (Ircam), Emmanuel Vincent (Inria Nancy). 
 
