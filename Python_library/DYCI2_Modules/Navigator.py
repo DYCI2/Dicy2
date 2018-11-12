@@ -97,10 +97,14 @@ class Navigator(object):
 		self.reinit_navigation_param()
 
 		self.control_parameters = ["avoid_repetitions_mode", "max_continuity"]
-		for param in control_parameters:
-			# TODO : PLUTOT FAIRE AVEC UN TRY ASSERT... POUR ETRE PLUS PROPRE
-			if param in self.__dict__.keys():
-				self.control_parameters.append(param)
+		if type(control_parameters) != type(None):
+			print("argument control_parameters = {}".format(control_parameters))
+			for param in control_parameters:
+				# TODO : PLUTOT FAIRE AVEC UN TRY ASSERT... POUR ETRE PLUS PROPRE
+				if param in self.__dict__.keys():
+					self.control_parameters.append(param)
+		else:
+			print("argument control_parameters = None")
 
 		self.execution_trace_parameters = ["current_position_in_sequence", "history_and_taboos", "current_continuity"]
 		for param in execution_trace_parameters:
