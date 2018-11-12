@@ -1,6 +1,8 @@
 # DYCI2_library
 
-This library aims at gathering in its successive versions the results of the DYCI2 project [(website)](http://repmus.ircam.fr/dyci2/home), a conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
+This library integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home). It contains a collection of tools for human-machine co-improvisation shaping a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4).
+
+A conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
 
 This repository contains: 
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the _Python\_library_ directory).
@@ -8,6 +10,7 @@ This repository contains:
 * The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory _Max\_library/\_Tutorials\__ and the _Readme_ file to download sound examples).
 
 __Authors / contributors:__ Jérôme Nika (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), & DYCI2 partners. 
+_DYCI2 project coordination :_ Gérard Assayag (Ircam), Marc Chemillier (EHESS), Jérôme Nika (Ircam), Emmanuel Vincent (Inria Nancy). 
 
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
