@@ -9,7 +9,9 @@ This repository contains:
 
 * The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory _Max\_library/\_Tutorials\__ and the _Readme_ file to download sound examples).
 
-__Author:__ Jérôme Nika (IRCAM STMS LAB); __Contributors:__ Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB); __DYCI2 project coordination:__ Gérard Assayag (Ircam), Marc Chemillier (EHESS), Jérôme Nika (Ircam), Emmanuel Vincent (Inria Nancy). 
+__Author:__ Jérôme Nika (IRCAM STMS LAB); 
+__Contributors:__ Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB); 
+DYCI2 supervision :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, post-doc researcher, WP coordinator), Marc Chemillier (EHESS, associate researcher).
 
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
@@ -44,6 +46,7 @@ See the tutorials corresponding to the different modules. For example, in the di
     $ python Generator_tutorial.py
 
 Html doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/
+
 PDF doc: in DYCI2lib/Python_library
 
 ------
