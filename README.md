@@ -19,9 +19,9 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Configuration and installation
 
-1. Download and install the last version of Python 2 (https://www.python.org/downloads).
+1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
 
-2. Use your terminal in the directory _DYCI2\_library/Python\_library_ to install the dependencies:
+2. Use your terminal in the directory Dyci2Lib to install the dependencies:
 
     $ pip install -r requirements.txt
 
