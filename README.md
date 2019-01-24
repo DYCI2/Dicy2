@@ -25,7 +25,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 
     $ pip install -r requirements.txt
 
-(If _pip_ is not installed: `sudo easy-install pip`.)
+(If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
 ------
 ### Max library of musical agents
