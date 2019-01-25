@@ -19,6 +19,8 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Configuration and installation
 
+## To use the Python library
+
 1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
 
 2. Use your terminal in the directory Dyci2Lib to install the dependencies:
@@ -26,6 +28,10 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
     $ pip install -r requirements.txt
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
+
+## To use the Max library 
+
+Download the examples as explained below.
 
 ------
 ### Max library of musical agents
