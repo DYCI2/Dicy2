@@ -19,7 +19,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Configuration and installation
 
-## To use the Python library
+#### To use the Python library
 
 1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
 
@@ -29,7 +29,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
-## To use the Max library 
+#### To use the Max library 
 
 Download the examples as explained below.
 
