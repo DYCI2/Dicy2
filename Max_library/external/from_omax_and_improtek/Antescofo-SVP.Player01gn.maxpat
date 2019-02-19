@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -929.0, 174.0, 693.0, 929.0 ],
+		"rect" : [ 247.0, 79.0, 1288.0, 912.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 304.0, 133.25, 87.0, 22.0 ],
+					"style" : "",
+					"text" : "s AnteToVideo"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-75",
@@ -9844,6 +9856,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -9871,10 +9892,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
 			"obj-122::obj-108::obj-89::obj-11" : [ "live.gain~[5]", "level", 0 ],
-			"obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ],
-			"obj-122::obj-108::obj-19::obj-11" : [ "live.gain~[6]", "level", 0 ]
+			"obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
+			"obj-122::obj-108::obj-19::obj-11" : [ "live.gain~[6]", "level", 0 ],
+			"obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
