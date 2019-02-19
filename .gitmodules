@@ -1,0 +1,3 @@
+[submodule "Max_library/external/catart"]
+	path = Max_library/external/catart
+	url = https://github.com/Ircam-RnD/catart-mubu
