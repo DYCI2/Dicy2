@@ -50,9 +50,9 @@ def concat_wave_files_directory(path_directory, abs_path_output_file):
 # outfile = "/Users/jnika/Documents/Git/DYCI2_library/MaxPatches/_Tutorials_/_ExamplesCorpus_/TestConcat.wav"
 # concat_wave_files([infile1,infile2],outfile)
 
-path_directory = "/Users/nika/Desktop/TestConcat/"
-outfile = "/Users/nika/Desktop/TestConcat/AAAAAA.wav"
-concat_wave_files_directory(path_directory, outfile)
+#path_directory = "/Users/nika/Desktop/TestConcat/"
+#outfile = "/Users/nika/Desktop/TestConcat/AAAAAA.wav"
+#concat_wave_files_directory(path_directory, outfile)
 
 # TODO : assert path cf. corpus builder
 def concat_annotations_and_wave_files(list_input_annotation_files, output_file, max_num_label = None, previous_label_if_no_label = True, from_s_to_ms = False):

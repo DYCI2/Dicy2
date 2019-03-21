@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1211.0, 153.0, 968.0, 815.0 ],
+		"rect" : [ 34.0, 153.0, 968.0, 815.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,22 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 3,
+					"fontsize" : 14.0,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ -1.0, -1.0, 169.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, -2.0, 164.0, 22.0 ],
+					"style" : "",
+					"text" : "DYCI2 preset"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
@@ -1690,7 +1706,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -1099.0, 250.0, 212.0, 190.0 ],
+						"rect" : [ 34.0, 250.0, 212.0, 190.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,

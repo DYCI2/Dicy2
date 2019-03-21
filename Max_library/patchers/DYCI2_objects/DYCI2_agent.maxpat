@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 277.0, 397.0, 1693.0, 814.0 ],
+		"rect" : [ 188.0, 182.0, 1693.0, 814.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.321569 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -10270,7 +10270,7 @@
 													"presentation_linecount" : 3,
 													"presentation_rect" : [ 3.733327, 49.133366, 160.0, 39.0 ],
 													"style" : "",
-													"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+													"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 												}
 
 											}
@@ -11347,7 +11347,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 515.0, 56.599976, 396.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11374,7 +11374,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 279.0, 279.0, 413.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11472,7 +11472,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-8",
-																	"items" : [ "ExampleDictMemory.json", ",", "Fox_LucidDreams_Drums.json", ",", "Female-Voice-singing.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "SS1_AufLid_00_mrk.json", ",", "AHR_Rec2_Vibr_01.json", ",", "Audio_NoPulse_Voice.json" ],
+																	"items" : [ "Audio_Pulse_Saxo.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "Audio_NoPulse_Voice.json" ],
 																	"maxclass" : "umenu",
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
@@ -11506,7 +11506,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 57.299988, 412.400024, 91.200012, 89.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/Git/DYCI2_library/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11777,7 +11777,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-73",
-													"items" : [ "ExampleDictMemory.json", ",", "Fox_LucidDreams_Drums.json", ",", "Female-Voice-singing.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "SS1_AufLid_00_mrk.json", ",", "AHR_Rec2_Vibr_01.json", ",", "Audio_NoPulse_Voice.json" ],
+													"items" : [ "Audio_Pulse_Saxo.json", ",", "Fox_LucidDreams_Voix.json", ",", "Fox_Effets1.json", ",", "Audio_NoPulse_Voice.json" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -13033,14 +13033,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_time.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mysend.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/Max_library/patchers/tools",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"patcherrelativepath" : "../tools",
 				"type" : "JSON",
 				"implicit" : 1

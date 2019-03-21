@@ -38,6 +38,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-43",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 705.800049, 3.0, 150.0, 87.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ -0.666656, 19.666626, 545.333313, 33.0 ],
+					"style" : "",
+					"text" : "Insert the audio files downloaded at http://repmus.ircam.fr/nika/dyci2_library in \"MaxPatches/_Tutorials_/_ExamplesCorpus_\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.666626, 387.666687, 20.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 699.666626, 407.166748, 20.0, 22.0 ],
+					"style" : "",
+					"text" : "0",
+					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -55,9 +91,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1102.999878, 875.0, 150.0, 20.0 ],
+					"patching_rect" : [ 978.999878, 848.333435, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.5, 407.666748, 99.333328, 20.0 ],
+					"presentation_rect" : [ 473.5, 424.666748, 99.333328, 20.0 ],
 					"style" : "",
 					"text" : "Current scenario"
 				}
@@ -73,7 +109,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 978.999878, 821.333313, 273.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.5, 427.666748, 412.333313, 19.0 ],
+					"presentation_rect" : [ 473.5, 444.666748, 414.0, 19.0 ],
 					"style" : ""
 				}
 
@@ -99,7 +135,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1052.83313, 786.666687, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.5, 369.166687, 150.0, 20.0 ],
+					"presentation_rect" : [ 473.5, 386.166687, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Current label and event"
 				}
@@ -114,7 +150,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1120.166504, 759.666687, 67.333336, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.5, 387.166748, 150.0, 22.0 ],
+					"presentation_rect" : [ 473.5, 404.166748, 150.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -128,7 +164,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1059.666504, 758.666687, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "A"
+					"text" : "F"
 				}
 
 			}
@@ -307,7 +343,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.0, 58.666748, 48.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.500031, 581.666748, 55.0, 22.0 ],
+					"presentation_rect" : [ 13.500031, 604.666748, 55.0, 22.0 ],
 					"style" : "",
 					"text" : "silence"
 				}
@@ -322,7 +358,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 810.0, 318.566772, 119.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.666687, 390.166748, 119.0, 22.0 ],
+					"presentation_rect" : [ 765.666687, 407.166748, 119.0, 22.0 ],
 					"style" : "",
 					"text" : "DYCI2_Python_lib 1"
 				}
@@ -338,7 +374,7 @@
 					"patching_rect" : [ 483.300049, 395.166687, 503.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 480.0, 594.500061, 338.0, 31.0 ],
+					"presentation_rect" : [ 488.0, 611.500061, 338.0, 31.0 ],
 					"style" : "",
 					"text" : "** Don't forget that you can play with the \"control_parameters\" of the agent (e.g. max contiuity). **",
 					"textcolor" : [ 0.626659, 0.011445, 0.044897, 1.0 ]
@@ -356,13 +392,13 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "DYCI2_text_query.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 815.0, 94.5, 143.0, 73.766663 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.5, 654.666748, 355.0, 72.0 ],
+					"presentation_rect" : [ 120.5, 678.666748, 355.0, 72.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -376,7 +412,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 638.0, 127.266663, 172.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 225.5, 631.666748, 78.0, 22.0 ],
+					"presentation_rect" : [ 233.5, 655.666748, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "C C B C C B"
 				}
@@ -393,7 +429,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.300049, 366.0, 20.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 243.5, 558.166748, 20.0, 22.0 ],
+					"presentation_rect" : [ 122.5, 577.166748, 20.0, 22.0 ],
 					"style" : "",
 					"text" : "5",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -412,7 +448,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.300049, 339.0, 20.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.5, 50.0, 20.0, 22.0 ],
+					"presentation_rect" : [ 304.5, 67.0, 20.0, 22.0 ],
 					"style" : "",
 					"text" : "4",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -431,7 +467,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.300049, 311.0, 20.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 98.000031, 559.166748, 20.0, 22.0 ],
+					"presentation_rect" : [ 13.500031, 577.166748, 20.0, 22.0 ],
 					"style" : "",
 					"text" : "3",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -450,7 +486,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.300049, 283.0, 20.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 846.333374, 167.666718, 20.0, 22.0 ],
+					"presentation_rect" : [ 584.333374, 338.666718, 20.0, 22.0 ],
 					"style" : "",
 					"text" : "2",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -469,7 +505,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.300049, 256.0, 20.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 618.666626, 129.666672, 20.0, 22.0 ],
+					"presentation_rect" : [ 513.166626, 146.666672, 20.0, 22.0 ],
 					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -480,16 +516,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 8,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 509.800049, 258.0, 232.0, 114.0 ],
+					"patching_rect" : [ 509.800049, 258.0, 232.0, 127.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 480.0, 509.500092, 338.0, 87.0 ],
+					"presentation_rect" : [ 488.0, 526.500122, 338.0, 87.0 ],
 					"style" : "",
-					"text" : "0) Audio on\n1) Agent: load memory using the preset above\n2) Edit renderer (toggle play on)\n3) Launch the first query (start date = 0)\n4) Agent / time: Start\n5) Launch reactive queries during the rendering",
+					"text" : "0) Audio on\n1) Agent: load memory using the preset above\n2) Optional: edit renderer (toggle play must be on)\n3) Launch the first query (start date = 0)\n4) Agent / time: Start\n5) Launch reactive queries during the rendering",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
 				}
 
@@ -506,7 +542,7 @@
 					"patching_rect" : [ 602.0, 581.0, 288.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 571.333374, 2.666625, 237.0, 69.0 ],
+					"presentation_rect" : [ 579.333374, 19.666626, 237.0, 69.0 ],
 					"style" : "",
 					"text" : "Memory preset: \nAudio: Soprano improvisation\n(by courtesy of Marta Gentilucci) \nLabels: vocal playing modes",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
@@ -525,7 +561,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 166.0, 34.0, 187.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 535.166748, 308.0, 22.0 ],
+					"presentation_rect" : [ 14.0, 552.166748, 308.0, 22.0 ],
 					"style" : "",
 					"text" : "Edit and launch dynamic temporal queries",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
@@ -542,7 +578,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.5, 3.0, 681.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 9.0, 546.333313, 27.0 ],
+					"presentation_rect" : [ -0.666656, -3.0, 546.333313, 27.0 ],
 					"style" : "",
 					"text" : "DYCI2 library - Tutorial - 1 agent, no beat, short-term scenarios"
 				}
@@ -560,7 +596,7 @@
 					"patching_rect" : [ 659.75, 443.0, 187.0, 132.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 480.0, 628.000061, 244.0, 116.0 ],
+					"presentation_rect" : [ 488.0, 645.000061, 244.0, 116.0 ],
 					"style" : "",
 					"text" : "Labels: vocal playing modes\nA: Tenuto\nB: Ribattuto\nC: Agiltà\nD: Stacatto\nF: Silence\nM: Breathy sound",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
@@ -576,7 +612,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.75, 161.266663, 169.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 114.5, 631.666748, 107.0, 22.0 ],
+					"presentation_rect" : [ 122.5, 655.666748, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "B F B F B B F B F"
 				}
@@ -591,7 +627,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.75, 131.0, 120.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.5, 581.666748, 118.0, 22.0 ],
+					"presentation_rect" : [ 182.5, 605.666748, 118.0, 22.0 ],
 					"style" : "",
 					"text" : "A D A D A D A D A D"
 				}
@@ -605,7 +641,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 361.5, 49.0, 134.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 114.5, 560.166748, 131.0, 20.0 ],
+					"presentation_rect" : [ 144.5, 578.166748, 131.0, 20.0 ],
 					"style" : "",
 					"text" : "Start date = next event",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
@@ -620,7 +656,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.5, 34.0, 116.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.500031, 559.166748, 81.5, 20.0 ],
+					"presentation_rect" : [ 35.500031, 577.166748, 81.5, 20.0 ],
 					"style" : "",
 					"text" : "Start date = 0",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
@@ -637,7 +673,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 361.5, 136.5, 134.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 296.0, 581.666748, 170.5, 22.0 ],
+					"presentation_rect" : [ 304.0, 605.666748, 170.5, 22.0 ],
 					"style" : "",
 					"text" : "M M M M M C C C B B F F F"
 				}
@@ -653,7 +689,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.75, 75.5, 169.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 197.5, 606.666748, 269.0, 22.0 ],
+					"presentation_rect" : [ 205.5, 630.666748, 269.0, 22.0 ],
 					"style" : "",
 					"text" : "\"C m hi None\" \"A l lo\" \"C m me\" \"C m me\" \"A l lo\""
 				}
@@ -668,7 +704,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 361.5, 106.5, 130.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 114.5, 606.666748, 79.0, 22.0 ],
+					"presentation_rect" : [ 122.5, 630.666748, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "D D D D D D"
 				}
@@ -683,7 +719,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 443.5, 75.5, 48.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 114.5, 581.666748, 55.0, 22.0 ],
+					"presentation_rect" : [ 122.5, 605.666748, 55.0, 22.0 ],
 					"style" : "",
 					"text" : "free 10"
 				}
@@ -700,7 +736,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 55.333344, 1031.0, 48.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 785.0, 170.666718, 57.0, 19.0 ],
+					"presentation_rect" : [ 793.0, 187.666718, 57.0, 19.0 ],
 					"style" : ""
 				}
 
@@ -1662,7 +1698,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 761.800049, 310.566772, 38.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 716.999939, 383.666748, 35.0, 35.0 ],
+					"presentation_rect" : [ 724.999939, 400.666748, 35.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -1685,7 +1721,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 55.333344, 801.666809, 406.333313, 211.666718 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.5, 163.333374, 405.333313, 206.666718 ],
+					"presentation_rect" : [ 473.5, 180.333374, 405.333313, 206.666718 ],
 					"viewvisibility" : 1
 				}
 
@@ -1708,23 +1744,8 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 25.0, 490.669495, 444.0, 269.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 46.0, 448.0, 265.0 ],
+					"presentation_rect" : [ 13.0, 63.0, 448.0, 265.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 140.5, 77.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.500031, 606.666748, 55.0, 22.0 ],
-					"style" : "",
-					"text" : "free 100"
 				}
 
 			}
@@ -1745,7 +1766,7 @@
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 25.0, 256.0, 448.0, 211.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 317.166718, 448.0, 211.0 ],
+					"presentation_rect" : [ 13.0, 334.166718, 448.0, 211.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1805,6 +1826,22 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 3,
+									"fontsize" : 14.0,
+									"id" : "obj-27",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 6.5, 11.0, 164.0, 22.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ -1.0, -2.0, 178.0, 22.0 ],
+									"style" : "",
+									"text" : "DYCI2 preset"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
@@ -3296,14 +3333,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-43",
-																	"linecount" : 3,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 318.150024, 257.0, 220.0, 22.0 ],
-																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"style" : ""
 																}
 
 															}
@@ -5103,7 +5138,7 @@
 ,
 					"patching_rect" : [ 598.75, 659.333313, 309.0, 86.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 530.333374, 75.0, 316.0, 86.0 ],
+					"presentation_rect" : [ 538.333374, 92.0, 316.0, 86.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5372,13 +5407,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 4 ],
 					"source" : [ "obj-44", 0 ]
 				}
@@ -5429,67 +5457,67 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-25::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
-			"obj-25::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
-			"obj-25::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
-			"obj-25::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
-			"obj-25::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
-			"obj-25::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-89::obj-11" : [ "live.gain~[5]", "level", 0 ],
-			"obj-25::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ],
-			"obj-25::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
-			"obj-25::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
-			"obj-25::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
-			"obj-25::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
-			"obj-25::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
-			"obj-25::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
-			"obj-25::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
-			"obj-25::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
-			"obj-25::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
-			"obj-25::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
 			"obj-25::obj-134::obj-41" : [ "NKslider7", "NKslider7", 0 ],
-			"obj-25::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
 			"obj-25::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
+			"obj-25::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
 			"obj-25::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
 			"obj-25::obj-134::obj-53" : [ "NKpot5", "NKpot5", 0 ],
-			"obj-25::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
-			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ],
+			"obj-25::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
 			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-19::obj-11" : [ "live.gain~[6]", "level", 0 ],
 			"obj-25::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
-			"obj-25::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
-			"obj-25::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
+			"obj-25::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
+			"obj-25::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
 			"obj-25::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
-			"obj-25::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
-			"obj-25::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
-			"obj-25::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
-			"obj-25::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
 			"obj-25::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
+			"obj-25::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
 			"obj-25::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
-			"obj-25::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
-			"obj-25::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
+			"obj-25::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
+			"obj-25::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
+			"obj-25::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
+			"obj-25::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
+			"obj-25::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
 			"obj-25::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
+			"obj-25::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
 			"obj-25::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
+			"obj-25::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
 			"obj-25::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
 			"obj-25::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
-			"obj-25::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
-			"obj-25::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
-			"obj-25::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
 			"obj-25::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
-			"obj-25::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
-			"obj-25::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
-			"obj-25::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
+			"obj-25::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
+			"obj-25::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
+			"obj-25::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
+			"obj-25::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
 			"obj-25::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
-			"obj-25::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
 			"obj-25::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-89::obj-11" : [ "live.gain~[7]", "level", 0 ],
+			"obj-25::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
+			"obj-25::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
 			"obj-25::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
-			"obj-25::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ]
+			"obj-25::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
+			"obj-25::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
+			"obj-25::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
+			"obj-25::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
+			"obj-25::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
+			"obj-25::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
+			"obj-25::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-108::obj-89::obj-11" : [ "live.gain~[5]", "level", 0 ],
+			"obj-25::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
+			"obj-25::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
+			"obj-25::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
+			"obj-25::obj-24::obj-15::obj-122::obj-85::obj-19::obj-11" : [ "live.gain~[8]", "level", 0 ],
+			"obj-25::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
+			"obj-25::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
+			"obj-25::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
+			"obj-25::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
+			"obj-25::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
+			"obj-25::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
+			"obj-25::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_agent_preset.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
