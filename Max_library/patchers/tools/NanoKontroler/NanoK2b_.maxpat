@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 94.0, 193.0, 654.0, 168.0 ],
+		"rect" : [ 111.0, 108.0, 834.0, 433.0 ],
 		"bgcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -3287,7 +3287,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -11049,9 +11048,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 201.0, 551.0, 31.0, 24.0 ],
+					"patching_rect" : [ 201.0, 551.0, 31.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.5, 109.5, 31.0, 24.0 ],
+					"presentation_rect" : [ 125.5, 109.5, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "Å",
 					"textcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ]
@@ -11066,9 +11065,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.0, 551.0, 31.0, 24.0 ],
+					"patching_rect" : [ 130.0, 551.0, 31.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.480011, 110.479996, 31.0, 24.0 ],
+					"presentation_rect" : [ 77.480011, 110.479996, 31.0, 23.0 ],
 					"style" : "",
 					"text" : "n",
 					"textcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ]
@@ -11186,10 +11185,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 273.839478, 27.0, 19.0 ],
+					"patching_rect" : [ 57.0, 273.839478, 27.0, 44.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 25.894442, 84.9981, 27.0, 19.0 ],
+					"presentation_rect" : [ 25.894442, 84.9981, 27.0, 44.0 ],
 					"style" : "",
 					"text" : "cyc",
 					"textcolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ]

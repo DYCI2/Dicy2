@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1181.0, 90.0, 614.0, 293.0 ],
+		"rect" : [ 517.0, 164.0, 626.0, 276.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,47 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 484.0, 794.0, 79.0, 22.0 ],
+					"style" : "",
+					"text" : "maximum $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 421.0, 844.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 496.0, 131.000183, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 543.25, 831.0, 124.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess minimum 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-121",
 					"maxclass" : "number",
@@ -103,7 +144,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 575.75, 184.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 594.0, 166.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -120,7 +160,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -161,7 +201,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 413.0, 361.0, 249.0, 22.0 ],
 									"style" : "",
-									"text" : "None None None"
+									"text" : "None None None None None"
 								}
 
 							}
@@ -369,7 +409,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 102.0, 346.0, 249.0, 22.0 ],
 									"style" : "",
-									"text" : "None None None"
+									"text" : "None None None None None"
 								}
 
 							}
@@ -1326,6 +1366,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
 					"source" : [ "obj-121", 0 ]
 				}
@@ -1426,8 +1473,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1435,7 +1497,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1507,6 +1569,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-61", 0 ]
 				}
@@ -1550,7 +1619,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_text_query.maxpat",
-				"bootpath" : "~/Documents/Git/DYCI2_library/MaxPatches/patchers/DYCI2_objects",
+				"bootpath" : "~/Music/Dyci2Lib-master/Max_library/patchers/DYCI2_objects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

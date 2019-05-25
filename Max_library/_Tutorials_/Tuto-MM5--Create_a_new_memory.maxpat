@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1476.0, -15.0, 677.0, 345.0 ],
+		"openrect" : [ 289.0, 267.0, 815.0, 419.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -30,13 +30,51 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
+		"devicewidth" : 815.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.626659, 0.011445, 0.044897, 1.0 ],
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.0, 142.666748, 77.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 137.0, 370.25, 211.0, 20.0 ],
+					"style" : "",
+					"text" : "Tuto-MM1--1agent_dynamic-scenario",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.5, 377.0, 576.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 4.5, 32.0, 777.0, 36.0 ],
+					"style" : "",
+					"text" : "N.B.: Some playing modes (scenarios of descriptors and reactive listening) do not require annotated files since they perform analysis and clustering automatically (see Max tutorials \"AM\")."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
@@ -54,16 +92,16 @@
 					"fontface" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-42",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 265.25, 397.75, 36.0 ],
+					"patching_rect" : [ 4.5, 265.25, 408.0, 79.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 4.5, 265.25, 397.75, 36.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 9.5, 338.25, 792.0, 50.0 ],
 					"style" : "",
-					"text" : "3) Move the generated .json file and your associated (.aiff) sound file in /MaxPatches/_Tutorials_/_ExamplesCorpus_"
+					"text" : "3) Move the generated .json file and your associated .aiff sound file in /MaxPatches/_Tutorials_/_ExamplesCorpus_, then give the name of the .json file you want to use as a memory in the \"preset\" box linked to your DYCI2 agent. \n(See an example in                                                             .)               "
 				}
 
 			}
@@ -72,16 +110,16 @@
 					"fontface" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-41",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 196.25, 683.0, 36.0 ],
+					"patching_rect" : [ 4.5, 196.25, 683.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 3.5, 188.75, 683.0, 36.0 ],
+					"presentation_rect" : [ 10.5, 206.5, 791.0, 36.0 ],
 					"style" : "",
-					"text" : "2) Drop your .csv / .txt annotation file here\n/!\\ No \".\" or \" \" in the whole path of the file (except extension) /!\\"
+					"text" : "2) Drop your .csv / .txt annotation file here -- /!\\ No \".\" or \" \" in the whole path of the file (except extension) /!\\ --\nA .json file will be created in the same directory."
 				}
 
 			}
@@ -97,7 +135,7 @@
 					"patching_rect" : [ 4.5, 65.0, 683.0, 94.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 4.5, 65.0, 683.0, 94.0 ],
+					"presentation_rect" : [ 8.5, 80.0, 683.0, 94.0 ],
 					"style" : "",
 					"text" : "1) Create a .csv / .txt annotation file with the following format \n\nstart_date_event_1_in_ms ; label_1_1 ... label_1_j\n...\nstart_date_event_i_in_ms ; label_i_1 ... label_i_j\ndate_end_file_in_ms ; X"
 				}
@@ -509,9 +547,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 4.5, 303.25, 701.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 303.25, 701.0, 21.0 ],
+					"presentation_rect" : [ 8.5, 170.0, 793.0, 21.0 ],
 					"style" : "",
-					"text" : "cf. example of Female-Voice-singing.csv --> Female-Voice-singing.json (annotation for Female-Voice-singing.aiff)"
+					"text" : "cf. example of Audio_NoPulse_Voice.csv --> Audio_NoPulse_Voice.json (annotation for Audio_NoPulse_Voice.aiff)"
 				}
 
 			}
@@ -521,14 +559,16 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-35",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 37.0, 576.0, 21.0 ],
+					"patching_rect" : [ 4.5, 37.0, 576.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 37.0, 576.0, 21.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 5.5, 288.0, 792.0, 36.0 ],
 					"style" : "",
-					"text" : "Or see section \"To use you own annotated musical memories\" in Readme.md (root directory)"
+					"text" : "Or, for more options, use the script FromTextToDYCI2json_script for more, for example :\n\t     $ python FromTextToDYCI2json_script.py [absolute path to the .csv/.txt file]"
 				}
 
 			}
@@ -541,7 +581,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 4.5, 167.5, 402.75, 77.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 167.5, 397.75, 78.5 ]
+					"presentation_rect" : [ 9.5, 207.5, 792.0, 78.5 ]
 				}
 
 			}
@@ -550,14 +590,32 @@
 					"fontface" : 3,
 					"fontsize" : 18.0,
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 4.666674, 681.0, 27.0 ],
+					"patching_rect" : [ 4.5, 4.666674, 681.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 2.666662, 1343.333374, 27.0 ],
+					"presentation_rect" : [ 4.5, 3.0, 796.0, 27.0 ],
 					"style" : "",
-					"text" : "DYCI2 library - Create a new \"musical memory\" from manual annotations"
+					"text" : "DYCI2 library - Create a new \"musical memory\" from manual annotations for \"MM\" patches"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
+					"id" : "obj-4",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 182.0, 490.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.5, 72.0, 802.0, 325.25 ],
+					"proportion" : 0.39,
+					"style" : ""
 				}
 
 			}

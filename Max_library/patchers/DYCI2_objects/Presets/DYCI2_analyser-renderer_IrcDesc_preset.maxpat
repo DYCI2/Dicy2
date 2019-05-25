@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1386.0, 90.0, 974.0, 885.0 ],
+		"rect" : [ 34.0, 90.0, 974.0, 885.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,24 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 749.0, 314.0, 147.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /FreqModOctave"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.225931, 0.243266, 0.235763, 1.0 ],
 					"color" : [ 0.626659, 0.011445, 0.044897, 1.0 ],
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -1886.0, 79.0, 370.0, 951.0 ],
+						"rect" : [ 821.0, 548.0, 1039.0, 937.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -82,7 +95,105 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 468.0, 155.0, 50.0, 22.0 ],
+									"presentation_rect" : [ 448.0, 157.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 562.0, 59.0, 60.0, 22.0 ],
+									"style" : "",
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 562.0, 146.0, 43.0, 22.0 ],
+									"style" : "",
+									"text" : "set $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 562.0, 116.0, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 2,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 468.0, 221.0, 30.0, 30.0 ],
+									"presentation_rect" : [ 474.0, 348.0, 0.0, 0.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 10.0,
+									"id" : "obj-61",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 526.0, 182.0, 160.0, 18.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 190.0, 26.0, 76.0, 18.0 ],
+									"style" : "",
+									"text" : "modulo octave"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-56",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 499.0, 116.0, 24.0, 24.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 170.0, 26.0, 16.0, 16.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
@@ -116,7 +227,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 266.0, 59.0, 105.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 156.0, 2.0, 105.0, 20.0 ],
+									"presentation_rect" : [ 10.0, 4.0, 105.0, 20.0 ],
 									"style" : "",
 									"text" : "Analysis"
 								}
@@ -130,8 +241,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 14.0, 59.0, 141.0, 20.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 2.0, 2.0, 141.0, 20.0 ],
 									"style" : "",
 									"text" : "Segmentation"
 								}
@@ -146,9 +255,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 33.0, 89.0, 152.0, 901.0 ],
-									"presentation" : 1,
-									"presentation_linecount" : 89,
-									"presentation_rect" : [ 176.0, 24.0, 170.0, 901.0 ],
 									"style" : "",
 									"text" : "FundamentalFrequency \n\nChroma \n\nMFCC \n\nSpectralCentroid \n\nLoudness \n\nTotalEnergy \n\nHarmonicSpectralCentroid \n\nSignalZeroCrossingRate \n\nSpectralSpread \n\nSpectralSkewness \n\nSpectralKurtosis \n\nSpectralRolloff\n\nSpectralVariation \n\nSpectralDecrease \n\nRelativeSpecificLoudness \n\nPerceptualTristimulus \n\nPerceptualOddToEvenRatio \n\nSharpness \n\nSpread \n\nSpectralFlatness \n\nSpectralCrest \n\nSpectralSlope \n\nPerceptualSpectralDeviation \n\nPerceptualSpectralCentroid \n\nPerceptualSpectralSpread \n\nPerceptualSpectralSkewness \n\nPerceptualSpectralKurtosis \n\nPerceptualSpectralRolloff \n\nPerceptualSpectralVariation \n\nPerceptualSpectralDecrease \n\nPerceptualSpectralSlope \n\nInharmonicity \n\nHarmonicEnergy \n\nNoiseEnergy \n\nNoisiness \n\nHarmonicTristimulus \n\nHarmonicOddToEvenRatio \n\nHarmonicSpectralDeviation \n\nHarmonicSpectralSpread \n\nHarmonicSpectralSkewness \n\nHarmonicSpectralKurtosis \n\nHarmonicSpectralVariation \n\nHarmonicSpectralDecrease \n\nHarmonicSpectralSlope \n\nHarmonicSpectralRolloff"
 								}
@@ -167,8 +273,6 @@
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 14.0, 89.0, 20.0, 902.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 23.0, 20.0, 902.0 ],
 									"size" : 45,
 									"style" : "",
 									"values" : [ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
@@ -186,7 +290,7 @@
 									"patching_rect" : [ 236.0, 89.0, 152.0, 901.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 89,
-									"presentation_rect" : [ 26.0, 24.0, 155.0, 901.0 ],
+									"presentation_rect" : [ 5.0, 26.0, 155.0, 901.0 ],
 									"style" : "",
 									"text" : "FundamentalFrequency \n\nChroma \n\nMFCC \n\nSpectralCentroid \n\nLoudness \n\nTotalEnergy \n\nHarmonicSpectralCentroid \n\nSignalZeroCrossingRate \n\nSpectralSpread \n\nSpectralSkewness \n\nSpectralKurtosis \n\nSpectralRolloff\n\nSpectralVariation \n\nSpectralDecrease \n\nRelativeSpecificLoudness \n\nPerceptualTristimulus \n\nPerceptualOddToEvenRatio \n\nSharpness \n\nSpread \n\nSpectralFlatness \n\nSpectralCrest \n\nSpectralSlope \n\nPerceptualSpectralDeviation \n\nPerceptualSpectralCentroid \n\nPerceptualSpectralSpread \n\nPerceptualSpectralSkewness \n\nPerceptualSpectralKurtosis \n\nPerceptualSpectralRolloff \n\nPerceptualSpectralVariation \n\nPerceptualSpectralDecrease \n\nPerceptualSpectralSlope \n\nInharmonicity \n\nHarmonicEnergy \n\nNoiseEnergy \n\nNoisiness \n\nHarmonicTristimulus \n\nHarmonicOddToEvenRatio \n\nHarmonicSpectralDeviation \n\nHarmonicSpectralSpread \n\nHarmonicSpectralSkewness \n\nHarmonicSpectralKurtosis \n\nHarmonicSpectralVariation \n\nHarmonicSpectralDecrease \n\nHarmonicSpectralSlope \n\nHarmonicSpectralRolloff"
 								}
@@ -222,7 +326,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 217.0, 89.0, 20.0, 902.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 157.0, 24.0, 20.0, 902.0 ],
+									"presentation_rect" : [ 136.0, 26.0, 20.0, 902.0 ],
 									"size" : 45,
 									"style" : "",
 									"values" : [ 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
@@ -232,7 +336,53 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 1,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"order" : 0,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-52", 0 ],
+									"order" : 1,
 									"source" : [ "obj-48", 0 ]
 								}
 
@@ -241,6 +391,22 @@
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 1 ],
+									"order" : 1,
+									"source" : [ "obj-56", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"order" : 0,
+									"source" : [ "obj-56", 0 ]
 								}
 
 							}
@@ -734,6 +900,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-53", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -745,6 +918,13 @@
 					"destination" : [ "obj-3", 0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
