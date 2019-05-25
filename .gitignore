@@ -2,8 +2,6 @@
 *.wav
 *.aif
 *.aiff
-*.sh
-*.command
 */*/*/*/_My*
 */*/*/_My*
 */*/_My*

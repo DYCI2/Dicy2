@@ -68,6 +68,7 @@ are available at https://github.com/DYCI2/om-dyci2.
 
 ------
 ### Notes
+* Mac OS
 * Python2 (>=2.7, Python3 coming soon !)
 * Max 8
 
