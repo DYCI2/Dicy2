@@ -1,12 +1,13 @@
 # DYCI2_library
 
-This library integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home). It contains a collection of generative agents and tools for smart composition and human-machine co-improvisation shaping a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4).
-A conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
+This library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
+It integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home) and shapes a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4). A conference paper about the DYCI2 library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
 
 This repository contains: 
+* The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory _Max\_library/\_Tutorials\__ and the _Readme_ file to download sound examples).
+
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the _Python\_library_ directory).
 
-* The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory _Max\_library/\_Tutorials\__ and the _Readme_ file to download sound examples).
 
 __Author:__ Jérôme Nika (IRCAM STMS LAB);
 
@@ -18,26 +19,34 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Configuration, installations, and requirements
 
+#### Python requirements
+1. Download and install the **last** version of Python **2** (https://www.python.org/downloads).
 
-1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
+2. Open Terminal to install the dependencies:
 
-2. Use your terminal in the directory Dyci2Lib to install the dependencies:
-
-    $ pip install -r requirements.txt
+   `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`
+   
+   `pip install -r requirements.txt`
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
-3. Externals: Antescofo is distributed with DYCI2, Mubu, and CatarT by Mubu
+#### Max externals
+1. __Mubu for Max__, download from Max package manager. In Max:
+	* File / Show Package Manager
+	* Search "Mubu for Max"
+	* Install
+2. __Catart by Mubu__
+	* Nothing to do if you downloaded a DYCI2 **release**.
+	* [For developpers: if you **cloned** this reporitory or downloaded it from the main page, make sure that you also synchronised the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
+
+The last external, Antescofo, is already in the repository (please use the version distributed with DYCI2).
 
 ------
-### Max library of musical agents
+### Tutorials
 
 Make sure that the path of the directory _Max\_library_ is set in the file preferences in Max.
 
-The reactive listening modules (Tutorials "B...") require the __Mubu for Max__ package. In Max 7:
-* File / Show Package Manager
-* Search "Mubu for Max"
-* Install
+
 
 The audio files corresponding to the Max tutorials can be downloaded here: http://repmus.ircam.fr/nika/dyci2_library. 
 
@@ -46,7 +55,7 @@ The audio files corresponding to the Max tutorials can be downloaded here: http:
 
 See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_:
 
-    $ python Generator_tutorial.py
+    `python Generator_tutorial.py`
 
 Html doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/
 
@@ -98,7 +107,7 @@ Check the repository [DYCI2_library](https://forge.ircam.fr/p/DYCI2_library/)
 
 ------
 ### Troubleshooting
-Please write to `jerome.nika@ircam.fr` for any questions
+Please write to `jerome.nika@ircam.fr` for any questionsn and to share with us your projects using DYCI2 !
 
 ------
 ### License
