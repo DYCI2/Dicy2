@@ -1,6 +1,6 @@
 # DYCI2_library
 
-This library integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home). It contains a collection of tools for human-machine co-improvisation shaping a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4).
+This library integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home). It contains a collection of generative agents and tools for smart composition and human-machine co-improvisation shaping a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4).
 
 A conference paper about the library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
 
@@ -17,9 +17,8 @@ __DYCI2 supervision :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nan
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 ------
-### Configuration and installation
+### Configuration, installations, and requirements
 
-#### To use the Python library
 
 1. Download and install the **last** version of Python 2 (https://www.python.org/downloads).
 
@@ -29,9 +28,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
-#### To use the Max library 
-
-Download the examples as explained below.
+3. Externals: Antescofo is distributed with DYCI2, Mubu, and CatarT by Mubu
 
 ------
 ### Max library of musical agents
@@ -94,8 +91,7 @@ are available at https://github.com/DYCI2/om-dyci2.
 ------
 ### Notes
 * Python2 (>=2.7, Python3 coming soon !)
-* Max7 64 bit (Max8 coming soon !)
-* Externals: Antescofo, Mubu, and CatarT
+* Max 8
 
 ------
 ### Development
