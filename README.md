@@ -19,7 +19,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Configuration, installations, and requirements
 
-#### Python requirements
+#### Download the Python requirements
 1. Download and install the **last** version of Python **2** (https://www.python.org/downloads).
 
 2. Open Terminal to install the dependencies:
@@ -30,64 +30,35 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
-#### Max externals
-1. __Mubu for Max__, download from Max package manager. In Max:
+#### Download the Max externals
+1. __Mubu for Max__, in Max:
 	* File / Show Package Manager
 	* Search "Mubu for Max"
 	* Install
 2. __Catart by Mubu__
 	* Nothing to do if you downloaded a DYCI2 **release**.
-	* [For developpers: if you **cloned** this reporitory or downloaded it from the main page, make sure that you also synchronised the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
+	* [For developpers: if you **cloned** this reporitory or **downloaded it from the main page**, make sure that you also synchronised the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
 
-The last external, Antescofo, is already in the repository (please use the version distributed with DYCI2).
+The last external, **Antescofo**, is already in the repository (please use the version distributed with DYCI2).
 
-------
-### Tutorials
-
-Make sure that the path of the directory _Max\_library_ is set in the file preferences in Max.
-
-
-
-The audio files corresponding to the Max tutorials can be downloaded here: http://repmus.ircam.fr/nika/dyci2_library. 
+Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max. Then explore the tutorials !
 
 ------
-### Autonomous use of the Python modules
+### DYCI2 Tutorials
 
-See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_:
+#### Exploring DYCI2 library
+The DYCI2 library offers different processes depending on the way the "musical memory" of your agent is created, and a range of generative strategies adapted to different types of interaction. The **tutorials** in **Dyci2lib/Max\_library_/Tutorials_** give an overview that should be sufficient to be able to build new setups.
+Start with **DYCI2_Tutorials_Read_me_first.maxpat** to go through the tutorials.
 
-    `python Generator_tutorial.py`
+**_Before using the tutorials, make sure you followed the installation procedure above, and insert the files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/_ExamplesCorpus_"_**
+
+
+#### [Advanced users: Autonomous use of the Python modules]
+Developpers can use the Python library autonomously. 
+See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_: `python Generator_tutorial.py`
 
 Html doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/
-
 PDF doc: in DYCI2lib/Python_library
-
-------
-### To create your own annotated musical memories
-
-Use the __Max tutorial "A5"__ (_Max\_library/\_Tutorials\__).
-
-Or:
-
-1. Create a .csv / .txt annotation file with the following format:
-
-* `start_date_event_1_in_ms` `;` `label_1_1` [SPACE] `...` [SPACE] `label_1_j`
-* ...
-* `start_date_event_i_in_ms` `;` `label_i_1` [SPACE] `...` [SPACE] `label_i_j`
-* ...
-* `date_end_file_in_ms` `;` `X`
-
-
-
-2. Use the script `FromTextToDYCI2json_script` (__no "." or " " in the whole path of the file except for the extension__), for example:
-
-	$ python FromTextToDYCI2json_script.py [path\_annotation\_file]
-
-3. Move the _.json_ file and your _.aif_ sound file in _/MaxPatches/\_Tutorials\_/\_ExamplesCorpus\__
-
-
-See the example of `Female-Voice-singing.csv` --> `Female-Voice-singing.json` (annotation for `Female-Voice-singing.aiff`).
-
-N.B.: Some playing modes (scenarios of descriptors and reactive listening) do not require annotated files since they perform analysis and clustering automatically (see Max tutorials "B"). 
 
 ------
 ### C wrapper and OM/o7 library
