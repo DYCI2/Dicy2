@@ -19,7 +19,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 ### Installation
 
-**If you plan to make music, first download the latest release [HERE](https://github.com/DYCI2/Dyci2Lib/releases) rather than cloning the repository or downloading DYCI2 from this page !**
+_**If you plan to make music, first download the latest release [HERE](https://github.com/DYCI2/Dyci2Lib/releases) rather than cloning the repository or downloading DYCI2 from this page !**_
 
 #### Download the Python requirements
 1. Download and install the **last** version of Python **2** (https://www.python.org/downloads).
@@ -40,6 +40,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 2. __Catart by Mubu__
 	* Nothing to do if you downloaded a DYCI2 **release**.
 	* [For developpers: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
+	
 The last external, **Antescofo**, is already in the repository (please use the version distributed with DYCI2).
 
 **Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max. Then explore the tutorials!**
@@ -76,7 +77,7 @@ Check the repository [DYCI2_library](https://forge.ircam.fr/p/DYCI2_library/)
 
 ------
 ### Troubleshooting
-Please write to `jerome.nika@ircam.fr` for any questionsn and to share with us your projects using DYCI2 !
+Please write to `jerome.nika@ircam.fr` for any question, or to share with us your projects using DYCI2 !
 
 ------
 ### License
