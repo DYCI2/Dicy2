@@ -52,7 +52,7 @@ The last external, **Antescofo**, is already in the repository (please use the v
 The DYCI2 library offers different processes depending on the way the "musical memory" of your agent is created, and a range of generative strategies adapted to different types of interaction. The **tutorials** in **Dyci2lib/Max\_library_/Tutorials_** give an overview that should be sufficient to be able to build new setups.
 Start with **DYCI2_Tutorials_Read_me_first.maxpat** to go through the tutorials.
 
-**_Before using the tutorials, make sure you followed the installation procedure above, and insert the files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/_ExamplesCorpus_"_**
+**_Before using the tutorials, make sure you followed the installation procedure above, and insert the files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"_**
 
 
 #### [Advanced users: Autonomous use of the Python modules]
