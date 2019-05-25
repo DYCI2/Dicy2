@@ -17,7 +17,9 @@ __DYCI2 supervision :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nan
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 ------
-### Configuration, installations, and requirements
+### Installation
+
+**If you plan to make music, first download the latest release [HERE](https://github.com/DYCI2/Dyci2Lib/releases) rather than cloning the repository or downloading DYCI2 from this page !**
 
 #### Download the Python requirements
 1. Download and install the **last** version of Python **2** (https://www.python.org/downloads).
@@ -37,11 +39,10 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 	* Install
 2. __Catart by Mubu__
 	* Nothing to do if you downloaded a DYCI2 **release**.
-	* [For developpers: if you **cloned** this reporitory or **downloaded it from the main page**, make sure that you also synchronised the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
-
+	* [For developpers: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
 The last external, **Antescofo**, is already in the repository (please use the version distributed with DYCI2).
 
-Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max. Then explore the tutorials !
+**Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max. Then explore the tutorials!**
 
 ------
 ### DYCI2 Tutorials
@@ -55,10 +56,7 @@ Start with **DYCI2_Tutorials_Read_me_first.maxpat** to go through the tutorials.
 
 #### [Advanced users: Autonomous use of the Python modules]
 Developpers can use the Python library autonomously. 
-See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_: `python Generator_tutorial.py`
-
-Html doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/
-PDF doc: in DYCI2lib/Python_library
+See the tutorials corresponding to the different modules. For example, in the directory _Python\_library_: `python Generator_tutorial.py`.Html doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/. PDF doc: in DYCI2lib/Python_library.
 
 ------
 ### C wrapper and OM/o7 library
