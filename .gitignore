@@ -13,3 +13,5 @@ _My*
 */.DS_Store
 .DS_Store
 before*
+*.sh
+*.command
