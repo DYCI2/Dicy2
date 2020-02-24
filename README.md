@@ -43,7 +43,7 @@ _**If you plan to make music, first download the latest release [HERE](https://g
 	
 The last external, **Antescofo**, is already in the repository (please use the version distributed with DYCI2).
 
-**Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max. Then explore the tutorials!**
+**Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). Then explore the tutorials!**
 
 ------
 ### DYCI2 Tutorials

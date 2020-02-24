@@ -290,8 +290,7 @@ class ListLabel(Label):
 
 	use_intervals = False
 
-	# TODO : pour tests. Après mettre depth = None
-	def __init__(self, label=[None], depth = 5):
+	def __init__(self, label=[None], depth = None):
 		if not type(label) == list:
 			if type(label) == str:
 				label = label.split(" ")

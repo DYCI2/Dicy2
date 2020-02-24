@@ -10011,7 +10011,7 @@
 													"fontsize" : 9.0,
 													"gradient" : 1,
 													"id" : "obj-20",
-													"linecount" : 6,
+													"linecount" : 7,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
@@ -10021,7 +10021,7 @@
 													"presentation_linecount" : 3,
 													"presentation_rect" : [ 3.733327, 49.133366, 160.0, 39.0 ],
 													"style" : "",
-													"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
+													"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/_Tutorials_/_ExamplesCorpus_"
 												}
 
 											}
@@ -10459,6 +10459,7 @@
 														"tags" : "",
 														"style" : "",
 														"subpatcher_template" : "",
+														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-10",
@@ -10466,9 +10467,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "bang" ],
-																	"patching_rect" : [ 14.733334, 124.003334, 63.0, 22.0 ],
+																	"patching_rect" : [ 14.733334, 124.003334, 69.0, 22.0 ],
 																	"style" : "",
-																	"text" : "delay 500"
+																	"text" : "delay 1500"
 																}
 
 															}
@@ -11098,7 +11099,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 515.0, 56.599976, 396.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11125,7 +11126,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 279.0, 279.0, 413.0, 35.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11250,14 +11251,14 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-57",
-																	"linecount" : 6,
+																	"linecount" : 7,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 57.299988, 412.400024, 91.200012, 89.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
