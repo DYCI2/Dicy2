@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 153.0, 968.0, 815.0 ],
+		"rect" : [ 619.0, 494.0, 968.0, 815.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -1773.0, 148.0, 917.0, 740.0 ],
+						"rect" : [ 542.0, 110.0, 244.0, 260.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -96,6 +96,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",
@@ -366,14 +367,15 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-5",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.449463, 194.0, 121.0, 20.0 ],
+									"patching_rect" : [ 240.449463, 194.0, 121.0, 33.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 22.0, 40.5, 121.0, 20.0 ],
+									"presentation_rect" : [ 22.0, 40.5, 129.0, 20.0 ],
 									"style" : "",
-									"text" : "loaded memory file"
+									"text" : "loaded annotation file"
 								}
 
 							}
@@ -387,7 +389,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 4.0, 5.0, 121.0, 20.0 ],
 									"style" : "",
-									"text" : "Memory from"
+									"text" : "Memory labels from"
 								}
 
 							}

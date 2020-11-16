@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 259.0, 386.0, 128.0 ],
+		"rect" : [ 119.0, 256.0, 352.0, 116.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -108,7 +108,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.499878, 161.0, 91.0, 22.0 ],
+					"patching_rect" : [ 15.499878, 163.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "DYCI2_version"
 				}
