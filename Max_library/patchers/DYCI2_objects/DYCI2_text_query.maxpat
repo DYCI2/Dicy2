@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 104.0, 406.0, 77.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -112,7 +112,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.0, 159.5, 271.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 42.0, 395.0, 22.0 ],
+					"presentation_rect" : [ 1.0, 43.0, 395.0, 22.0 ],
 					"style" : ""
 				}
 

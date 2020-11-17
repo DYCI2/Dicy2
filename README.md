@@ -4,9 +4,14 @@ This library contains a collection of generative agents and tools for smart comp
 It integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home) and shapes a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4). A conference paper about the DYCI2 library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
 
 This repository contains: 
+
+* __Tutorials__ that are actual self-contained applications and can be used as such by users who are not interested in building new patches.
+
 * The __Max DYCI2 library__ of musical agents interfacing with the Python library. (See the tutorials in the directory _Max\_library/\_Tutorials\__ and the _Readme_ file to download sound examples).
 
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the _Python\_library_ directory).
+
+
 
 
 __Author:__ Jérôme Nika (IRCAM STMS LAB);
@@ -40,10 +45,10 @@ _**If you plan to make music, first download the latest release [HERE](https://g
 2. __Catart by Mubu__
 	* Nothing to do if you downloaded a DYCI2 **release**.
 	* [For developpers: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
-	
-The last external, **Antescofo**, is already in the repository (please use the version distributed with DYCI2).
 
 **Finally move the whole directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). Then explore the tutorials!**
+
+The last external, **Antescofo**, used in the Tutorials "MM" (work in progress) is already in the repository (please use the version distributed with DYCI2).
 
 ------
 ### DYCI2 Tutorials
@@ -53,6 +58,8 @@ The DYCI2 library offers different processes depending on the way the "musical m
 Start with **DYCI2_Tutorials_Read_me_first.maxpat** to go through the tutorials.
 
 **_Before using the tutorials, make sure you followed the installation procedure above, and insert the files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"_**
+
+**_/!\ If you already have a python distribution installed and that the shell command "python" calls Python 3, please replace the "DYCI2_Python_lib" objects in the patches by "DYCI2_Python2_lib" objects./!\_** 
 
 
 #### [Advanced users: Autonomous use of the Python modules]

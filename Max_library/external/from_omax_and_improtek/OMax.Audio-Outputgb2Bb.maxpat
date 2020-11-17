@@ -1599,7 +1599,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 266.0, 48.0, 42.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.280663, 72.969162, 26.3834, 17.0 ],
+					"presentation_rect" : [ 45.280663, 72.969162, 27.0, 17.0 ],
 					"style" : "",
 					"triangle" : 0
 				}
@@ -3431,7 +3431,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 786.0, 138.0, 28.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.0, 2.681458, 14.664062, 17.0 ],
+					"presentation_rect" : [ 55.0, 2.681458, 15.0, 17.0 ],
 					"style" : "",
 					"triangle" : 0
 				}
@@ -3736,7 +3736,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 578.0, 138.0, 28.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 39.0, 2.681458, 14.664062, 17.0 ],
+					"presentation_rect" : [ 39.0, 2.681458, 15.0, 17.0 ],
 					"style" : "",
 					"triangle" : 0
 				}

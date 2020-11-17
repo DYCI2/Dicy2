@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 119.0, 256.0, 352.0, 116.0 ],
+		"rect" : [ 119.0, 256.0, 370.0, 114.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -42,9 +42,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.499878, 130.099976, 183.0, 22.0 ],
+					"patching_rect" : [ 15.499878, 130.099976, 187.0, 22.0 ],
 					"style" : "",
-					"text" : "DYCI2_launch_python_server 1"
+					"text" : "DYCI2_launch_python2_server 1"
 				}
 
 			}
@@ -307,7 +307,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_launch_python_server.maxpat",
+				"name" : "DYCI2_launch_python2_server.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

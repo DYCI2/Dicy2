@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 617.0, 83.0, 285.0, 175.0 ],
+		"rect" : [ 324.0, 190.0, 286.0, 174.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.321569 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -352,7 +352,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 164.800049, 91.0, 22.0 ],
+					"patching_rect" : [ 11.0, 164.0, 91.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0_expand"
 				}
@@ -715,11 +715,11 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 92.0, 76.0, 444.0, 243.0 ],
+						"rect" : [ 92.0, 76.0, 445.0, 245.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -759,7 +759,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3434,7 +3434,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3735,7 +3735,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -4078,7 +4078,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -4174,7 +4174,7 @@
 															"major" : 7,
 															"minor" : 3,
 															"revision" : 4,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -5162,7 +5162,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5297,7 +5297,7 @@
 															"major" : 7,
 															"minor" : 3,
 															"revision" : 4,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -5679,7 +5679,7 @@
 															"major" : 7,
 															"minor" : 3,
 															"revision" : 4,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -6542,7 +6542,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -6786,7 +6786,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7729,7 +7729,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7786,7 +7786,7 @@
 															"major" : 7,
 															"minor" : 3,
 															"revision" : 4,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -7907,7 +7907,7 @@
 																			"major" : 7,
 																			"minor" : 3,
 																			"revision" : 4,
-																			"architecture" : "x86",
+																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
 ,
@@ -8738,7 +8738,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -8877,7 +8877,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 13.0, 290.666656, 171.0, 22.0 ],
+									"patching_rect" : [ 13.0, 289.666656, 171.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -8903,7 +8903,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -9120,7 +9120,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -9328,7 +9328,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -9493,7 +9493,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -9981,7 +9981,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -10330,7 +10330,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -10735,7 +10735,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -10894,7 +10894,7 @@
 															"major" : 7,
 															"minor" : 3,
 															"revision" : 4,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -11134,17 +11134,17 @@
 																	"fontsize" : 9.0,
 																	"gradient" : 1,
 																	"id" : "obj-20",
-																	"linecount" : 8,
+																	"linecount" : 6,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 39.399994, 220.700027, 70.0, 69.0 ],
 																	"presentation" : 1,
-																	"presentation_linecount" : 4,
+																	"presentation_linecount" : 3,
 																	"presentation_rect" : [ 3.733327, 49.133366, 160.0, 39.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -11551,7 +11551,7 @@
 																			"major" : 7,
 																			"minor" : 3,
 																			"revision" : 4,
-																			"architecture" : "x86",
+																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
 ,
@@ -12154,7 +12154,7 @@
 																			"major" : 7,
 																			"minor" : 3,
 																			"revision" : 4,
-																			"architecture" : "x86",
+																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
 ,
@@ -12221,7 +12221,7 @@
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 515.0, 56.599976, 396.0, 35.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}
@@ -12248,7 +12248,7 @@
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 279.0, 279.0, 413.0, 35.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}
@@ -12373,14 +12373,14 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-57",
-																					"linecount" : 8,
+																					"linecount" : 6,
 																					"maxclass" : "message",
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 57.299988, 412.400024, 91.200012, 89.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}
