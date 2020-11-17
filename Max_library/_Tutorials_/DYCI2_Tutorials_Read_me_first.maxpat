@@ -64,7 +64,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 411.0, 247.666748, 856.083313, 476.0 ],
+					"patching_rect" : [ 411.0, 247.666748, 856.083313, 460.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 29,
 					"presentation_rect" : [ 412.0, 245.666748, 386.0, 460.0 ],
@@ -86,7 +86,7 @@
 					"patching_rect" : [ 5.0, 127.666748, 2151.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 3.0, 80.666687, 805.0, 33.0 ],
+					"presentation_rect" : [ 6.0, 80.666687, 805.0, 33.0 ],
 					"style" : "",
 					"text" : "Videos of productions and artistic collaborations using DYCI2lib: https://www.youtube.com/playlist?list=PL-C_JLZNFAGfGwtMPrRz9gOD3LnAMnHkO\nAssociated research: https://jeromenika.com/research-designing-generative-agents/dyci2lib/",
 					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
@@ -137,8 +137,7 @@
 					"presentation_rect" : [ 6.0, 245.666748, 789.0, 22.0 ],
 					"style" : "",
 					"text" : "DYCI2 agents and corresponding tutorials",
-					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
-					"textjustification" : 0
+					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
 				}
 
 			}
@@ -234,8 +233,7 @@
 					"presentation_rect" : [ 7.0, 610.666748, 791.0, 22.0 ],
 					"style" : "",
 					"text" : "To create your own musical memory",
-					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ],
-					"textjustification" : 0
+					"textcolor" : [ 0.030047, 0.249895, 0.411943, 1.0 ]
 				}
 
 			}
@@ -271,8 +269,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 708.666748, 789.0, 22.0 ],
 					"style" : "",
-					"text" : "To build your own setup",
-					"textjustification" : 0
+					"text" : "To build your own setup"
 				}
 
 			}
@@ -308,8 +305,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 121.666748, 789.0, 22.0 ],
 					"style" : "",
-					"text" : "Introduction",
-					"textjustification" : 0
+					"text" : "Introduction"
 				}
 
 			}
@@ -328,7 +324,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 6.0, 559.666748, 404.0, 47.0 ],
 					"style" : "",
-					"text" : "3 agents using different musical memories automatically segmented and labelled using audio features, and guided by reactive listening to live inputs."
+					"text" : "2 agents using different musical memories automatically segmented and labelled using audio features, and guided by reactive listening to live inputs."
 				}
 
 			}
@@ -338,16 +334,16 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-25",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 354.999969, 501.000153, 393.0, 33.0 ],
+					"patching_rect" : [ 354.999969, 501.000153, 393.0, 74.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 6.0, 447.666748, 392.0, 33.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 6.0, 452.666748, 392.0, 74.0 ],
 					"style" : "",
-					"text" : "1 agent using a musical memory automatically segmented and labelled using audio features, and guided by reactive listening to live inputs."
+					"text" : "1 agent using a musical memory automatically segmented and labelled using audio features, and guided by reactive listening to live inputs.\n\nPlaying modes and categories corresponding to the different patches : Listen, Match, Develop, Accompany, Augment, Guide"
 				}
 
 			}
@@ -531,7 +527,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 537.666748, 291.0, 20.0 ],
 					"style" : "",
-					"text" : "Tuto-AM3--3agents_reactive_listening",
+					"text" : "Tuto-AM7--MultiAgent",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -547,9 +543,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 354.999969, 414.0, 234.08313, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 425.666748, 291.0, 20.0 ],
+					"presentation_rect" : [ 6.0, 430.666748, 291.0, 20.0 ],
 					"style" : "",
-					"text" : "Tuto-AM2--1agent_reactive_listening",
+					"text" : "Tuto-AM2 to Tuto-AM6",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -567,7 +563,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 369.666748, 291.0, 20.0 ],
 					"style" : "",
-					"text" : "Tuto-AM1--1agent_dynamic-scenario",
+					"text" : "Tuto-AM1--Memory-and-Scenario",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -688,7 +684,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_version.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../patchers/tools",
+				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
