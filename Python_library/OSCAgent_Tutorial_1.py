@@ -12,7 +12,7 @@
 OSC Agent Tutorial
 ===================
 Tutorial for the class :class:`~OSCAgent.OSCAgent` defined in :mod:`OSCAgent`. 
-Associated Max patch OSCAgent_Tutorial_1_...
+Associated Max patch Tuto_AM1,2,3...
 
 """
 
