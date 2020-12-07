@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 908.0, 288.0, 846.0, 492.0 ],
+		"rect" : [ 442.0, 137.0, 1094.0, 492.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -116,11 +116,11 @@
 					"comment" : "Print from python (0/1)",
 					"hint" : "Print from python (0/1)",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 502.0, 16.0, 30.0, 30.0 ]
 				}
 
@@ -131,7 +131,7 @@
 					"comment" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"hint" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -194,11 +194,11 @@
 					"comment" : "Launch (1) / Kill (0) python server",
 					"hint" : "Launch (1) / Kill (0) python server",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 9.0, 8.0, 30.0, 30.0 ]
 				}
 
@@ -231,22 +231,23 @@
 					"id" : "obj-63",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 247.5, 137.0, 72.0, 22.0 ],
-					"text" : "unpack s s i"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 247.5, 137.0, 63.0, 22.0 ],
+					"text" : "unpack s i"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-60",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.5, 407.0, 764.0, 22.0 ],
-					"text" : "cd /Users/jnika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects\\; cd ../..\\; cd Python_library\\; python LaunchOSCAgents.py 1"
+					"patching_rect" : [ 58.5, 407.0, 667.0, 35.0 ],
+					"text" : "cd /Users/jnika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_\\; cd ..\\; cd Python_library\\; ./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 1"
 				}
 
 			}
@@ -254,11 +255,11 @@
 				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 175.0, 68.0, 22.0 ],
-					"text" : "pack s s s i"
+					"patching_rect" : [ 225.0, 175.0, 59.0, 22.0 ],
+					"text" : "pack s s i"
 				}
 
 			}
@@ -269,8 +270,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 205.0, 240.0, 22.0 ],
-					"text" : "cd $1\\; cd ../..\\; cd Python_library\\; $2 $3 $4"
+					"patching_rect" : [ 225.0, 205.0, 188.0, 22.0 ],
+					"text" : "cd $1\\; cd ..\\; cd Dyci2App\\; $2 $3"
 				}
 
 			}
@@ -281,8 +282,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.5, 107.0, 219.0, 22.0 ],
-					"text" : "sprintf python LaunchOSCAgents.py %i"
+					"patching_rect" : [ 247.5, 107.0, 403.0, 22.0 ],
+					"text" : "sprintf ./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents %i"
 				}
 
 			}
@@ -441,13 +442,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 3 ],
-					"source" : [ "obj-63", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-55", 2 ],
 					"source" : [ "obj-63", 1 ]
 				}
@@ -481,13 +475,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
