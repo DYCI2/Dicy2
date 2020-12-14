@@ -1,6 +1,6 @@
 # DYCI2_library
 
-This library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
+The DYCI2 library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
 It integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home) and shapes a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4). A conference paper about the DYCI2 library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).
 
 This repository contains: 
