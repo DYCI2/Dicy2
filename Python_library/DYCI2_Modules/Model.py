@@ -22,7 +22,7 @@ Tutorial for the class :class:`~Model.FactorOracle` in :file:`_Tutorials_/Factor
 """
 
 import random
-from Label import *
+from .Label import *
 from collections import Counter
 
 class Model(object):

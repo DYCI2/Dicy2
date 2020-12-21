@@ -11,12 +11,12 @@
 """ 
 OSC Agent Tutorial
 ===================
-Tutorial for the class :class:`~OSCAgent.OSCAgent` defined in :mod:`OSCAgent`. 
+Tutorial for the class :class:`~OSCAgent.OSCAgentServer` defined in :mod:`OSCAgent`. 
 Associated Max patch Tuto_AM1,2,3...
 
 """
 
-from DYCI2_Modules.OSCAgent import *
+from DYCI2_Modules.OSCAgentServer import *
 
 
 print("\nCreation of a OSC agent \nModel type = Factor Oracle.\n Empty (Empty sequence, empty labels)")

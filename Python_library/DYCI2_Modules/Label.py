@@ -24,7 +24,7 @@ Definition of alphabets of labels to build sequences and use them in creative ap
 #**Tutorial in** :file:`_Tutorials_/Label_tutorial.py`. 
 
 
-from Transforms import *
+from .Transforms import *
 from copy import deepcopy, copy
 
 

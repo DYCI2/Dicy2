@@ -20,8 +20,8 @@ When the whole library is loaded, the global dict *implemented_model_navigator_c
 
 """
 
-from Model import *
-from Navigator import *
+from .Model import *
+from .Navigator import *
 
 # TODO : AGGRANDIR TAILLE HISTORY (ET AUTRES ?) VENANT DE NAVIGATOR QUAND ON APPREND UN EVENT DANS LE MODEL
 

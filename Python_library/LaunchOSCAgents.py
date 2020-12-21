@@ -11,13 +11,13 @@
 """ 
 Launch OSC Agents
 ===================
-Tutorial for the class :class:`~OSCAgent.OSCAgent` defined in :mod:`OSCAgent`. 
+Tutorial for the class :class:`~OSCAgent.OSCAgent` defined in :mod:`OSCAgentServer`. 
 Associated Max patch Tuto_AM1,2,3...
 
 """
 
 import sys
-from DYCI2_Modules.OSCAgent import *
+from DYCI2_Modules.OSCAgentServer import *
 
 num = 0
 try:

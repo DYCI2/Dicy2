@@ -17,10 +17,10 @@ see **Deguernel, "Apprentissage de structures musicales en context d'improvisati
 """
 
 
-from Label import *
-from Model import *
-from Navigator import *
-from ModelNavigator import *
+from .Label import *
+from .Model import *
+from .Navigator import *
+from .ModelNavigator import *
 
 
 ##########

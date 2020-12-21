@@ -25,9 +25,7 @@ Class defining transformations on labels and contents.
 #TODO : TUTO
 
 
-
-import Label
-
+from .Label import *
 
 
 #from numpy import roll

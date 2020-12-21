@@ -16,7 +16,7 @@ Audio tools.
 
 import wave
 import os
-from ParseAnnotationFiles import *
+from .ParseAnnotationFiles import *
 
 
 def concat_wave_files(list_input_files, abs_path_output_file):

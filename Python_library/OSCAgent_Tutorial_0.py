@@ -11,14 +11,14 @@
 """ 
 OSC Agent Tutorial
 ===================
-Tutorial for the class :class:`~OSCAgent.OSCAgent` defined in :mod:`OSCAgent`. 
+Tutorial for the class :class:`~OSCAgent.OSCAgentServer` defined in :mod:`OSCAgent`. 
 Associated Max patch Tuto_AM1,2,3...
 
 """
 
 # TODO : SEPARER EN PLUSIEURS TUTOS DIFFERENTS !!!
 
-from DYCI2_Modules.OSCAgent import *
+from DYCI2_Modules.OSCAgentServer import *
 
 
 # 1) IMPROVISE AND SEND

@@ -19,7 +19,7 @@ Tutorial in :file:`_Tutorials_/FactorOracleNavigator_tutorial.py`
 
 """
 
-from MetaModelNavigator import *
+from .MetaModelNavigator import *
 
 #####################################################################################
 #####################################################################################

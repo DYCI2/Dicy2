@@ -39,9 +39,9 @@ Main classes: :class:`~Generator.Generator` (oriented towards offline generation
 
 
 
-from Query import *
-from ModelNavigator import *
-from Intervals import *
+from .Query import *
+from .ModelNavigator import *
+from .Intervals import *
 import copy
 
 

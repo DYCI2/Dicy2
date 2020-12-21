@@ -15,8 +15,8 @@ Example of the required json / dict format: :file:`_Tutorial_/ExamplesCorpus/Exa
 
 """
 
-from Generator import *
-from CorpusBuilder import *
+from .Generator import *
+from .CorpusBuilder import *
 
 #TODO: Possibilité de faire multimodal key
 #TODO: test si clé demandée est bien ou non dedans

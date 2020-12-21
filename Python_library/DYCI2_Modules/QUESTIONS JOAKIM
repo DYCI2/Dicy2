@@ -1,0 +1,10 @@
+QUESTIONS JOAKIM
+
+python-osc dans requirements ?
+
+  File "/Users/nika/Documents/GitHub/Dyci2Lib/Python_library/DYCI2_Modules/OSCAgentServer.py", line 69, in __init__
+    Process.__init__(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'self'
+
+    self._client: Target = Target(Server.SERVER_ADDRESS, self._outport, Server.DEFAULT_IP)
+TypeError: __init__() takes 3 positional arguments but 4 were given

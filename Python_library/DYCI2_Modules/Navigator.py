@@ -22,7 +22,7 @@ The classes defined in this module are used in association with models (cf. :mod
 
 import random
 import copy
-from Intervals import *
+from .Intervals import *
 
 class Navigator(object):
 	"""
