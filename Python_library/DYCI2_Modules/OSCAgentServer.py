@@ -28,7 +28,7 @@ from multiprocessing import Process
 from random import random
 from typing import Optional, Any, Union, List, Tuple, Dict, Callable, Type
 
-# TODO[JB]: Don't forget to add maxosc and pythonosc to requirements.txt
+# TODO[JB]: Don't forget to add maxosc and python-osc to requirements.txt
 from maxosc import Sender, SendFormat
 from maxosc.caller import Caller
 from maxosc.exceptions import MaxOscError
@@ -70,7 +70,7 @@ class Server(Process, Caller):
         self._inport: int = inport
         self._outport: int = outport
         self._server: Optional[BlockingOSCUDPServer] = None  # Initialized on `run` call
-        self._client: Target = Target(Server.SERVER_ADDRESS, self._outport, Server.DEFAULT_IP)
+        self._client: Target = Target(self._outport, Server.DEFAULT_IP)
 
     def run(self) -> None:
         """ raises: OSError is server already is in use """
