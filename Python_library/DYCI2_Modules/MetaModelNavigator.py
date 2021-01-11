@@ -20,8 +20,8 @@ When the whole library is loaded, the global dict *implemented_model_navigator_c
 
 """
 
-from .Model import *
-from .Navigator import *
+from DYCI2_Modules.Model import *
+from DYCI2_Modules.Navigator import *
 
 # TODO : AGGRANDIR TAILLE HISTORY (ET AUTRES ?) VENANT DE NAVIGATOR QUAND ON APPREND UN EVENT DANS LE MODEL
 
@@ -90,7 +90,6 @@ class MetaModelNavigator(type):
 
 	def __new__(metacls, name, bases, dict_methods):
 		#print("__new__ classe {}".format(name))
-
 		try:
 			assert len(bases) == 2
 		except AssertionError as exception:
@@ -126,3 +125,4 @@ class MetaModelNavigator(type):
 	def __init__(cls, name, bases, dict_methods):
 		#print("__init__ classe {}".format(name))
 		implemented_model_navigator_classes[name] = cls
+	

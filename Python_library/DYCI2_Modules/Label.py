@@ -374,9 +374,9 @@ class ListLabel(Label):
 
 
 def from_list_to_labels(labels = [], label_type = None):
-	#print("from_list_to_labels, args = ")
-	#print(labels)
-	#print(label_type)
+	print("\nFICHIER LABEL === from_list_to_labels, args = ")
+	print(labels)
+	print(label_type)
 	labels_to_learn = labels
 	if label_type is None:
 		return labels_to_learn
@@ -389,21 +389,55 @@ def from_list_to_labels(labels = [], label_type = None):
 		else:	
 			#equiv_function = label_type.__eq__
 			if len(labels) > 0:
+				print("FICHIER LABEL === LABEL EST INSTANCE 0")
 				if isinstance(labels[0],Label):
+					print("FICHIER LABEL === LABEL EST INSTANCE 1")
 					if not isinstance(labels[0],label_type):
 						print("Error: the elements in the input sequence already inherit from an other subclass of Label.")
 						return None
 					else:
+						print("FICHIER LABEL === LABEL EST INSTANCE 2")
+						print(labels)
 						return labels
 				else:
+					print("FICHIER LABEL === LABEL EST INSTANCE 3")
 					labels_to_learn = label_type.make_sequence_of_labels_from_list(labels)
-					#print(labels_to_learn)
+					print(labels_to_learn)
 		return labels_to_learn
 
 
-#PROVISOIRE !!!
+#TODO: PROVISOIRE !!! Même chose que from list to labels
 def from_list_to_contents (sequence = [], content_type = None):
-	return from_list_to_labels(sequence, content_type)
+	print("\nFICHIER LABEL === from_list_to_contents, args = ")
+	print(sequence)
+	print(content_type)
+	sequence_to_learn = sequence
+	if content_type is None:
+		return sequence_to_learn
+	else:
+		try:
+			assert issubclass(content_type, Label)
+		except AssertionError as exception:
+			print("content_type must inherit from the class Label.", exception)
+			return None
+		else:	
+			#equiv_function = content_type.__eq__
+			if len(sequence) > 0:
+				print("FICHIER LABEL === LABEL EST INSTANCE 0")
+				if isinstance(sequence[0],Label):
+					print("FICHIER LABEL === LABEL EST INSTANCE 1")
+					if not isinstance(sequence[0],content_type):
+						print("Error: the elements in the input sequence already inherit from an other subclass of Label.")
+						return None
+					else:
+						print("FICHIER LABEL === LABEL EST INSTANCE 2")
+						print(sequence)
+						return sequence
+				else:
+					print("FICHIER LABEL === LABEL EST INSTANCE 3")
+					sequence_to_learn = content_type.make_sequence_of_labels_from_list(sequence)
+					print(sequence_to_learn)
+		return sequence_to_learn
 
 
 #print(from_list_to_labels(["c m7", "db maj7", ["db","min7"]],ChordLabel))

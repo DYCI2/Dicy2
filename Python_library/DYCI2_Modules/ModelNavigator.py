@@ -135,7 +135,11 @@ def continuations_with_jump(self, authorized_indexes):
 
 	"""
 	possible_continuations = None
+	print("MODEL NAVIGATOR 1 GGGGGGGGGGG")
+	print(self.direct_transitions)
 	direct_transition = self.direct_transitions.get(self.current_position_in_sequence)
+	print("MODEL NAVIGATOR 2 GGGGGGGGGGG")
+	print(direct_transition)
 	filtered_continuations = authorized_indexes
 
 	if direct_transition and direct_transition[1] in filtered_continuations:

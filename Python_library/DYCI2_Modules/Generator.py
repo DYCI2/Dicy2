@@ -639,6 +639,7 @@ class GenerationHandler(Generator):
 		Generator.__init__(self, sequence, labels, model_navigator, equiv, label_type, content_type, authorized_tranformations, continuity_with_future)	
 
 		# TODO : REVOIR : CERTAINS ATTRIBUTS NE SERVENT A RIEN
+
 		self.current_performance_time = {"event":-1, "ms":-1, "last_update_event_in_ms":-1}
 		self.generation_trace = []
 		self.current_generation_time = {"event":-1, "ms":-1}
@@ -649,6 +650,7 @@ class GenerationHandler(Generator):
 		self.running_generation = []
 		self.query_pool_event = []
 		self.query_pool_ms = []
+		
 		# TODO : UTILISER ?
 		#self.current_scenario = [] #représentation linéaire des query donc on met en tête de liste les somaxismes		
 

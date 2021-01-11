@@ -87,6 +87,7 @@ class TransposeTransform(NoTransform):
         self.mod12 = True
         #self.admitted_types = [MelodicLabel, HarmonicLabel, ClassicMIDIContents, ClassicAudioContents]
         self.admitted_types = [Label.ChordLabel]
+        #self.admitted_types = [ChordLabel]
 
     def __repr__(self):
         return "Transposition of "+str(self.semitone)+" semi-tones"
