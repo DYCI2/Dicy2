@@ -97,7 +97,7 @@ class Generator (object):
 	>>> 
 	>>> sequence_2 = make_sequence_of_chord_labels(["d m7(1)", "d m7(2)", "g 7(3)", "g 7(4)", "c maj7(5)","c maj7(6)","c# maj7(7)","c# maj7(8)", "d# m7(9)", "d# m7(10)", "g# 7(11)", "g# 7(12)", "c# maj7(13)", "c# maj7(14)"])
 	>>> labels_2 = make_sequence_of_chord_labels(["d m7", "d m7", "g 7", "g 7", "c maj7","c maj7","c# maj7","c# maj7", "d# m7", "d# m7", "g# 7", "g# 7", "c# maj7", "c# maj7"])
-	>>> authorized_intervals = range(-2,6)
+	>>> authorized_intervals = list(range(-2,6))
 	>>> generator_2 = Generator(sequence = sequence_2, labels = labels_2, model_navigator = "FactorOracleNavigator", authorized_tranformations = authorized_intervals, sequence_to_interval_fun = chord_labels_sequence_to_interval)
 
 	
@@ -485,7 +485,7 @@ class Generator (object):
 		generated_sequence = []	
 		#s = Recherche prefix (current_scenario) - > Sort 1 ### TODO
 		#print("self.memory.history_and_taboos = {}".format(self.memory.history_and_taboos))
-		authorized_indexes = self.filter_using_history_and_taboos(range(0,len(self.memory.labels))) #Remember state at idx 0 is None
+		authorized_indexes = self.filter_using_history_and_taboos(list(range(0,len(self.memory.labels)))) #Remember state at idx 0 is None
 		#print("SCENARIO ONE PHASE 1")
 
 		#15/11/17
@@ -622,7 +622,7 @@ class GenerationHandler(Generator):
 	>>> 
 	>>> print("\\nCreation of a Generation Handler\\nModel type = Factor Oracle\\nSequence: {}\\nLabels: {}".format(sequence, labels))
 	>>> 
-	>>> authorized_intervals = range(-6,6)
+	>>> authorized_intervals = list(range(-6,6))
 	>>> generation_handler = GenerationHandler(sequence = sequence, labels = labels, model_type = "FactorOracleNavigator", authorized_tranformations = authorized_intervals, sequence_to_interval_fun = chord_labels_sequence_to_interval)
 	>>> generation_handler.memory.avoid_repetitions_mode = 1 
 	>>> generation_handler.memory.max_continuity = 3
@@ -745,7 +745,7 @@ class GenerationHandler(Generator):
 		>>> 
 		>>> print("\\nCreation of a Generation Handler\\nModel type = Factor Oracle\\nSequence: {}\\nLabels: {}".format(sequence, labels))
 		>>> 
-		>>> authorized_intervals = range(-6,6)
+		>>> authorized_intervals = list(range(-6,6))
 		>>> generation_handler = GenerationHandler(sequence = sequence, labels = labels, model_type = "FactorOracleNavigator", authorized_tranformations = authorized_intervals, sequence_to_interval_fun = chord_labels_sequence_to_interval)
 		>>> generation_handler.memory.avoid_repetitions_mode = 1 
 		>>> generation_handler.memory.max_continuity = 3

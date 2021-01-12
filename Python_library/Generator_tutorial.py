@@ -58,7 +58,7 @@ list_for_sequence = ["d m7(1)", "d m7(2)", "g 7(3)", "g 7(4)", "c maj7(5)","c ma
 labels = from_list_to_labels(labels = list_for_labels, label_type = ChordLabel)
 sequence = from_list_to_labels(labels = list_for_sequence, label_type = ChordLabel)
 
-authorized_intervals = range(-6,6)
+authorized_intervals = list(range(-6,6))
 generator = Generator(sequence = sequence, labels = labels, label_type = ChordLabel, content_type = ChordLabel, model_navigator = "FactorOracleNavigator", authorized_tranformations = authorized_intervals)
 
 #generator.memory.avoid_repetitions_mode = 1 
@@ -84,7 +84,7 @@ print("History and taboos: {}".format(generator.memory.history_and_taboos))
 # name = 'Burger_Magic_eBow.json'
 # path_json_file  = os.path.join(current_dir, 'MaxPatches','_Tutorials_','_ExamplesCorpus_', name)
 
-# authorized_intervals = range(-6,7)
+# authorized_intervals = list(range(-6,7))
 # #generator = new_generator_from_json_file(path_json_file = path_json_file, keys_labels= "ChordLabel" , keys_contents = "ChordLabel",
 # #	label_type = ChordLabel, content_type = ChordLabel, authorized_tranformations = authorized_intervals)
 
@@ -99,7 +99,7 @@ print("History and taboos: {}".format(generator.memory.history_and_taboos))
 # # list_for_labels = ["d m7"]*1000
 # # labels = from_list_to_labels(labels = list_for_labels, label_type = ChordLabel)
 # # sequence = labels
-# # authorized_intervals = range(-2,6)
+# # authorized_intervals = list(range(-2,6))
 # # generator = Generator(sequence = sequence, labels = labels, label_type = ChordLabel, model_navigator = "FactorOracleNavigator", authorized_tranformations = authorized_intervals)
 # # ######
 

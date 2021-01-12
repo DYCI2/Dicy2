@@ -65,7 +65,7 @@ for length,list_of_left_pos_and_deltas in prefixes_delta.items():
 
 
 authorized_indexes = [0,1,8,9]
-authorized_intervals = range(2,5)
+authorized_intervals = list(range(2,5))
 
 prefixes_delta, length_longest_prefix = filtered_prefix_indexing_intervals(sequence, pattern, 
 	authorized_indexes = authorized_indexes, authorized_intervals = authorized_intervals,

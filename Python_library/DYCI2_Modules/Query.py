@@ -6,7 +6,7 @@
 # Class Query and its subclasses.
 # These classes are then be used by the class Generator for creative applications.
 # Jérôme Nika, IRCAM STMS Lab
-# copyleft 2016
+# copyleft 2016 - 2021
 #############################################################################
 
 from .Label import *

@@ -135,11 +135,9 @@ def continuations_with_jump(self, authorized_indexes):
 
 	"""
 	possible_continuations = None
-	print("MODEL NAVIGATOR 1 GGGGGGGGGGG")
-	print(self.direct_transitions)
+	#print(self.direct_transitions)
 	direct_transition = self.direct_transitions.get(self.current_position_in_sequence)
-	print("MODEL NAVIGATOR 2 GGGGGGGGGGG")
-	print(direct_transition)
+	#print(direct_transition)
 	filtered_continuations = authorized_indexes
 
 	if direct_transition and direct_transition[1] in filtered_continuations:
@@ -148,7 +146,7 @@ def continuations_with_jump(self, authorized_indexes):
 	if len(filtered_continuations) > 0:
 		if self.avoid_repetitions_mode > 0:
 			print("\nTrying to avoid repetitions: possible continuations {}...".format(filtered_continuations))
-			filtered_continuations = [c for c in filtered_continuations if self.history_and_taboos[c] == min([self.history_and_taboos[ch] for ch in filtered_continuations])]
+			filtered_continuations = [c for c in filtered_continuations if self.history_and_taboos[c] == min([self.history_and_taboos[ch] for ch in filtered_continuations],key=noneIsInfinite)]
 			print("... reduced to {}.".format(filtered_continuations))
 		possible_continuations = filtered_continuations
 	return possible_continuations
@@ -271,7 +269,7 @@ def free_navigation(factor_oracle_navigator, length, new_max_continuity = None, 
 				#print("FREE GENERATION 3.{}.5".format(i))
 				#s = factor_oracle_navigator.navigate_without_continuation(factor_oracle_navigator.filter_using_history_and_taboos(init_continuations))	
 				#LAST 15/10
-				s = factor_oracle_navigator.follow_continuation_with_jump(range(factor_oracle_navigator.index_last_state()))
+				s = factor_oracle_navigator.follow_continuation_with_jump(list(range(factor_oracle_navigator.index_last_state())))
 				if not s is None:
 					str_print_info += " xxnothingxx - random: {}".format(s)
 					#factor_oracle_navigator.current_position_in_sequence = s
@@ -388,7 +386,7 @@ def simply_guided_navigation_one_step(factor_oracle_navigator, required_label, n
 			str_print_info += " ...> {} -{}-> {}".format(s-1,factor_oracle_navigator.direct_transitions.get(s-1)[0],factor_oracle_navigator.direct_transitions.get(s-1)[1])
 		else:
 			#s = factor_oracle_navigator.find_matching_label_without_continuation(required_label, init_continuations_matching_label, equiv)
-			s = factor_oracle_navigator.find_matching_label_without_continuation(required_label, factor_oracle_navigator.filter_using_history_and_taboos(range(1,factor_oracle_navigator.index_last_state())), equiv)			
+			s = factor_oracle_navigator.find_matching_label_without_continuation(required_label, factor_oracle_navigator.filter_using_history_and_taboos(list(range(1,factor_oracle_navigator.index_last_state()))), equiv)
 			if not s is None:
 				str_print_info += " xxnothingxx - random matching label: {}".format(s)
 			else:	

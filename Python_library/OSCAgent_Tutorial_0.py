@@ -28,7 +28,7 @@ from DYCI2_Modules.OSCAgentServer import *
 
 # print("\nCreation of a OSC agent \nModel type = Factor Oracle\nSequence: {}\nLabels: {}".format(sequence, labels))
 
-# authorized_intervals = range(-6,6)
+# authorized_intervals = list(range(-6,6))
 # agent = OSCagent(sequence = sequence, labels = labels, model_type = "FactorOracle", authorized_tranformations = authorized_intervals)
 # agent.generation_handler.memory.avoid_repetitions_mode = 1 
 # agent.generation_handler.memory.max_continuity = 3
