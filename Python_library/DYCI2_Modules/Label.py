@@ -423,18 +423,18 @@ def from_list_to_contents (sequence = [], content_type = None):
 		else:	
 			#equiv_function = content_type.__eq__
 			if len(sequence) > 0:
-				print("FICHIER LABEL === LABEL EST INSTANCE 0")
+				print("FICHIER LABEL === CONTENT EST INSTANCE 0")
 				if isinstance(sequence[0],Label):
-					print("FICHIER LABEL === LABEL EST INSTANCE 1")
+					print("FICHIER LABEL === CONTENT EST INSTANCE 1")
 					if not isinstance(sequence[0],content_type):
 						print("Error: the elements in the input sequence already inherit from an other subclass of Label.")
 						return None
 					else:
-						print("FICHIER LABEL === LABEL EST INSTANCE 2")
+						print("FICHIER LABEL === CONTENT EST INSTANCE 2")
 						print(sequence)
 						return sequence
 				else:
-					print("FICHIER LABEL === LABEL EST INSTANCE 3")
+					print("FICHIER LABEL === CONTENT EST INSTANCE 3")
 					sequence_to_learn = content_type.make_sequence_of_labels_from_list(sequence)
 					print(sequence_to_learn)
 		return sequence_to_learn

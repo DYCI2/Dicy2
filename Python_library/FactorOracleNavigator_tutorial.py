@@ -6,10 +6,7 @@
 # Jérôme Nika, IRCAM STMS Lab
 # copyleft 2016-2021
 #############################################################################
-
-
-
-""" 
+"""
 Factor Oracle Navigator Tutorial
 ==================================
 Tutorial for the class :class:`~ModelNavigator.FactorOracleNavigator` defined in :mod:`ModelNavigator`. 
@@ -20,7 +17,7 @@ Tutorial for the class :class:`~ModelNavigator.FactorOracleNavigator` defined in
 from DYCI2_Modules.ModelNavigator import *
 
 
-sequence = ['A1','B1','B2','C1','A2','B3','C2','D1','A3','B4','C3']
+sequence = ['A1', 'B1', 'B2', 'C1', 'A2', 'B3', 'C2', 'D1', 'A3', 'B4', 'C3']
 labels = [s[0] for s in sequence]
 print("\n-------------\nFactor oracle navigator on {}\nwhere chosen label = letter only\n-------------".format(sequence))
 FON = FactorOracleNavigator(sequence, labels, label_type = Label)

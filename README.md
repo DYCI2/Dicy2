@@ -33,7 +33,7 @@ _**This document is about the source code, so if you want to use DYCI2 in a crea
 
    `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`
    
-   `pip3 install -r requirements.txt`
+   `pip3 install -r requirements.txt --user`
 
 (If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
 
