@@ -81,11 +81,6 @@ are available at https://github.com/DYCI2/om-dyci2.
 * Max 8
 * Python2 (>=2.7, Python3 coming soon !)
 
-
-------
-### Development
-Check the repository [DYCI2_library](https://forge.ircam.fr/p/DYCI2_library/)
-
 ------
 ### Troubleshooting
 Please write to `jerome.nika@ircam.fr` for any question, or to share with us your projects using DYCI2 !
