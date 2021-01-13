@@ -297,11 +297,11 @@ def follow_continuation_with_jump_proba(self, authorized_indexes):
 		for i in range(0, len(filtered_continuations)):
 			model_score = 0
 			for j in range(0, len(self.models)):
-				#print "**********"
+				#print ("**********")
 				event = self.sequence[filtered_continuations[i] + self.model_data_locations[j][0][1]][self.model_data_locations[j][0][0]]
-				#print "Event: ", event
+				#print ("Event: ", event)
 				conditions = self.sequence[filtered_continuations[i] + self.model_data_locations[j][1][1]][self.model_data_locations[j][1][0]]
-				#print "Conditions: ", conditions
+				#print ("Conditions: ", conditions)
 				if self.models[j].get_conditions_counts(conditions) == 0:
 					model_score = 0
 				else:
@@ -312,7 +312,7 @@ def follow_continuation_with_jump_proba(self, authorized_indexes):
 		index_proba = [score / index_score_sum for score in index_score]
 		
 		for i in range(0, len(filtered_continuations)):
-			print filtered_continuations[i], index_proba[i]
+			print (filtered_continuations[i], index_proba[i])
 		
 		rand = random.random()
 		choice = False

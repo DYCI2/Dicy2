@@ -32,7 +32,7 @@ def hindemith(listOfPitches):
 	elif ((listOfPitches[j]-listOfPitches[i])%12==7):
 		hind = listOfPitches[i]
 	else:
-		print "Hindemith problem : ", listOfPitches
+		print ("Hindemith problem : ", listOfPitches)
 		return 0
 	return hind
 

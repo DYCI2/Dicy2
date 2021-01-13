@@ -23,6 +23,7 @@ See the different tutorials accompanied with Max patches.
 
 # FROM SERVER IN SOMAX
 # DOC AND TUTO : TODO
+
 import time
 from multiprocessing import Process
 from random import random
@@ -35,7 +36,6 @@ from maxosc.exceptions import MaxOscError
 from maxosc.maxformatter import MaxFormatter
 from pythonosc.dispatcher import Dispatcher
 from pythonosc.osc_server import BlockingOSCUDPServer
-
 
 from DYCI2_Modules import GeneratorBuilder, SaveSendFormat
 from DYCI2_Modules.Generator import GenerationHandler
@@ -136,7 +136,6 @@ class OSCAgent(Server):
     def run(self) -> None:
         self.generation_handler.start()
         Server.run(self)
-
 
     def start(self):
         Server.start(self)
@@ -330,5 +329,3 @@ class OSCAgent(Server):
                 print("... SENT TO MAX : {}".format(list_to_send))
                 map_antescofo = SaveSendFormat.write_list_as_antescofo_map(list_to_send, abs_start_date)
                 self._client.send("/antescofo", ["/updated_buffered_impro_with_info_transfo", map_antescofo])
-
-

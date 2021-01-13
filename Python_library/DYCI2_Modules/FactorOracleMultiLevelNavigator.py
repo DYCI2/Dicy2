@@ -132,21 +132,21 @@ class MultiLevelNavigator(Navigator):
 					for key in index_delta_prefixes.keys():
 						for index in index_delta_prefixes[key]:
 							temp_score = 0
-							#print "Index : ", index, "Length : ", key
+							#print("Index : ", index, "Length : ", key)
 							for i in range(key):
 								for j in range(len(self.level_weights)):
 									if self.labels[index + i].label[j] == pattern[i].label[j]:
 										temp_score = temp_score + self.level_weights[j]
-							#print "Score : ", temp_score
+							#print("Score : ", temp_score)
 							if temp_score > max_score:
 								max_score = temp_score
 								key_max = key
 								pos_max = index
-					print "Score max : ", max_score, "  Index : ", pos_max, "  Length : ", key
+					print("Score max : ", max_score, "  Index : ", pos_max, "  Length : ", key)
 							
 					#TODO : MAX PAS FORCEMENT BONNE IDEE
 					#length_selected_prefix = index_delta_prefixes.keys()[random.randint(0, len(index_delta_prefixes.keys())-1)]
-					print index_delta_prefixes
+					print(index_delta_prefixes)
 					
 					length_selected_prefix = key
 					s = pos_max

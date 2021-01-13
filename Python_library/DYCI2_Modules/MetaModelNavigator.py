@@ -25,7 +25,6 @@ from DYCI2_Modules.Navigator import *
 
 # TODO : AGGRANDIR TAILLE HISTORY (ET AUTRES ?) VENANT DE NAVIGATOR QUAND ON APPREND UN EVENT DANS LE MODEL
 
-
 def lambda_init_double_inheritance (BaseClass1, BaseClass2):
 	return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: init_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs)
 
