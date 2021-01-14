@@ -37,11 +37,11 @@ from maxosc.maxformatter import MaxFormatter
 from pythonosc.dispatcher import Dispatcher
 from pythonosc.osc_server import BlockingOSCUDPServer
 
-from DYCI2_Modules import GeneratorBuilder, SaveSendFormat
-from DYCI2_Modules.Generator import GenerationHandler
-from DYCI2_Modules.Label import Label
-from DYCI2_Modules.Query import Query
-from DYCI2_Modules.Temporary_parse_file import TemporaryParser
+from . import GeneratorBuilder, SaveSendFormat
+from .Generator import GenerationHandler
+from .Label import Label
+from .Query import Query
+from .Temporary_parse_file import TemporaryParser
 
 # TODO[JB]: This is a placeholder for all places where you're expected to specify the real type of the input value!
 TODO_INSERTTYPE = Union[None, List, Tuple, Dict, int, float, str]
@@ -57,7 +57,7 @@ class Target:
     def send(self, address: str, content: Any, **_kwargs):
         self._client.send(address, content)
 
-
+# TODO 2021 : https://openclassrooms.com/forum/sujet/tkinter-et-multiprocessing
 class Server(Process, Caller):
     DEFAULT_IP = "127.0.0.1"
     SERVER_ADDRESS = "/server"
@@ -116,7 +116,7 @@ class Server(Process, Caller):
             print(f"Element {i}: type = {type_received_elements}, value= {received_elements[i]}")
         self._client.send("/random", random.random())
 
-
+# TODO 2021 :
 class OSCAgent(Server):
     DEFAULT_OSC_MAX_LEN = 100
 

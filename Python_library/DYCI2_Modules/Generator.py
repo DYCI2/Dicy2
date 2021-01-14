@@ -35,14 +35,11 @@ Main classes: :class:`~Generator.Generator` (oriented towards offline generation
 # TODO S'OCCUPER D'UNE CLASSE CONTENT !!
 
 
-# TODO : SUPPRIMER DANS LA DOC LES FONCTIONS "EQUIV-MOD..." "SEQUENCE TO INTERVAL..."		
+# TODO : SUPPRIMER DANS LA DOC LES FONCTIONS "EQUIV-MOD..." "SEQUENCE TO INTERVAL..."
 
-
-from .Query import *
-from .ModelNavigator import *
-from .Intervals import *
 from DYCI2_Modules.Transforms import *
-import copy
+from .ModelNavigator import *
+from .Query import *
 
 
 class Generator(object):

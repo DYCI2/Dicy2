@@ -16,10 +16,6 @@ This is based on the Knowledge/Intuition paradigm introduced in **Deguernel, Vin
 
 """
 
-
-from .Label import *
-from .Model import *
-from .Navigator import *
 from .ModelNavigator import *
 import xml.etree.ElementTree as ET
 

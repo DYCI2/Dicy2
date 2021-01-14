@@ -16,7 +16,7 @@ Some subclasses of :class:`~Label.Label` enable to define a notion of interval. 
 **Tutorial in** :file:`_Tutorials_/Label_and_intervals_tutorial.py`.
 """
 
-from .Label import *
+from copy import deepcopy, copy
 from .PrefixIndexing import *
 
 
