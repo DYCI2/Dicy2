@@ -35,12 +35,12 @@ from maxosc.maxformatter import MaxFormatter
 from pythonosc.dispatcher import Dispatcher
 from pythonosc.osc_server import BlockingOSCUDPServer
 
-from . import GeneratorBuilder, SaveSendFormat, Generator, Label, Query, Temporary_parse_file
-#from . import GeneratorBuilder, SaveSendFormat
-#from .Generator import GenerationHandler
-#from .Label import Label
-#from .Query import Query
-#from .Temporary_parse_file import TemporaryParser
+from . import Label, Query
+from . import GeneratorBuilder, SaveSendFormat
+from .Generator import GenerationHandler
+from .Label import Label
+from .Query import Query
+from .Temporary_parse_file import TemporaryParser
 
 # TODO[JB]: This is a placeholder for all places where you're expected to specify the real type of the input value!
 TODO_INSERTTYPE = Union[None, List, Tuple, Dict, int, float, str]

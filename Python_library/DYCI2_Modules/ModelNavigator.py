@@ -75,12 +75,13 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         >>> FON = FactorOracleNavigator(sequence, labels)
 
         """
+
+        Navigator.__init__(factor_oracle_navigator, sequence, labels, max_continuity, control_parameters,
+                           history_parameters, equiv)
+        print(factor_oracle_navigator.labels)
         FactorOracle.__init__(factor_oracle_navigator, sequence, labels, equiv, label_type, content_type)
         print(factor_oracle_navigator.labels)
         factor_oracle_navigator.reinit_navigation_param()
-        print(factor_oracle_navigator.labels)
-        Navigator.__init__(factor_oracle_navigator, sequence, labels, max_continuity, control_parameters,
-                           history_parameters, equiv)
         print(factor_oracle_navigator.labels)
 
     # TODO : surchager set use_taboo pour que tous les -1 passent à 0 si on passe à FALSE
@@ -90,7 +91,8 @@ class FactorOracleNavigator(FactorOracle, Navigator):
     # dict_methods["__init__"] = create_factor_oracle_navigator
 
     def reinit_navigation_param(factor_oracle_navigator):
-        """ (Re)initializes the navigation parameters (current navigation index, history of retrieved indexes, current continuity,...)."""
+        """ (Re)initializes the navigation parameters (current navigation index, history of retrieved indexes,
+        current continuity,...). """
         factor_oracle_navigator.history_and_taboos = [None] + [0] * (len(factor_oracle_navigator.sequence) - 1)
         factor_oracle_navigator.current_continuity = 0
         factor_oracle_navigator.current_position_in_sequence = -1
