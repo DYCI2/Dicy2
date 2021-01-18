@@ -7,18 +7,15 @@
 # copyleft 2016 - 2017
 #############################################################################
 
-
 """ 
 OSC Agent Tutorial
 ===================
-Tutorial for the class :class:`~OSCAgent.OSCAgentServer` defined in :mod:`OSCAgent`. 
+Tutorial 1 for the class :class:`~OSCAgentServer.OSCAgent` defined in :mod:`OSCAgentServer`.
 Associated Max patch Tuto_AM1,2,3...
-
 """
 
-
+from DYCI2_Modules.Label import *
 from DYCI2_Modules.OSCAgentServer import *
-
 
 # 1) IMPROVISE AND SEND
 

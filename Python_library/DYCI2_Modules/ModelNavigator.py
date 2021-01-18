@@ -26,8 +26,8 @@ Tutorial in :file:`_Tutorials_/FactorOracleNavigator_tutorial.py`
 # Class FactorOracleNavigator
 #####################################################################################
 #####################################################################################
-from DYCI2_Modules.Model import FactorOracle
-from DYCI2_Modules.Navigator import Navigator
+from .Model import *
+from .Navigator import *
 
 docstring = """
 	**Factor Oracle Navigator class**.
@@ -47,6 +47,7 @@ docstring = """
 
 	"""
 
+
 #####################################################################################
 # METHODS 
 # Definining the methods free_navigation and simply_guided_navigation of the class
@@ -61,8 +62,8 @@ class FactorOracleNavigator(FactorOracle, Navigator):
     # Most of the time, __init__ won't have to be defined but it is needed in this particular case (because
     # reinit_navigation_param is overloaded).
     def __init__(factor_oracle_navigator, sequence=[], labels=[], max_continuity=20,
-                                       control_parameters=[], history_parameters=[], equiv=(lambda x, y: x == y),
-                                       label_type=None, content_type=None):
+                 control_parameters=[], history_parameters=[], equiv=(lambda x, y: x == y),
+                 label_type=None, content_type=None):
         """
         Constructor for the class FactorOracleNavigator.
         :see also: The class FactorOracle in FactorOracleAutomaton.py
@@ -74,22 +75,19 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         >>> FON = FactorOracleNavigator(sequence, labels)
 
         """
-
-        Navigator.__init__(factor_oracle_navigator, sequence, labels, max_continuity, control_parameters,
-                           history_parameters, equiv)
-        print(factor_oracle_navigator.labels)
         FactorOracle.__init__(factor_oracle_navigator, sequence, labels, equiv, label_type, content_type)
         print(factor_oracle_navigator.labels)
         factor_oracle_navigator.reinit_navigation_param()
         print(factor_oracle_navigator.labels)
-
+        Navigator.__init__(factor_oracle_navigator, sequence, labels, max_continuity, control_parameters,
+                           history_parameters, equiv)
+        print(factor_oracle_navigator.labels)
 
     # TODO : surchager set use_taboo pour que tous les -1 passent à 0 si on passe à FALSE
     # TODO : mode 0 : répétitions authorisées, mode 1 = on prend le min, mode 2, interdire les déjà passés
     # TODO : SURCHARGER POUR INTERDIRE LES AUTRES
 
     # dict_methods["__init__"] = create_factor_oracle_navigator
-
 
     def reinit_navigation_param(factor_oracle_navigator):
         """ (Re)initializes the navigation parameters (current navigation index, history of retrieved indexes, current continuity,...)."""
@@ -99,9 +97,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         factor_oracle_navigator.current_navigation_index = - 1
         factor_oracle_navigator.no_empty_event = True
 
-
     # dict_methods["reinit_navigation_param"] = reinit_navigation_param
-
 
     def follow_continuation_using_transition(factor_oracle_navigator, authorized_indexes):
         """
@@ -131,9 +127,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
             # factor_oracle_navigator.current_continuity += 1
         return s
 
-
     # dict_methods["follow_continuation_using_transition"] = follow_continuation_using_transition
-
 
     def continuations_with_jump(self, authorized_indexes):
         """
@@ -166,9 +160,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
             possible_continuations = filtered_continuations
         return possible_continuations
 
-
     # dict_methods["continuations_with_jump"] = continuations_with_jump
-
 
     # TODO : autres modes que random choice
     def follow_continuation_with_jump(self, authorized_indexes):
@@ -192,15 +184,14 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         # self.current_continuity = 0
         return s
 
-
     # dict_methods["follow_continuation_with_jump"] = follow_continuation_with_jump
-
 
     ####################
     # TODO : QUAND ON GENERE, DEBUT OU NON ? SOIT INTEGRER DANS PARAMETRES FONCTIONS SOIT DECIDER QU'ON APPELLE reinit_navigation_param si c'est le début
     # TODO : traiter le cas ou trop de taboos par ex... bref on ne peut plus générer. 	KEN : if len(taboo_list) > taboo_list_length: taboo_list.pop(0)
     # TODO : autoriser factor links ?
-    def free_navigation(factor_oracle_navigator, length, new_max_continuity=None, forward_context_length_min=0, init=False,
+    def free_navigation(factor_oracle_navigator, length, new_max_continuity=None, forward_context_length_min=0,
+                        init=False,
                         equiv=None, print_info=False):
         """ Free navigation through the automaton.
             Returns a novel sequence being consistent with the internal logic of the sequence on which the automaton is built.
@@ -288,8 +279,10 @@ class FactorOracleNavigator(FactorOracle, Navigator):
                 if not s is None:
                     # print("FREE GENERATION 3.{}.4".format(i))
                     str_print_info += " ...> {} -{}-> {}".format(s - 1,
-                                                                 factor_oracle_navigator.direct_transitions.get(s - 1)[0],
-                                                                 factor_oracle_navigator.direct_transitions.get(s - 1)[1])
+                                                                 factor_oracle_navigator.direct_transitions.get(s - 1)[
+                                                                     0],
+                                                                 factor_oracle_navigator.direct_transitions.get(s - 1)[
+                                                                     1])
                 # factor_oracle_navigator.current_position_in_sequence = s
                 else:
                     # print("FREE GENERATION 3.{}.5".format(i))
@@ -317,9 +310,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
 
         return generated_sequence_of_indexes
 
-
     # dict_methods["free_navigation"] = free_navigation
-
 
     # TODO : QUAND ON GENERE, DEBUT OU NON ? SOIT INTEGRER DANS PARAMETRES FONCTIONS SOIT DECIDER QU'ON APPELLE reinit_navigation_param si c'est le début
     # TODO : traiter le cas ou trop de taboos par ex... bref on ne peut plus générer. 	KEN : if len(taboo_list) > taboo_list_length: taboo_list.pop(0)
@@ -398,9 +389,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
             # factor_oracle_navigator.current_position_in_sequence = s
         return generated_sequence_of_indexes
 
-
     # dict_methods["simply_guided_navigation"] = simply_guided_navigation
-
 
     # TODO : ATTENTION, SI UTILISE AILLEURS, BIEN PENSER AU MECANISME EQUIVALENT A INIT POUR ..._navigation_TOUT-COURT
     def simply_guided_navigation_one_step(factor_oracle_navigator, required_label, new_max_continuity=None,
@@ -445,9 +434,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
 
         return s
 
-
     # dict_methods["simply_guided_navigation_one_step"] = simply_guided_navigation_one_step
-
 
     def filtered_continuations(factor_oracle_navigator, index_state, forward_context_length_min=0, equiv=None):
         """ Continuations from the state at index index_state in the automaton (see method continuations), and filtered continuations satisfying the constraints of taboos and repetitions (cf. FactorOracleNavigator.history_and_taboos and FactorOracleNavigator.avoid_repetitions_mode).
@@ -475,9 +462,7 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         # print("Continuations from index {} after filtering: {}".format(index_state, filtered_continuations))
         return init_continuations, filtered_continuations
 
-
     # dict_methods["filtered_continuations"] = filtered_continuations
-
 
     def filtered_continuations_with_label(factor_oracle_navigator, index_state, required_label,
                                           forward_context_length_min=0, equiv=None):
@@ -503,9 +488,10 @@ class FactorOracleNavigator(FactorOracle, Navigator):
         filtered_continuations = factor_oracle_navigator.filter_using_history_and_taboos(init_continuations)
         return init_continuations, filtered_continuations
 
-
     # dict_methods["filtered_continuations_with_label"] = filtered_continuations_with_label
 
+# TODO 2021 : PREVIOUSLY IN THE INIT METHOD USING THE META CLASS
+implemented_model_navigator_classes = {"FactorOracleNavigator": FactorOracleNavigator}
 #####################################################################################
 # CREATION OF THE CLASS
 # tuple_bases = (FactorOracle, Navigator)

@@ -21,11 +21,8 @@ See the different tutorials accompanied with Max patches.
 
 """
 
-# FROM SERVER IN SOMAX
 # DOC AND TUTO : TODO
-
 import time
-# from multiprocessing import Process
 from multiprocessing import Process
 from random import random
 from typing import Optional, Any, Union, List, Tuple, Dict, Callable, Type
@@ -38,11 +35,12 @@ from maxosc.maxformatter import MaxFormatter
 from pythonosc.dispatcher import Dispatcher
 from pythonosc.osc_server import BlockingOSCUDPServer
 
-from . import GeneratorBuilder, SaveSendFormat
-from .Generator import GenerationHandler
-from .Label import Label
-from .Query import Query
-from .Temporary_parse_file import TemporaryParser
+from . import GeneratorBuilder, SaveSendFormat, Generator, Label, Query, Temporary_parse_file
+#from . import GeneratorBuilder, SaveSendFormat
+#from .Generator import GenerationHandler
+#from .Label import Label
+#from .Query import Query
+#from .Temporary_parse_file import TemporaryParser
 
 # TODO[JB]: This is a placeholder for all places where you're expected to specify the real type of the input value!
 TODO_INSERTTYPE = Union[None, List, Tuple, Dict, int, float, str]
@@ -57,6 +55,7 @@ class Target:
 
     def send(self, address: str, content: Any, **_kwargs):
         self._client.send(address, content)
+
 
 # TODO 2021 : https://openclassrooms.com/forum/sujet/tkinter-et-multiprocessing
 class Server(Process, Caller):
@@ -116,6 +115,7 @@ class Server(Process, Caller):
         for i in range(len(received_elements)):
             print(f"Element {i}: type = {type_received_elements}, value= {received_elements[i]}")
         self._client.send("/random", random.random())
+
 
 # TODO 2021 :
 class OSCAgent(Server):

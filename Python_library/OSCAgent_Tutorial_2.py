@@ -11,9 +11,8 @@
 """ 
 OSC Agent Tutorial
 ===================
-Tutorial for the class :class:`~OSCAgent.OSCAgentServer` defined in :mod:`OSCAgent`. 
+Tutorial 2 for the class :class:`~OSCAgentServer.OSCAgent` defined in :mod:`OSCAgentServer`.
 Associated Max patch Tuto_AM1,2,3...
-
 """
 
 
