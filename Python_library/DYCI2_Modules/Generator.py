@@ -42,6 +42,11 @@ from .ModelNavigator import *
 from .Query import *
 
 
+# TODO 2021 : Initially default argument for Generator was (lambda x, y: x == y) --> pb with pickle
+# TODO 2021 : (because not serialized ?) --> TODO "Abstract Equiv class" to pass objects and not lambda ?
+def basic_equiv(x, y):
+    return x == y
+
 class Generator(object):
     """ The class **Generator** embeds a **model navigator** as "memory" (cf. metaclass :class:`~MetaModelNavigator.MetaModelNavigator`) and processes **queries** (class :class:`~Query.Query`) to generate new sequences. This class uses pattern matching techniques (cf. :mod:`PrefixIndexing`) to enrich the navigation and generation methods offered by the chosen model with ("ImproteK-like") anticipative behaviour.
 	More information on "scenario-based generation": see **Nika, "Guiding Human-Computer Music Improvisation: introducing Authoring and Control with Temporal Scenarios", PhD Thesis, UPMC Paris 6, Ircam, 2016** (https://tel.archives-ouvertes.fr/tel-01361835)
@@ -121,6 +126,8 @@ class Generator(object):
                     implemented_model_navigator_classes.keys()), exception)
                 return None
             else:
+                if equiv is None:
+                    equiv = basic_equiv
                 self.model_navigator = model_navigator
                 self.memory = implemented_model_navigator_classes[self.model_navigator](sequence=sequence,
                                                                                         labels=labels,
@@ -972,7 +979,7 @@ class GenerationHandler(Generator):
 
         if not self.current_duration_event_ms is None:
             return (num_event - self.current_performance_time["event"]) * (self.current_duration_event_ms) - (
-                        self.current_performance_time["ms"] - self.current_performance_time["last_update_event_in_ms"])
+                    self.current_performance_time["ms"] - self.current_performance_time["last_update_event_in_ms"])
         else:
             return None
 

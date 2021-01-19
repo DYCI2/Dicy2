@@ -25,7 +25,7 @@ sequence = from_list_to_labels(["d m7(1)", "d m7(2)", "g 7(3)", "g 7(4)", "c maj
 print("\nCreation of a OSC agent \nModel type = Factor Oracle\nSequence: {}\nLabels: {}".format(sequence, labels))
 
 authorized_intervals = list(range(-6,6))
-agent = OSCAgent(sequence = sequence, labels = labels, model_type = "FactorOracle", authorized_transformations = authorized_intervals)
+agent = OSCAgent(sequence = sequence, labels = labels, authorized_transformations = authorized_intervals)
 agent.generation_handler.memory.avoid_repetitions_mode = 1 
 agent.generation_handler.memory.max_continuity = 3
 agent.generation_handler.memory.no_empty_event = False

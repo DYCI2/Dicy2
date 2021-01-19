@@ -123,7 +123,9 @@ class OSCAgent(Server):
 
     def __init__(self, inport: int = Server.DEFAULT_INPORT, outport: int = Server.DEFAULT_OUTPORT,
                  sequence: Union[list, tuple] = (), labels: Union[list, tuple] = (),
-                 model_type: str = "FactorOracleNavigator", equiv: Callable = (lambda x, y: x == y),
+                 # TODO 2021 : Initially "equiv: Callable = (lambda x, y: x == y)" but problem with pickle
+                 # TODO 2021 : (because not serialized ?) --> TODO "Abstract Equiv class" to pass objects and not lambda ?
+                 model_type: str = "FactorOracleNavigator", equiv: Callable = None,
                  label_type: Optional[TODO_INSERTTYPE] = None, content_type: Optional[TODO_INSERTTYPE] = None,
                  authorized_transformations: Union[list, tuple] = (0,),
                  continuity_with_future: Tuple[float, float] = (0.0, 1.0),
