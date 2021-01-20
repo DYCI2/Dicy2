@@ -143,7 +143,7 @@ class Generator(object):
         self.current_generation_output = []
         self.transfo_current_generation_output = []
 
-        self.authorized_tranformations = authorized_tranformations
+        self.authorized_transformations = authorized_tranformations
         # TODO : PLUTOT NO TRANSFORM ?
         self.current_transformation_memory = None
         # self.equiv_mod_interval = equiv_mod_interval
@@ -163,7 +163,7 @@ class Generator(object):
         # print(self.authorized_tranformations != [0])
         # print(self.authorized_tranformations)
         return (not (self.memory.label_type is None)) and self.memory.label_type.use_intervals and len(
-            self.authorized_tranformations) > 0 and self.authorized_tranformations != [0]
+            self.authorized_transformations) > 0 and self.authorized_transformations != [0]
 
     def learn_event(self, state, label):
         """ Learn a new event in the memory (model navigator)."""
@@ -522,7 +522,7 @@ class Generator(object):
                                                                                     self.memory.labels, list_of_labels,
                                                                                     self.continuity_with_future,
                                                                                     authorized_indexes,
-                                                                                    self.authorized_tranformations,
+                                                                                    self.authorized_transformations,
                                                                                     make_sequence_of_intervals_from_sequence_of_labels,
                                                                                     equiv_mod_interval,
                                                                                     self.memory.equiv)
