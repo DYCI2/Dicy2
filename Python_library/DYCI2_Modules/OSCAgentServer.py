@@ -93,8 +93,8 @@ class Server(Process, Caller):
         # TODO[JB]: Error handling strategy
         #           As a reference: this is how it's handled in somax
         except Exception as e:
-            self.logger.error(e)
-            self.logger.debug(repr(e))
+            #self.logger.error(e)
+            #self.logger.debug(repr(e))
             if self.DEBUG:
                 raise
         # TODO[JB]: Another solution could be

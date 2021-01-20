@@ -47,6 +47,7 @@ from .Query import *
 def basic_equiv(x, y):
     return x == y
 
+
 class Generator(object):
     """ The class **Generator** embeds a **model navigator** as "memory" (cf. metaclass :class:`~MetaModelNavigator.MetaModelNavigator`) and processes **queries** (class :class:`~Query.Query`) to generate new sequences. This class uses pattern matching techniques (cf. :mod:`PrefixIndexing`) to enrich the navigation and generation methods offered by the chosen model with ("ImproteK-like") anticipative behaviour.
 	More information on "scenario-based generation": see **Nika, "Guiding Human-Computer Music Improvisation: introducing Authoring and Control with Temporal Scenarios", PhD Thesis, UPMC Paris 6, Ircam, 2016** (https://tel.archives-ouvertes.fr/tel-01361835)

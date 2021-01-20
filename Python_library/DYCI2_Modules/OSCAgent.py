@@ -78,16 +78,35 @@ class OSCAgent(Server):
 	def run(self):#, inport = 4567, outport = 1234):
 		#self.outPort = outport
 		#self.inPort = inport
+
 		self.server = OSC.OSCServer(("127.0.0.1",self.inPort))
+
+
 		self.server.addMsgHandler("/random", self.outputRandom)
+
+		# OK: in DYCI2Agent / send_stop_free_agent
 		self.server.addMsgHandler("/stop", self.stopServer)
 		##########################################################
+
+		# OK: handledl in DYCI2Agent / send_queries but could be handled upstream (query)
 		self.server.addMsgHandler("/query", self.handle_new_query)
+
+		# OK: in DYCI2Agent / send_time
 		self.server.addMsgHandler("/perf_time", self.set_performance_time)
+
+		# OK: in DYCI2Agent / load_json_memory
 		self.server.addMsgHandler("/load_memory_from_json", self.load_generation_handler_from_json_file)
+
+		# OK: in DYCI2Agent / online_memory
 		self.server.addMsgHandler("/new_empty_memory", self.new_empty_memory)
+
+		# OK: in DYCI2Agent / control parameters
 		self.server.addMsgHandler("/set_control_parameter", self.set_control_parameter)
+
+		# OK: in DYCI2Agent / control parameters
 		self.server.addMsgHandler("/set_delta_transformation", self.set_delta_transformation)
+
+		# OK: in DYCI2Agent / senf_event_to_learn
 		self.server.addMsgHandler("/learn_event", self.learn_event)
 
 		##########################################################
