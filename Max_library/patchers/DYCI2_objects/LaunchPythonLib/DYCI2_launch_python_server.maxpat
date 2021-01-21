@@ -2,15 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"major" : 7,
+			"minor" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"classnamespace" : "box",
-		"rect" : [ 845.0, 704.0, 846.0, 492.0 ],
+		"rect" : [ -1090.0, 127.0, 467.0, 492.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,8 +36,20 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 325.0, 38.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -46,6 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 58.5, 371.0, 81.0, 22.0 ],
+					"style" : "",
 					"text" : "loadmess set"
 				}
 
@@ -58,6 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 130.0, 88.0, 65.0, 22.0 ],
+					"style" : "",
 					"text" : "closebang"
 				}
 
@@ -70,6 +83,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 393.5, 59.0, 79.0, 22.0 ],
+					"style" : "",
 					"text" : "loadmess #1"
 				}
 
@@ -82,6 +96,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 548.0, 16.0, 72.0, 22.0 ],
+					"style" : "",
 					"text" : "loadmess 1"
 				}
 
@@ -94,6 +109,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 502.0, 317.0, 34.0, 22.0 ],
+					"style" : "",
 					"text" : "gate"
 				}
 
@@ -106,7 +122,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 502.0, 58.0, 24.0, 24.0 ]
+					"patching_rect" : [ 502.0, 58.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -116,12 +133,13 @@
 					"comment" : "Print from python (0/1)",
 					"hint" : "Print from python (0/1)",
 					"id" : "obj-11",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 502.0, 16.0, 30.0, 30.0 ]
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 502.0, 16.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -131,12 +149,13 @@
 					"comment" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"hint" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.5, 8.0, 30.0, 30.0 ]
+					"patching_rect" : [ 247.5, 8.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -147,8 +166,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 9.0, 115.0, 24.0, 24.0 ]
+					"patching_rect" : [ 9.0, 115.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -160,6 +179,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 9.0, 88.0, 58.0, 22.0 ],
+					"style" : "",
 					"text" : "route 1 0"
 				}
 
@@ -172,7 +192,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 9.0, 50.0, 24.0, 24.0 ]
+					"patching_rect" : [ 9.0, 50.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -184,6 +205,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 130.0, 132.0, 31.0, 22.0 ],
+					"style" : "",
 					"text" : "pkill"
 				}
 
@@ -194,12 +216,13 @@
 					"comment" : "Launch (1) / Kill (0) python server",
 					"hint" : "Launch (1) / Kill (0) python server",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 9.0, 8.0, 30.0, 30.0 ]
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 9.0, 8.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -210,6 +233,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 502.0, 356.0, 129.0, 22.0 ],
+					"style" : "",
 					"text" : "print FROM_PYTHON"
 				}
 
@@ -222,6 +246,11 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 225.0, 251.0, 124.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"shell" : "(default)"
+					}
+,
+					"style" : "",
 					"text" : "shell"
 				}
 
@@ -234,6 +263,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 247.5, 137.0, 72.0, 22.0 ],
+					"style" : "",
 					"text" : "unpack s s i"
 				}
 
@@ -241,12 +271,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-60",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.5, 407.0, 764.0, 22.0 ],
-					"text" : "cd /Users/jnika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_\\; cd ../..\\; cd Python_library\\; python LaunchOSCAgents.py 1"
+					"patching_rect" : [ 58.5, 407.0, 764.0, 35.0 ],
+					"style" : "",
+					"text" : "cd /Users/nika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib\\; cd ../..\\; cd Python_library\\; python3 LaunchOSCAgents.py 1 2>&1"
 				}
 
 			}
@@ -258,6 +290,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.0, 175.0, 68.0, 22.0 ],
+					"style" : "",
 					"text" : "pack s s s i"
 				}
 
@@ -269,8 +302,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 205.0, 240.0, 22.0 ],
-					"text" : "cd $1\\; cd ../..\\; cd Python_library\\; $2 $3 $4"
+					"patching_rect" : [ 225.0, 205.0, 274.0, 22.0 ],
+					"style" : "",
+					"text" : "cd $1\\; cd ../..\\; cd Python_library\\; $2 $3 $4 2>&1"
 				}
 
 			}
@@ -282,6 +316,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 247.5, 107.0, 226.0, 22.0 ],
+					"style" : "",
 					"text" : "sprintf python3 LaunchOSCAgents.py %i"
 				}
 
@@ -294,6 +329,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 9.0, 180.0, 130.0, 22.0 ],
+					"style" : "",
 					"text" : "conformpath max boot"
 				}
 
@@ -306,6 +342,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.0, 149.0, 89.0, 22.0 ],
+					"style" : "",
 					"text" : "filepath default"
 				}
 
@@ -357,6 +394,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 0,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -481,7 +534,13 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

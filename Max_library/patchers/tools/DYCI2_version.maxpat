@@ -2,14 +2,13 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"major" : 7,
+			"minor" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"classnamespace" : "box",
 		"rect" : [ 34.0, 392.0, 947.0, 103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -37,7 +36,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -47,6 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 77.0, 49.0, 22.0 ],
+					"style" : "",
 					"text" : "print \" \""
 				}
 
@@ -61,6 +60,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 0.0, 0.0, 60.0, 22.0 ],
+					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -75,8 +75,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 33.0, 921.0, 35.0 ],
-					"text" : "-------------------------------------------------------------------------------------------------------------------------------------------------------------, DYCI2 library -- Version of December 2020, Jérôme Nika - http://repmus.ircam.fr/nika, -------------------------------------------------------------------------------------------------------------------------------------------------------------"
+					"patching_rect" : [ 0.0, 33.0, 943.0, 35.0 ],
+					"style" : "",
+					"text" : "-------------------------------------------------------------------------------------------------------------------------------------------------------------, DYCI2 library -- Version of February 2021, Jérôme Nika - http://repmus.ircam.fr/nika, -------------------------------------------------------------------------------------------------------------------------------------------------------------"
 				}
 
 			}
@@ -95,9 +96,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

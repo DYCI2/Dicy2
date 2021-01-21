@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 119.0, 256.0, 352.0, 116.0 ],
+		"rect" : [ -1132.0, 145.0, 362.0, 118.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -123,7 +123,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.499878, 32.433289, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 0"
+					"text" : "loadmess 1"
 				}
 
 			}
@@ -302,13 +302,13 @@
 		"dependency_cache" : [ 			{
 				"name" : "DYCI2_version.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../tools",
+				"patcherrelativepath" : "../../tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_launch_python_server.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

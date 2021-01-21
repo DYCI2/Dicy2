@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1227.0, 113.0, 740.0, 601.0 ],
+		"rect" : [ -1227.0, 113.0, 290.0, 190.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 0.321569 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -719,7 +719,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -1360.0, 48.0, 1295.0, 720.0 ],
+						"rect" : [ -921.0, 185.0, 458.0, 250.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -746,7 +746,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
@@ -764,7 +763,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ -1326.0, 79.0, 913.0, 655.0 ],
+										"rect" : [ -1326.0, 79.0, 222.0, 209.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -791,7 +790,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"bgcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
@@ -5512,6 +5510,10 @@
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "bang" ],
 																	"patching_rect" : [ 63.0, 297.0, 35.0, 22.0 ],
+																	"saved_object_attributes" : 																	{
+																		"shell" : "(default)"
+																	}
+,
 																	"style" : "",
 																	"text" : "shell"
 																}
@@ -9403,7 +9405,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ -1195.0, 151.0, 640.0, 480.0 ],
+										"rect" : [ -1195.0, 151.0, 351.0, 210.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9498,9 +9500,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 15.0, 123.0, 141.0, 22.0 ],
+													"patching_rect" : [ 15.0, 123.0, 113.0, 22.0 ],
 													"style" : "",
-													"text" : "/server stopServer None"
+													"text" : "/server stop_server"
 												}
 
 											}
@@ -10093,7 +10095,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ -1003.0, 251.0, 908.0, 565.0 ],
+										"rect" : [ -1288.0, 79.0, 542.0, 429.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -10120,7 +10122,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-11",
@@ -10563,7 +10564,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-11",
@@ -11394,7 +11394,7 @@
 																	"fontsize" : 9.0,
 																	"gradient" : 1,
 																	"id" : "obj-20",
-																	"linecount" : 6,
+																	"linecount" : 5,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
@@ -11404,7 +11404,7 @@
 																	"presentation_linecount" : 3,
 																	"presentation_rect" : [ 3.733327, 49.133366, 162.0, 39.0 ],
 																	"style" : "",
-																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																	"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																}
 
 															}
@@ -12481,7 +12481,7 @@
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 515.0, 56.599976, 396.0, 35.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}
@@ -12508,7 +12508,7 @@
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 279.0, 279.0, 413.0, 35.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}
@@ -12633,14 +12633,14 @@
 , 																			{
 																				"box" : 																				{
 																					"id" : "obj-57",
-																					"linecount" : 8,
+																					"linecount" : 6,
 																					"maxclass" : "message",
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 57.299988, 412.400024, 91.200012, 89.0 ],
 																					"style" : "",
-																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_MyProjects_/Fox/2020-07_20_Fresnoy2/_ExamplesCorpus_"
+																					"text" : "/Users/nika/Documents/GitHub/Dyci2Lib/Max_library/_Tutorials_/_ExamplesCorpus_"
 																				}
 
 																			}

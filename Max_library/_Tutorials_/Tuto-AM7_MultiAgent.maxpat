@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 2175.333008, 90.0, 80.0 ],
+					"patching_rect" : [ 1275.0, 2175.333008, 93.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
 					"presentation_rect" : [ 1370.718628, 778.249939, 80.614685, 93.0 ],
@@ -6737,8 +6737,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -6747,8 +6747,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -8204,8 +8204,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -8214,8 +8214,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10296,8 +10296,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10306,8 +10306,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -11000,8 +11000,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -11010,8 +11010,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13046,8 +13046,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -13056,8 +13056,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -14513,8 +14513,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -14523,8 +14523,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -16605,8 +16605,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -16615,8 +16615,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -17309,8 +17309,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -17319,8 +17319,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -19397,8 +19397,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -19407,8 +19407,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -20864,8 +20864,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -20874,8 +20874,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -22956,8 +22956,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -22966,8 +22966,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -23660,8 +23660,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -23670,8 +23670,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -25668,8 +25668,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -25678,8 +25678,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -27135,8 +27135,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -27145,8 +27145,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -29227,8 +29227,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -29237,8 +29237,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -29931,8 +29931,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -29941,8 +29941,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -31938,8 +31938,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -31948,8 +31948,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -33406,8 +33406,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -33416,8 +33416,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -35479,8 +35479,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -35489,8 +35489,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -36183,8 +36183,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -36193,8 +36193,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -38190,8 +38190,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -38200,8 +38200,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -39658,8 +39658,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -39668,8 +39668,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -41730,8 +41730,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -41740,8 +41740,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -42434,8 +42434,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -42444,8 +42444,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -44642,8 +44642,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -44652,8 +44652,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -46109,8 +46109,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -46119,8 +46119,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -48201,8 +48201,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -48211,8 +48211,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -48905,8 +48905,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -48915,8 +48915,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -50913,8 +50913,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -50923,8 +50923,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -52380,8 +52380,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -52390,8 +52390,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -54472,8 +54472,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -54482,8 +54482,8 @@
 , 															{
 																"name" : "newobjYellow-2",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -55176,8 +55176,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -55186,8 +55186,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -59607,14 +59607,15 @@
 				"box" : 				{
 					"color" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ -18.520905, 479.333313, 119.0, 22.0 ],
+					"patching_rect" : [ -18.520905, 479.333313, 119.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1346.333252, 44.249939, 119.0, 22.0 ],
+					"presentation_rect" : [ 1302.333252, 44.249939, 149.0, 22.0 ],
 					"style" : "",
-					"text" : "DYCI2_Python_lib 2"
+					"text" : "Launch_DYCI2_agents 2"
 				}
 
 			}
@@ -60311,296 +60312,296 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-61::obj-89::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-42" : [ "NK2r3[2]", "NK2r3", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-46" : [ "NK2r1[1]", "NK2r1", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-102" : [ "NK2prev1[3]", "NK2prev1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-188" : [ "NK2fast[2]", "NK2fast", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-55" : [ "NKpot6[2]", "NKpot6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
 			"obj-18::obj-156::obj-95::obj-134::obj-98" : [ "NK2next1[1]", "NK2next1", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-18" : [ "NK2r6[3]", "NK2r6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-97" : [ "NK2m8[2]", "NK2m8", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-105" : [ "NK2m4[1]", "NK2m4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-111" : [ "NK2m1[2]", "NK2m1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-35" : [ "NKslider4[1]", "NKslider4", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-31" : [ "NKslider2[3]", "NKslider2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-62" : [ "NKpot2[5]", "NKpot2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-74" : [ "NK2s4[1]", "NK2s4", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-105" : [ "NK2m4[3]", "NK2m4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-76" : [ "NK2s3[1]", "NK2s3", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-76" : [ "NK2s3[3]", "NK2s3", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-99" : [ "NK2m7[2]", "NK2m7", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-104" : [ "NK2next2[1]", "NK2next2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-97" : [ "NK2m8[3]", "NK2m8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-59" : [ "NKpot8[1]", "NKpot8", 0 ],
+			"obj-1::obj-196::obj-9::obj-159" : [ "live.gain~[48]", "live.gain~", 0 ],
+			"obj-1::obj-25::obj-9::obj-159" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-41" : [ "NKslider7[3]", "NKslider7", 0 ],
 			"obj-107::obj-156::obj-95::obj-134::obj-38" : [ "NK2r4[2]", "NK2r4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-99" : [ "NK2m7[1]", "NK2m7", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-51" : [ "NKpot4[3]", "NKpot4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-64" : [ "NKpot3[2]", "NKpot3", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-31" : [ "NKslider2[1]", "NKslider2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-49" : [ "NKpot2[6]", "NKpot2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-15" : [ "NK2r8[2]", "NK2r8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-39" : [ "NKslider6[1]", "NKslider6", 0 ],
-			"obj-1::obj-25::obj-9::obj-159" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-107" : [ "NK2m3[3]", "NK2m3", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-188" : [ "NK2fast[2]", "NK2fast", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-41" : [ "NKslider7[2]", "NKslider7", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-62" : [ "NKpot2[3]", "NKpot2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-188" : [ "NK2fast[3]", "NK2fast", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-31" : [ "NKslider2[2]", "NKslider2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-7" : [ "NK2s1[1]", "NK2s1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-192" : [ "NK2stop[2]", "NK2stop", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-188" : [ "NK2fast[1]", "NK2fast", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-57" : [ "NKpot7[3]", "NKpot7", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-82" : [ "NK2s6[2]", "NK2s6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-102" : [ "NK2prev1[1]", "NK2prev1", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-53" : [ "NKpot5[3]", "NKpot5", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-57" : [ "NKpot7[2]", "NKpot7", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-111" : [ "NK2m1[1]", "NK2m1", 0 ],
-			"obj-1::obj-149::obj-9::obj-159" : [ "live.gain~[50]", "live.gain~", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-34" : [ "NK2r5[3]", "NK2r5", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-186" : [ "NK2play[2]", "NK2play", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-42" : [ "NK2r3[1]", "NK2r3", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-196" : [ "NK2rec[3]", "NK2rec", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-186" : [ "NK2play[1]", "NK2play", 0 ],
-			"obj-18::obj-159" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-111" : [ "NK2m1[3]", "NK2m1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-37" : [ "NKslider5[2]", "NKslider5", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-37" : [ "NKslider5[1]", "NKslider5", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-46" : [ "NK2r1[3]", "NK2r1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-46" : [ "NK2r1[2]", "NK2r1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-80" : [ "NK2s7[1]", "NK2s7", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-64" : [ "NKpot3[3]", "NKpot3", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-33" : [ "NKslider1[5]", "NKslider1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-95" : [ "NK2prev2[1]", "NK2prev2", 0 ],
-			"obj-1::obj-136::obj-9::obj-159" : [ "live.gain~[23]", "live.gain~", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-51" : [ "NKpot4", "NKpot4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-104" : [ "NK2next2[1]", "NK2next2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-18" : [ "NK2r6[1]", "NK2r6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-20" : [ "NKslider1[6]", "NKslider1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-82" : [ "NK2s6[1]", "NK2s6", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-192" : [ "NK2stop[3]", "NK2stop", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-18" : [ "NK2r6[2]", "NK2r6", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-37" : [ "NKslider5[3]", "NKslider5", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-59" : [ "NKpot8[2]", "NKpot8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-109" : [ "NK2m2[1]", "NK2m2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-99" : [ "NK2m7[3]", "NK2m7", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-43" : [ "NKslider8[2]", "NKslider8", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-49" : [ "NKpot2[4]", "NKpot2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-20" : [ "NKslider1[4]", "NKslider1", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-62" : [ "NKpot2[3]", "NKpot2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-43" : [ "NKslider8[3]", "NKslider8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-78" : [ "NK2s8[2]", "NK2s8", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-111" : [ "NK2m1[3]", "NK2m1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-103" : [ "NK2m5[2]", "NK2m6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-95" : [ "NK2prev2[1]", "NK2prev2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-10" : [ "NK2s2[1]", "NK2s2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-98" : [ "NK2next1[3]", "NK2next1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-186" : [ "NK2play[2]", "NK2play", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-38" : [ "NK2r4[3]", "NK2r4", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-41" : [ "NKslider7[2]", "NKslider7", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-34" : [ "NK2r5[1]", "NK2r5", 0 ],
 			"obj-1::obj-127::obj-9::obj-159" : [ "live.gain~[12]", "live.gain~", 0 ],
-			"obj-1::obj-20::obj-9::obj-159" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-188" : [ "NK2fast[3]", "NK2fast", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-10" : [ "NK2s2[2]", "NK2s2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-74" : [ "NK2s4[3]", "NK2s4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-43" : [ "NKslider8[1]", "NKslider8", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-64" : [ "NKpot3[3]", "NKpot3", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-111" : [ "NK2m1[2]", "NK2m1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-35" : [ "NKslider4[1]", "NKslider4", 0 ],
+			"obj-1::obj-136::obj-9::obj-159" : [ "live.gain~[23]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-95" : [ "NK2prev2[3]", "NK2prev2", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-53" : [ "NKpot5[2]", "NKpot5", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-49" : [ "NKpot2[1]", "NKpot2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-55" : [ "NKpot6[1]", "NKpot6", 0 ],
 			"obj-107::obj-156::obj-95::obj-134::obj-44" : [ "NK2r2[2]", "NK2r2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-16" : [ "NK2r7[1]", "NK2r7", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-37" : [ "NKslider5[1]", "NKslider5", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-82" : [ "NK2s6[3]", "NK2s6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-100" : [ "NK2set[2]", "NK2set", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-57" : [ "NKpot7", "NKpot7", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-76" : [ "NK2s3[1]", "NK2s3", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-33" : [ "NKslider1[3]", "NKslider1", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-109" : [ "NK2m2[3]", "NK2m2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-55" : [ "NKpot6[2]", "NKpot6", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-78" : [ "NK2s8[1]", "NK2s8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-101" : [ "NK2m6[2]", "NK2m6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-102" : [ "NK2prev1", "NK2prev1", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-76" : [ "NK2s3[3]", "NK2s3", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-46" : [ "NK2r1[2]", "NK2r1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-99" : [ "NK2m7[1]", "NK2m7", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-15" : [ "NK2r8[1]", "NK2r8", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-33" : [ "NKslider1[7]", "NKslider1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-96" : [ "NK2cycle[2]", "NK2cycle", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
+			"obj-18::obj-159" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-16" : [ "NK2r7[3]", "NK2r7", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-74" : [ "NK2s4[2]", "NK2s4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-196" : [ "NK2rec[1]", "NK2rec", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-57" : [ "NKpot7[3]", "NKpot7", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-97" : [ "NK2m8[2]", "NK2m8", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-196" : [ "NK2rec", "NK2rec", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-104" : [ "NK2next2[3]", "NK2next2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-57" : [ "NKpot7[1]", "NKpot7", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-107" : [ "NK2m3[3]", "NK2m3", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-59" : [ "NKpot8[2]", "NKpot8", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-39" : [ "NKslider6[3]", "NKslider6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-188" : [ "NK2fast", "NK2fast", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-101" : [ "NK2m6[1]", "NK2m6", 0 ],
+			"obj-1::obj-30::obj-9::obj-159" : [ "live.gain~[20]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-49" : [ "NKpot2[6]", "NKpot2", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-182" : [ "NK2back[2]", "NK2back", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-111" : [ "NK2m1[1]", "NK2m1", 0 ],
 			"obj-107::obj-156::obj-95::obj-134::obj-51" : [ "NKpot4[2]", "NKpot4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-16" : [ "NK2r7[1]", "NK2r7", 0 ],
+			"obj-1::obj-2::obj-9::obj-159" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-20" : [ "NKslider1[8]", "NKslider1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-107" : [ "NK2m3[2]", "NK2m3", 0 ],
 			"obj-12::obj-61::obj-89::obj-134::obj-53" : [ "NKpot5", "NKpot5", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-38" : [ "NK2r4[1]", "NK2r4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-42" : [ "NK2r3[1]", "NK2r3", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-46" : [ "NK2r1[3]", "NK2r1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-15" : [ "NK2r8[2]", "NK2r8", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ],
 			"obj-18::obj-156::obj-95::obj-134::obj-49" : [ "NKpot2[2]", "NKpot2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-100" : [ "NK2set[3]", "NK2set", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-97" : [ "NK2m8[3]", "NK2m8", 0 ],
 			"obj-107::obj-156::obj-95::obj-134::obj-104" : [ "NK2next2[2]", "NK2next2", 0 ],
 			"obj-12::obj-61::obj-89::obj-134::obj-33" : [ "NKslider1[2]", "NKslider1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-10" : [ "NK2s2", "NK2s2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-57" : [ "NKpot7[1]", "NKpot7", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-80" : [ "NK2s7[3]", "NK2s7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-53" : [ "NKpot5[1]", "NKpot5", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-182" : [ "NK2back[3]", "NK2back", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-84" : [ "NK2s5[2]", "NK2s5", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-46" : [ "NK2r1[1]", "NK2r1", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-20" : [ "NKslider1[8]", "NKslider1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-18" : [ "NK2r6", "NK2r6", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-80" : [ "NK2s7", "NK2s7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-15" : [ "NK2r8[1]", "NK2r8", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-103" : [ "NK2m5[3]", "NK2m6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-7" : [ "NK2s1[2]", "NK2s1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-10" : [ "NK2s2[1]", "NK2s2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-39" : [ "NKslider6[3]", "NKslider6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-39" : [ "NKslider6[2]", "NKslider6", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-96" : [ "NK2cycle", "NK2cycle", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-182" : [ "NK2back[1]", "NK2back", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-42" : [ "NK2r3[3]", "NK2r3", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-109" : [ "NK2m2[2]", "NK2m2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-105" : [ "NK2m4", "NK2m4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
 			"obj-18::obj-156::obj-95::obj-134::obj-100" : [ "NK2set[1]", "NK2set", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-59" : [ "NKpot8[3]", "NKpot8", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-105" : [ "NK2m4[2]", "NK2m4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-39" : [ "NKslider6", "NKslider6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-182" : [ "NK2back[2]", "NK2back", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-33" : [ "NKslider1[3]", "NKslider1", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-98" : [ "NK2next1[3]", "NK2next1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-96" : [ "NK2cycle[2]", "NK2cycle", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-98" : [ "NK2next1", "NK2next1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-38" : [ "NK2r4[1]", "NK2r4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-16" : [ "NK2r7[2]", "NK2r7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-44" : [ "NK2r2[1]", "NK2r2", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-43" : [ "NKslider8[3]", "NKslider8", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-76" : [ "NK2s3[2]", "NK2s3", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-46" : [ "NK2r1", "NK2r1", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-97" : [ "NK2m8[1]", "NK2m8", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-44" : [ "NK2r2[3]", "NK2r2", 0 ],
-			"obj-107::obj-159" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-82" : [ "NK2s6[1]", "NK2s6", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-101" : [ "NK2m6[3]", "NK2m6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-98" : [ "NK2next1[2]", "NK2next1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-20" : [ "NKslider1", "NKslider1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-99" : [ "NK2m7", "NK2m7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-64" : [ "NKpot3[1]", "NKpot3", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-15" : [ "NK2r8[3]", "NK2r8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-103" : [ "NK2m5[1]", "NK2m6", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-55" : [ "NKpot6[3]", "NKpot6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-196" : [ "NK2rec[2]", "NK2rec", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-196" : [ "NK2rec[1]", "NK2rec", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-82" : [ "NK2s6[3]", "NK2s6", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-78" : [ "NK2s8[2]", "NK2s8", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-41" : [ "NKslider7[1]", "NKslider7", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-102" : [ "NK2prev1[3]", "NK2prev1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-95" : [ "NK2prev2[2]", "NK2prev2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-55" : [ "NKpot6[1]", "NKpot6", 0 ],
-			"obj-1::obj-30::obj-9::obj-159" : [ "live.gain~[20]", "live.gain~", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-16" : [ "NK2r7[3]", "NK2r7", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-100" : [ "NK2set[2]", "NK2set", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-38" : [ "NK2r4", "NK2r4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-84" : [ "NK2s5", "NK2s5", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-33" : [ "NKslider1[7]", "NKslider1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-101" : [ "NK2m6[2]", "NK2m6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-84" : [ "NK2s5[1]", "NK2s5", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-84" : [ "NK2s5[3]", "NK2s5", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-35" : [ "NKslider4[2]", "NKslider4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-192" : [ "NK2stop", "NK2stop", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-20" : [ "NKslider1[6]", "NKslider1", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-109" : [ "NK2m2", "NK2m2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-101" : [ "NK2m6[1]", "NK2m6", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-74" : [ "NK2s4[3]", "NK2s4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-34" : [ "NK2r5[2]", "NK2r5", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-35" : [ "NKslider4", "NKslider4", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
 			"obj-18::obj-156::obj-95::obj-134::obj-51" : [ "NKpot4[1]", "NKpot4", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-7" : [ "NK2s1[3]", "NK2s1", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-103" : [ "NK2m5[2]", "NK2m6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-18" : [ "NK2r6[1]", "NK2r6", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-186" : [ "NK2play[3]", "NK2play", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-107" : [ "NK2m3[2]", "NK2m3", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-104" : [ "NK2next2", "NK2next2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-96" : [ "NK2cycle[1]", "NK2cycle", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-62" : [ "NKpot2[7]", "NKpot2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-20" : [ "NKslider1[4]", "NKslider1", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-38" : [ "NK2r4[3]", "NK2r4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-10" : [ "NK2s2[2]", "NK2s2", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-107" : [ "NK2m3[1]", "NK2m3", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-95" : [ "NK2prev2[3]", "NK2prev2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-49" : [ "NKpot2[4]", "NKpot2", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-100" : [ "NK2set", "NK2set", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-34" : [ "NK2r5[1]", "NK2r5", 0 ],
-			"obj-1::obj-196::obj-9::obj-159" : [ "live.gain~[48]", "live.gain~", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-10" : [ "NK2s2[3]", "NK2s2", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-53" : [ "NKpot5[2]", "NKpot5", 0 ],
-			"obj-12::obj-61::obj-89::obj-134::obj-103" : [ "NK2m5", "NK2m6", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-43" : [ "NKslider8[1]", "NKslider8", 0 ],
-			"obj-1::obj-2::obj-9::obj-159" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-96" : [ "NK2cycle[3]", "NK2cycle", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-102" : [ "NK2prev1[2]", "NK2prev1", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-76" : [ "NK2s3[2]", "NK2s3", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-44" : [ "NK2r2", "NK2r2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-37" : [ "NKslider5[3]", "NKslider5", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-80" : [ "NK2s7[2]", "NK2s7", 0 ],
 			"obj-12::obj-61::obj-89::obj-134::obj-41" : [ "NKslider7", "NKslider7", 0 ],
-			"obj-130::obj-61::obj-89::obj-134::obj-78" : [ "NK2s8[3]", "NK2s8", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-74" : [ "NK2s4[2]", "NK2s4", 0 ],
-			"obj-18::obj-156::obj-95::obj-134::obj-192" : [ "NK2stop[1]", "NK2stop", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-105" : [ "NK2m4[1]", "NK2m4", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-41" : [ "NKslider7[1]", "NKslider7", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-34" : [ "NK2r5[3]", "NK2r5", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-102" : [ "NK2prev1[2]", "NK2prev1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-16" : [ "NK2r7", "NK2r7", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-80" : [ "NK2s7[3]", "NK2s7", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-33" : [ "NKslider1[5]", "NKslider1", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-84" : [ "NK2s5[1]", "NK2s5", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-44" : [ "NK2r2[3]", "NK2r2", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-42" : [ "NK2r3[2]", "NK2r3", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-76" : [ "NK2s3", "NK2s3", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-7" : [ "NK2s1[3]", "NK2s1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-182" : [ "NK2back", "NK2back", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-188" : [ "NK2fast[1]", "NK2fast", 0 ],
 			"obj-130::obj-61::obj-89::obj-134::obj-35" : [ "NKslider4[3]", "NKslider4", 0 ],
-			"obj-107::obj-156::obj-95::obj-134::obj-80" : [ "NK2s7[2]", "NK2s7", 0 ]
+			"obj-107::obj-156::obj-95::obj-134::obj-57" : [ "NKpot7[2]", "NKpot7", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-78" : [ "NK2s8", "NK2s8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-34" : [ "NK2r5[2]", "NK2r5", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-107" : [ "NK2m3", "NK2m3", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-102" : [ "NK2prev1[1]", "NK2prev1", 0 ],
+			"obj-1::obj-20::obj-9::obj-159" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-18" : [ "NK2r6[3]", "NK2r6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-37" : [ "NKslider5[2]", "NKslider5", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-64" : [ "NKpot3", "NKpot3", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-39" : [ "NKslider6[1]", "NKslider6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-64" : [ "NKpot3[2]", "NKpot3", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-97" : [ "NK2m8", "NK2m8", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-80" : [ "NK2s7[1]", "NK2s7", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-59" : [ "NKpot8[3]", "NKpot8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-196" : [ "NK2rec[2]", "NK2rec", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-59" : [ "NKpot8", "NKpot8", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-59" : [ "NKpot8[1]", "NKpot8", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-44" : [ "NK2r2[1]", "NK2r2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-51" : [ "NKpot4[3]", "NKpot4", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-105" : [ "NK2m4[2]", "NK2m4", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-95" : [ "NK2prev2", "NK2prev2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-182" : [ "NK2back[3]", "NK2back", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-95" : [ "NK2prev2[2]", "NK2prev2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-37" : [ "NKslider5", "NKslider5", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-182" : [ "NK2back[1]", "NK2back", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-103" : [ "NK2m5[1]", "NK2m6", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-100" : [ "NK2set[3]", "NK2set", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-35" : [ "NKslider4[2]", "NKslider4", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-34" : [ "NK2r5", "NK2r5", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-55" : [ "NKpot6[3]", "NKpot6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-43" : [ "NKslider8[2]", "NKslider8", 0 ],
+			"obj-107::obj-159" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-109" : [ "NK2m2[1]", "NK2m2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-84" : [ "NK2s5[3]", "NK2s5", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-82" : [ "NK2s6[2]", "NK2s6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-7" : [ "NK2s1", "NK2s1", 0 ],
+			"obj-1::obj-149::obj-9::obj-159" : [ "live.gain~[50]", "live.gain~", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-103" : [ "NK2m5[3]", "NK2m6", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-31" : [ "NKslider2[1]", "NKslider2", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-10" : [ "NK2s2[3]", "NK2s2", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-31" : [ "NKslider2[2]", "NKslider2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-82" : [ "NK2s6", "NK2s6", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-186" : [ "NK2play[3]", "NK2play", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-111" : [ "NK2m1", "NK2m1", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-53" : [ "NKpot5[1]", "NKpot5", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-53" : [ "NKpot5[3]", "NKpot5", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-109" : [ "NK2m2[2]", "NK2m2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-62" : [ "NKpot2", "NKpot2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-78" : [ "NK2s8[1]", "NK2s8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-39" : [ "NKslider6[2]", "NKslider6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-101" : [ "NK2m6", "NK2m6", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-107" : [ "NK2m3[1]", "NK2m3", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-42" : [ "NK2r3[3]", "NK2r3", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-7" : [ "NK2s1[2]", "NK2s1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-55" : [ "NKpot6", "NKpot6", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-97" : [ "NK2m8[1]", "NK2m8", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-74" : [ "NK2s4[1]", "NK2s4", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-101" : [ "NK2m6[3]", "NK2m6", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-16" : [ "NK2r7[2]", "NK2r7", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-186" : [ "NK2play", "NK2play", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-105" : [ "NK2m4[3]", "NK2m4", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-18" : [ "NK2r6[2]", "NK2r6", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-31" : [ "NKslider2", "NKslider2", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-186" : [ "NK2play[1]", "NK2play", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-192" : [ "NK2stop[1]", "NK2stop", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-15" : [ "NK2r8[3]", "NK2r8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-62" : [ "NKpot2[5]", "NKpot2", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-42" : [ "NK2r3", "NK2r3", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-31" : [ "NKslider2[3]", "NKslider2", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-84" : [ "NK2s5[2]", "NK2s5", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-43" : [ "NKslider8", "NKslider8", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-96" : [ "NK2cycle[1]", "NK2cycle", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-7" : [ "NK2s1[1]", "NK2s1", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-78" : [ "NK2s8[3]", "NK2s8", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-98" : [ "NK2next1[2]", "NK2next1", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-15" : [ "NK2r8", "NK2r8", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-196" : [ "NK2rec[3]", "NK2rec", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-192" : [ "NK2stop[2]", "NK2stop", 0 ],
+			"obj-18::obj-156::obj-95::obj-134::obj-64" : [ "NKpot3[1]", "NKpot3", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-99" : [ "NK2m7[3]", "NK2m7", 0 ],
+			"obj-107::obj-156::obj-95::obj-134::obj-99" : [ "NK2m7[2]", "NK2m7", 0 ],
+			"obj-12::obj-61::obj-89::obj-134::obj-74" : [ "NK2s4", "NK2s4", 0 ],
+			"obj-130::obj-61::obj-89::obj-134::obj-62" : [ "NKpot2[7]", "NKpot2", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "DYCI2_Python_lib.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"name" : "Launch_DYCI2_agents.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_version.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_launch_python_server.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"name" : "Launch_DYCI2_agents_script.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_agent.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_time.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mysend.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_analyzer_renderer_IrcDesc.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_text_query.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SliceLevelP.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_MasterLevelP.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NanoK2b_.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -60613,98 +60614,105 @@
 , 			{
 				"name" : "NK2b_Player.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr_arg.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "NK2b_SVPPlayer.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools/NanoKontroler",
+				"patcherrelativepath" : "../patchers/tools/NanoKontroler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.menu.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/catart/patches/lib",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/external/catart/patches/lib",
+				"patcherrelativepath" : "../external/catart/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.Audio-Outputgb2Bb.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/external/from_omax_and_improtek",
+				"patcherrelativepath" : "../external/from_omax_and_improtek",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru2.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_agent_preset.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_handles_from_labels.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_online_analyzer_IrcDesc.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pipo_change_param.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_format_query.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : "../patchers/DYCI2_objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "append_lists.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../patchers/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_analyser-renderer_IrcDesc_preset.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DYCI2_load_phase_preset.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/Presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "load_phase_preset.js",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
-				"patcherrelativepath" : "../../../../Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/Presets",
+				"patcherrelativepath" : "../patchers/DYCI2_objects/Presets",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
