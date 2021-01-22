@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 177.0, 304.0, 762.0, 401.0 ],
+		"rect" : [ -1071.0, 179.0, 762.0, 401.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 502.0, 343.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -50,13 +61,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 312.0, 391.0, 425.0, 213.0 ],
+						"rect" : [ 312.0, 391.0, 916.0, 422.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -105,7 +116,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 37.5, 64.0, 132.0, 22.0 ],
-									"presentation_linecount" : 3,
 									"text" : "/usr/bin/env python3 -V"
 								}
 
@@ -486,6 +496,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 223.5, 276.5, 124.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"shell" : "(default)"
+					}
+,
 					"text" : "shell"
 				}
 
@@ -511,7 +525,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.5, 276.5, 182.0, 102.0 ],
-					"text" : "cd /Users/jnika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib\\; cd ../../..\\; cd misc\\; ./launch_dyci2_agents.sh 1 python3 2>&1"
+					"text" : "cd /Users/nika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib\\; cd ../../..\\; cd misc\\; ./launch_dyci2_agents.sh 1 python3 2>&1"
 				}
 
 			}
@@ -753,6 +767,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -775,8 +798,9 @@
 		"styles" : [ 			{
 				"name" : "dUG Yello 01-1",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -787,20 +811,20 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
-					"fontsize" : [ 10.0 ]
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
-					"fontsize" : [ 10.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
 				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -810,8 +834,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"fontsize" : [ 10.0 ]
+
 				}
 ,
 				"toggle" : 				{

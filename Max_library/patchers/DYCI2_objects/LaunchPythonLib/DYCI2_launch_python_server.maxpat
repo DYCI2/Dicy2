@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 127.0, 657.0, 564.0 ],
+		"rect" : [ -724.0, 198.0, 657.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,13 +50,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 312.0, 391.0, 425.0, 213.0 ],
+						"rect" : [ 311.0, 391.0, 425.0, 213.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -84,6 +84,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -103,8 +104,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 37.5, 64.0, 132.0, 22.0 ],
-									"text" : "/usr/bin/env python3 -V"
+									"patching_rect" : [ 70.5, 94.0, 164.0, 22.0 ],
+									"text" : "/usr/bin/env python3 -V 2>&1"
 								}
 
 							}
@@ -127,8 +128,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 99.0, 234.0, 22.0 ],
-									"text" : "PATH=/usr/local/bin:$PATH && python3 -V"
+									"patching_rect" : [ 44.0, 67.0, 266.0, 22.0 ],
+									"text" : "PATH=/usr/local/bin:$PATH && python3 -V 2>&1"
 								}
 
 							}
@@ -139,8 +140,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.5, 135.0, 67.0, 22.0 ],
-									"text" : "python3 -V"
+									"patching_rect" : [ 79.5, 135.0, 98.0, 22.0 ],
+									"text" : "python3 -V 2>&1"
 								}
 
 							}
@@ -195,7 +196,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 124.0, 24.0, 169.0, 22.0 ],
+					"patching_rect" : [ 22.0, 226.0, 169.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -297,11 +298,11 @@
 					"comment" : "Print from python (0/1)",
 					"hint" : "Print from python (0/1)",
 					"id" : "obj-11",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 502.0, 16.0, 30.0, 30.0 ]
 				}
 
@@ -312,7 +313,7 @@
 					"comment" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"hint" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -375,11 +376,11 @@
 					"comment" : "Launch (1) / Kill (0) python server",
 					"hint" : "Launch (1) / Kill (0) python server",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.0, 8.0, 30.0, 30.0 ]
 				}
 
@@ -403,6 +404,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 225.0, 251.0, 124.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"shell" : "(default)"
+					}
+,
 					"text" : "shell"
 				}
 
@@ -427,7 +432,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 58.5, 407.0, 897.0, 22.0 ],
-					"text" : "cd /Users/jnika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib\\; cd ../..\\; cd Python_library\\; python3 LaunchOSCAgents.py 0 2>&1"
+					"text" : "cd 0\\; cd ../..\\; cd Python_library\\; 0 0 0 2>&1"
 				}
 
 			}
@@ -686,11 +691,18 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "dUG Yello 01-1",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -701,20 +713,20 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
-					"fontsize" : [ 10.0 ]
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
 				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
-					"fontsize" : [ 10.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
 				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -724,8 +736,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"fontsize" : [ 10.0 ]
+
 				}
 ,
 				"toggle" : 				{

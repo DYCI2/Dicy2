@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,14 +40,14 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
+					"id" : "obj-18",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 338.0, 19.0, 150.0, 20.0 ],
+					"patching_rect" : [ 435.0, 21.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 263.0, 3.749939000000001, 150.0, 20.0 ],
-					"text" : "Launch_DYCI2_agents 1"
+					"presentation_rect" : [ 364.0, 3.749939000000001, 150.0, 20.0 ],
+					"text" : "DYCI2_Python_lib 1"
 				}
 
 			}
@@ -55,13 +55,27 @@
 				"box" : 				{
 					"color" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 844.333312999999976, 3.166687, 119.0, 22.0 ],
+					"patching_rect" : [ 844.333312999999976, 3.166687, 119.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 453.999908000000005, 1.749939, 117.0, 22.0 ],
-					"text" : "DYCI2_Python_lib 1"
+					"presentation_rect" : [ 458.999908000000005, 3.749939000000001, 150.0, 22.0 ],
+					"text" : "Launch_DYCI2_agents 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 338.0, 19.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 219.0, 3.749939000000001, 150.0, 20.0 ],
+					"text" : "Launch_DYCI2_agents 1"
 				}
 
 			}
@@ -167,7 +181,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -240,7 +254,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -766,7 +780,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1463,7 +1477,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2163,7 +2177,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2209,7 +2223,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3450,7 +3464,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3496,7 +3510,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4339,7 +4353,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4408,7 +4422,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6469,7 +6483,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6624,7 +6638,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6893,7 +6907,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7329,7 +7343,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7632,7 +7646,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -8568,7 +8582,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 8,
+											"revision" : 7,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8691,7 +8705,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 8,
+															"revision" : 7,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -9480,7 +9494,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10337,7 +10351,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_Python_lib.maxpat",
+				"name" : "Launch_DYCI2_agents.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
 				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
@@ -10351,10 +10365,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_launch_python_server.maxpat",
+				"name" : "Launch_DYCI2_agents_script.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
 				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "abstraction_path.js",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/misc",
+				"patcherrelativepath" : "../misc",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
