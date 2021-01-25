@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['LaunchOSCAgents.py'],
-             pathex=['/Users/jnika/Documents/GitHub/Dyci2Lib/Python_library'],
+             pathex=['/Users/nika/Documents/GitHub/Dyci2Lib/Python_library'],
              binaries=[],
              datas=[],
              hiddenimports=[],
