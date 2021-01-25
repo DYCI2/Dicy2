@@ -1,0 +1,3 @@
+([('LaunchDyci2Agents',
+   '/Users/jnika/Documents/GitHub/Dyci2Lib/Python_library/dist/LaunchDyci2Agents',
+   'EXECUTABLE')],)

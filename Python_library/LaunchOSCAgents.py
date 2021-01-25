@@ -16,10 +16,13 @@ Associated Max patch Tuto_AM1,2,3...
 """
 
 import sys
+import multiprocessing
 from DYCI2_Modules.OSCAgentServer import *
 
 
 if __name__ == '__main__':
+	multiprocessing.freeze_support()
+	multiprocessing.set_start_method('spawn')
 	num = 0
 	try:
 		strPAram=sys.argv[1:]
