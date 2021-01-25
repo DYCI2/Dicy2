@@ -1,6 +1,8 @@
 #!/bin/bash
 # launch_dyci2_agents.sh
 
+eval `/usr/libexec/path_helper -s`
+
 SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SERVER_PYTHON_PATH="${SCRIPT_DIRECTORY}/../../Python_library/LaunchOSCAgents.py"
 # #TODO

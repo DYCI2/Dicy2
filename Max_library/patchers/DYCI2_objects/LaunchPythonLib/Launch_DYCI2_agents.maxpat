@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1132.0, 176.0, 343.0, 119.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 34.0, 176.0, 343.0, 119.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
@@ -44,7 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 261.0, -2.0, 60.0, 22.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -57,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.0, 30.933228, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -69,8 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 366.166412, 128.933228, 53.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 366.16641199999998, 128.933228000000014, 53.0, 22.0 ],
 					"text" : "python2"
 				}
 
@@ -82,10 +81,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 40.933228, 58.000366, 20.0 ],
+					"patching_rect" : [ 353.499878000000024, 40.933228, 58.000366, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 262.0, 69.0, 54.0, 20.0 ],
-					"style" : "",
 					"text" : "python2"
 				}
 
@@ -97,10 +95,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, -13.066772, 58.000366, 20.0 ],
+					"patching_rect" : [ 353.499878000000024, -13.066772, 58.000366, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 245.499756, 18.066772, 43.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 245.499755999999991, 18.066772, 43.0, 20.0 ],
 					"text" : "Mode:"
 				}
 
@@ -112,8 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 349.833099, 104.933228, 53.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 349.833099000000004, 104.933228, 53.0, 22.0 ],
 					"text" : "python3"
 				}
 
@@ -125,8 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.166565, 128.933228, 31.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 333.166564999999991, 128.933228000000014, 31.0, 22.0 ],
 					"text" : "app"
 				}
 
@@ -138,8 +133,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 333.499756, 73.933228, 68.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 333.499755999999991, 73.933228, 68.0, 22.0 ],
 					"text" : "route 0 1 2"
 				}
 
@@ -151,10 +145,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 24.933228, 58.000366, 20.0 ],
+					"patching_rect" : [ 353.499878000000024, 24.933228, 58.000366, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 262.0, 53.0, 54.0, 20.0 ],
-					"style" : "",
 					"text" : "python3"
 				}
 
@@ -169,11 +162,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.499756, 9.933228, 18.0, 50.0 ],
+					"patching_rect" : [ 333.499755999999991, 9.933228, 18.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 247.499756, 38.0, 18.0, 50.0 ],
+					"presentation_rect" : [ 247.499755999999991, 38.0, 18.0, 50.0 ],
 					"size" : 3,
-					"style" : "",
 					"value" : 1
 				}
 
@@ -185,10 +177,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 8.933228, 58.000366, 20.0 ],
+					"patching_rect" : [ 353.499878000000024, 8.933228, 58.000366, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 262.0, 36.5, 29.0, 20.0 ],
-					"style" : "",
 					"text" : "app"
 				}
 
@@ -199,8 +190,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.499884, 166.933228, 502.500122, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 10.499884, 166.933228000000014, 502.500121999999976, 22.0 ],
 					"text" : "Launch_DYCI2_agents_script 1 python3"
 				}
 
@@ -213,7 +203,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 11.0, 69.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -225,8 +214,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "int", "int" ],
-					"patching_rect" : [ 91.499878, 66.433289, 40.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 91.499877999999995, 66.433289000000002, 40.0, 22.0 ],
 					"text" : "t b 0 i"
 				}
 
@@ -238,8 +226,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 42.433289, 69.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 11.0, 42.433289000000002, 69.0, 22.0 ],
 					"text" : "delay 1000"
 				}
 
@@ -254,7 +241,6 @@
 					"patching_rect" : [ 4.499878, 226.0, 364.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 90.0, 324.0, 20.0 ],
-					"style" : "",
 					"text" : "Kill and launch the server when the agent is turned off/on."
 				}
 
@@ -265,8 +251,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.499878, 197.0, 91.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 10.499878000000001, 197.0, 91.0, 22.0 ],
 					"text" : "DYCI2_version"
 				}
 
@@ -279,7 +264,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 494.0, 52.600037, 72.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess 1"
 				}
 
@@ -291,8 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.499878, 39.433289, 79.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 91.499877999999995, 39.433289000000002, 79.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -307,7 +290,6 @@
 					"patching_rect" : [ 523.0, 112.933228, 69.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 53.0, 61.0, 173.0, 20.0 ],
-					"style" : "",
 					"text" : "Display prints from the server"
 				}
 
@@ -319,10 +301,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.333191, 117.933228, 60.333374, 47.0 ],
+					"patching_rect" : [ 33.333190999999999, 117.933228, 60.333373999999999, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 53.0, 32.0, 160.0, 20.0 ],
-					"style" : "",
 					"text" : "Launch / Kill server"
 				}
 
@@ -334,10 +315,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.166565, 116.933228, 75.833435, 47.0 ],
+					"patching_rect" : [ 212.166564999999991, 116.933228, 75.833434999999994, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 4.0, 243.0, 20.0 ],
-					"style" : "",
 					"text" : "Number of agents in the patch"
 				}
 
@@ -350,10 +330,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 159.16655, 116.933228, 50.0, 22.0 ],
+					"patching_rect" : [ 159.166550000000001, 116.933228, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 3.0, 50.0, 22.0 ],
-					"style" : ""
+					"presentation_rect" : [ 2.0, 3.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -367,8 +346,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 494.0, 112.933228, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 59.0, 24.0, 24.0 ],
-					"style" : ""
+					"presentation_rect" : [ 11.0, 59.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -380,10 +358,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.499878, 117.933228, 24.0, 24.0 ],
+					"patching_rect" : [ 10.499878000000001, 117.933228, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 30.0, 24.0, 24.0 ],
-					"style" : ""
+					"presentation_rect" : [ 11.0, 30.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -530,7 +507,34 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "DYCI2_version.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../../tools",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Launch_DYCI2_agents_script.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "abstraction_path.js",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/misc",
+				"patcherrelativepath" : "../../../misc",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

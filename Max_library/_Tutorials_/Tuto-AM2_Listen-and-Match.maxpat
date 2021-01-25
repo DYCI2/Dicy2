@@ -40,28 +40,16 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 338.0, 19.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 731.99993900000004, 18.249938999999998, 150.0, 20.0 ],
-					"text" : "Launch_DYCI2_agents 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.890246, 0.66949, 0.2834, 1.0 ],
 					"id" : "obj-80",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 844.333312999999976, 3.166687, 119.0, 22.0 ],
+					"patching_rect" : [ 844.333312999999976, 3.166687, 119.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 766.833221000000094, 43.249938999999998, 117.0, 22.0 ],
-					"text" : "DYCI2_Python_lib 1"
+					"presentation_rect" : [ 740.499877999999967, 43.249938999999998, 143.333343000000127, 22.0 ],
+					"text" : "Launch_DYCI2_agents 1"
 				}
 
 			}
@@ -6395,7 +6383,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1235.697998000000098, 1031.749268000000029, 117.0, 68.0 ],
+					"patching_rect" : [ 1235.697998000000098, 1031.749268000000029, 120.0, 68.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 738.99993900000004, 834.166747999999984, 136.0, 56.0 ],
@@ -42418,7 +42406,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_Python_lib.maxpat",
+				"name" : "Launch_DYCI2_agents.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
 				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
@@ -42432,10 +42420,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "DYCI2_launch_python_server.maxpat",
+				"name" : "Launch_DYCI2_agents_script.maxpat",
 				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects/LaunchPythonLib",
 				"patcherrelativepath" : "../patchers/DYCI2_objects/LaunchPythonLib",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "abstraction_path.js",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/misc",
+				"patcherrelativepath" : "../misc",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
