@@ -22,12 +22,12 @@ then
 	var=$(which python3)
 	echo "Python 3 interpreter = $var"
 	echo "Launching DYCI2 Python3 server..."
-	python3 $(SERVER_PYTHON_PATH $1)
+	python3 $SERVER_PYTHON_PATH $1
 	#$var $SERVER_PYTHON_PATH $1
 elif [ $2 = "app" ]
 then
 	echo "--> Launching a server using Dyci2 app"
-	$(SERVER_APP_PATH 1)
+	$SERVER_APP_PATH $1
 else
    echo "--> Warning: accepted parameters = python3 and app"
 fi
