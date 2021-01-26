@@ -21,7 +21,7 @@ __DYCI2 research project :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inri
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 ------
-_**To use DYCI2 applications in Max directly, please go to the "Releases" page HERE](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
+_**To use DYCI2 applications in Max directly, please go to the "Releases" page [HERE](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
 
 ### Installation
