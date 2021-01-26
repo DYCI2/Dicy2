@@ -23,6 +23,7 @@ __Some videos of collaborations with musicians using DYCI2 or its previous versi
 ------
 _**To use DYCI2 applications in Max directly, please go to the "Releases" page [HERE](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
+------
 
 ### Installation
 
