@@ -1,3 +1,0 @@
-([('LaunchDyci2Agents',
-   '/Users/nika/Documents/GitHub/Dyci2Lib/Python_library/dist/LaunchDyci2Agents',
-   'EXECUTABLE')],)
