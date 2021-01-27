@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 392.0, 947.0, 103.0 ],
+		"rect" : [ -1156.0, 223.0, 947.0, 103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -74,8 +74,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 33.0, 895.0, 22.0 ],
-					"text" : "--------------------------------------------------, DYCI2 library -- Version of February 2021, J. Nika et al. -More: http://repmus.ircam.fr/nika, --------------------------------------------------"
+					"patching_rect" : [ 0.0, 33.0, 910.0, 22.0 ],
+					"text" : "--------------------------------------------------, DYCI2 library -- Version of February 2021, J. Nika et al. - more @ http://repmus.ircam.fr/nika, --------------------------------------------------"
 				}
 
 			}
