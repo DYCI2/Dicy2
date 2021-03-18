@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>10K549</string>
+	<string>18D109</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>shell</string>
 	<key>CFBundleGetInfoString</key>
-	<string>shell 6.1.3, Copyright ©2013 Bill Orcutt/Jeremy Bernstein</string>
+	<string>shell 8.0.0, Copyright ©2018 Bill Orcutt/Jeremy Bernstein</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.bootsquad.shell</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,26 +17,30 @@
 	<key>CFBundlePackageType</key>
 	<string>iLaX</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.1.3</string>
+	<string>8.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>max2</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>6.1.3</string>
+	<string>8.0.0</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>DTCompiler</key>
-	<string>com.apple.compilers.llvmgcc42</string>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>4C199</string>
+	<string>9F2000</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>10K549</string>
+	<string>17E189</string>
 	<key>DTSDKName</key>
-	<string></string>
+	<string>macosx10.13</string>
 	<key>DTXcode</key>
-	<string>0420</string>
+	<string>0941</string>
 	<key>DTXcodeBuild</key>
-	<string>4C199</string>
+	<string>9F2000</string>
 </dict>
 </plist>

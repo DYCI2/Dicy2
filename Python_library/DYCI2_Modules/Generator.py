@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -40,6 +39,12 @@ Main classes: :class:`~Generator.Generator` (oriented towards offline generation
 from DYCI2_Modules.Transforms import *
 from .ModelNavigator import *
 from .Query import *
+
+
+# TODO 2021 : Initially default argument for Generator was (lambda x, y: x == y) --> pb with pickle
+# TODO 2021 : (because not serialized ?) --> TODO "Abstract Equiv class" to pass objects and not lambda ?
+def basic_equiv(x, y):
+    return x == y
 
 
 class Generator(object):
@@ -121,6 +126,8 @@ class Generator(object):
                     implemented_model_navigator_classes.keys()), exception)
                 return None
             else:
+                if equiv is None:
+                    equiv = basic_equiv
                 self.model_navigator = model_navigator
                 self.memory = implemented_model_navigator_classes[self.model_navigator](sequence=sequence,
                                                                                         labels=labels,
@@ -135,7 +142,7 @@ class Generator(object):
         self.current_generation_output = []
         self.transfo_current_generation_output = []
 
-        self.authorized_tranformations = authorized_tranformations
+        self.authorized_transformations = authorized_tranformations
         # TODO : PLUTOT NO TRANSFORM ?
         self.current_transformation_memory = None
         # self.equiv_mod_interval = equiv_mod_interval
@@ -155,7 +162,7 @@ class Generator(object):
         # print(self.authorized_tranformations != [0])
         # print(self.authorized_tranformations)
         return (not (self.memory.label_type is None)) and self.memory.label_type.use_intervals and len(
-            self.authorized_tranformations) > 0 and self.authorized_tranformations != [0]
+            self.authorized_transformations) > 0 and self.authorized_transformations != [0]
 
     def learn_event(self, state, label):
         """ Learn a new event in the memory (model navigator)."""
@@ -514,7 +521,7 @@ class Generator(object):
                                                                                     self.memory.labels, list_of_labels,
                                                                                     self.continuity_with_future,
                                                                                     authorized_indexes,
-                                                                                    self.authorized_tranformations,
+                                                                                    self.authorized_transformations,
                                                                                     make_sequence_of_intervals_from_sequence_of_labels,
                                                                                     equiv_mod_interval,
                                                                                     self.memory.equiv)
@@ -972,7 +979,7 @@ class GenerationHandler(Generator):
 
         if not self.current_duration_event_ms is None:
             return (num_event - self.current_performance_time["event"]) * (self.current_duration_event_ms) - (
-                        self.current_performance_time["ms"] - self.current_performance_time["last_update_event_in_ms"])
+                    self.current_performance_time["ms"] - self.current_performance_time["last_update_event_in_ms"])
         else:
             return None
 

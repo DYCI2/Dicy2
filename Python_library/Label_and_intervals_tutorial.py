@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -16,6 +15,7 @@ Tutorial for the tools defined in :mod:`Intervals` allowing the use of intervals
 """
 
 from DYCI2_Modules.Intervals import *
+from DYCI2_Modules.Label import *
 
 chord_label_1 = ChordLabel("c# maj7")
 chord_label_2 = ChordLabel("db maj7")

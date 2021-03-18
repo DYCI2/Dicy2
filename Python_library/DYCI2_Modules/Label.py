@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -43,6 +42,15 @@ class Label(object):
     @classmethod
     def __desc__(self):
         return "Label"
+
+    @classmethod
+    def from_string(cls, s):
+        if s == "Label":
+            return Label
+        elif s == "ListLabel":
+            return ListLabel
+        elif s == "ChordLabel":
+            return ChordLabel
 
     def set_label(self, label):
         self.label = deepcopy(label)
@@ -375,6 +383,7 @@ class ListLabel(Label):
 
 def from_list_to_labels(labels=[], label_type=None):
     labels_to_learn = labels
+    # TODO 2021: No ! SHOULD BE INSTANCES OF SUBCLASSES OF LABEL !
     if label_type is None:
         return labels_to_learn
     else:

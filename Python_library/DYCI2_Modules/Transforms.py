@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -20,7 +19,7 @@ Class defining transformations on labels and contents.
 # TODO : TUTO
 
 
-from DYCI2_Modules.Label import *
+from .Label import *
 
 # from numpy import roll
 

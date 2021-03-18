@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -79,10 +78,6 @@ class Model(object):
 			return None
 		else:
 			# TODO POUR CONTENTS QUAND LA CLASSE EXISTERA
-			print("\n\n\nFICHIER MODEL")
-			print("LIST TO BUILD LABELS = {}".format(labels))
-			print("LABEL_TYPE = {}".format(self.label_type))
-			
 			labels_to_learn = from_list_to_labels(labels, self.label_type)
 			sequence_to_learn = from_list_to_contents(sequence, self.content_type)
 			#print("LABELS TO LEARN = {}".format(labels_to_learn))
