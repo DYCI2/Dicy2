@@ -2,7 +2,7 @@
 
 ## Introduction
 
-#### Summary
+### Summary
 
 The DYCI2 library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
 It integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home) and shapes a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4). 
@@ -17,7 +17,7 @@ __Author:__ Jérôme Nika (IRCAM STMS LAB)
 __Contributors:__ Joakim Borg (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), Georges Bloch (UniStra), Diemo Schwarz (IRCAM STMS LAB); 
 __DYCI2 research project :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, WP coordinator), Marc Chemillier (EHESS, associate researcher).
 
-#### Repository
+### Repository
 
 This repository contains: 
 
@@ -27,7 +27,7 @@ This repository contains:
 
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. Each class is associated with a tutorial (see the tutorials in the _Python\_library_ directory).
 
-#### Configuration
+### Configuration
 * Mac OS
 * Max 8
 * Python 3.7 and following versions
@@ -39,7 +39,7 @@ _**To use DYCI2 applications in Max directly, please go to the "Releases" page [
 
 ## Installation
 
-#### Get Max and Download the dependencies
+### Get Max and Download the dependencies
 1. Get Max from https://cycling74.com/downloads.
 
 2. __Install Mubu for Max__, in Max:
@@ -51,12 +51,12 @@ _**To use DYCI2 applications in Max directly, please go to the "Releases" page [
 	* Nothing to do if you downloaded a DYCI2 **release**.
 	* [For developpers: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !]
 
-#### DYCI2 setup
+### DYCI2 setup
 
 Move the DYCI2lib directory wherever you want, and make sure that the path of the directory _Dyci2lib/Max\_library_ is set in the file preferences in Max (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). 
 
 
-#### Get Python and download the Python requirements
+### Get Python and download the Python requirements
 1. Download and install the **last** version of Python **3** (https://www.python.org/downloads).
 
 2. Open Terminal to install the dependencies:
@@ -69,7 +69,7 @@ Move the DYCI2lib directory wherever you want, and make sure that the path of th
 
 ## Exploring the library
 
-#### Tutorial
+### Tutorial
 The DYCI2 library offers different processes depending on the way the "musical memory" of your agent is created, and a range of generative strategies adapted to different types of interaction. The **tutorials** in **Dyci2lib/Max\_library_/Tutorials_** give an overview that should be sufficient to be able to build new setups.
 Start with **DYCI2_Tutorials_Read_me_first.maxpat** to go through the tutorials.
 
@@ -83,13 +83,13 @@ See the tutorials corresponding to the different modules. For example, in the di
 ------
 ## Notes
 
-#### C wrapper and OM/o7 library
+### C wrapper and OM/o7 library
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library,
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment,
 are available at https://github.com/DYCI2/om-dyci2 (work in progress).
 
-#### Troubleshooting
+### Troubleshooting
 Please write to `jerome.nika@ircam.fr` for any question, or to share with us your projects using DYCI2 !
 
-#### License
+### License
 GPL v3
