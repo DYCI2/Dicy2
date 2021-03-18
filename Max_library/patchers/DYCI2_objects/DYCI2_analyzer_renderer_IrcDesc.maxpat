@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1289.0, 79.0, 876.0, 655.0 ],
+		"rect" : [ -1239.0, 79.0, 858.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2882,7 +2882,7 @@
 					"patching_rect" : [ 445.333344000000011, 9.5, 112.000000000000028, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 205.254593, 25.0, 77.666655999999989, 20.0 ],
-					"text" : "b) Renderer"
+					"text" : "Renderer"
 				}
 
 			}
@@ -2896,8 +2896,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 352.962646000000007, 9.5, 88.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.962646, 26.0, 83.0, 20.0 ],
-					"text" : "a) Analyzer"
+					"presentation_rect" : [ 3.962646, 26.0, 83.0, 20.0 ],
+					"text" : "Analyzer"
 				}
 
 			}
@@ -2920,7 +2920,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 616.0, 90.0, 174.0, 640.0 ],
+						"rect" : [ -574.0, 79.0, 174.0, 640.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -7737,7 +7737,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ -893.0, 117.0, 692.0, 673.0 ],
+										"rect" : [ -893.0, 117.0, 289.0, 673.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -7765,6 +7765,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-127",
@@ -18162,7 +18163,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 597.333374000000049, 105.833336000000003, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 288.254608000000019, 175.733368000000013, 16.0, 16.0 ],
+					"presentation_rect" : [ 290.254608000000019, 175.733368000000013, 16.0, 16.0 ],
 					"uncheckedcolor" : [ 0.376471, 0.384314, 0.4, 0.166071 ]
 				}
 
@@ -18176,7 +18177,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 627.666687000000024, 105.833336000000003, 51.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 284.266907000000003, 156.666655999999989, 51.0, 18.0 ],
+					"presentation_rect" : [ 286.266907000000003, 156.666655999999989, 51.0, 18.0 ],
 					"text" : "Reverse"
 				}
 
@@ -19624,7 +19625,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.5, 9.5, 341.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.037354, 2.0, 200.291946999999993, 22.0 ],
+					"presentation_rect" : [ 1.962646, 3.0, 200.291946999999993, 22.0 ],
 					"text" : "A - Memory navigator"
 				}
 
@@ -27102,6 +27103,8 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.890246272087097, 0.669490218162537, 0.28339958190918, 1.0 ],
 					"grad1" : [ 0.862745, 0.870588, 0.878431, 0.27 ],
 					"grad2" : [ 0.32549, 0.345098, 0.372549, 0.75 ],
 					"id" : "obj-165",
@@ -27111,7 +27114,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1.5, 9.5, 335.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.375397, 7.634743, 282.891479000000004, 210.066695999999979 ],
+					"presentation_rect" : [ 1.375397, 2.0, 282.891479000000004, 215.701438999999993 ],
 					"proportion" : 0.39
 				}
 
