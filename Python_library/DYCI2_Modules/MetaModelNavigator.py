@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 ####################################################################################
@@ -20,41 +19,54 @@ When the whole library is loaded, the global dict *implemented_model_navigator_c
 
 """
 
-from Model import *
-from Navigator import *
+from .Model import *
+from .Navigator import *
+
 
 # TODO : AGGRANDIR TAILLE HISTORY (ET AUTRES ?) VENANT DE NAVIGATOR QUAND ON APPREND UN EVENT DANS LE MODEL
 
+def lambda_init_double_inheritance(BaseClass1, BaseClass2):
+    return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: init_double_inheritance(BaseClass1, BaseClass2,
+                                                                                             InstanceClassCreatedWithMetaclass,
+                                                                                             *args, **kargs)
 
-def lambda_init_double_inheritance (BaseClass1, BaseClass2):
-	return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: init_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs)
 
 def init_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs):
-	BaseClass1.__init__(InstanceClassCreatedWithMetaclass, *args, **kargs)
-	BaseClass2.__init__(InstanceClassCreatedWithMetaclass, *args, **kargs)
+    BaseClass1.__init__(InstanceClassCreatedWithMetaclass, *args, **kargs)
+    BaseClass2.__init__(InstanceClassCreatedWithMetaclass, *args, **kargs)
 
 
 def learn_event_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs):
-	BaseClass1.learn_event(InstanceClassCreatedWithMetaclass, *args, **kargs)
-	BaseClass2.learn_event(InstanceClassCreatedWithMetaclass, *args, **kargs)
+    BaseClass1.learn_event(InstanceClassCreatedWithMetaclass, *args, **kargs)
+    BaseClass2.learn_event(InstanceClassCreatedWithMetaclass, *args, **kargs)
 
-def lambda_learn_event_double_inheritance (BaseClass1, BaseClass2):
-	return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: learn_event_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs)
+
+def lambda_learn_event_double_inheritance(BaseClass1, BaseClass2):
+    return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: learn_event_double_inheritance(BaseClass1,
+                                                                                                    BaseClass2,
+                                                                                                    InstanceClassCreatedWithMetaclass,
+                                                                                                    *args, **kargs)
+
 
 def learn_sequence_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs):
-	BaseClass1.learn_sequence(InstanceClassCreatedWithMetaclass, *args, **kargs)
-	#BaseClass2.learn_sequence(InstanceClassCreatedWithMetaclass, *args, **kargs)
+    BaseClass1.learn_sequence(InstanceClassCreatedWithMetaclass, *args, **kargs)
 
-def lambda_learn_sequence_double_inheritance (BaseClass1, BaseClass2):
-	return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: learn_sequence_double_inheritance(BaseClass1, BaseClass2, InstanceClassCreatedWithMetaclass, *args, **kargs)
+
+# BaseClass2.learn_sequence(InstanceClassCreatedWithMetaclass, *args, **kargs)
+
+def lambda_learn_sequence_double_inheritance(BaseClass1, BaseClass2):
+    return lambda InstanceClassCreatedWithMetaclass, *args, **kargs: learn_sequence_double_inheritance(BaseClass1,
+                                                                                                       BaseClass2,
+                                                                                                       InstanceClassCreatedWithMetaclass,
+                                                                                                       *args, **kargs)
 
 
 # USED IN THE CONSTRUCTOR OF THE CLASS GENERATOR
 implemented_model_navigator_classes = {}
 
+
 class MetaModelNavigator(type):
-	
-	""":class:`~MetaModelNavigator.MetaModelNavigator` is a **metaclass**. 
+    """:class:`~MetaModelNavigator.MetaModelNavigator` is a **metaclass**.
 	A new class created using this metaclass is a **model navigator** and inherits from: 
 	**1)** a class inheriting from :class:`~Model.Model`, **2)** a class inheriting from :class:`~Navigator.Navigator`. 
 	The class :class:`~FactorOracleNavigator.FactorOracleNavigator` introduced below is an example of model navigator created using this metaclass.
@@ -88,41 +100,44 @@ class MetaModelNavigator(type):
 
 	"""
 
-	def __new__(metacls, name, bases, dict_methods):
-		#print("__new__ classe {}".format(name))
+    def __new__(metacls, name, bases, dict_methods):
+        # print("__new__ classe {}".format(name))
+        try:
+            assert len(bases) == 2
+        except AssertionError as exception:
+            print(
+                "The class must heritate from two classes: 1st) a class inheriting from the class Model, 2nd) a class inheriting from the class Navigator.",
+                exception)
+            return False
+        else:
+            try:
+                assert issubclass(bases[0], Model)
+            except AssertionError as exception:
+                print("First base must inherit from the class Model.", exception)
+                return False
+            else:
+                try:
+                    assert issubclass(bases[1], Navigator)
+                except AssertionError as exception:
+                    print("Second base must inher from the class Navigator.", exception)
+                    return False
+                else:
+                    try:
+                        assert (("free_navigation" in dict_methods.keys()) and (
+                                    "simply_guided_navigation" in dict_methods.keys()))
+                    except AssertionError as exception:
+                        print(
+                            "The methods free_navigation and simply_guided_navigation must be defined in the dict of methods.",
+                            exception)
+                        return False
+                    else:
+                        dict_methods["learn_event"] = lambda_learn_event_double_inheritance(bases[0], bases[1])
+                        dict_methods["learn_sequence"] = lambda_learn_sequence_double_inheritance(bases[0], bases[1])
+                        if not "__init__" in dict_methods.keys():
+                            # print("Adding default __init__ method")
+                            dict_methods["__init__"] = lambda_init_double_inheritance(bases[0], bases[1])
+                        return type.__new__(metacls, name, bases, dict_methods)
 
-		try:
-			assert len(bases) == 2
-		except AssertionError as exception:
-			print("The class must heritate from two classes: 1st) a class inheriting from the class Model, 2nd) a class inheriting from the class Navigator.", exception)
-			return False
-		else:
-			try:
-				assert issubclass(bases[0], Model) 
-			except AssertionError as exception:
-				print("First base must inherit from the class Model.", exception)
-				return False
-			else:
-				try:
-					assert issubclass(bases[1], Navigator) 
-				except AssertionError as exception:
-					print("Second base must inher from the class Navigator.", exception)
-					return False
-				else:
-					try:
-						assert (("free_navigation" in dict_methods.keys()) and ("simply_guided_navigation" in dict_methods.keys()) ) 
-					except AssertionError as exception:
-						print("The methods free_navigation and simply_guided_navigation must be defined in the dict of methods.", exception)
-						return False
-					else:	
-						dict_methods["learn_event"] = lambda_learn_event_double_inheritance(bases[0],bases[1])
-						dict_methods["learn_sequence"] = lambda_learn_sequence_double_inheritance(bases[0],bases[1])		
-						if not "__init__" in dict_methods.keys():
-							#print("Adding default __init__ method")
-							dict_methods["__init__"] = lambda_init_double_inheritance(bases[0],bases[1])			
-						return type.__new__(metacls, name, bases, dict_methods)
-					
-
-	def __init__(cls, name, bases, dict_methods):
-		#print("__init__ classe {}".format(name))
-		implemented_model_navigator_classes[name] = cls
+    def __init__(cls, name, bases, dict_methods):
+        # print("__init__ classe {}".format(name))
+        implemented_model_navigator_classes[name] = cls

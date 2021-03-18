@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -16,8 +15,8 @@ Some subclasses of :class:`~Label.Label` enable to define a notion of interval. 
 **Tutorial in** :file:`_Tutorials_/Label_and_intervals_tutorial.py`.
 """
 
-from Label import *
-from PrefixIndexing import *
+from copy import deepcopy, copy
+from .PrefixIndexing import *
 
 
 def prefix_indexing_intervals(sequence, pattern, sequence_to_interval_fun = None, **args):

@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -26,7 +25,7 @@ sequence = from_list_to_labels(labels = list_for_sequence, label_type = ChordLab
 
 print("\nCreation of a Generation Handler\nModel type = Factor Oracle\nSequence: {}\nLabels: {}".format(sequence, labels))
 
-authorized_intervals = range(-6,6)
+authorized_intervals = list(range(-6,6))
 generation_handler = GenerationHandler(sequence = sequence, labels = labels, label_type = ChordLabel, model_navigator = "FactorOracleNavigator", authorized_tranformations = authorized_intervals)
 generation_handler.memory.avoid_repetitions_mode = 1 
 generation_handler.memory.max_continuity = 3

@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -15,7 +14,7 @@ Tools to save, send, and format models and sequence using different format.
 """
 
 import os, json
-from GeneratorBuilder import *
+from .GeneratorBuilder import *
 #TODO : pour "extract..." --> a remettre dans un meilleur module
 
 #####################################################################################

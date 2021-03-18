@@ -14,17 +14,18 @@ This repository contains:
 
 
 
-__Author:__ Jérôme Nika (IRCAM STMS LAB);
-
-__Contributors:__ Joakim Borg (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB); 
-__DYCI2 supervision :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, WP coordinator), Marc Chemillier (EHESS, associate researcher).
+__Author:__ Jérôme Nika (IRCAM STMS LAB)
+__Contributors:__ Joakim Borg (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), Georges Bloch (UniStra), Diemo Schwarz (IRCAM STMS LAB); 
+__DYCI2 research project :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, WP coordinator), Marc Chemillier (EHESS, associate researcher).
 
 __Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 ------
-### Installation
+_**To use DYCI2 applications in Max directly, please go to the "Releases" page [HERE](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
-_**This document is about the source code, so if you want to use DYCI2 in a creative project, please download the latest release [HERE](https://github.com/DYCI2/Dyci2Lib/releases) rather than cloning the repository or downloading DYCI2 from this page ! Otherwise, if you are a developper, keep following this document. **_
+------
+
+### Installation
 
 #### Get Python and download the Python requirements
 1. Download and install the **last** version of Python **2** (https://www.python.org/downloads).
@@ -33,9 +34,7 @@ _**This document is about the source code, so if you want to use DYCI2 in a crea
 
    `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`
    
-   `pip install -r requirements.txt`
-
-(If _pip_ is not installed: `sudo easy-install pip`, or try `curl https://bootstrap.pypa.io/get-pip.py | python`)
+   `pip3 install -r requirements.txt --user`cd
 
 #### Get Max and Download the Max externals
 1. Get Max from https://cycling74.com/downloads.
@@ -80,11 +79,6 @@ are available at https://github.com/DYCI2/om-dyci2.
 * Mac OS
 * Max 8
 * Python2 (>=2.7, Python3 coming soon !)
-
-
-------
-### Development
-Check the repository [DYCI2_library](https://forge.ircam.fr/p/DYCI2_library/)
 
 ------
 ### Troubleshooting

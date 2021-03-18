@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -22,7 +21,7 @@ Tutorial for the class :class:`~Model.FactorOracle` in :file:`_Tutorials_/Factor
 """
 
 import random
-from Label import *
+from .Label import *
 from collections import Counter
 
 class Model(object):
@@ -79,7 +78,6 @@ class Model(object):
 			return None
 		else:
 			# TODO POUR CONTENTS QUAND LA CLASSE EXISTERA
-			#print("LIST TO BUILD LABELS = {}".format(labels))
 			labels_to_learn = from_list_to_labels(labels, self.label_type)
 			sequence_to_learn = from_list_to_contents(sequence, self.content_type)
 			#print("LABELS TO LEARN = {}".format(labels_to_learn))

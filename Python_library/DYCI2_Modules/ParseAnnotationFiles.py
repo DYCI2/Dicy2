@@ -1,4 +1,3 @@
-#!/usr/bin/python3.5
 # -*-coding:Utf-8 -*
 
 #############################################################################
@@ -92,9 +91,9 @@ def csv_events_to_lists(file_path, max_num_label = None, offset_dates_ms = 0, pr
 			for i in range(1, len(events)):
 				label += events[i].replace("\n"," ").replace(","," ").replace(";"," ").split(" ")
 			if max_num_label is None:
-				label = filter(lambda x: x!="", label)
+				label = list(filter(lambda x: x!="", label))
 			else: 
-				label = filter(lambda x: x!="", label[0:max_num_label])
+				label = list(filter(lambda x: x!="", label[0:max_num_label]))
 			#print("LABEL = {}".format(label))
 			
 			if len(label) == 0 :

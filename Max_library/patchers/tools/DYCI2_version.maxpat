@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 392.0, 947.0, 103.0 ],
+		"rect" : [ -1156.0, 223.0, 947.0, 103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -70,13 +70,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-87",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 33.0, 921.0, 35.0 ],
-					"text" : "-------------------------------------------------------------------------------------------------------------------------------------------------------------, DYCI2 library -- Version of December 2020, Jérôme Nika - http://repmus.ircam.fr/nika, -------------------------------------------------------------------------------------------------------------------------------------------------------------"
+					"patching_rect" : [ 0.0, 33.0, 896.0, 22.0 ],
+					"text" : "--------------------------------------------------, DYCI2 library -- Version of March 2021, J. Nika et al. - more @ http://repmus.ircam.fr/nika, --------------------------------------------------"
 				}
 
 			}
@@ -95,9 +94,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
