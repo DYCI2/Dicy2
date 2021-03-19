@@ -26,8 +26,7 @@ This repository contains:
 
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. 
 
-Advanced users and Developpers can use the Python library autonomously. See the tutorials corresponding to the different modulesHtml doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/. PDF doc: in DYCI2lib/Python_library.
-
+Advanced users and developpers can use the Python library autonomously. See the tutorials corresponding to the different modulesHtml doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/. PDF doc: in DYCI2lib/Python_library.
 
 
 ------
@@ -58,13 +57,14 @@ _**To use DYCI2 applications in Max directly, please go to the "Releases" page [
    `pip3 install -r requirements.txt --user`
 
 ------
-## C wrapper and OM/o7 library
+## C wrapper and OM/OM\# library (work in progress)
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library,
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment,
-are available at https://github.com/DYCI2/om-dyci2 (work in progress).
+are available at https://github.com/DYCI2/om-dyci2.
 
 ## Troubleshooting
 Please write to `jerome.nika@ircam.fr` for any question, or to share with us your projects using DYCI2 !
 
 ## License
 GPL v3
+
