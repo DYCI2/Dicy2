@@ -47,10 +47,9 @@ _**To use DYCI2 applications in Max directly, please go to the "Releases" page [
 * Put the DYCI2lib directory into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). 
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"
 
-## Get Python and download the Python requirements
-1. Download and install the **last** version of Python **3** (https://www.python.org/downloads).
-
-2. Open Terminal to install the dependencies:
+## Python configuration
+* Download and install the **last** version of Python **3** (https://www.python.org/downloads).
+* Open Terminal to install the dependencies:
 
    `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`
    
