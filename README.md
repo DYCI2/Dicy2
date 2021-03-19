@@ -49,11 +49,7 @@ _**To use DYCI2 applications in Max directly, please go to the "Releases" page [
 
 ## Python configuration
 * Download and install the **last** version of Python **3** (https://www.python.org/downloads).
-* Open Terminal to install the dependencies:
-
-   `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`
-   
-   `pip3 install -r requirements.txt --user`
+* Open Terminal to install the dependencies: `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`, enter, `pip3 install -r requirements.txt --user`, enter.
 
 ------
 ## C wrapper and OM/OM\# library (work in progress)
