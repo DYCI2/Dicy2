@@ -15,7 +15,9 @@ __Contributors:__ Joakim Borg (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB /
 __DYCI2 research project :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, WP coordinator), Marc Chemillier (EHESS, associate researcher).
 
 ------
+_**To use DYCI2 applications in Max directly, please go to the [Releases page](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
+------
 
 ## Repository
 
@@ -29,9 +31,6 @@ This repository contains:
 
 Advanced users and developpers can use the Python library autonomously. See the tutorials corresponding to the different modulesHtml doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/. PDF doc: in DYCI2lib/Python_library.
 
-
-------
-_**To use DYCI2 applications in Max directly, please go to the "Releases" page [HERE](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
 ------
 
