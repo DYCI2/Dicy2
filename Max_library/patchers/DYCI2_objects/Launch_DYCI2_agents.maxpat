@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -988.0, 144.0, 348.0, 123.0 ],
+		"rect" : [ 990.0, 240.0, 361.0, 123.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.0, 30.933228, 29.5, 22.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -152,7 +152,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 178.499755999999991, 49.5, 18.0, 34.0 ],
 					"size" : 2,
-					"value" : 0
+					"value" : 1
 				}
 
 			}
@@ -493,7 +493,34 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "DYCI2_version.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
+				"patcherrelativepath" : "../tools",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Launch_DYCI2_agents_script.maxpat",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "abstraction_path.js",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/app",
+				"patcherrelativepath" : "../../app",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

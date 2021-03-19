@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1091.0, 152.0, 762.0, 401.0 ],
+		"rect" : [ 34.0, 152.0, 874.0, 526.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,39 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 553.5, 430.0, 219.0, 22.0 ],
+					"text" : "sprintf ./launch_dyci2_agents.sh %i %s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 545.5, 459.0, 275.5, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "cd $1\\; cd ../..\\; cd app/LaunchDyci2Agents.app/Contents/Resources\\; $2 $3 $4 2>&1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.0, 343.0, 168.0, 35.0 ],
+					"patching_rect" : [ 523.0, 340.5, 170.0, 35.0 ],
 					"text" : "sh: ./launch_dyci2_agents.sh: No such file or directory"
 				}
 
@@ -123,7 +149,7 @@
 					"comment" : "Mode (app or python3)",
 					"hint" : "Mode (app or python3)",
 					"id" : "obj-20",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -187,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.0, 243.0, 72.0, 22.0 ],
+					"patching_rect" : [ 657.0, 240.5, 72.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -199,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.5, 310.0, 34.0, 22.0 ],
+					"patching_rect" : [ 203.5, 335.0, 34.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -212,7 +238,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 590.0, 285.0, 24.0, 24.0 ]
+					"patching_rect" : [ 611.0, 282.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -222,12 +248,12 @@
 					"comment" : "Print from python (0/1)",
 					"hint" : "Print from python (0/1)",
 					"id" : "obj-11",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 590.0, 243.0, 30.0, 30.0 ]
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.0, 240.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -237,7 +263,7 @@
 					"comment" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"hint" : "Number of agents (launches OSCAgent_Tutorial_[INT].py)",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -300,11 +326,11 @@
 					"comment" : "Launch (1) / Kill (0) python server",
 					"hint" : "Launch (1) / Kill (0) python server",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.0, 8.0, 30.0, 30.0 ]
 				}
 
@@ -315,7 +341,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 208.5, 347.0, 128.0, 22.0 ],
+					"patching_rect" : [ 203.5, 372.0, 128.0, 22.0 ],
 					"text" : "print FROM_SERVER"
 				}
 
@@ -327,7 +353,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 223.5, 276.5, 124.0, 22.0 ],
+					"patching_rect" : [ 218.5, 301.5, 124.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"shell" : "(default)"
 					}
@@ -351,13 +377,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-60",
-					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 5.5, 276.5, 182.0, 89.0 ],
-					"text" : "cd /Users/nika/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects\\; cd ../../..\\; cd app\\; ./launch_dyci2_agents.sh 1 python3 2>&1"
+					"patching_rect" : [ 5.5, 276.5, 182.0, 22.0 ]
 				}
 
 			}
@@ -380,7 +404,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 323.5, 231.0, 227.0, 22.0 ],
+					"patching_rect" : [ 323.5, 231.0, 215.0, 22.0 ],
 					"text" : "cd $1\\; cd ../..\\; cd app\\; $2 $3 $4 2>&1"
 				}
 
@@ -392,8 +416,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.5, 141.0, 219.0, 22.0 ],
-					"text" : "sprintf ./launch_dyci2_agents.sh %i %s"
+					"patching_rect" : [ 340.5, 141.0, 239.0, 22.0 ],
+					"text" : "sprintf ./launch_dyci2_agents_ext.sh %i %s"
 				}
 
 			}
@@ -620,18 +644,29 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "abstraction_path.js",
+				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/app",
+				"patcherrelativepath" : "../../app",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "dUG Yello 01-1",
-				"newobj" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ],
+				"toggle" : 				{
 					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
-				"message" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -645,9 +680,20 @@
 					"fontsize" : [ 10.0 ]
 				}
 ,
-				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"newobj" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
 					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"message" : 				{
+					"fontface" : [ 1 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -658,16 +704,7 @@
 						"autogradient" : 0
 					}
 ,
-					"fontsize" : [ 10.0 ],
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
-				}
-,
-				"button" : 				{
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
-				}
-,
-				"toggle" : 				{
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",
