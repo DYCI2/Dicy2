@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -808.0, 193.0, 357.0, 124.0 ],
+		"rect" : [ -988.0, 144.0, 348.0, 123.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.0, 30.933228, 29.5, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -77,28 +77,13 @@
 , 			{
 				"box" : 				{
 					"fontface" : 2,
-					"id" : "obj-3",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878000000024, 40.933228, 58.000366, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 69.0, 81.0, 20.0 ],
-					"text" : "python2 code"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 2,
 					"id" : "obj-29",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.499755999999991, -14.5, 152.000366000000014, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.499755999999991, 22.0, 130.0, 20.0 ],
+					"presentation_rect" : [ 174.499755999999991, 33.5, 130.0, 20.0 ],
 					"text" : "Start server from"
 				}
 
@@ -143,20 +128,19 @@
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-21",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878000000024, 24.933228, 58.000366, 33.0 ],
+					"patching_rect" : [ 353.499878000000024, 24.933228, 85.000365999999985, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 53.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 193.0, 64.5, 81.0, 20.0 ],
 					"text" : "python3 code"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"disabled" : [ 0, 0, 0 ],
+					"disabled" : [ 0, 0 ],
 					"id" : "obj-19",
 					"itemtype" : 0,
 					"maxclass" : "radiogroup",
@@ -164,10 +148,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.499755999999991, 9.933228, 18.0, 50.0 ],
+					"patching_rect" : [ 333.499755999999991, 9.933228, 18.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 166.499755999999991, 38.0, 18.0, 50.0 ],
-					"size" : 3,
+					"presentation_rect" : [ 178.499755999999991, 49.5, 18.0, 34.0 ],
+					"size" : 2,
 					"value" : 0
 				}
 
@@ -181,7 +165,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 353.499878000000024, 9.933228, 196.000366000000014, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 36.5, 153.0, 20.0 ],
+					"presentation_rect" : [ 193.0, 48.0, 153.0, 20.0 ],
 					"text" : "LaunchDyci2Agents app"
 				}
 
