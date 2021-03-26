@@ -37,15 +37,16 @@ Advanced users and developpers can use the Python library autonomously. See the 
 ## Requirements
 * Mac OS
 * Max 8
-* Python 3.7 and >
+* Python 3.9 and >
 * Mubu for Max: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 * Catart by Mubu:
 	* DYCI2 Repository: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !
 	* DYCI2 Release: Included in DYCI2lib (but check their repository https://forum.ircam.fr/projects/detail/catart-mubu/ !)
 
 ## Installation
-* Put the DYCI2lib directory into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). 
+* Drag the DYCI2lib directory wherever you want (but not in Max packages / libraries !) and add its path into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). 
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"
+* /!\ The sampling rate of Max MUST be the same as that of the audio file(s) used in the memory(/ies).
 
 ## Python configuration
 * Download and install the **last** version of Python **3** (https://www.python.org/downloads).
