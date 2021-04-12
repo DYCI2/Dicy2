@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -808.0, 193.0, 331.0, 117.0 ],
+		"classnamespace" : "box",
+		"rect" : [ -988.0, 144.0, 348.0, 123.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
@@ -44,7 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 261.0, -2.0, 60.0, 22.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -57,8 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 261.0, 30.933228, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -69,25 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 366.166412, 128.933228, 53.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 366.16641199999998, 128.933228000000014, 53.0, 22.0 ],
 					"text" : "python2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 2,
-					"id" : "obj-3",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 40.933228, 58.000366, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 69.0, 81.0, 20.0 ],
-					"style" : "",
-					"text" : "python2 code"
 				}
 
 			}
@@ -98,10 +81,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 333.499756, -14.5, 152.000366, 20.0 ],
+					"patching_rect" : [ 333.499755999999991, -14.5, 152.000366000000014, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.499756, 22.0, 130.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 174.499755999999991, 33.5, 130.0, 20.0 ],
 					"text" : "Start server from"
 				}
 
@@ -113,8 +95,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 349.833099, 104.933228, 53.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 349.833099000000004, 104.933228, 53.0, 22.0 ],
 					"text" : "python3"
 				}
 
@@ -126,8 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.166565, 128.933228, 31.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 333.166564999999991, 128.933228000000014, 31.0, 22.0 ],
 					"text" : "app"
 				}
 
@@ -139,8 +119,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 333.499756, 73.933228, 68.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 333.499755999999991, 73.933228, 68.0, 22.0 ],
 					"text" : "route 0 1 2"
 				}
 
@@ -149,21 +128,19 @@
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-21",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 24.933228, 58.000366, 33.0 ],
+					"patching_rect" : [ 353.499878000000024, 24.933228, 85.000365999999985, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 53.0, 81.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 193.0, 64.5, 81.0, 20.0 ],
 					"text" : "python3 code"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"disabled" : [ 0, 0, 0 ],
+					"disabled" : [ 0, 0 ],
 					"id" : "obj-19",
 					"itemtype" : 0,
 					"maxclass" : "radiogroup",
@@ -171,11 +148,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.499756, 9.933228, 18.0, 50.0 ],
+					"patching_rect" : [ 333.499755999999991, 9.933228, 18.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 166.499756, 38.0, 18.0, 50.0 ],
-					"size" : 3,
-					"style" : "",
+					"presentation_rect" : [ 178.499755999999991, 49.5, 18.0, 34.0 ],
+					"size" : 2,
 					"value" : 0
 				}
 
@@ -187,10 +163,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.499878, 9.933228, 196.000366, 20.0 ],
+					"patching_rect" : [ 353.499878000000024, 9.933228, 196.000366000000014, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 181.0, 36.5, 153.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 193.0, 48.0, 153.0, 20.0 ],
 					"text" : "LaunchDyci2Agents app"
 				}
 
@@ -201,8 +176,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.499884, 166.933228, 502.500122, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 10.499884, 166.933228000000014, 502.500121999999976, 22.0 ],
 					"text" : "Launch_DYCI2_agents_script 1 python3"
 				}
 
@@ -215,7 +189,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 11.0, 69.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -227,8 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "int", "int" ],
-					"patching_rect" : [ 91.499878, 66.433289, 40.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 91.499877999999995, 66.433289000000002, 40.0, 22.0 ],
 					"text" : "t b 0 i"
 				}
 
@@ -240,8 +212,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 42.433289, 69.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 11.0, 42.433289000000002, 69.0, 22.0 ],
 					"text" : "delay 1000"
 				}
 
@@ -256,7 +227,6 @@
 					"patching_rect" : [ 4.499878, 226.0, 364.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 90.0, 324.0, 20.0 ],
-					"style" : "",
 					"text" : "Kill and launch the server when the agent is turned off/on."
 				}
 
@@ -267,8 +237,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.499878, 197.0, 91.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 10.499878000000001, 197.0, 91.0, 22.0 ],
 					"text" : "DYCI2_version"
 				}
 
@@ -281,7 +250,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 494.0, 52.600037, 72.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess 0"
 				}
 
@@ -293,8 +261,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.499878, 39.433289, 79.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 91.499877999999995, 39.433289000000002, 79.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -308,8 +275,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 523.0, 112.933228, 69.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.499756, 66.5, 147.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 22.499756000000001, 66.5, 147.0, 20.0 ],
 					"text" : "Display prints from server"
 				}
 
@@ -321,10 +287,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.333191, 117.933228, 78.0, 33.0 ],
+					"patching_rect" : [ 33.333190999999999, 117.933228, 78.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.499756, 37.5, 119.0, 20.0 ],
-					"style" : "",
+					"presentation_rect" : [ 22.499756000000001, 37.5, 119.0, 20.0 ],
 					"text" : "Start / Stop server"
 				}
 
@@ -336,10 +301,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.166565, 116.933228, 75.833435, 47.0 ],
+					"patching_rect" : [ 212.166564999999991, 116.933228, 75.833434999999994, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 4.0, 243.0, 20.0 ],
-					"style" : "",
 					"text" : "Number of agents in the patch"
 				}
 
@@ -352,10 +316,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 159.16655, 116.933228, 50.0, 22.0 ],
+					"patching_rect" : [ 159.166550000000001, 116.933228, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 3.0, 50.0, 22.0 ],
-					"style" : ""
+					"presentation_rect" : [ 2.0, 3.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -369,8 +332,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 494.0, 112.933228, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 64.5, 24.0, 24.0 ],
-					"style" : ""
+					"presentation_rect" : [ 2.0, 64.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -382,10 +344,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.499878, 117.933228, 24.0, 24.0 ],
+					"patching_rect" : [ 10.499878000000001, 117.933228, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 35.5, 24.0, 24.0 ],
-					"style" : ""
+					"presentation_rect" : [ 2.0, 35.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -532,34 +493,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "DYCI2_version.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../tools",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Launch_DYCI2_agents_script.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "abstraction_path.js",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/app",
-				"patcherrelativepath" : "../../app",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
