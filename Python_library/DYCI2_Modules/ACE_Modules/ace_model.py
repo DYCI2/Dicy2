@@ -63,6 +63,7 @@ def load_ace_model_keras(alpha, loss = "tonnetz", seed = ""):
         tf_mapping = K.constant(tf_mappingR)
         loss=wrap_loss_function(tf_mapping = tf_mapping)
         ace_model = load_model('model_ace_keras' + seed +'/'+ modelName + '/' + modelName + '.hdf5', custom_objects={'loss_function': loss})
+    ace_model._make_predict_function()
     return ace_model, history, list_chord_ace, idx_test
 #%%
 def track_to_cqt(track, sr = 44100):
@@ -138,6 +139,7 @@ def multiscale_chords(ace_model, list_chord_ace, data, indice_reduc = 10, sr = 4
     return vect_prob
 
 #%% test zone
+'''
 alpha = "a0"
 ace_model, history, list_chord_ace, idx_test = load_ace_model_keras(alpha)
 #%%
@@ -157,4 +159,5 @@ import matplotlib.pyplot as plt
 #plt.imshow(v, cmap="YlGnBu", aspect = 'auto')
 plt.imshow(v, cmap="prism", aspect = 'auto')
 #ax.grid()
+'''
     
