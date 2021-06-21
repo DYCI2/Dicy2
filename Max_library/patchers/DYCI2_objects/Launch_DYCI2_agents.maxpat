@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 990.0, 240.0, 361.0, 123.0 ],
+		"rect" : [ 990.0, 240.0, 459.0, 369.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,8 +37,20 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-8",
+					"index" : 1,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 91.4998779296875, -2.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -83,7 +95,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.499755999999991, -14.5, 152.000366000000014, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.499755999999991, 33.5, 130.0, 20.0 ],
+					"presentation_rect" : [ 174.499755859375, 33.5, 130.0, 20.0 ],
 					"text" : "Start server from"
 				}
 
@@ -148,11 +160,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.499755999999991, 9.933228, 18.0, 34.0 ],
+					"patching_rect" : [ 333.499755859375, 9.9332275390625, 18.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 178.499755999999991, 49.5, 18.0, 34.0 ],
+					"presentation_rect" : [ 178.499755859375, 49.5, 18.0, 34.0 ],
 					"size" : 2,
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -212,8 +224,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 42.433289000000002, 69.0, 22.0 ],
-					"text" : "delay 1000"
+					"patching_rect" : [ 11.0, 42.43328857421875, 67.0, 22.0 ],
+					"text" : "delay 2000"
 				}
 
 			}
@@ -275,7 +287,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 523.0, 112.933228, 69.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.499756000000001, 66.5, 147.0, 20.0 ],
+					"presentation_rect" : [ 22.499755859375, 66.5, 147.0, 20.0 ],
 					"text" : "Display prints from server"
 				}
 
@@ -289,7 +301,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.333190999999999, 117.933228, 78.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.499756000000001, 37.5, 119.0, 20.0 ],
+					"presentation_rect" : [ 22.499755859375, 37.5, 119.0, 20.0 ],
 					"text" : "Start / Stop server"
 				}
 
@@ -488,39 +500,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "DYCI2_version.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/tools",
-				"patcherrelativepath" : "../tools",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Launch_DYCI2_agents_script.maxpat",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/patchers/DYCI2_objects",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "abstraction_path.js",
-				"bootpath" : "~/Documents/GitHub/Dyci2Lib/Max_library/app",
-				"patcherrelativepath" : "../../app",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
