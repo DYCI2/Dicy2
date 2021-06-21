@@ -37,19 +37,22 @@ if __name__ == '__main__':
 			OSCoutport = 1234
 			i = 0
 			while i < num:
-				OSCinport += i
-				OSCoutport += i
 				print("\n--- Creation of DYCI2 agent num {}  ---\nModel type = Factor Oracle.\nEmpty (Empty sequence, empty labels)".format(i+1))
 				OSCAgent(inport = OSCinport, outport = OSCoutport).start()
-				print("--- MODEL AND AGENT {} CREATED, OSC SERVER LAUNCHED: SEND YOUR QUERIES ! --- ".format(i+1))
+
+				print("--- MODEL AND AGENT {} CREATED, OSC SERVER LAUNCHED {} {}: SEND YOUR QUERIES ! --- ".format(i+1,OSCinport,OSCoutport))
 				#agent_1 = OSCAgent(inport = OSCinport, outport = OSCoutport)
 				#agent_1.start()
+				OSCinport += 1
+				OSCoutport += 1
 				i+=1
 		except IndexError:
 			print("DYCI2 Agent.\n(The program must be given a parameter. The parameter should be the number of Dyci2 agents to launch.)")
 	except ValueError:
 		print( "Wrong parameter: %s. The parameter should be the number of Dyci2 agents to launch (int)." % num)
 		raise
+	while True:
+		time.sleep(1)
 
 
 

@@ -79,7 +79,7 @@ class Navigator(object):
             print("NEW NAVIGATION INDEX: {}".format(self.current_navigation_index))
             print("OLD LEN EXECUTION TRACE: {}".format(len(self.execution_trace)))
 
-            if self.current_navigation_index > 0 and val_attr == \
+            if len(self.execution_trace) > 0 and self.current_navigation_index > 0 and val_attr == \
                     self.execution_trace[self.current_navigation_index - 1]["current_position_in_sequence"] + 1:
                 self.current_continuity += 1
                 print("Continuity + 1 = {}".format(self.current_continuity))
@@ -165,7 +165,7 @@ class Navigator(object):
         previous_position_in_sequence = None
         previous_previous_continuity_in_sequence = None
 
-        if self.current_navigation_index > 0:
+        if len(self.execution_trace) > 0 and self.current_navigation_index > 0:
             previous_continuity = self.execution_trace[self.current_navigation_index - 1]["current_continuity"]
             # print("Current continuity = {}, previous continuity = {}".format(self.current_continuity, previous_continuity))
             previous_position_in_sequence = self.execution_trace[self.current_navigation_index - 1][
@@ -198,12 +198,12 @@ class Navigator(object):
 		:see also: The list of the parameters of the model whose values are stored in the execution trace is defined in :attr:`self.execution_trace_parameters`.
 
 		"""
-
-        print("GO TO ANTERIOR STATE USING EXECUTION TRACE\nGoing back to state when {} was generated:\n{}".format(
-            index_in_navigation, self.execution_trace[index_in_navigation]))
-        history_after_generating_prev = self.execution_trace[index_in_navigation]
-        for name_slot, value_slot in history_after_generating_prev.items():
-            self.__dict__[name_slot] = value_slot
+        if len(self.execution_trace) > 0:
+            print("GO TO ANTERIOR STATE USING EXECUTION TRACE\nGoing back to state when {} was generated:\n{}".format(
+                index_in_navigation, self.execution_trace[index_in_navigation]))
+            history_after_generating_prev = self.execution_trace[index_in_navigation]
+            for name_slot, value_slot in history_after_generating_prev.items():
+                self.__dict__[name_slot] = value_slot
 
     def free_generation(self, length, new_max_continuity=None, forward_context_length_min=0, init=False, equiv=None,
                         print_info=False):
