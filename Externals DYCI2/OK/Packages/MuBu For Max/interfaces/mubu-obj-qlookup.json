@@ -1,0 +1,419 @@
+{
+  "gf": {
+    "digest": "Real-time following and recognition of time profiles.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Gesture",
+	  "Recognition"
+    ]
+  },
+  "imubu": {
+    "digest": "Sound description multi-buffer with a graphical interface.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data",
+	  "Visualisation"
+    ]
+  },
+  "mubu.additive~": {
+    "digest": "Additive + noise synthesis engine.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Synthesis"
+    ]
+  },
+  "mubu.concat~": {
+    "digest": "Concatenative synthesis module based on the ZsaZsa overlap-add synthesis engine.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Synthesis"
+    ]
+  },
+  "mubu.dtw": {
+    "digest": "Dynamic time warping.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Machine learning",
+	  "Gesture"
+    ]
+  },
+  "mubu.gmm": {
+    "digest": "Gaussian Mixture Models.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Gesture",
+	  "Recognition"
+    ]
+  },
+  "mubu.gmr": {
+    "digest": "Gaussian Mixture Regression.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Gesture",
+	  "Recognition"
+    ]
+  },
+  "mubu.granular~": {
+    "digest": "Granular synthesis module based on the ZsaZsa overlap-add synthesis engine.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Synthesis"
+    ]
+  },
+  "mubu.hhmm": {
+	"digest" : "Hierarchical Hidden Markov Models for continuous segmentation and recognition.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Gesture",
+      "Recognition"
+    ]
+  },
+  "mubu.knn": {
+    "digest": "K-NN unit selection based on a kD-tree algorithm.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu": {
+    "digest": "Sound description multi-buffer.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.play": {
+    "digest": "MuBu tracks player.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.play~": {
+    "digest": "MuBu audio tracks player.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.process": {
+    "digest": "Process MuBu tracks by PiPo plugins or patches.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data",
+	  "Analysis"
+    ]
+  },
+  "mubu.record": {
+    "digest": "Recording data streams into a MuBu track.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.record~": {
+    "digest": "Recording audio streams into a MuBu track.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.track": {
+    "digest": "MuBu track reference giving optimized access to the track data.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Data"
+    ]
+  },
+  "mubu.xmm": {
+    "digest": "(Hierarchical) Multimodal Hidden Markov Models for continuous recognition and mapping.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+      "Gesture"
+    ]
+  },
+  "pipo.bands": {
+    "digest": "Spectral centroid is the barycentre of the spectrum.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+ "pipo.basic": {
+    "digest": "Calculate basic audio descriptors: f0, periodicity, loudness, spectral moments.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.bayesfilter": {
+    "digest": "PiPo for EMG envelope extraction based on non-linear bayesian filtering.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Filtering"
+    ]
+  },
+  "pipo.biquad": {
+    "digest": "PiPo biquad filter.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Filtering"
+    ]
+  },
+  "pipo.chop": {
+    "digest": "PiPo fixed-size segmentation and temporal statistics.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Data",
+	  "Segmentation"
+    ]
+  },
+  "pipo.const": {
+    "digest": "PiPo implementation of the YIN algorithm for monophonic pitch estimation.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.dct": {
+    "digest": "Discrete Cosine Transform.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.delta": {
+    "digest": "PiPo calculating Inter-frames differences: Simple linear regression on a stream of (regularly sampled) vectors/matrices.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.fft": {
+    "digest": "PiPo for fft analysis.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.finitedif": {
+    "digest": "PiPo for discrete derivation using the time-domain finite difference method.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+ "pipo.gate": {
+    "digest": "PiPo segmenting by threshold (on and off), typically on loudness, and calculating temporal statistics.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Segmentation"
+    ]
+  },
+  "pipo.ircamdescriptor": {
+    "digest": "PiPo binding for IrcamDescriptor library.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+ "pipo.lpc": {
+    "digest": "PiPo computing linear prediction coefficients.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.lpcformants": {
+    "digest": "PiPo computing the formant frequencies and bandwidths based on a LPC analysis.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.median": {
+    "digest": "Pipo for median filtering.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Filtering"
+    ]
+  },
+  "pipo.mel": {
+    "digest": "Pipo computing MEL bands.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.mfcc": {
+    "digest": "Pipo computing Mel-frequency cepstral coefficients.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.moments": {
+    "digest": "PiPo calculating the moments of a vector.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.mvavrg": {
+    "digest": "PiPo for moving average.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Filtering"
+    ]
+  },
+  "pipo": {
+    "digest": "Simple PiPo host receiving and outputting lists.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo"
+    ]
+  },
+  "pipo.onseg": {
+    "digest": "PiPo segmenting by onset (attack), typically on loudness, and calculating temporal statistics.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Segmentation"
+    ]
+  },
+  "pipo.peaks": {
+    "digest": "PiPo estimating local maxima from a given vector.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.psy": {
+    "digest": "PiPo pitch-synchronous analysis based on yin.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.scale": {
+    "digest": "PiPo scaling data stream.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo.select": {
+    "digest": "PiPo selecting subset of rows or columns in incoming stream.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo"
+    ]
+  },
+  "pipo.slice": {
+    "digest": "PiPo slicing data stream into windowed frames.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo"
+    ]
+  },
+  "pipo.sum": {
+    "digest": "PiPo summing values of data streams.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo"
+    ]
+  },
+  "pipo.wavelet": {
+    "digest": "Online Continuous Wavelet Transform [...1-dimensional...].",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+	  "Analysis"
+    ]
+  },
+  "pipo.yin": {
+    "digest": "PiPo implementation of the YIN algorithm for monophonic pitch estimation.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo",
+      "Analysis"
+    ]
+  },
+  "pipo~": {
+    "digest": "Simple PiPo host receiving audio and outputting lists.",
+    "module": "MuBuForMax",
+    "category": [
+      "MuBuForMax",
+	  "Pipo"
+    ]
+  }
+}

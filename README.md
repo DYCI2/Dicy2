@@ -39,10 +39,12 @@ NB: When launching the DYCI2 core using the python library and not the compiled 
 * Mac OS
 * Max 8
 * Python 3.9 and >
+
+## Externals
 * Mubu for Max: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 * Catart by Mubu:
-	* DYCI2 Repository: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !
 	* DYCI2 Release: already included in DYCI2lib/Max_Library/external (but check the repository https://forum.ircam.fr/projects/detail/catart-mubu/ !)
+	* DYCI2 Repository: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !
 * Max shell object: already included in DYCI2lib/Max_Library/external (but check the repository https://github.com/jeremybernstein/shell/releases !) 
 
 
