@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="gf">
+	<digest>
+		Real-time following and recognition of time profiles
+	</digest>
+	<description>
+		                             The object compares incoming data flow with a set of prerecorded phrases. <br />                             It returns two types of  outputs: <br />                             - <i>likelihood</i> =  how close is the performed phrases to the recorded ones, or the likeliest = which phrase it is <br />                             - <i>time</i> index = the time progression of the performed phrase (i.e. cursor)<br />                             It can work with any type of multidimentional data, regularly sampled (sensor data, sound descriptors, image descriptors, etc.)<br />                             <br />                             For more information see the <a href='http://imtr.ircam.fr/imtr/Gesture_Follower'>GestureFollower web site</a>.<br />                             <br />                             <b>Outlets description</b><br />                             <br />                             <i>Outlet 1 - Following:</i> <br />                             outputs lists containing informations about the following. It is dumped everytime that the object receives an observation, and only if it is in 'follow' or 'play' mode. <br />                             4 Lists are dumped through this outlet. Each list has a size equal to the number of learned phrases and is prepended by a different keyword: <br />                             - 'frame' :	[INT]	The position of the follower. This value says if the follower is at the beginning, middle or end of the phrase. It is expressed in frames. <br />                             - 'time'	:	[FLOAT] Same as 'frame', but expressed in milliseconds.<br />                             - 'timenorm': [FLOAT] Same as 'frame', but expressed in a float between 0 (begin) and 1 (end).<br />                             - 'speed': [FLOAT] It represents the speed of the performance compared to the original one. 1 means 'same speed', 0.5 means 'half speed and so on.<br />                             <br />                             <i>Outlet 2 - Recognizing:</i> <br />                             outputs lists containing informations about the recognition. It is dumped everytime that the object receives an observation, and only if it is in 'follow' or 'play' mode. <br />                             4 lists are dumped through this outlet. Each list has a size equal to the number of learned phrases and is prepended by a different keyword: <br />                             - 'likelihood':	[FLOAT]	It says how much the performance is closed to the original one. 0 means identical, '-inf' means completely different. <br />                             - 'likelihoodnorm': [FLOAT]	Same as before but normalized so that its sum is always equal to 1 (the phrase with the highest value is the closest to the original one). <br />                             - 'likeliest': [INT] The index of the phrase with highest likelihood. <br />                             <br />                             <i>Outlet 3 - Dump:</i> <br />                             dumps various informations.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2014 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.8.11 (Build 01/2016)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="name" get="1" set="1" type="symbol" size="1">
+			<digest>
+				gf/MuBu Container Name
+			</digest>
+			<description>
+				GF name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="gf/MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="autorestart" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Auto Restart
+			</digest>
+			<description>
+				                                  0 : no autorestart (loop mode) (default) <br/>                                   1 : when the likeliest phrase reaches its end (i.e. its 'end marker'), a 'restartall' method is invoked, <br/>                                       restarting all phrases and resetting their likelihoods. <br/>                                   2 : when the likelihood of a phrase is less then its limit (defined by the 'autorestartlimit' method), <br/>                                       then this phrase restarts from begin. In this case, its likelihood is <i>freezed</i> by a certain amount of frames <br/>                                       (defined by the 'freezelikelihoodamount' method).<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Auto Restart" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="autorestartlimit" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Auto Restart Limit
+			</digest>
+			<description>
+				See the 'autorestart' attribute.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Auto Restart Limit" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="beginning" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Follow Beginning Mode
+			</digest>
+			<description>
+				                                  Set this parameter to 1 if, after a restart, a phrase is supposed to start from begin (default).<br/>                                   Set 0 if a phrase could start from each frame. The 'window' parameter should logically be set to 0 in this case.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Follow Beginning Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="expectedspeed" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Expected Speed (Transition Prob)
+			</digest>
+			<description>
+				Expected Speed (Transition Prob)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Expected Speed (Transition Prob)" />
+				<attribute name="order" get="1" set="1" type="int" value="6" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="forwardonly" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Forward Only
+			</digest>
+			<description>
+				to be documented
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Forward Only" />
+				<attribute name="order" get="1" set="1" type="int" value="7" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="freezelikelihoodamount" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Freeze Likelihood At Beginning
+			</digest>
+			<description>
+				Freeze Likelihood At Beginning
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Freeze Likelihood At Beginning" />
+				<attribute name="order" get="1" set="1" type="int" value="8" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="likelihoodcontrast" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Likelihood Contrast
+			</digest>
+			<description>
+				                                  Set the contrast in the 'likelihoodnorm' results. <br/>                                   The value is in [-1, 1] range. <br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Likelihood Contrast" />
+				<attribute name="order" get="1" set="1" type="int" value="11" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="metric" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Metric
+			</digest>
+			<description>
+				to be documented
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Metric" />
+				<attribute name="order" get="1" set="1" type="int" value="12" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="minmax" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Normalisation Min Max
+			</digest>
+			<description>
+				List of normalisation Min Max for channels
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Normalisation Min Max" />
+				<attribute name="order" get="1" set="1" type="int" value="13" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="normalization" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Normalization Enable
+			</digest>
+			<description>
+				Normalization enabled
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Normalization Enable" />
+				<attribute name="order" get="1" set="1" type="int" value="14" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxchannels" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Max Number Of Channels
+			</digest>
+			<description>
+				                                  Sets the maximum number of channels (default=20). Warning: changing this parameter will reset all data.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Max Number Of Channels" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxphrases" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Max Phrases
+			</digest>
+			<description>
+				                                  Defines the maximum number of phrases (default=10). Warning: changing this parameter will reset all data.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Max Phrases" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="markeroffset" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Marker Offset
+			</digest>
+			<description>
+				Markers offset, used by jumpto and goto methods.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Marker Offset" />
+				<attribute name="order" get="1" set="1" type="int" value="15" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="scene" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Scene
+			</digest>
+			<description>
+				Set the current scene (see 'transition' for details).
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Scene" />
+				<attribute name="order" get="1" set="1" type="int" value="16" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="smoothingspeed" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Smoothing Speed
+			</digest>
+			<description>
+				                                  Set the size of the window in which the speed is calculated. <br/>                                   The speed is so calculated considering the last 'smoothingspeed' frames. (default=100) <br/>                                   The smaller this value, the faster the speed changes.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Smoothing Speed" />
+				<attribute name="order" get="1" set="1" type="int" value="17" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="tolerance" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Tolerance
+			</digest>
+			<description>
+				                                  This parameter set how much the follower should be 'tolerant' with the performance.<br/>                                   Setting this parameter to a high value means that the follower will go forward even if the performance is not very close to the recorded example.<br/>                                   Teoretically, this parameter should be as low as possible without freezing the following.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Tolerance" />
+				<attribute name="order" get="1" set="1" type="int" value="18" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="viterbi" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Viterbi Decoding Enable
+			</digest>
+			<description>
+				Viterbi decoding enabled
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Viterbi Decoding Enable" />
+				<attribute name="order" get="1" set="1" type="int" value="19" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="weights" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Channel Weights
+			</digest>
+			<description>
+				Specifies the weight list for each channel, so how much each channel is 'important' compared with the others. <br/>                                   0 means that the channel is not even considered.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Channel Weights" />
+				<attribute name="order" get="1" set="1" type="int" value="20" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="window" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Decoding Window
+			</digest>
+			<description>
+				                                  Set the size of the calculation window. <br/>                                   If the size of the window is equal to 'n', than only 'n' frames after the actual position of the follower are considered. <br/>                                   The smaller is this parameter, the less CPU expensive is the follower. <br/>                                   If the size of the window is bigger than the size pf the phrase, the window is automatically set to fix the phrase size <br/>                                   0 means that the calculation is performed on the whole phrase (default = 1000)<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Decoding Window" />
+				<attribute name="order" get="1" set="1" type="int" value="21" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="channels" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Channels
+			</digest>
+			<description>
+				Sets the number of channels<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Channels" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxframes" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Default Max Frames
+			</digest>
+			<description>
+				Sets the default maximum number of frames.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Default Max Frames" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="frameperiod" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Frame Rate (Learning Only)
+			</digest>
+			<description>
+				The costant frameperiod of the incoming observation, expressed in milliseconds. 
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Frame Rate (Learning Only)" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="likelihoodwindow" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Likelihood Window
+			</digest>
+			<description>
+				                                  Sets the size of the window in which the likelihood is calculated. <br/>                                   The likelihood is so calculated considering the last 'likelihoodwindow' frames. (default=100) <br/>                                   The smaller this value, the faster the likelihood changes.<br/>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Likelihood Window" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="phrasename">
+			<arglist>
+				<arg name="phrase_index phrase_name" type="int symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        syntax: 'phrasename' &lt;int:phrase_index&gt; &lt;symbol:phrase_name&gt; <br/>                        Sets the name of given phrase.<br/>
+			</description>
+		</method>
+		<method name="getaligndata">
+			<arglist>
+				<arg name="ON/OFF" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        syntax: 'getaligndata' &lt;int:on/off&gt; <br/>                        If getaligndata is enabled, gf outputs the 'warping data' from outlet 3.<br/>
+			</description>
+		</method>
+		<method name="autotimetag">
+			<arglist>
+				<arg name="ON/OFF" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        syntax: 'autotimetag' &lt;int:on/off&gt; <br/>                        If autotimetag is enabled, the first float of the observation is considered as a timetag (default=0).<br/>
+			</description>
+		</method>
+		<method name="play">
+			<arglist>
+				<arg name="speed(opt)" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        syntax: 'play' [float:speed] <br/>                        Sets the 'play' mode. In this mode, the follower automatically advances by one frame for each received information,<br/>                         without really 'following' the performance (as if the 'tolerance' parameter would be extremely high). <br/>
+			</description>
+		</method>
+		<method name="stop">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Stops following. Incoming observations will be not considered. <br />                         See 'follow' and 'play' messages for details.<br />
+			</description>
+		</method>
+		<method name="pause">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Sets the pause state. The object stops considering incoming observations until a 'resume' message is received. <br />
+			</description>
+		</method>
+		<method name="resume">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Resume the follower after a 'pause' state. See 'pause' message for details.<br />
+			</description>
+		</method>
+		<method name="nextscene">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				to be documented. <br />
+			</description>
+		</method>
+		<method name="dumpminmax">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				to be documented. <br />
+			</description>
+		</method>
+		<method name="sceneenable">
+			<arglist>
+				<arg name="ON/OFF" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				If 1, gf will enables/disables each phrase automatically,<br />                         according to the transition matrix specified by the 'transition' method (off by default).<br />
+			</description>
+		</method>
+		<method name="enable">
+			<arglist>
+				<arg name="phrase_indexes list" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        syntax: 'enable' &lt;list of int:phrase_indexes&gt;  <br/>                        Enables the specified phrases, disables the others. <br />
+			</description>
+		</method>
+		<method name="enableone">
+			<arglist>
+				<arg name="phrase_indexe ON/OFF" type="int int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        usage: enableone &lt;int:phraseindex&gt; &lt;int:on/off&gt;                         Enables/disables the given phrase.<br />
+			</description>
+		</method>
+		<method name="transition">
+			<arglist>
+				<arg name="scene_index transition_from transition_to value(0/1)" type="int int int int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Sets the value of a cell of a scene matrix. <br />                         A scene is a boolean matrix that specifies the order in which the phrases will be performed (or just which phrases are enabled and which are disabled). <br />                        A value '1'; in the cell [i,j] of the scene 's' specifies that when the scene 's' is set (by the 'setscene' method),<br />                        as soon as the performance of the phrase 'j' ends than the phrase 'i' will be enabled. <br />                        By default, every cel of every scene is set to '1' (that means that all phrases are always enabled). <br />                        The first COLUMN of a scene is the 'begin' row, and specifies which phrases are enabled when this scene is set. <br />                        The first ROW of a scene is the 'end' column, and specifies the list of phrases after which the performance is considered completed.<br />                        In this case, an 'end' symbol is dumped from the right outlet.<br />
+			</description>
+		</method>
+		<method name="bang">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Forces the follower to dump results (through the first and the second outlets), <br />                         even if no new observations have been received.<br />
+			</description>
+		</method>
+		<method name="dump">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Dumps parameters values through the right outlet. <br />
+			</description>
+		</method>
+		<method name="learn">
+			<arglist>
+				<arg name="Index of the learning phrase" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Sets the 'learn' mode. In this mode, all incoming observations are used to record the phrase that corresponds to the specified index. <br />                       The number of channels of the recording phrase will correspond to the size of the first incoming observation. <br />                       No results are dumped in this mode. However, the 'learn' mode is not exclusive, that means you can learn and 'follow' (or 'play') at the same time. <br />                       Learn 0 or no args means learn off. <br />
+			</description>
+		</method>
+		<method name="clear">
+			<arglist>
+				<arg name="Index or name of the phrase" type="int or symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      The word <m>clear</m>, followed by the index (int) or the name (symbol) of a phrase, deletes all informations about that phrase.<br />                       If 0 or no arguments are provided, all phrases are deleted.<br />
+			</description>
+		</method>
+		<method name="gotomarker">
+			<arglist>
+				<arg name="marker_name, phrase_index(opt), preroll(opt)" type="list: symbol [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotomarker symbol:marker_name [int:phrase_index] [int:preroll]<br/>                       Go to a given marker triggering all markers in the between.<br/>
+			</description>
+		</method>
+		<method name="jumptomarker">
+			<arglist>
+				<arg name="marker_name, phrase_index(opt), preroll(opt)" type="list: symbol [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptomarker symbol:marker_name [int:phrase_index] [int:preroll]<br/>                       Jumps to the given marker without triggering markers in the between.<br/>
+			</description>
+		</method>
+		<method name="jumptofirstmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptofirstmarker[int:phrase_index] [int:preroll]<br/>                       Jumps to the first marker, without triggering it.<br/>
+			</description>
+		</method>
+		<method name="gotofirstmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotofirstmarker[int:phrase_index] [int:preroll]<br/>                       Go to the first marker, triggering it.<br/>
+			</description>
+		</method>
+		<method name="jumptolastmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptolastmarker[int:phrase_index] [int:preroll]<br/>                       Jump to the last marker, without triggering it.<br/>
+			</description>
+		</method>
+		<method name="gotolastmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotolastmarker[int:phrase_index] [int:preroll]<br/>                       Go to the last marker, triggering it.<br/>
+			</description>
+		</method>
+		<method name="jumptonextmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptonextmarker[int:phrase_index] [int:preroll]<br/>                       Jump to the next marker, without triggering it.<br/>
+			</description>
+		</method>
+		<method name="gotonextmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotonextmarker[int:phrase_index] [int:preroll]<br/>                       Go to the next marker, triggering it.<br/>
+			</description>
+		</method>
+		<method name="jumptopreviousmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptopreviousmarker[int:phrase_index] [int:preroll]<br/>                       Jump to the previous marker, without triggering it.<br/>
+			</description>
+		</method>
+		<method name="gotopreviousmarker">
+			<arglist>
+				<arg name="phrase_index(opt), preroll(opt)" type="list: [int] [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotopreviousmarker[int:phrase_index] [int:preroll]<br/>                       Go to the previous marker, triggering it.<br/>
+			</description>
+		</method>
+		<method name="jumptoframe">
+			<arglist>
+				<arg name="frame, phrase_index(opt)" type="list: int [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: jumptoframe int:frame [int:phrase_index]<br/>                       Jump to a given frame without triggering markers.<br/>
+			</description>
+		</method>
+		<method name="gotoframe">
+			<arglist>
+				<arg name="frame, phrase_index(opt)" type="list: int [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: gotoframe int:frame [int:phrase_index]<br/>                       Go to a given frame, triggering all markers between the current index and the destination.<br/>
+			</description>
+		</method>
+		<method name="jumptopos">
+			<arglist>
+				<arg name="position, phrase_index(opt)" type="list: float [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: 'jumptopos' float:position [int:phrase_index]<br/>                       Jump to a given position, expressed with a float in [0,1], without triggering markers.<br/>
+			</description>
+		</method>
+		<method name="gotopos">
+			<arglist>
+				<arg name="position, phrase_index(opt)" type="list: float [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: 'gotopos' float:position [int:phrase_index]<br/>                       Go to a given position, expressed with a float in [0,1], triggering all markers between the current index and the destination.<br/>
+			</description>
+		</method>
+		<method name="jumptotime">
+			<arglist>
+				<arg name="time_position, phrase_index(opt)" type="list: float [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: 'jumptotime' float:time_position [int:phrase_index]<br/>                       Jump to a given time position, without triggering markers.<br/>
+			</description>
+		</method>
+		<method name="gototime">
+			<arglist>
+				<arg name="time_position, phrase_index(opt)" type="list: float [int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: 'gototime' float:time_position [int:phrase_index]<br/>                       Go to a given time position, triggering all markers between the current index and the destination.<br/>
+			</description>
+		</method>
+		<method name="warpingview">
+			<arglist>
+				<arg name="1/0 : warping view visible/invisible" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Displays or hide warping view during following<br/>
+			</description>
+		</method>
+		<method name="follow">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Set the 'follow' mode. In this mode, all incoming observations are used to compare the performed phrase with the recorded examples.<br/>                       In this mode, everytime that an observation is received, results are dumped through the first and the second outlets (see 'outlets')<br/>
+			</description>
+		</method>
+		<method name="restart">
+			<arglist>
+				<arg name="phrase_index(opt)" type="[int]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Restart following the phrase from begin. All the likelihoods will be resetted. <br />                       Restart 0 or no args means 'restart all phrases'. <br />
+			</description>
+		</method>
+		<method name="restartall">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Restart following all phrases from begin (same as 'restart 0'). <br />                       All the likelihoods will be resetted. <br />
+			</description>
+		</method>
+		<method name="batchprocess">
+			<arglist>
+				<arg name="phrase_index(opt) likelihood_threashold (opt)" type="[int] [float]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax: 'batchprocess' [&lt;int:phrase index&gt;] [&lt;float:likelihood threashold&gt;]<br />                       batchprocess allows for the use of gf in an offline mode:<br />                       the decoding (following) is applied to all phrases using the reference phrase set as argument.<br />                       Batchprocess create three additional tracks: <br />                       -recognition: contains the likeliest phrase (from 1 to maxframes) <br />                       -indexes: contains the time-warped indexes (from 1 to maxframes) <br />                       -likelihood: contains the normalized likelihood vlaues (from 1 to maxframes).<br />
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+				<arg name="Observation" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Considered as an observation of one channel (see the 'list' method). <br />
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+				<arg name="Observation" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Considered as an observation of one channel (see the 'list' method). <br />
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="Observation" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      The incoming observation. <br/>                       The size of this list is equal to the number of channels of the phrase.<br/>                       If the phrase is empty, its number of channels is automatically set to the size of this list.<br/>                       If the phrase is not empty and an observation longer or shorted than its number of channels is received, than an error occurs. <br />
+			</description>
+		</method>
+		<method name="setmarker">
+			<arglist>
+				<arg name="phrase_index(opt) frame(opt) name(opt)" type="[int] [int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Syntax online: 'setmarker' [symbol:name] <br/>                       Syntax offline: 'setmarker' int:phrase_index int:frame [symbol:name] <br/>                       During learning, adds a marker  to the current learning phrase at the current timetag. <br/>                       Otherwhise adds a marker to the given phrase at the given frame.<br/>                       The name of the marker is optional.<br/>
+			</description>
+		</method>
+		<method name="getsize">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'getsize' [int:phrase index]<br/>                       Gets the size of given phrase (without argument gets the size of all phrases).<br/>
+			</description>
+		</method>
+		<method name="getregions">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'getregions' [int:phrase index]<br/>                       Gets the region bounds of given phrase (without argument gets the region bounds of all phrases).<br/>
+			</description>
+		</method>
+		<method name="likelihoodwindownorm">
+			<arglist>
+				<arg name="to be documented " type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				to be documented <br/>
+			</description>
+		</method>
+		<method name="regions">
+			<arglist>
+				<arg name="phrase_index (region1_start region1_end) (region2_start region2_end)(opt) ..." type="list: int [float float] [float float] ..." optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'regions' &lt;int:phrase index&gt; [float:begin1 float:end1] [float:begin2 float:end2] ... <br/>                      add regions to the given phrase <br/>
+			</description>
+		</method>
+		<method name="open">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				opens the editor.<br/>
+			</description>
+		</method>
+		<method name="writeall">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'writeall' [int: phrase_index] [symbol:file_name] <br/>                      Save all parameters and phrases as mubu file. With phrase index, save just given i-th phrase.<br/>
+			</description>
+		</method>
+		<method name="readall">
+			<arglist>
+				<arg name="file_name(opt)" type="[symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'readall' [symbol:file_name] <br/>                      Reads and sets as current content all parameters and phrases from a mubu file.<br/>
+			</description>
+		</method>
+		<method name="appendall">
+			<arglist>
+				<arg name="file_name(opt)" type="[symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'appendall' [symbol:file_name] <br/>                      Reads and appends to the current content all parameters and phrases from a mubu file.<br/>
+			</description>
+		</method>
+		<method name="writedata">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'writedata' [int:phrase_index] [symbol:file_name] <br/>                      Saves the content of the data track of the given phrase to text or sdif file. Default phrase index is 0.<br/>
+			</description>
+		</method>
+		<method name="readdata">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'readdata' [int:phrase_index] [symbol:file_name] <br/>                      Reads and sets the content of data track in the given phrase from a text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="appenddata">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'appenddata' [int:phrase_index] [symbol:file_name] <br/>                      Reads and appends to current content of data track in the given phrase from a text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="writemarkers">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'writemarkers' [int:phrase_index] [symbol:file_name] <br/>                      Saves the content of the markers track in given phrase to text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="readmarkers">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'readmarkers' [int:phrase_index] [symbol:file_name] <br/>                      Reads and sets the content of the markers track in the given phrase from a text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="writeregions">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'writeregions' [int:phrase_index] [symbol:file_name] <br/>                      Saves the content of the regions track of the given phrase to text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="readregions">
+			<arglist>
+				<arg name="phrase_index(opt) file_name(opt)" type="[int] [symbol]" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'readregions' [int:phrase_index] [symbol:file_name] <br/>                      Reads and sets the content of the regions track of the given phrase from a text or sdif file.<br/>
+			</description>
+		</method>
+		<method name="channelnames">
+			<arglist>
+				<arg name="phrase_index channel_name1 channel_name2 ..." type="list: int symbol symbol ..." optional="0" id="0" />
+				<arg name="phrase_index channel_name1 channel_name2 ..." type="list: int symbol symbol ..." optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      syntax: 'channelnames' &lt;int:phrase_index&gt; &lt;symbol:ch1_name&gt; &lt;symbol:ch2_name&gt; ...<br/>                       Set the channel names for the given phrase. <br/> 
+			</description>
+		</method>
+		<method name="dumpmarkers">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Dumps markers for all phrases. <br/> 
+			</description>
+		</method>
+		<method name="normalize">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Normalizes all phrases. <br/> 
+			</description>
+		</method>
+		<method name="getautoweights">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				to be documented. <br/> 
+			</description>
+		</method>
+		<method name="reset">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                      Reset an invalid gf with default content. <br/> 
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu" />
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+

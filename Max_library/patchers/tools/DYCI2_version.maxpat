@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 7,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -74,8 +73,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 33.0, 896.0, 22.0 ],
-					"text" : "--------------------------------------------------, DYCI2 library -- Version of March 2021, J. Nika et al. - more @ http://repmus.ircam.fr/nika, --------------------------------------------------"
+					"patching_rect" : [ 0.0, 33.0, 886.0, 22.0 ],
+					"text" : "--------------------------------------------------, DYCI2 library -- Version of April 2021, J. Nika et al. - more @ http://repmus.ircam.fr/nika, --------------------------------------------------"
 				}
 
 			}
@@ -94,7 +93,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

@@ -1,0 +1,13 @@
+max oblist MuBu mubu;
+max oblist MuBu imubu;
+max oblist MuBu mubu.track;
+
+max objectfile mubu mubu;
+max objectfile imubu mubu;
+max objectfile mubu.track mubu;
+
+max db.addvirtual alias mubu mubu;
+max db.addvirtual alias imubu mubu;
+max db.addvirtual alias mubu.track mubu;
+
+max objectfile pipo.js pipo.javascript;

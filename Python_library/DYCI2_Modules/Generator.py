@@ -464,16 +464,26 @@ class Generator(object):
                 i += l
             else:
                 # print("SCENARIO BASED GENERATION 1.{}.2.1".format(i))
-                if self.memory.no_empty_event and self.memory.current_position_in_sequence < self.memory.index_last_state():
-                    print("NO EMPTY EVENT")
-                    generated_sequence.append(self.memory.sequence[self.memory.current_position_in_sequence + 1])
-                    # print("\n\n-->HANDLE WHEN NO EMPTY EVENT MODE SETS POSITION: {}<--".format(self.memory.sequence[self.current_position_in_sequence + 1]))
-                    self.memory.current_position_in_sequence = self.memory.current_position_in_sequence + 1
+                if self.memory.no_empty_event:
+                    if self.memory.current_position_in_sequence < self.memory.index_last_state():
+                        print("NO EMPTY EVENT")
+                        generated_sequence.append(self.memory.sequence[self.memory.current_position_in_sequence + 1])
+                        self.transfo_current_generation_output.append(self.current_transformation_memory)
+                        # print("\n\n-->HANDLE WHEN NO EMPTY EVENT MODE SETS POSITION: {}<--".format(self.memory.sequence[self.current_position_in_sequence + 1]))
+                        self.memory.current_position_in_sequence = self.memory.current_position_in_sequence + 1
+                    else:
+                        print("EMPTY EVENT #2")
+                        index = random.randint(1, self.memory.index_last_state())
+                        generated_sequence.append(self.memory.sequence[index])
+                        self.transfo_current_generation_output.append(self.current_transformation_memory)
+                        ###### RELEASE
+                        self.memory.current_position_in_sequence = index
 
                 # TODO : + TRANSFORMATION POUR TRANSPO SI NECESSAIRE
                 else:
                     print("EMPTY EVENT")
                     generated_sequence.append(None)
+                    self.transfo_current_generation_output.append(self.current_transformation_memory)
                     ###### RELEASE
                     self.memory.current_position_in_sequence = 0
                 ###### RELEASE
@@ -858,7 +868,9 @@ class GenerationHandler(Generator):
 		:return: query.start["date"] (converted to "absolute" value)
 		:rtype: int
 	"""
-
+        if self.memory.index_last_state() <= 1:
+            return None
+            
         print("\n--------------------")
         # print("current navigation index:")
         # print(self.memory.current_position_in_sequence)

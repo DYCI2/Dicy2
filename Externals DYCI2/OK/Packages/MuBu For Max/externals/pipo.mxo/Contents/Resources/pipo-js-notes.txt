@@ -1,0 +1,149 @@
+-*-org-*-
+
+https://github.com/jerryscript-project/jerryscript/blob/master/docs/03.API-EXAMPLE.md
+
+** get and build jerryscript engine libs
+
+git clone https://github.com/jerryscript-project/jerryscript.git
+jerryscript/tools/build.py --builddir=./build --cmake-param="-DCMAKE_INSTALL_PREFIX=./"
+cd jerryscript/build/
+make -j4
+make install
+
+** build jerryscript as all-in-one big source files in src
+
+# not necessary:
+# python jerryscript/tools/srcgenerator.py --output-dir ../src --jerry-core --jerry-port-default --jerry-libm
+
+cd mubu-and-co/common/pipo/modules/javascript-engine
+jerryscript/tools/build.py --all-in-one ON   --jerry-ext ON --builddir=.. --cmake-param="-DCMAKE_INSTALL_PREFIX=./" --cmake-param="-DENABLE_ALL_IN_ONE_SOURCE=ON" --cmake-param="-DJERRY_CMDLINE=0" --cmake-param="-DJERRY_ERROR_MESSAGES=1" --cmake-param="-DJERRY_LINE_INFO=1" --cmake-param="-DJERRY_EXTERNAL_CONTEXT=1" --cmake-param="-DJERRY_LOGGING=1" --cmake-param="-DJERRY_MEM_STATS=1"
+
+--> generates javascript-engine/src and some other not necessary dirs
+
+
+** build jerryscript
+
+cd mubu-and-co/common/pipo/modules/javascript-engine
+
+jerryscript/tools/build.py --all-in-one=ON --builddir=./build --cmake-param="-DCMAKE_INSTALL_PREFIX=../../" --cmake-param="-DJERRY_CMDLINE=0"  --cmake-param="-DJERRY_ERROR_MESSAGES=1" --cmake-param="-DJERRY_EXTERNAL_CONTEXT=1" --cmake-param="-DJERRY_LOGGING=1" --cmake-param="-DJERRY_MEM_STATS=1"
+cd jerryscript/build/
+make
+make install
+cd ../..
+
+* use cases
+
+** expression in args
+- implicit return, when no "return" in expr
+
+pipo js @js.expr "a[0] * 2"
+pipo js @js.expr "[ a[0] * 2, a[1] * 3, a[0] + a[1] ]"
+
+- explicit return
+
+pipo js @js.expr "if (a[1] < 0.6) { a[4] = 0; }; return a;"
+
+
+*** DONE derive output width from output array length
+
+** run-time parameters list 
+
+pipo js @js.expr "a[0] * p[0]" @js.params 1
+
+** with added functions 
+
+- from js libs
+
+pipo js @js.require jsframework @js.expr "framework.func(a)"
+
+- from math.h, ftm functions, array functions?
+
+pipo js @js.expr "[ lin2db(a[0]), hz2midi(a[4]) ]"
+pipo js @js.expr "mean(a)"
+
+
+
+** with input data as object for process?
+
+mubu.process m audio descr:js @js.obj yes @js.expr "[ hz2midi(o.FundamentalFrequency) ]"
+
+** script?
+
+pipo js @js.script "function streamAttributes() {} ..."
+
+
+** script file
+
+pipo js @js.file filename.js
+
+filename.js:
+
+function streamAttributes(sa) {
+  sa.width = 1;
+  return sa;
+}
+
+function frames(...) {
+}
+
+* code
+
+** sketch
+for use case pipo js @js.setup "..sa.." @js.expr "..a.."
+
+pipo_js 
+{
+  jerry_init();
+  // register propagateFrames method
+}
+
+streamAttributes ()
+{
+  if expr_attr given:
+    // construct and interpolate script:
+    "
+    function streamAttributes(sa) { `init_attr`; return sa; }
+    function frames(frm) { a = frm.values; frm.values = `expr_attr`; return frm; }
+    "
+  else if script_attr given:
+    load script from file
+
+  // parse script
+}
+
+frames ()
+{
+  // set frm object:
+  frm = { values: input_array,
+	  time: frame_time,
+	 };
+
+  // call frames function from compiled script with frm object
+}
+
+propagateFrames()
+{
+  // propagate returned frm.values
+  propagateFrames(unpacked frmout);
+}
+
+** pipo.js simulation in standalone js
+
+run with:
+
+node run 
+
+function simrunner (pipo) {
+  pipo.streamAttributes(sa);
+
+  for (i = 0; i < numframes; i++) {
+    var a[framesize];
+
+    // generate noise
+    var frmin = { time: i * hop, 
+	 	  values: a, 
+		}
+    var frmout = pipo.frames(frmin);
+   
+ }
+}

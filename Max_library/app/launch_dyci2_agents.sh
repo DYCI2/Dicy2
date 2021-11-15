@@ -5,8 +5,8 @@ eval `/usr/libexec/path_helper -s`
 
 SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SERVER_PYTHON_PATH="${SCRIPT_DIRECTORY}/../../Python_library/LaunchOSCAgents.py"
-#SERVER_APP_PATH="${SCRIPT_DIRECTORY}/LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents"
-SERVER_APP_PATH="${SCRIPT_DIRECTORY}/LaunchDyci2Agents"
+SERVER_APP_PATH="${SCRIPT_DIRECTORY}/LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents"
+#SERVER_APP_PATH="${SCRIPT_DIRECTORY}/LaunchDyci2Agents"
 
 echo "Number of agents = $1"
 echo "Mode = $2"

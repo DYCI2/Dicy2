@@ -310,6 +310,10 @@ class OSCAgent(Server):
         # TODO: Format the output
 
         abs_start_date: TODO_INSERTTYPE = self.generation_handler.process_query(query=new_query, print_info=True)
+        
+        if abs_start_date is None:
+            return
+
         print(f"Output of the run of {name}: {self.generation_handler.current_generation_output}")
 
         message: list = [str(name), abs_start_date, start_unit, "absolute", scope_duration, scope_unit,

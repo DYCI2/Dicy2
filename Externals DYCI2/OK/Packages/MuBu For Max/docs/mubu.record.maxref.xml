@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.record">
+	<digest>
+		Record data
+	</digest>
+	<description>
+		Record data into a track of a MuBu container.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2018 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.9.11 (Build 01/12/2019)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="record progress">
+			<digest>
+			</digest>
+			<description>
+				record progress
+			</description>
+		</outlet>
+		<outlet id="1" name="record done">
+			<digest>
+			</digest>
+			<description>
+				record done
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+		<objarg name="Track id" type="atom" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Track index or name
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="trackid" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id
+			</digest>
+			<description>
+				Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bufferindex" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Index
+			</digest>
+			<description>
+				Buffer Index
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Index" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="record" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Recording
+			</digest>
+			<description>
+				Enable/Disable Recording
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Recording" />
+				<attribute name="order" get="1" set="1" type="int" value="9" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="append" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Recording Append
+			</digest>
+			<description>
+				Enable/Disable Recording Append
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Recording Append" />
+				<attribute name="order" get="1" set="1" type="int" value="10" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="overdub" get="1" set="1" type="int" size="1">
+			<digest>
+				Enable/Disable Overdub Mode (record then punches in/out)
+			</digest>
+			<description>
+				Enable/Disable Overdub Mode (record then punches in/out)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable/Disable Overdub Mode (record then punches in/out)" />
+				<attribute name="order" get="1" set="1" type="int" value="11" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="progressoutput" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Progress Output Mode
+			</digest>
+			<description>
+				Progress Output Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off time index fill" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Progress Output Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="12" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="defer" get="1" set="1" type="float" size="1">
+			<digest>
+				Defer Recording
+			</digest>
+			<description>
+				Defer Recording
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Defer Recording" />
+				<attribute name="order" get="1" set="1" type="int" value="13" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxsize" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Maximum Size
+			</digest>
+			<description>
+				Maximum Size
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Size" />
+				<attribute name="order" get="1" set="1" type="int" value="102" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="matrixcols" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Matrix Columns
+			</digest>
+			<description>
+				Matrix Columns
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Matrix Columns" />
+				<attribute name="order" get="1" set="1" type="int" value="105" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="matrixrows" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Matrix Rows
+			</digest>
+			<description>
+				Matrix Rows
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Matrix Rows" />
+				<attribute name="order" get="1" set="1" type="int" value="106" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="matrixcolnames" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Matrix Column Names
+			</digest>
+			<description>
+				Matrix Column Names
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Matrix Column Names" />
+				<attribute name="order" get="1" set="1" type="int" value="107" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="matrixvarrows" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Variable Matrix Rows
+			</digest>
+			<description>
+				Variable Matrix Rows
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Variable Matrix Rows" />
+				<attribute name="order" get="1" set="1" type="int" value="108" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="extradata" get="1" set="1" type="symbol" size="1">
+			<digest>
+				Extra Data Type
+			</digest>
+			<description>
+				Extra Data Type
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="none label" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Extra Data Type" />
+				<attribute name="order" get="1" set="1" type="int" value="109" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enum" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="timetagged" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Time-Tagged Data
+			</digest>
+			<description>
+				Time-Tagged Data
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Time-Tagged Data" />
+				<attribute name="order" get="1" set="1" type="int" value="110" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="samplerate" get="1" set="1" type="float" size="1">
+			<digest>
+				Sample Rate
+			</digest>
+			<description>
+				Sample Rate
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Sample Rate" />
+				<attribute name="order" get="1" set="1" type="int" value="111" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="sampleperiod" get="1" set="1" type="float" size="1">
+			<digest>
+				Sample Period
+			</digest>
+			<description>
+				Sample Period
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Sample Period" />
+				<attribute name="order" get="1" set="1" type="int" value="112" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="sampleoffset" get="1" set="1" type="float" size="1">
+			<digest>
+				Sample Offset
+			</digest>
+			<description>
+				Sample Offset
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Sample Offset" />
+				<attribute name="order" get="1" set="1" type="int" value="113" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="info" get="1" set="1" type="float" size="1">
+			<digest>
+				Track Info Entries
+			</digest>
+			<description>
+				Track Info Entries
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Info Entries" />
+				<attribute name="order" get="1" set="1" type="int" value="116" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="silent" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Update Silently
+			</digest>
+			<description>
+				Update Silently
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Update Silently" />
+				<attribute name="order" get="1" set="1" type="int" value="117" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="predef" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Predefine Track
+			</digest>
+			<description>
+				Predefine Track
+			</description>
+			<attributelist>
+				<attribute name="category" get="1" set="1" type="unknown" value="track" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Predefine Track" />
+				<attribute name="order" get="1" set="1" type="int" value="201" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="clear">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+		<method name="punch">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+		<method name="settime">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+		<method name="setlabel">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+		<method name="gettimestats">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+		<method name="refer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Clear content
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu.record~" />
+		<seealso name="mubu.play" />
+		<seealso name="mubu.play~" />
+		<seealso name="mubu" />
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+

@@ -30,6 +30,7 @@ This repository contains:
 * The __Python DYCI2 library__, defining models and tools for creative generation of sequences (and in particular musical sequences) from models of sequences. It implements several models, generative heuristics, time management strategies, and architectures of interactive agents. 
 
 Advanced users and developpers can use the Python library autonomously. See the tutorials corresponding to the different modulesHtml doc: http://repmus.ircam.fr/downloads/docs/DYCI2_library/. PDF doc: in DYCI2lib/Python_library.
+NB: When launching the DYCI2 core using the python library and not the compiled app, the default command is "python3". Expert users can modify this command in the script located here: Dyci2Lib/Max_library/app/launch_dyci2_agents.sh
 
 
 ------
@@ -38,13 +39,17 @@ Advanced users and developpers can use the Python library autonomously. See the 
 * Mac OS
 * Max 8
 * Python 3.9 and >
+
+## Externals
 * Mubu for Max: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 * Catart by Mubu:
+	* DYCI2 Release: already included in DYCI2lib/Max_Library/external (but check the repository https://forum.ircam.fr/projects/detail/catart-mubu/ !)
 	* DYCI2 Repository: if you **cloned** the repository or **downloaded it from the main page**, make sure that you also cloned the [Catart](https://github.com/Ircam-RnD/catart-mubu) submodule or your directory `Dyci2Lib/Max_library/external/catart`will be empty !
-	* DYCI2 Release: Included in DYCI2lib (but check their repository https://forum.ircam.fr/projects/detail/catart-mubu/ !)
+* Max shell object: already included in DYCI2lib/Max_Library/external (but check the repository https://github.com/jeremybernstein/shell/releases !) 
+
 
 ## Installation
-* Drag the DYCI2lib directory wherever you want (but not in Max packages / libraries !) and add its path into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). 
+* Drag the DYCI2lib directory wherever you want (but not in Max packages / libraries !) and add its path into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). /!\ The path of this folder must not contain any whitespace.
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"
 * /!\ The sampling rate of Max MUST be the same as that of the audio file(s) used in the memory(/ies).
 

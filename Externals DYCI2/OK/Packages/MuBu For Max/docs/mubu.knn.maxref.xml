@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.knn">
+	<digest>
+		K-NN unit selection
+	</digest>
+	<description>
+		K-nearest neighbor search on matrix data of a MuBu container's track using a kD-tree. The search can include matrix data of a given track over multiple buffers of a referred MuBu container. The buffers of the referred container that are included into kD-tree can be selected by the include and exclude messages. The object internally constructs a kD-tree from the included data. <br/>The selection data is given as a float or list representing a scalar, vector or matrix corresponing to the matrix dimensions of the referred track. The kd-Tree search uses an Euklidian distance between the given selection data and the matrix data normalized by its standard deviation. Additionally, a weight can be defined for each matrix element (message weights) in order to scale their importance in the search. <br/>As an option, the object can scale incoming selection data to the mean and standard deviation or to the minimum and maximum of the data included into the KNN search using the scaling attribute (typically applied to normalized input data). The minimum, maximum, mean and standard deviation calculated over the included data at the construction of the kD-tree can be output using the messages getmin, getmax, getmean, and getstddev. <br/>By default, the kD-tree is not updated automatically when the track content changes, but can be updated using the update message. Initializing and changing the referred a MuBu container and/or track (messages and attributes mubuname, trackid, and refer) as well as setting the buffers included into the KNN search (messages include and exclude) automatically will cause the (re-)construction of the kD-tree. Since the constructing the kD-tree may represent a considerable amout of calcultaion, it is recommend to carefully choose the moment when the kD-tree is constructed. 
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2018 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.9.11 (Build 01/12/2019)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="lists of segment indices">
+			<digest>
+			</digest>
+			<description>
+				lists of segment indices
+			</description>
+		</outlet>
+		<outlet id="1" name="lists of buffer indices">
+			<digest>
+			</digest>
+			<description>
+				lists of buffer indices
+			</description>
+		</outlet>
+		<outlet id="2" name="info">
+			<digest>
+			</digest>
+			<description>
+				info
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="trackid" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id
+			</digest>
+			<description>
+				Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="autoupdate" get="1" set="1" type="int" size="1">
+			<digest>
+				Auto Update Mode
+			</digest>
+			<description>
+				Auto Update Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off on" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Auto Update Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="k" get="1" set="1" type="int" size="1">
+			<digest>
+				Maximum Number of Returned Neighbors (zero for all in radius)
+			</digest>
+			<description>
+				Maximum Number of Returned Neighbors (zero for all in radius)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Number of Returned Neighbors (zero for all in radius)" />
+				<attribute name="min" get="1" set="1" type="int" value="0" />
+				<attribute name="order" get="1" set="1" type="int" value="20" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="radius" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Maximum Distance (zero for unlimited)
+			</digest>
+			<description>
+				Maximum Distance (zero for unlimited)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Distance (zero for unlimited)" />
+				<attribute name="min" get="1" set="1" type="unknown" value="0.00" />
+				<attribute name="order" get="1" set="1" type="int" value="21" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="weights" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Selection Weights
+			</digest>
+			<description>
+				Selection Weights
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Selection Weights" />
+				<attribute name="order" get="1" set="1" type="int" value="30" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="scaling" get="1" set="1" type="int" size="1">
+			<digest>
+				Scaling Mode
+			</digest>
+			<description>
+				Scaling Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off minmax meanstddev" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Scaling Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="40" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Search neighbors of given values.
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Select neighbors of given values.
+			</description>
+		</method>
+		<method name="bang">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Reselect neighbors with same target.
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Select neighbors of given values.
+			</description>
+		</method>
+		<method name="select">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Set target at columns given by columns message, select nearest neighbors.
+			</description>
+		</method>
+		<method name="columns">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Set target columns to use for select message, sets their weights to 1
+			</description>
+		</method>
+		<method name="getweights">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Send current weights list out rightmost outlet
+			</description>
+		</method>
+		<method name="gettarget">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Send current target list scaled from minmax out rightmost outlet
+			</description>
+		</method>
+		<method name="update">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Update kD-tree with current track values.
+			</description>
+		</method>
+		<method name="include">
+			<arglist>
+				<arg name="indices of included buffers" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Sets buffers (by index) that are included in the k-NN search and reconstructs the kD-tree (all other buffers of the referred MuBu container are excluded).
+			</description>
+		</method>
+		<method name="exclude">
+			<arglist>
+				<arg name="indices of excluded buffers" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Sets buffers (by index) that are excluded from the k-NN search and reconstructs the kD-tree (all other buffers of the referred MuBu container are included).
+			</description>
+		</method>
+		<method name="getincluded">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs list of indices of buffers that are included in the k-NN search.
+			</description>
+		</method>
+		<method name="getexcluded">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs list of indices of buffers that are excluded from the k-NN search.
+			</description>
+		</method>
+		<method name="getnum">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the total number of elements and the number of buffers included in the k-NN search.
+			</description>
+		</method>
+		<method name="getmin">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the minima of the matrix data included in the k-NN search.
+			</description>
+		</method>
+		<method name="getmax">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the maxima of the matrix data included in the k-NN search.
+			</description>
+		</method>
+		<method name="getrange">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the range between minimum and maximum of the matrix data included in the k-NN search.
+			</description>
+		</method>
+		<method name="getmean">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the mean values of the matrix data included in the k-NN search.
+			</description>
+		</method>
+		<method name="getmedian">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the median values of the matrix data included in the k-NN search.
+			</description>
+		</method>
+		<method name="getstddev">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the standard deviation of the matrix data included in the k-NN search
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu" />
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+		<seealso name="mubu.process" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+
