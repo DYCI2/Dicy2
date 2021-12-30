@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.granular~">
+	<digest>
+		MuBu granular synthesis engine
+	</digest>
+	<description>
+		This externals performs asynchronous and synchronous granular synthesis.<br/> For granular synthesis in synchronous mode, a marker track is required that marks the elementary waveforms of the audio stream.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2018 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.9.11 (Build 01/12/2019)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="audio output">
+			<digest>
+			</digest>
+			<description>
+				audio output
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Number of channels" type="int" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Number of audio output channels
+			</description>
+		</objarg>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+		<objarg name="Marker track id" type="atom" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			marker track index or name (for synchronous mode)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="audio" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Audio Track Id
+			</digest>
+			<description>
+				Audio Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Audio Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="markers" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Marker Track Id
+			</digest>
+			<description>
+				Marker Track Id
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Marker Track Id" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bufferindex" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Index
+			</digest>
+			<description>
+				Buffer Index
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Index" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resampleaudioinput" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Resample Audio Input
+			</digest>
+			<description>
+				                                  Enable/disable resampling of audio input (trcks r buffer~) in memory. <br />                                   They will be resampled to the system sample rate when the input has a different one.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Resample Audio Input" />
+				<attribute name="order" get="1" set="1" type="int" value="4" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="cyclic" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Cyclic Audio
+			</digest>
+			<description>
+				Consider audio buffer cyclic, i.e. grains extending past end of buffer wrap around to beginning.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Cyclic Audio" />
+				<attribute name="order" get="1" set="1" type="int" value="100" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="microtiming" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Micro timing
+			</digest>
+			<description>
+				Use sub-sample precise paste position into output buffer in granular synthesis, audible for short @period / high frequencies.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Micro timing" />
+				<attribute name="order" get="1" set="1" type="int" value="101" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="varmetro" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Variable Time Period
+			</digest>
+			<description>
+				Allow smooth changes in period metronome.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Variable Time Period" />
+				<attribute name="order" get="1" set="1" type="int" value="102" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="minmaxperiod" get="1" set="1" type="float" size="1">
+			<digest>
+				Minimum Maximum Period
+			</digest>
+			<description>
+				Minimum Maximum Period
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Minimum Maximum Period" />
+				<attribute name="order" get="1" set="1" type="int" value="110" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxduration" get="1" set="1" type="float" size="1">
+			<digest>
+				Maximum Duration
+			</digest>
+			<description>
+				Maximum Duration
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Duration" />
+				<attribute name="order" get="1" set="1" type="int" value="111" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxdelay" get="1" set="1" type="float" size="1">
+			<digest>
+				Maximum Delay
+			</digest>
+			<description>
+				Maximum Delay
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Delay" />
+				<attribute name="order" get="1" set="1" type="int" value="112" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxresampling" get="1" set="1" type="float" size="1">
+			<digest>
+				Maximum Resampling
+			</digest>
+			<description>
+				Maximum Resampling
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Resampling" />
+				<attribute name="order" get="1" set="1" type="int" value="113" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="advance" get="1" set="1" type="float" size="1">
+			<digest>
+				Scheduling Advance
+			</digest>
+			<description>
+				Scheduling Advance
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Scheduling Advance" />
+				<attribute name="order" get="1" set="1" type="int" value="120" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="delay" get="1" set="1" type="float" size="1">
+			<digest>
+				Scheduling Delay
+			</digest>
+			<description>
+				Scheduling Delay
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Scheduling Delay" />
+				<attribute name="order" get="1" set="1" type="int" value="121" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="play" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Enable Periodic Playing
+			</digest>
+			<description>
+				Enable Periodic Playing
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Enable Periodic Playing" />
+				<attribute name="order" get="1" set="1" type="int" value="1010" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="period" get="1" set="1" type="float" size="1">
+			<digest>
+				Period (Abs/Rel)
+			</digest>
+			<description>
+				Period (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Period (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1020" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="periodvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Period Random Variation (Abs/Rel)
+			</digest>
+			<description>
+				Period Random Variation (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Period Random Variation (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1021" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="positionvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Position Random Variation
+			</digest>
+			<description>
+				Position Random Variation
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Position Random Variation" />
+				<attribute name="order" get="1" set="1" type="int" value="1022" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="centered" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Position Refers to Grain Center
+			</digest>
+			<description>
+				Position Refers to Grain Center
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Position Refers to Grain Center" />
+				<attribute name="order" get="1" set="1" type="int" value="1050" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="duration" get="1" set="1" type="float" size="1">
+			<digest>
+				Duration (Abs/Rel)
+			</digest>
+			<description>
+				Duration (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Duration (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1060" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="durationvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Duration Random Variation (Abs/Rel)
+			</digest>
+			<description>
+				Duration Random Variation (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Duration Random Variation (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1061" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="attack" get="1" set="1" type="float" size="1">
+			<digest>
+				Attack Time (Abs/Rel)
+			</digest>
+			<description>
+				Attack Time (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Attack Time (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1130" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="release" get="1" set="1" type="float" size="1">
+			<digest>
+				Release Time (Abs/Rel)
+			</digest>
+			<description>
+				Release Time (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Release Time (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1131" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="reverse" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Reverse
+			</digest>
+			<description>
+				Reverse
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Reverse" />
+				<attribute name="order" get="1" set="1" type="int" value="1132" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="window" get="1" set="1" type="symbol" size="1">
+			<digest>
+				Window Function
+			</digest>
+			<description>
+				Window Function
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="trapezoid cosine" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Window Function" />
+				<attribute name="order" get="1" set="1" type="int" value="1133" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enum" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="level" get="1" set="1" type="float" size="1">
+			<digest>
+				Level
+			</digest>
+			<description>
+				Level
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Level" />
+				<attribute name="order" get="1" set="1" type="int" value="1140" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="levelvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Level Random Variation
+			</digest>
+			<description>
+				Level Random Variation
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Level Random Variation" />
+				<attribute name="order" get="1" set="1" type="int" value="1141" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resampling" get="1" set="1" type="float" size="1">
+			<digest>
+				Resampling
+			</digest>
+			<description>
+				Resampling
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Resampling" />
+				<attribute name="order" get="1" set="1" type="int" value="1142" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resamplingvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Resampling Random Variation
+			</digest>
+			<description>
+				Resampling Random Variation
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Resampling Random Variation" />
+				<attribute name="order" get="1" set="1" type="int" value="1143" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filtermode" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Filter Mode
+			</digest>
+			<description>
+				Filter Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="off lowpass highpass resonant bandpass peaknotch bandstop allpass lowshelf highshelf" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="1150" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filterfreq" get="1" set="1" type="float" size="1">
+			<digest>
+				Filter Cutoff/Center Frequency
+			</digest>
+			<description>
+				Filter Cutoff/Center Frequency
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Cutoff/Center Frequency" />
+				<attribute name="order" get="1" set="1" type="int" value="1151" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filterfreqvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Filter Frequency Random Variation (Abs/Rel)
+			</digest>
+			<description>
+				Filter Frequency Random Variation (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Frequency Random Variation (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1152" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filterq" get="1" set="1" type="float" size="1">
+			<digest>
+				Filter Q-Factor
+			</digest>
+			<description>
+				Filter Q-Factor
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Q-Factor" />
+				<attribute name="order" get="1" set="1" type="int" value="1153" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filterqvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Filter Q-Factor Random Variation (Abs/Rel)
+			</digest>
+			<description>
+				Filter Q-Factor Random Variation (Abs/Rel)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Q-Factor Random Variation (Abs/Rel)" />
+				<attribute name="order" get="1" set="1" type="int" value="1154" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="filtergain" get="1" set="1" type="float" size="1">
+			<digest>
+				Filter Gain
+			</digest>
+			<description>
+				Filter Gain
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Filter Gain" />
+				<attribute name="order" get="1" set="1" type="int" value="1155" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="duplicatechannels" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Duplicate Grain Channels
+			</digest>
+			<description>
+				Duplicate Grain Channels
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Duplicate Grain Channels" />
+				<attribute name="order" get="1" set="1" type="int" value="2100" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="channeloffset" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Output Channel Offset
+			</digest>
+			<description>
+				Output Channel Offset
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Output Channel Offset" />
+				<attribute name="order" get="1" set="1" type="int" value="2101" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="outputgains" get="1" set="1" type="float" size="1">
+			<digest>
+				Output Gains
+			</digest>
+			<description>
+				Output Gains
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Output Gains" />
+				<attribute name="order" get="1" set="1" type="int" value="2102" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="outputdelays" get="1" set="1" type="float" size="1">
+			<digest>
+				Output Delays
+			</digest>
+			<description>
+				Output Delays
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Output Delays" />
+				<attribute name="order" get="1" set="1" type="int" value="2103" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="voicedcol" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Voiced Coeff Marker Column
+			</digest>
+			<description>
+				Voiced Coeff Marker Column
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Voiced Coeff Marker Column" />
+				<attribute name="order" get="1" set="1" type="int" value="10000" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="voicedminmax" get="1" set="1" type="float" size="1">
+			<digest>
+				Voiced Coeff Min/Max
+			</digest>
+			<description>
+				Voiced Coeff Min/Max
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Voiced Coeff Min/Max" />
+				<attribute name="order" get="1" set="1" type="int" value="10001" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="vuoverlap" get="1" set="1" type="float" size="1">
+			<digest>
+				Voiced/Unvoiced Waveform Overlap
+			</digest>
+			<description>
+				Voiced/Unvoiced Waveform Overlap
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Voiced/Unvoiced Waveform Overlap" />
+				<attribute name="order" get="1" set="1" type="int" value="10002" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="unvoicedlevel" get="1" set="1" type="float" size="1">
+			<digest>
+				Unvoiced Level
+			</digest>
+			<description>
+				Unvoiced Level
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Unvoiced Level" />
+				<attribute name="order" get="1" set="1" type="int" value="10003" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="minsourcefreq" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Minimum Source Frequency
+			</digest>
+			<description>
+				Minimum Source Frequency
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Minimum Source Frequency" />
+				<attribute name="order" get="1" set="1" type="int" value="10005" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="tdi" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Time Domain Waveform Interpolation
+			</digest>
+			<description>
+				Time Domain Waveform Interpolation
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Time Domain Waveform Interpolation" />
+				<attribute name="order" get="1" set="1" type="int" value="10006" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="refer">
+			<arglist>
+				<arg name="MuBu container name" type="symbol" optional="0" id="0" />
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set MuBu container and track id
+			</description>
+		</method>
+		<method name="resetoutputs">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				clear internal output buffers
+			</description>
+		</method>
+		<method name="bang">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				trigger grain/segment or synchronize periodic playing
+			</description>
+		</method>
+		<method name="position">
+			<arglist>
+				<arg name="position" type="float" optional="0" id="0" />
+				<arg name="transition time (optional)" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set grain/segment position
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="position" type="float" optional="0" id="0" />
+				<arg name="transition time (optional)" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				play until position and stop at end
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set position
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set position
+			</description>
+		</method>
+		<method name="stop">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				stop playing
+			</description>
+		</method>
+		<method name="getgrain">
+			<arglist>
+				<arg name="buffer~ name" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				synthesize grain to buffer~
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu.concat~" />
+		<seealso name="mubu.additive~" />
+		<seealso name="mubu" />
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+		<seealso name="mubu.process" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+
