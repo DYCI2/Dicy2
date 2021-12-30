@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<root>
+<refpage name='mubu.maxref.xml'/>
+<refpage name='imubu.maxref.xml'/>
+<refpage name='mubu.track.maxref.xml'/>
+<refpage name='mubu.knn.maxref.xml'/>
+<refpage name='mubu.concat~.maxref.xml'/>
+<refpage name='mubu.granular~.maxref.xml'/>
+</root>

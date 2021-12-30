@@ -1,0 +1,133 @@
+[[[[[[[[[[[[HIGH SIERRA]]]]]]]]]]]]
+
+INSTALLER PYTHON ETC SUR L'ORDI DE COMPILATION HIGH SIERRA
+===========================================================
+*INSTALLER BREW:
+---------------
+https://brew.sh/index_fr
+OU ON TROUVE LA COMMANDE
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+
+*PUIS INSTALLER PYTHON AVEC BREW
+------------------------------
+brew install python
+(Pip est installé... puis avec python3 pip ou pip3 ?)
+
+*PUIS INSTALLER PYINSTALLER 4.2 
+(A PRIORI C'EST LE BON SUR CATALINA... MAIS SUR HIGH SIERRA ??)
+------------------------------
+python3 -m pip install PyInstaller==4.2
+
+pyinstaller --version
+
+BUILD SUR HIGH SIERRA 
+=====================
+*TELECHARGER DYCI2
+*INSTALLER DEPENDANCES DE DYCI2
+cd [LIB DYCI2]
+pip3 install -r requirements.txt --user
+*ON TEST DYCI2 EN PYTHON
+cd [LIB DYCI2/Python_library]
+python3 LaunchOSCAgents.py 2
+*MAINTENANT ON DOIT AVOIR
+[PYTHON 3.9]
+[DEPENDANCES DE DYCI1]
+[PyInstaller 4.2]
+
+*LET'S GO
+--------------------------------------
+
+[Cd Python_library]
+
+python3 -m PyInstaller LaunchOSCAgents.py --name LaunchDyci2Agents --exclude-module matplotlib --clean --noconfirm --onefile --noconsole
+
+((POUR MEMOIRE))
+[ICI PATH COMPLIQUE POUR PYTHON MAIS IL SUFFIT DE "python3" QUAND PYTHON INSTALLE AVEC BREW]
+/usr/local/Cellar/python@3.9/3.9.2_4/bin/python3 -m PyInstaller LaunchOSCAgents.py --name LaunchDyci2Agents --exclude-module matplotlib --clean --noconfirm --onefile --noconsole
+
+TEST
+=====
+cd dist 
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+CHMOD
+=====
+chmod u+x LaunchDyci2Agents.app
+
+FAIRE UN DMG POUR TRANSMETTRE PAR DISQUE DUR SUR CATALINA
+============================================================
+hdiutil create LaunchDyci2Agents.dmg -fs HFS+ -srcfolder LaunchDyci2Agents.app -ov
+Puis transmettre le DMG sur catalina
+
+TEST
+=====
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+
+
+[[[[[[[[[[[[CATALINA]]]]]]]]]]]]
+
+TEST
+=====
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+INSTALLER TROUSSEAU CERTIFICAT DEV ETC
+======================================
+Ouvrir le fichier Certificats-Global Ircam-Mac.p12 envoyé par Olivier Labat le 17/03/21
+MDP Dev Apple Ircam
+Ensuite on voit apparaitre dans keychain "Developer ID Application: INST RECHER COORD ACOUST MUSICALE (3BD2P55TR2)"
+
+SIGN
+====================
+[mettre entitlements in Python_library/]
+codesign --deep --timestamp -s "Developer ID Application: INST RECHER COORD ACOUST MUSICALE" --options=runtime  --entitlements ../dyci2.entitlements LaunchDyci2Agents.app
+
+TEST
+=====
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+CHMOD
+=====
+chmod u+x LaunchDyci2Agents.app
+
+TEST
+=====
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+
+NOTARIZE
+========
+
+
+hdiutil create LaunchDyci2Agents.dmg -fs HFS+ -srcfolder LaunchDyci2Agents.app -ov
+
+xcrun altool --notarize-app --primary-bundle-id "ircam.repmus.dyci2"  -u "jerome.nika@ircam.fr" -p $(security find-generic-password -w -a $LOGNAME -s "DYCI2_signature_password")  --file LaunchDyci2Agents.dmg 
+
+[if needed, get password at https://appleid.apple.com and 
+xcrun altool --notarize-app --primary-bundle-id "ircam.repmus.dyci2"  -u "jerome.nika@ircam.fr" -p "PASSWORD???"  --file LaunchDyci2Agents.app]
+
+[wait for the mail]
+
+xcrun stapler staple LaunchDyci2Agents.app
+
+FINAL TEST
+==========
+./LaunchDyci2Agents.app/Contents/MacOS/LaunchDyci2Agents 3
+
+
+NE PAS OUBLIER
+==============
+
+Chmod u+x app et script, et shell ?
+
+
+FAIRE ARCHIVE POUR TRANSMETTRE
+==============================
+
+NE PAS OUBLIER DE METTRE ENCORE DANS UN DOSSIER PARENT (--> DYCI2lib3.2/DYCI2Lib/les trucs) car le DMG fait "perdre" un niveau de hiérarchie.
+
+hdiutil create DYCI2_Markeas_Final.dmg -fs HFS+ -srcfolder Dyci2Lib-Markeas-LAST_5 -ov
+
+hdiutil create Dyci2Lib.dmg -fs HFS+ -srcfolder Dyci2Lib -ov
+
+hdiutil create OM-DYCI2_v1-2.dmg -fs HFS+ -srcfolder OM-DYCI2_v1-2 -ov

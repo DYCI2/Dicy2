@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu.additive~">
+	<digest>
+		MuBu additive synthesis engine
+	</digest>
+	<description>
+		This external synthesizes additive data stored in MuBu tracks.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2018 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.9.11 (Build 01/12/2019)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages">
+			<digest>
+			</digest>
+			<description>
+				messages
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="audio output">
+			<digest>
+			</digest>
+			<description>
+				audio output
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="Number of channels" type="int" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Number of audio output channels
+			</description>
+		</objarg>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+		<objarg name="Partials track id" type="atom" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			partials track index or name
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="bufferindex" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Index or Indices
+			</digest>
+			<description>
+				Buffer Index or Indices
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Index or Indices" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="text" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="partials" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id of Partials
+			</digest>
+			<description>
+				Track Id of Partials
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id of Partials" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="residual" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id of Residual
+			</digest>
+			<description>
+				Track Id of Residual
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id of Residual" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="envelope" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Track Id of Envelope
+			</digest>
+			<description>
+				Track Id of Envelope
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Track Id of Envelope" />
+				<attribute name="order" get="1" set="1" type="int" value="4" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parindexcol" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Column of Partial Indices
+			</digest>
+			<description>
+				Column of Partial Indices
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Column of Partial Indices" />
+				<attribute name="order" get="1" set="1" type="int" value="5" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parfreqcol" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Column of Partial Frequencies
+			</digest>
+			<description>
+				Column of Partial Frequencies
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Column of Partial Frequencies" />
+				<attribute name="order" get="1" set="1" type="int" value="6" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parampcol" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Column of Partial Amplitudes
+			</digest>
+			<description>
+				Column of Partial Amplitudes
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Column of Partial Amplitudes" />
+				<attribute name="order" get="1" set="1" type="int" value="7" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parphicol" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Column of Partial Phases
+			</digest>
+			<description>
+				Column of Partial Phases
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Column of Partial Phases" />
+				<attribute name="order" get="1" set="1" type="int" value="8" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="pargainall" get="1" set="1" type="float" size="1">
+			<digest>
+				Partial Gain (All Partials, in dB)
+			</digest>
+			<description>
+				Partial Gain (All Partials, in dB)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Partial Gain (All Partials, in dB)" />
+				<attribute name="order" get="1" set="1" type="int" value="9" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parf0" get="1" set="1" type="float" size="1">
+			<digest>
+				Constant Fundamental Frequencies (in Hz)
+			</digest>
+			<description>
+				Constant Fundamental Frequencies (in Hz)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Constant Fundamental Frequencies (in Hz)" />
+				<attribute name="order" get="1" set="1" type="int" value="10" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parf0wgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Constant Fundamental Frequency
+			</digest>
+			<description>
+				Weight of Constant Fundamental Frequency
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Constant Fundamental Frequency" />
+				<attribute name="order" get="1" set="1" type="int" value="11" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parfreqwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Constant Partial Frequencies
+			</digest>
+			<description>
+				Weight of Constant Partial Frequencies
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Constant Partial Frequencies" />
+				<attribute name="order" get="1" set="1" type="int" value="12" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parfreqbufwgt" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Weights of Partial Frequencies
+			</digest>
+			<description>
+				Buffer Weights of Partial Frequencies
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Weights of Partial Frequencies" />
+				<attribute name="order" get="1" set="1" type="int" value="13" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parfreqvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Variation of Partial Frequencies (in Hz)
+			</digest>
+			<description>
+				Variation of Partial Frequencies (in Hz)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Variation of Partial Frequencies (in Hz)" />
+				<attribute name="order" get="1" set="1" type="int" value="14" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="partrans" get="1" set="1" type="float" size="1">
+			<digest>
+				Partial Frequency Transposition (in cent)
+			</digest>
+			<description>
+				Partial Frequency Transposition (in cent)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Partial Frequency Transposition (in cent)" />
+				<attribute name="order" get="1" set="1" type="int" value="15" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parshiftall" get="1" set="1" type="float" size="1">
+			<digest>
+				Partial Frequency Shift (All Partials, in Hz)
+			</digest>
+			<description>
+				Partial Frequency Shift (All Partials, in Hz)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Partial Frequency Shift (All Partials, in Hz)" />
+				<attribute name="order" get="1" set="1" type="int" value="16" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parshiftwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Partial Frequency Shifts
+			</digest>
+			<description>
+				Weight of Partial Frequency Shifts
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Partial Frequency Shifts" />
+				<attribute name="order" get="1" set="1" type="int" value="17" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parampwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Constant Partial Amplitudes
+			</digest>
+			<description>
+				Weight of Constant Partial Amplitudes
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Constant Partial Amplitudes" />
+				<attribute name="order" get="1" set="1" type="int" value="18" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parampbufwgt" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Weights of Partial Amplitudes
+			</digest>
+			<description>
+				Buffer Weights of Partial Amplitudes
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Weights of Partial Amplitudes" />
+				<attribute name="order" get="1" set="1" type="int" value="19" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parampvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Variation of Partial Amplitude (factor)
+			</digest>
+			<description>
+				Variation of Partial Amplitude (factor)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Variation of Partial Amplitude (factor)" />
+				<attribute name="order" get="1" set="1" type="int" value="20" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="pargainwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Partial Gains
+			</digest>
+			<description>
+				Weight of Partial Gains
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Partial Gains" />
+				<attribute name="order" get="1" set="1" type="int" value="21" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parphivar" get="1" set="1" type="float" size="1">
+			<digest>
+				Variation of Partial Phase (0 to 1)
+			</digest>
+			<description>
+				Variation of Partial Phase (0 to 1)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Variation of Partial Phase (0 to 1)" />
+				<attribute name="order" get="1" set="1" type="int" value="22" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="parenvwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Constant Partial Envelope
+			</digest>
+			<description>
+				Weight of Constant Partial Envelope
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Constant Partial Envelope" />
+				<attribute name="order" get="1" set="1" type="int" value="23" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resbufwgt" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Buffer Weights of Residual
+			</digest>
+			<description>
+				Buffer Weights of Residual
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Buffer Weights of Residual" />
+				<attribute name="order" get="1" set="1" type="int" value="24" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resgain" get="1" set="1" type="float" size="1">
+			<digest>
+				Residual Gain (dB)
+			</digest>
+			<description>
+				Residual Gain (dB)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Residual Gain (dB)" />
+				<attribute name="order" get="1" set="1" type="int" value="25" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resenvwgt" get="1" set="1" type="float" size="1">
+			<digest>
+				Weight of Constant Residual Envelope
+			</digest>
+			<description>
+				Weight of Constant Residual Envelope
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Weight of Constant Residual Envelope" />
+				<attribute name="order" get="1" set="1" type="int" value="26" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resposvar" get="1" set="1" type="float" size="1">
+			<digest>
+				Variation of Residual Position (in ms)
+			</digest>
+			<description>
+				Variation of Residual Position (in ms)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Variation of Residual Position (in ms)" />
+				<attribute name="order" get="1" set="1" type="int" value="27" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="mubuname" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="0" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="playmode" get="1" set="1" type="int" size="1">
+			<digest>
+				Play/Loop Mode
+			</digest>
+			<description>
+				Play/Loop Mode
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="straight loop palindrome" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Play/Loop Mode" />
+				<attribute name="order" get="1" set="1" type="int" value="28" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bounds" get="1" set="1" type="float" size="1">
+			<digest>
+				Play/Loop Boundaries
+			</digest>
+			<description>
+				Play/Loop Boundaries
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Play/Loop Boundaries" />
+				<attribute name="order" get="1" set="1" type="int" value="29" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="speed" get="1" set="1" type="float" size="1">
+			<digest>
+				Play/Loop Speed
+			</digest>
+			<description>
+				Play/Loop Speed
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Play/Loop Speed" />
+				<attribute name="order" get="1" set="1" type="int" value="30" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="muteonstill" get="1" set="1" type="int" size="1">
+			<digest>
+				Mute When Not Playing/Looping
+			</digest>
+			<description>
+				Mute When Not Playing/Looping
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Mute When Not Playing/Looping" />
+				<attribute name="order" get="1" set="1" type="int" value="31" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="maxpartials" get="1" set="1" type="int" size="1">
+			<digest>
+				Maximum Number of Partials
+			</digest>
+			<description>
+				Maximum Number of Partials
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Maximum Number of Partials" />
+				<attribute name="order" get="1" set="1" type="int" value="32" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="windowsize" get="1" set="1" type="int" size="1">
+			<digest>
+				Window Size (in sample frames)
+			</digest>
+			<description>
+				Window Size (in sample frames)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Window Size (in sample frames)" />
+				<attribute name="order" get="1" set="1" type="int" value="33" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="interframe" get="1" set="1" type="int" size="1">
+			<digest>
+				Interpolate Between Frames
+			</digest>
+			<description>
+				Interpolate Between Frames
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Interpolate Between Frames" />
+				<attribute name="order" get="1" set="1" type="int" value="34" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="cyclic" get="1" set="1" type="int" size="1">
+			<digest>
+				Cyclic Residual
+			</digest>
+			<description>
+				Cyclic Residual
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Cyclic Residual" />
+				<attribute name="order" get="1" set="1" type="int" value="35" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="refer">
+			<arglist>
+				<arg name="MuBu container name" type="symbol" optional="0" id="0" />
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set MuBu container and track id
+			</description>
+		</method>
+		<method name="resetoutputs">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				clear internal output buffers
+			</description>
+		</method>
+		<method name="jump">
+			<arglist>
+				<arg name="position" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Jump To Position
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="position" type="float" optional="0" id="0" />
+				<arg name="transition time (optional)" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				play until position and stop at end
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set position
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				set position
+			</description>
+		</method>
+		<method name="stop">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				stop playing
+			</description>
+		</method>
+		<method name="getposition">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				get current position
+			</description>
+		</method>
+		<method name="parfreq">
+			<arglist>
+				<arg name="vector of partial frequencies" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Constant Partial Frequencies (in Hz)
+			</description>
+		</method>
+		<method name="parshift">
+			<arglist>
+				<arg name="vector of partial shifts" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Frequency Shifts (in Hz)
+			</description>
+		</method>
+		<method name="paramp">
+			<arglist>
+				<arg name="vector of partial amplitudes" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Frequency Amplitudes (linear)
+			</description>
+		</method>
+		<method name="pargain">
+			<arglist>
+				<arg name="vector of partial gains" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Frequency Gains (linear)
+			</description>
+		</method>
+		<method name="parenv">
+			<arglist>
+				<arg name="vector of envelope samples" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Constant Partials Envelope (in dB)
+			</description>
+		</method>
+		<method name="resenv">
+			<arglist>
+				<arg name="vector of envelope samples" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Constant Residual Envelope (in dB)
+			</description>
+		</method>
+		<method name="mubuname">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				MuBu Container Name
+			</description>
+		</method>
+		<method name="bufferindex">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Buffer Index or Indices
+			</description>
+		</method>
+		<method name="partials">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Track Id of Partials
+			</description>
+		</method>
+		<method name="residual">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Track Id of Residual
+			</description>
+		</method>
+		<method name="envelope">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Track Id of Envelope
+			</description>
+		</method>
+		<method name="parindexcol">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Column of Partial Indices
+			</description>
+		</method>
+		<method name="parfreqcol">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Column of Partial Frequencies
+			</description>
+		</method>
+		<method name="parampcol">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Column of Partial Amplitudes
+			</description>
+		</method>
+		<method name="parphicol">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Column of Partial Phases
+			</description>
+		</method>
+		<method name="pargainall">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Gain (All Partials, in dB)
+			</description>
+		</method>
+		<method name="parf0">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Constant Fundamental Frequencies (in Hz)
+			</description>
+		</method>
+		<method name="parf0wgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Constant Fundamental Frequency
+			</description>
+		</method>
+		<method name="parfreqwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Constant Partial Frequencies
+			</description>
+		</method>
+		<method name="parfreqbufwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Buffer Weights of Partial Frequencies
+			</description>
+		</method>
+		<method name="parfreqvar">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Variation of Partial Frequencies (in Hz)
+			</description>
+		</method>
+		<method name="partrans">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Frequency Transposition (in cent)
+			</description>
+		</method>
+		<method name="parshiftall">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Partial Frequency Shift (All Partials, in Hz)
+			</description>
+		</method>
+		<method name="parshiftwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Partial Frequency Shifts
+			</description>
+		</method>
+		<method name="parampwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Constant Partial Amplitudes
+			</description>
+		</method>
+		<method name="parampbufwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Buffer Weights of Partial Amplitudes
+			</description>
+		</method>
+		<method name="parampvar">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Variation of Partial Amplitude (factor)
+			</description>
+		</method>
+		<method name="pargainwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Partial Gains
+			</description>
+		</method>
+		<method name="parphivar">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Variation of Partial Phase (0 to 1)
+			</description>
+		</method>
+		<method name="parenvwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Constant Partial Envelope
+			</description>
+		</method>
+		<method name="resbufwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Buffer Weights of Residual
+			</description>
+		</method>
+		<method name="resgain">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Residual Gain (dB)
+			</description>
+		</method>
+		<method name="resenvwgt">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Weight of Constant Residual Envelope
+			</description>
+		</method>
+		<method name="resposvar">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Variation of Residual Position (in ms)
+			</description>
+		</method>
+		<method name="playmode">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				straight loop palindrome
+			</description>
+		</method>
+		<method name="bounds">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Play/Loop Boundaries
+			</description>
+		</method>
+		<method name="speed">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Play/Loop Speed
+			</description>
+		</method>
+		<method name="muteonstill">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Mute When Not Playing/Looping
+			</description>
+		</method>
+		<method name="maxpartials">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Maximum Number of Partials
+			</description>
+		</method>
+		<method name="windowsize">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Window Size (in sample frames)
+			</description>
+		</method>
+		<method name="interframe">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Interpolate Between Frames
+			</description>
+		</method>
+		<method name="cyclic">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Cyclic Residual
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="mubu.granular~" />
+		<seealso name="mubu.concat~" />
+		<seealso name="mubu" />
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+		<seealso name="mubu.process" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+

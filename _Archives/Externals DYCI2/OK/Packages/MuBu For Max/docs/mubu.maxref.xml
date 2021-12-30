@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="mubu">
+	<digest>
+		MuBu container
+	</digest>
+	<description>
+		                             Multi-buffer container for sound description and motion capture data. <br />                              The MuBu multi-buffer can contain multiple temporally aligned tracks with an individual time representation                              (periodically <i>sampled</i> or <i>time-tagged</i> data).                              Essentially, a track is a contiguous array of track elements each including a 2-dimensional matrix of numeric values                              (representing scalars, vectors or matrices using 32-bit floating-point values),                              and an item of <i>extra data</i>.                              Currently, <m>label</m> is the only supported type of extra data, allowing to associate a symbol to each track element.                             As an option, the matrix of each track element can have a variable number of rows. <br />                              <br />                              The following options define the configuration of a track when it is created: <br />                              <br />                              - time representation (<m>timetagged</m>) <br />                              - extra data type (<m>extradata</m>) <br />                              <br />                              In order to keep the implementation of the MuBu track simple,                              the a track is preallocated to a given maximum size (maxSize).                              The maxium size and the configuration options of a track can not be changed.                              Nevertheless, the <m>modifytrack</m> message as well as messages sent to a given track allow for replacing                              a track with a track of another configuration copying the original track's content. <br />                              <br />                              Many MuBu externals such as the <o>i<o>mubu</o></o> editor and the synthesis externals (such as <o><o>mubu</o>.concat~</o>),                              can interpret the data stored in the different tracks of a container as being temporally aligned                              to a sound stored in a <o>buffer~</o> or <o>polybuffer~</o>. <br />                              <br />                              By default a container has a single <i>buffer</i>.                              A container with multiple buffers repeats the same structure of tracks multiple times.                              Each buffer of a MuBu conatiner may be associated (by its index) to a buffer of a <o>polybuffer~</o>.                              While the content, the size, and the maximum size as well as other parameters (e.g. the sample rate)                              can be different for the same track in different buffers, corresponding tracks of different buffers have                              to be of the same configuration (time-tagged or not, extra data type).                              Consequently, when adding a track to a container with multiple buffers, an empty track is also added                              to the other buffers of the given container.                              When a track in one buffer is replaced by a new track of a different configuration                              (time-tagged/sampled, or extra data type),                              the corresponding tracks in the other buffers are modified to fit the configuration of the new track.                              <br />                              Most of the messages sent to a MuBu container or (using the <m>track</m> message) to a particular track of the container,                              concern only the <i>current</i> buffer of the container.                              The current buffer and the number of buffers can be changed by attributes or messages (<m>bufferindex</m> and <m>numbuffers</m>). <br />                              <br />                              Each track (of each buffer) has a <i>track info</i> table storing associated (meta) data as name/value pairs.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+		Ircam | Centre Pompidou
+		</metadata>
+		<metadata name="copyright">
+		 © 1995 - 2018 IRCAM - Centre Pompidou
+		</metadata>
+		<metadata name="version">
+		1.9.11 (Build 01/12/2019)
+		</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" name="messages to the container and tracks">
+			<digest>
+			</digest>
+			<description>
+				messages to the container and tracks
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" name="prefixed output values">
+			<digest>
+			</digest>
+			<description>
+				prefixed output values
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="MuBu name" type="symbol" optional="1"> 
+			<digest>
+			</digest>
+			<description>
+			Name of MuBu container
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="name" get="1" set="1" type="symbol" size="1">
+			<digest>
+				MuBu Container Name
+			</digest>
+			<description>
+				                                    Sets the container name. <br />                                     If a container of the given name exists the <o>mubu</o> object refers to that container                                     (same as the message <m>refer</m>).                                     Otherwise, and if the <o>mubu</o> object does not share its container with other <o>mubu</o> or <o>imubu</o> objects,                                     the current container is simply renamed.                                     If the <o>mubu</o> object shares its current container with other <o>mubu</o> or <o>imubu</o> objects and the given name                                     does not refer to an existing MuBu container, a new empty container is created with the given name.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="MuBu Container Name" />
+				<attribute name="order" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="numbuffers" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Number of Buffers
+			</digest>
+			<description>
+				                                    Sets the number of buffers of the container. <br />                                     If new buffers are created, the additional tracks are created with the same maximum size (maxSize) as                                     the tracks of the last buffer.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Number of Buffers" />
+				<attribute name="order" get="1" set="1" type="int" value="2" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="bufferindex" get="1" set="1" type="int" size="1">
+			<digest>
+				Current Buffer Index
+			</digest>
+			<description>
+				Sets the current buffer.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Current Buffer Index" />
+				<attribute name="order" get="1" set="1" type="int" value="3" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="trackindex" get="1" set="1" type="int" size="1">
+			<digest>
+				Current Track Index
+			</digest>
+			<description>
+				Sets the current track index.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Current Track Index" />
+				<attribute name="order" get="1" set="1" type="int" value="4" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="embed" get="1" set="1" type="int" size="1">
+			<digest>
+				Save Content With Patcher
+			</digest>
+			<description>
+				                                    Enables/disables the conservation of the container data in copy/paste and when saving the patcher. <br />                                     Attention: This option should only be used for containers with a relatively small amout of data.                                     Larger amounts of data should be saved to a file (see <m>write</m>).
+			</description>
+			<attributelist>
+				<attribute name="enumvals" get="1" set="1" type="unknown" value="no yes layout" />
+				<attribute name="label" get="1" set="1" type="symbol" value="Save Content With Patcher" />
+				<attribute name="order" get="1" set="1" type="int" value="5" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="enumindex" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="externalfiles" get="1" set="1" type="int" size="1">
+			<digest>
+				Sounds As External Files
+			</digest>
+			<description>
+				                                    Enable/disable save of sound files names in mubu files. <br />                                     They will be loaded directly from original files.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Sounds As External Files" />
+				<attribute name="order" get="1" set="1" type="int" value="6" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="resamplefiles" get="1" set="1" type="int" size="1">
+			<digest>
+				Resample Audio Files On Load
+			</digest>
+			<description>
+				                                    Enable/disable resampling of sound files on load. <br />                                     They will be resampled to the system sample rate when the file has a different one.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Resample Audio Files On Load" />
+				<attribute name="order" get="1" set="1" type="int" value="7" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="snaprate" get="1" set="1" type="unknown" size="1">
+			<digest>
+				Editor Refresh Delay
+			</digest>
+			<description>
+				Sets the display refresh rate in milliseconds (0: no automatic refresh) (def: 120 ms)
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Editor Refresh Delay" />
+				<attribute name="order" get="1" set="1" type="int" value="108" />
+				<attribute name="paint" get="1" set="1" type="int" value="1" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="viewgui_config" get="1" set="1" type="symbol" size="1">
+			<digest>
+				
+			</digest>
+			<description>
+				
+			</description>
+			<attributelist>
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="savegui" get="1" set="1" type="int" size="1">
+			<digest>
+				Save Gui Config
+			</digest>
+			<description>
+				Save Gui Config
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" value="Save Gui Config" />
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" value="onoff" />
+			</attributelist>
+		</attribute>
+
+		<attribute name="globalgui_config" get="1" set="1" type="symbol" size="1">
+			<digest>
+				
+			</digest>
+			<description>
+				
+			</description>
+			<attributelist>
+				<attribute name="save" get="1" set="1" type="int" value="1" />
+			</attributelist>
+		</attribute>
+
+	</attributelist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="refer">
+			<arglist>
+				<arg name="MuBu container name" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Refers to the MuBu container of the given name. <br />                         If a <o>mubu</o> object is the only reference to its current container,                         the current container is saved as <i>garbage</i> before the new reference is set.                         MuBu containers that have been saved as garbage can be restored via a <i>refer</i> message.                         A warning message is posted into the Max window each time a container is collected as or restored from garbage.
+			</description>
+		</method>
+		<method name="addtrackpaste">
+			<arglist>
+				<arg name="track name (optional)" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Creates new track from clipboard content.
+			</description>
+		</method>
+		<method name="addbufferpaste">
+			<arglist>
+				<arg name="buffer name (optional)" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Creates new buffer from clipboard content.
+			</description>
+		</method>
+		<method name="namebuffers">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Set buffer names from a list.
+			</description>
+		</method>
+		<method name="nametracks">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Set tracks from a list.
+			</description>
+		</method>
+		<method name="getname">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the name of the MuBu container (prefixed by &apos;name&apos;).
+			</description>
+		</method>
+		<method name="getbuffers">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Get buffer names/indices as list (prefixed by &apos;buffers&apos;).
+			</description>
+		</method>
+		<method name="gettracks">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Get track names/indices as a list (prefixed by &apos;tracks&apos;).
+			</description>
+		</method>
+		<method name="infobuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Set buffer info.
+			</description>
+		</method>
+		<method name="getinfobuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Get info for given buffer (optional) or current buffer
+			</description>
+		</method>
+		<method name="getnumbuffers">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the current number of buffers (prefixed by &apos;numbuffers&apos;).
+			</description>
+		</method>
+		<method name="getnumtracks">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs the current number of tracks (prefixed by &apos;numtracks&apos;).
+			</description>
+		</method>
+		<method name="hasbuffer">
+			<arglist>
+				<arg name="buffer index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs whether the given buffer exists (prefixed by &apos;hasbuffer&apos;).
+			</description>
+		</method>
+		<method name="hastrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs whether the given track exists (prefixed by &apos;hastrack&apos;).
+			</description>
+		</method>
+		<method name="getbufferindex">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Outputs current buffer index (prefixed by &apos;bufferindex&apos;).
+			</description>
+		</method>
+		<method name="addbuffer">
+			<arglist>
+				<arg name="buffer name (optional)" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Creates a new buffer.
+			</description>
+		</method>
+		<method name="insertbuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Inserts buffer at given index.
+			</description>
+		</method>
+		<method name="movebuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Move buffer at given index.
+			</description>
+		</method>
+		<method name="copybuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Copies the given buffer.
+			</description>
+		</method>
+		<method name="removebuffer">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Removes the given buffer.
+			</description>
+		</method>
+		<method name="addtrack">
+			<arglist>
+				<arg name="track name (optional)" type="symbol" optional="0" id="0" />
+				<arg name="max size" type="int" optional="0" id="0" />
+				<arg name="matrix cols" type="int" optional="0" id="0" />
+				<arg name="matrix rows" type="int" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Adds an empty track to the current buffer of the MuBu container or replaces an existing named track. <br />                         In addition to the arguments, the message allows for using an attribute syntax to determine                         the configuration options and additional parameters of the created track. <br />                         <br />                         The following attributes are implemented: <br />                         <br />                         <m>@name [symbol]</m> — track name (def: unnamed) <br />                         <m>@maxsize [int]</m> — maximum size (def: 256) <br />                         <m>@matrixcols [int]</m> — number of matrix columns (def: 1) <br />                         <m>@matrixrows [int]</m> — number of matrix rows (def: 1) <br />                         <m>@matrixcolnames [list]</m> — list of matrix column names <br />                         <m>@matrixrowsvar [atom: 0 | &apos;no&apos; | 1 | &apos;yes&apos;]</m> — number of matrix rows is variable or not (def: &apos;no&apos;) <br />                         <m>@timetagged [atom: 0 | &apos;no&apos; | 1 | &apos;yes&apos;]</m> — track is time-tagged or not (def: &apos;no&apos;) <br />                         <m>@samplerate [float]</m> — sample rate and sample period (def: 1) <br />                         <m>@sampleperiod [float]</m> — sample period and sample rate (def: 1000) <br />                         <m>@sampleoffset [float]</m> — sample offset time (def: 0) <br />                         <m>@extradata [symbol: &apos;none&apos; | &apos;label&apos;]</m> — track extra data type (def: &apos;none&apos;) <br />                         <m>@info [list]</m> — list of track info keys and values <br />                         <br />                         Note that when a track in one buffer is replaced by a new track of a different configuration                         (time-tagged/sampled, matrix column names, or extra data type),                         the corresponding tracks in the other buffers are modified to fit the configuration of the new track.
+			</description>
+		</method>
+		<method name="appendtrack">
+			<arglist>
+				<arg name="track name (optional)" type="symbol" optional="0" id="0" />
+				<arg name="max size" type="int" optional="0" id="0" />
+				<arg name="matrix cols" type="int" optional="0" id="0" />
+				<arg name="matrix rows" type="int" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Adds an empty track to the last buffer of the MuBu container or appends a new buffer. <br />                         If a track of the same name or the same configuration attributes already exists a new buffer is added,                         if not the new track is added to teh last buffer.                         The track attributes are identical to those of the <m>addtrack</m> message.
+			</description>
+		</method>
+		<method name="inserttrack">
+			<arglist>
+				<arg name="track index" type="int" optional="0" id="0" />
+				<arg name="track name (optional)" type="symbol" optional="0" id="0" />
+				<arg name="max size" type="int" optional="0" id="0" />
+				<arg name="matrix cols" type="int" optional="0" id="0" />
+				<arg name="matrix rows" type="int" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Inserts an empty track to the MuBu container or moves an existing named to the given track index. <br />                         The track attributes are identical to those of the <m>addtrack</m> message.
+			</description>
+		</method>
+		<method name="movetrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="target track index" type="int" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Moves the given track.
+			</description>
+		</method>
+		<method name="removetrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Removes the given track.
+			</description>
+		</method>
+		<method name="removetracks">
+			<arglist>
+				<arg name="start track index or name" type="atom" optional="0" id="0" />
+				<arg name="number of tracks to remove" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Removes given number of tracks from given index.
+			</description>
+		</method>
+		<method name="replacetrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="max size" type="int" optional="0" id="0" />
+				<arg name="matrix cols" type="int" optional="0" id="0" />
+				<arg name="matrix rows" type="int" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Replaces the given track with an empty track. <br />                         The track attributes are identical to those of the <m>addtrack</m> message.
+			</description>
+		</method>
+		<method name="copytrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="new track name" type="symbol" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Creates a new track by copying the given existing track optionally modifying the track attributes.                         The track attributes are identical to those of the <m>addtrack</m> message.
+			</description>
+		</method>
+		<method name="splittrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="timetags" type="list of double" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Split given track by time.
+			</description>
+		</method>
+		<method name="merge">
+			<arglist>
+				<arg name="tracks to merge - index or name" type="list of atoms" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Merge elements by time or by matrix columns/rows of given tracks
+			</description>
+		</method>
+		<method name="crop">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="timetags" type="list of double" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Crop given track by time.
+			</description>
+		</method>
+		<method name="join">
+			<arglist>
+				<arg name="tracks to append - index or name" type="list of atoms" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Append elements from given tracks to first track
+			</description>
+		</method>
+		<method name="modifytrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="max size" type="int" optional="0" id="0" />
+				<arg name="matrix cols" type="int" optional="0" id="0" />
+				<arg name="matrix rows" type="int" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Replaces the given track by a track with the given attributes copying the content of the original track. <br />                         The track attributes are identical to those of the <m>addtrack</m> message.
+			</description>
+		</method>
+		<method name="croptrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="maximum size factor" type="float" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Crops a given tracks maximum size regarding the current size.
+			</description>
+		</method>
+		<method name="readall">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Replaces the current content of the container by data read from a file.                         If no file path is given, a file open dialog allows for chosing a file in the file system. <br />                         <br />                         Similar to <m>addtrack</m>, the read message allows for the definition of attributes (depending on the file format). <br />                         <br />                         If the <m>@name</m> attribute is specified in the message, a single track is created with the given name.                         Multiple tracks are created with the given name as prefix, followed by additional                         suffixes depending on the file format and content.                         <br />                         The MuBu container supports the following import file formats: <br />                         <br />                         - MuBu files (using custom SDIF types and a .mubu suffix) <br />                         - Multiple sound file formats <br />                         - SDIF, sound description interchange format <br />                         - MIDI standard files <br />                         - MusicXML <br />
+			</description>
+		</method>
+		<method name="readappend">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Appends one or more buffers to the container with data read from a file.                         If no file path is given, a file open dialog allows for chosing a file in the file system. <br />                         Depending on the file format, track attributes can be defined.
+			</description>
+		</method>
+		<method name="read">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Inserts data from a file into the current buffer. <br />                         One or multiple tracks may be added to the container or replace existing tracks.                         If no file path is given, a file open dialog allows for chosing a file in the file system. <br />                         Depending on the file format, track attributes can be defined.
+			</description>
+		</method>
+		<method name="readtrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Replaces the given track by data read from a file.                         If no file path is given, a file open dialog allows for chosing a file in the file system. <br />                         Depending on the file format, track attributes can be defined.
+			</description>
+		</method>
+		<method name="readtrackappend">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Appends data read from a file to the given track.                         One or multiple tracks may be added to the container or replace existing tracks.                         If no file path is given, a file open dialog allows for chosing a file in the file system. <br />                         Depending on the file format, track attributes can be defined.
+			</description>
+		</method>
+		<method name="writeall">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Saves the content of the entire container (all buffer and tracks) into a file.                         The files, suffixed with <i>.mubu</i>, are encoded in an SDIF compatible file format using custom SDIF types                         for each track.
+			</description>
+		</method>
+		<method name="write">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+				<arg name="attributes" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Exports the data of one or multiple tracks of the currrent buffer into a file.                         Currently only writing of SDIF files is supported. <br />                         <br />                         <b>SDIF Files</b> <br />                         <br />                         The Mubu container supports the import and export of SDIF files containing name value tables,                         labels (&apos;1LAB&apos; signature) and numeric matrix data (32-bit floating-point format only).                         Most SDIF files imported by the container can be exported as identical files. <br />                         <br />                         A track of the current buffer is only exported when its track info defines at least a value for <i>SDIF.FrameSigature</i>.                         Additionally the values <i>SDIF.StreamId</i> and <i>SDIF.MatrixSigature</i> can be defined to create more complex SDIF files.                         When the track info value <i>SDIF.FrameSigature</i> is set to <i>1NVT</i> only the track info is exported,                         otherwise the track info is ignored.
+			</description>
+		</method>
+		<method name="writetrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Saves the content of a given track into a file.
+			</description>
+		</method>
+		<method name="writealltracks">
+			<arglist>
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Saves the content of all tracks into one file for each track.
+			</description>
+		</method>
+		<method name="writedata">
+			<arglist>
+				<arg name="buffer index or name" type="atom" optional="0" id="0" />
+				<arg name="file path" type="symbol" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Saves the data matrices of all tracks of given buffer into a text file.
+			</description>
+		</method>
+		<method name="clearall">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Removes all buffers and tracks from the container.
+			</description>
+		</method>
+		<method name="clear">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Removes all tracks from the container (leaving empty buffers).
+			</description>
+		</method>
+		<method name="cleartrack">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				
+			</description>
+		</method>
+		<method name="printall">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Prints a summary of the container into the Max window.
+			</description>
+		</method>
+		<method name="print">
+			<arglist>
+				<arg name="buffer index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Prints a summary of the current buffer into the Max window.
+			</description>
+		</method>
+		<method name="printtrack">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				Prints a summary of the given track (in the current container) into the Max window.
+			</description>
+		</method>
+		<method name="buffer">
+			<arglist>
+				<arg name="buffer index or name" type="int" optional="0" id="0" />
+				<arg name="message" type="symbol" optional="0" id="0" />
+				<arg name="arguments" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Sets the current buffer and optionally sends a message. <br />                         If 0 is given instead of a valid buffer id, the current buffer remains unchanged and                         the message is send to all buffers of the container.
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Same as message <m>buffer</m> with a buffer index as first argument.
+			</description>
+		</method>
+		<method name="track">
+			<arglist>
+				<arg name="track index or name" type="atom" optional="0" id="0" />
+				<arg name="message" type="symbol" optional="0" id="0" />
+				<arg name="arguments" type="list" optional="0" id="0" />
+			</arglist>
+			<digest>
+			</digest>
+			<description>
+				                        Calls a method of the given track. <br />                         If 0 is given instead of a valid track id, the message is applied to all tracks of the container.                         All track messages are also messages of the <o>mubu.track</o> object. <br />                         <br />                         Valid track messages are: <br />                         <br />                         <m>maxsize</m> [int: size] — sets maximum track size * <br />                         <m>maxduration</m> [float: duration] — sets maximum track size in ms (using current samplerate) * <br />                         <m>size</m> [int: size] — sets current track size <br />                         <m>duration</m> [float: duration] — sets track current size in ms (using current samplerate) <br />                         <m>matrixdims</m> [int: cols] [int: rows] — set number of matrix columns * <br />                         <m>matrixcols</m> [int: cols] — set number of matrix columns * <br />                         <m>matrixrows</m> [int: rows] — set number of matrix rows * <br />                         <m>matrixrows</m> [int: index] [int: rows] — set number of matrix rows at the given index (requires <m>matrixvarrows</m> enabled) <br />                         <m>matrixcolnames</m> [list: names] — sets matrix column names <br />                         <m>matrixvarrows</m> [int: switch] — enables/disables individual variable matrix rows for each track element * <br />                         <m>extradata</m> [&apos;none&apos; | &apos;label&apos;] — sets extra data type * <br />                         <m>timetagged</m> [int: switch] — sets whether track elements have time-tags <br />                         <m>samplerate</m> [float: rate] — sets sample rate (estimated worst case average sample rate for time-tagged tracks) <br />                         <m>sampleperiod</m> [float: period] — sets sample period (estimated worst case average sample period for time-tagged tracks) <br />                         <m>sampleoffset</m> — [float: offset] sets sample offset (0 for time-tagged tracks) <br />                         <m>silent</m> [int: switch] — enables or disables updates to track listeners <br />                         <m>getmaxsize</m> — outputs maximum track size <br />                         <m>getmaxduration</m> — outputs maximum track size in ms (using current samplerate) <br />                         <m>getsize</m> — outputs track size <br />                         <m>getduration</m> — outputs track size in ms (using current samplerate) <br />                         <m>getmatrixcols</m> — outputs number of matrix columns <br />                         <m>getmatrixrows</m> — outputs number of matrix rows <br />                         <m>getmatrixcolnames</m> — outputs matrix column names <br />                         <m>getmatrixvarrows</m> — outputs whether track allows track elements for having a variable number of matrix rows <br />                         <m>getextradata</m> — outputs track extra data type <br />                         <m>gettimetagged</m> — outputs whether track has time-tagged data <br />                         <m>getsamplerate</m> — outputs sample rate <br />                         <m>getsampleperiod</m> — outputs sample period <br />                         <m>getsampleoffset</m> — outputs sample offset <br />                         <m>getsilent</m> — outputs whether track updates of track listeners are enabled <br />                         <m>set</m> [int: index] [list: values] — sets track element(s) at given index <br />                         <m>insert</m> [int: index] [list: values] — inserts track element(s) at given index <br />                         <m>append</m> [list: values] — appends element(s) to track <br />                         <m>remove</m> [int: index] [int: num (opt)] — removes element(s) from track <br />                         <m>insertpoints</m> [list: time and values] — inserts time-tagged element(s) into track <br />                         <m>appendpoints</m> [list: time interval and values] — appends time-tagged element(s) to track <br />                         <m>removepoints</m> [float: time] [float: end time (opt)] — removes time-tagged element(s) from track <br />                         <m>clear</m> — clears track (removing all elements)<br />                         <m>getinfo</m> [sym: key (opt)] — outputs track info (all or for a given key) <br />                         <m>info</m> [list: key and value pairs] — sets track info from a list of key and value pairs <br />                         <m>write</m> [sym: file path] — saves track data to a file                         <m>read</m> [sym: file path] — reads track data from a file                         <m>resample</m> [float: sampleRate] — resamples track to the given sampleRate                         <br />                         The messages marked with * will actually replace the existing track with a new track copying the data.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="imubu" />
+		<seealso name="mubu.track" />
+		<seealso name="mubu.process" />
+		<seealso name="mubu.knn" />
+		<seealso name="mubu.play" />
+		<seealso name="mubu.play~" />
+		<seealso name="mubu.record" />
+		<seealso name="mubu.record~" />
+		<seealso name="mubu.granular~" />
+		<seealso name="mubu.concat~" />
+		<seealso name="mubu.additive~" />
+	</seealsolist>
+
+	<!--MENU ITEMS-->
+	<menuitemlist>
+	</menuitemlist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+	</examplelist>
+
+
+</c74object>
+
