@@ -43,6 +43,7 @@ See the __'quick start' pdf guide__, follow the instructions below, then explore
 * Download the .dmg file corresponding to your OS (see below: one version for OS >= High Sierra and < Catalina, one version for OS >= Catalina).
 * Drag the DYCI2lib directory wherever you want (but not in Max packages / libraries !) and add its path into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). /!\ The path of this folder must not contain any whitespace. /!\ 
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxLibrary/Tutorials/\_ExamplesCorpus\_". /!\ The sampling rate of Max MUST be the same as that of the audio file(s) used in the memory(/ies). /!\ 
+* On MacOS versions >= Catalina, the very first time you open the library, you will have to authorize the execution of the two DYCI2 externals (mubu, and shell) from the "Security & Privacy" menu in "System preference" of your computer. All this is explained in the pdf "DYCI2 start guide". Once this is done, you will never have to do it again.
 
 ### Requirements
 * Mac OS

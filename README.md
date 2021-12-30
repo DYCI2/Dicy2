@@ -54,6 +54,7 @@ NB: When launching the DYCI2 core using the python library and not the compiled 
 * Drag the DYCI2lib directory wherever you want (but not in Max packages / libraries !) and add its path into Max's search path (in Max: Options/File preferences... then add the path WITH THE SUBFOLDERS). /!\ The path of this folder must not contain any whitespace.
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxPatches/Tutorials/\_ExamplesCorpus\_"
 * /!\ The sampling rate of Max MUST be the same as that of the audio file(s) used in the memory(/ies).
+* On MacOS versions >= Catalina, the very first time you open the library, you will have to authorize the execution of the two DYCI2 externals (mubu, and shell) from the "Security & Privacy" menu in "System preference" of your computer. All this is explained in the pdf "DYCI2 start guide". Once this is done, you will never have to do it again.
 
 ## Python configuration
 * Download and install the **last** version of Python **3** (https://www.python.org/downloads).
