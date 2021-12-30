@@ -4,18 +4,20 @@
 The DYCI2 library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
 It integrates the results of the [DYCI2 project](http://repmus.ircam.fr/dyci2/home) and shapes a next-generation software with regard to [OMax](https://github.com/DYCI2/OMax4). 
 
-__A conference paper about the DYCI2 library can be downloaded [here](https://hal.archives-ouvertes.fr/hal-01583089/document).__
+If using the library, please quote: __Nika, J., Déguernel, K., Chemla, A., Vincent, E., & Assayag, G. (2017, October). Dyci2 agents: merging the" free"," reactive", and" scenario-based" music generation paradigms. In International Computer Music Conference. [(Article)](https://hal.archives-ouvertes.fr/hal-01583089/document).__
+
+__Some videos of  artistic productions using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 __A recent presentation about the DYCI2 library (20 min in english): https://youtu.be/RXKJbpJb8w4?t=1530__
-
-__Some videos of collaborations with musicians using DYCI2 or its previous versions: https://www.youtube.com/channel/UCAKZIW0mMWCrX80yS96ZxAw__.
 
 __Author:__ Jérôme Nika (IRCAM STMS LAB)
 __Contributors:__ Joakim Borg (IRCAM STMS LAB), Ken Déguernel (IRCAM STMS LAB / Inria Nancy - Grand Est), Axel Chemla--Romeu-Santos (IRCAM STMS LAB), Georges Bloch (UniStra), Diemo Schwarz (IRCAM STMS LAB); 
 __DYCI2 research project :__ Gérard Assayag (Ircam, PI), Emmanuel Vincent (Inria Nancy, WP leader), Jérôme Nika (Ircam, WP coordinator), Marc Chemillier (EHESS, associate researcher).
 
+Also check [om-dyci2](https://github.com/DYCI2/om-dyci2), the "offline" compositional declination of this project, a framework for interactive generation of musical sequences combining generative agents and computer-assisted composition tools.
+
 ------
-_**To use DYCI2 applications in Max directly, please go to the [Releases page](https://github.com/DYCI2/Dyci2Lib/releases). The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
+_**To use DYCI2 applications in Max directly, please go to the [Release page](https://github.com/DYCI2/Dyci2Lib/releases) that contains a release version of DYCI2lib ready to be used as a Max library. The following sections of this document are intended for developers wishing to craft the Python core of the DYCI2 agents.**_
 
 ------
 
@@ -58,7 +60,7 @@ NB: When launching the DYCI2 core using the python library and not the compiled 
 * Open Terminal to install the dependencies: `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`, enter, `pip3 install -r requirements.txt --user`, enter.
 
 ------
-## C wrapper and OM/OM\# library (work in progress)
+## See also: om-dyci2, C wrapper and OM/OM\# library for compositional worflows
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library,
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment,
 are available at https://github.com/DYCI2/om-dyci2.
