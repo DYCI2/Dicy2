@@ -60,7 +60,7 @@ NB: When launching the DYCI2 core using the python library and not the compiled 
 * Open Terminal to install the dependencies: `cd [DRAG_AND_DROP_THE_DIRECTORY_Dyci2lib]`, enter, `pip3 install -r requirements.txt --user`, enter.
 
 ------
-##See also: om-dyci2, C wrapper and OM/OM\# library for compositional worflows
+## See also: om-dyci2, C wrapper and OM/OM\# library for compositional worflows
 * __libdyci2__: a C wrapper to the DYCI2 Python library allowing to compile libdyci2 as a dynamic library,
 * __om-dyci2__: a library for using DYCI2/libdyci2 in the OM/o7 computer-aided composition environment,
 are available at https://github.com/DYCI2/om-dyci2.
