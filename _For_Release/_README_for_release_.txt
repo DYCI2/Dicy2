@@ -45,8 +45,11 @@ See the __'quick start' pdf guide__, follow the instructions below, then explore
 * Insert the media files downloaded at http://repmus.ircam.fr/nika/dyci2_library in "MaxLibrary/Tutorials/\_ExamplesCorpus\_". /!\ The sampling rate of Max MUST be the same as that of the audio file(s) used in the memory(/ies). /!\ 
 * On MacOS versions >= Catalina, the very first time you open the library, you will have to authorize the execution of the two DYCI2 externals (mubu, and shell) from the "Security & Privacy" menu in "System preference" of your computer. All this is explained in the pdf "DYCI2 start guide". Once this is done, you will never have to do it again.
 
+(Open the "System preference / Security & Privacy" menu of your computer. Launch one of the Tutorial patchers. On the popup messages click on "Open" if possible, "Cancel" if not. In "System preference / Security & Privacy"  click on "Open anyway" as soon as this option appears. When there are no more error messages quit Max. Launch one of the Tutorial patchers again, and repeat the operation until there are no more popup messages when opening a tutorial. You may have to quit and restart Max several times, but once this is done, you will never have to do it again.)
+
+
 ### Requirements
-* Mac OS
+* Mac OS >= High Sierra
 * Max 8
 * Mubu for Max: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 * Catart by Mubu: already included in DYCI2lib/Max_Library/external (but check the repository https://forum.ircam.fr/projects/detail/catart-mubu/ !)
