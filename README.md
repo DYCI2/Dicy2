@@ -1,4 +1,4 @@
-# DYCI2_library
+# !!!! UNDER CONSTRUCTION !!!!
 
 
 The DYCI2 library contains a collection of generative agents and tools for smart composition and human-machine co-improvisation. 
