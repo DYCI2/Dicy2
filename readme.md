@@ -18,7 +18,7 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 * Drag the Dicy2 directory in your Max packages.
 * Install "Mubu for Max" __>=1.10.5__ to use the audio use case: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 
-*Remark: anything other than downloading the release or cloning the repository will break the signature and notarization of misc/dicy2_server.app. Developpers can build this app by themselves from the [Python source code](https://github.com/DYCI2/Dicy2-python)* 
+*Remark: anything other than downloading the release or cloning the repository will break the signature and notarization of misc/dicy2_server.app. Developpers can build this app by themselves from the [Python source code](https://github.com/DYCI2/Dicy2-python)*
 
 ### Quick start
 * See the "Dyci2 for Max user guide" that comes with the library.
@@ -51,7 +51,7 @@ This distribution includes agents and sound files from past productions with our
 "Balafon_Lehman_ExMachina.wav" and "SaxPlayingMode_Lehman_ExMachina.wav" were recorded by Steve Lehman for "Ex Machina" with Orchestre National de Jazz.
 "Texture_Maurin_ExMachina.wav" was recorded by Fred Maurin for "Ex Machina" with Orchestre National de Jazz.
 "Piano_Markeas_Music-Of-Choices.wav" was recorded by Alexandros Markeas for "Music of Choices".
-"Soprano_Gentilucci.wav" was recorded by Marta Gentilucci during her residency "Female Singing Voice's Vibrato and Tremolo: Analysis, Mapping and Improvisation" at Ircam. 
+"Soprano_Gentilucci.wav" was recorded by Marta Gentilucci during her residency "Female Singing Voice's Vibrato and Tremolo: Analysis, Mapping and Improvisation" at Ircam.
 "Fox_Sax_1/2/3.aif" comes from a performance of "C'est pour ça" at Ircam.
 "Nox3_LucidDreams.wav" comes from the song "Lucid Dreams" by Nox3.
 
