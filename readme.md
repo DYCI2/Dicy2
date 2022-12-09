@@ -14,14 +14,18 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 * Max 8
 
 ### Installation
+* Download the [last Dicy2 Release](https://forum.ircam.fr/projects/releases/dicy2/) or clone the repo.
 * Drag the Dicy2 directory in your Max packages.
 * Install "Mubu for Max" __>=1.10.5__ to use the audio use case: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
+
+*Remark: anything other than downloading the release or cloning the repository will break the signature and notarization of misc/dicy2_server.app. Developpers can build this app by themselves from the [Python source code](https://github.com/DYCI2/Dicy2-python)* 
 
 ### Quick start
 * See the "Dyci2 for Max user guide" that comes with the library.
 * Have a look at "extras/Dicy2_Overview.maxpat"
 * Tutorials and examples are in "examples" and "examples/Performance Strategies"
 * __[Video tutorial on Ircam's Youtube channel](https://forum.ircam.fr/article/detail/dicy2-tutorials/)__
+
 
 
 ------
@@ -73,8 +77,3 @@ Interested developers can check out the [generative core of Dicy2](https://githu
 
 ### License
 GPL v3
-
-
-
-
-
