@@ -1,0 +1,194 @@
+{
+	"configuration" : 	{
+		"default_parameters" : 		{
+			"absolute_regularization" : 0.001,
+			"covariance_mode" : 0,
+			"gaussians" : 12,
+			"relative_regularization" : 0.01
+		}
+,
+		"multiClass_regression_estimator" : 0,
+		"multithreading" : 2
+	}
+,
+	"models" : [ 		{
+			"components" : [ 				{
+					"bimodal" : 0,
+					"covariance" : [ 425.108891727354091 ],
+					"covariance_determinant" : 425.108891727354091,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.002352338470119 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 204.538118122464937 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 150.624967975804338 ],
+					"covariance_determinant" : 150.624967975804338,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.006639005560888 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 16.476261297184031 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 237.453053086290737 ],
+					"covariance_determinant" : 237.453053086290737,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.004211358780199 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 95.812105098479421 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 5748.538843282541166 ],
+					"covariance_determinant" : 5748.538843282541166,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000173957248487 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 331.383052444722466 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.11623046875 ],
+					"covariance_determinant" : 1.11623046875,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.895872338191808 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 703.0733642578125 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 6350.168437727226774 ],
+					"covariance_determinant" : 6350.168437727226774,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000157476137807 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 362.023892769285965 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 3590.169184152767684 ],
+					"covariance_determinant" : 3590.169184152767684,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000278538405492 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 249.360005468629083 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 57.599568174813143 ],
+					"covariance_determinant" : 57.599568174813143,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.01736124126773 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 238.950004306753698 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 3888.784629978075827 ],
+					"covariance_determinant" : 3888.784629978075827,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000257149751182 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 270.844903244948171 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 3947.322589863489611 ],
+					"covariance_determinant" : 3947.322589863489611,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000253336274711 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 285.286351047593769 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.662642116527496 ],
+					"covariance_determinant" : 2.662642116527496,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.375566807793214 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 261.92159682915451 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 6231.291652331361547 ],
+					"covariance_determinant" : 6231.291652331361547,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 1,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.000160480371614 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 375.546065572608939 ],
+					"output_covariance" : [  ]
+				}
+ ],
+			"label" : "1",
+			"mixture_coeffs" : [ 0.100561425089836, 0.060304276645184, 0.074001312255859, 0.083137810230255, 0.008620360866189, 0.061950642615557, 0.070433378219604, 0.211645498871803, 0.062989138066769, 0.051536902785301, 0.108948402106762, 0.105870865285397 ],
+			"parameters" : 			{
+				"absolute_regularization" : 0.001,
+				"covariance_mode" : 0,
+				"gaussians" : 12,
+				"relative_regularization" : 0.01
+			}
+
+		}
+ ],
+	"shared_parameters" : 	{
+		"bimodal" : 0,
+		"column_names" : [ "FundamentalFrequencyMean" ],
+		"dimension" : 1,
+		"dimension_input" : 0,
+		"em_algorithm_max_iterations" : 0,
+		"em_algorithm_min_iterations" : 10,
+		"em_algorithm_percent_chg" : 0.01,
+		"likelihood_window" : 1
+	}
+
+}

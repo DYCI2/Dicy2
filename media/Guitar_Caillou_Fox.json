@@ -1,0 +1,428 @@
+{
+	"configuration" : 	{
+		"default_parameters" : 		{
+			"absolute_regularization" : 0.001,
+			"covariance_mode" : 0,
+			"gaussians" : 30,
+			"relative_regularization" : 0.01
+		}
+,
+		"multiClass_regression_estimator" : 0,
+		"multithreading" : 2
+	}
+,
+	"models" : [ 		{
+			"components" : [ 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.270200348210444, 0.141494079177905, 0.141494079177905, 1049.730771093697513 ],
+					"covariance_determinant" : 283.617599302292547,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 3.701218731404769, -0.000498890335177, -0.000498890335177, 0.000952692459407 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 10.646695551564559, 421.59034681481495 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.031796385363994, 0.000005520947497, 0.000005520947497, 233.738597284156896 ],
+					"covariance_determinant" : 7.43204251365593,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 31.450115746065268, -0.000000742857362, -0.000000742857362, 0.004278283568154 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.000000216655376, 22.578199441111028 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.009896372397993, 31.161730019869903, 31.161730019869903, 1193.975580238002067 ],
+					"covariance_determinant" : 1428.71376962088766,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.835699638112136, -0.021811037789703, -0.021811037789703, 0.001406787290173 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 2.677084887593267, 496.41914955033991 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.246918717924641, 91.314093397321102, 91.314093397321102, 7717.143631747909239 ],
+					"covariance_determinant" : 9001.530822112636088,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.857314581736522, -0.010144284922405, -0.010144284922405, 0.000249615177943 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.956605251931642, 714.179571967863126 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.090221597387237, 179.696901240496288, 179.696901240496288, 37107.633207505394239 ],
+					"covariance_determinant" : 8164.566835309526141,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 4.544960431584074, -0.022009361288263, -0.022009361288263, 0.000133530855877 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 9.361748500696509, 477.441701216935201 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.587160198638034, 72.991738342092432, 72.991738342092432, 16046.909155938043114 ],
+					"covariance_determinant" : 4094.312501326588517,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 3.919317138283588, -0.017827593355036, -0.017827593355036, 0.000143408740405 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 0.664380734579285, 858.196534634665795 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.255739221779925, -7.519503043506039, -7.519503043506039, 633.656228236038714 ],
+					"covariance_determinant" : 739.164052899829471,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.857260611835937, 0.010172982592979, 0.010172982592979, 0.001698864030053 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 4.75203807973941, 915.953211538814799 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.362027802231302, 197.761317620488029, 197.761317620488029, 33957.159833455189073 ],
+					"covariance_determinant" : 41098.216864441659709,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.826244115297252, -0.004811919657556, -0.004811919657556, 0.0000574727563 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 1.998327162745304, 1459.115866461559108 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 5.563527677379542, 170.808490802778664, 170.808490802778664, 6458.415262090952638 ],
+					"covariance_determinant" : 6756.031532330542177,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.955948063768595, -0.025282370276898, -0.025282370276898, 0.000823490484133 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 6.3795824224224, 612.310586012591443 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.637079589591098, 89.291406256825454, 89.291406256825454, 4295.201181005912076 ],
+					"covariance_determinant" : 3353.832136296823137,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 1.280684603895684, -0.026623695709296, -0.026623695709296, 0.000786288485059 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.553569450185528, 640.418328232450222 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 4.207485872204113, 55.128569125411019, 55.128569125411019, 847.029121008164452 ],
+					"covariance_determinant" : 524.703926172098704,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 1.614299186185898, -0.1050660503488, -0.1050660503488, 0.008018780996931 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 8.234010689484874, 567.064905686625139 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.604159108527816, 5.851962486180339, 5.851962486180339, 189.317946608939423 ],
+					"covariance_determinant" : 80.132696911911438,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 2.362555534815626, -0.073028398040981, -0.073028398040981, 0.007539483030154 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 1.000272785950372, 228.441736841341537 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.031796162128448, -0.0, -0.0, 3.28735731150225 ],
+					"covariance_determinant" : 0.104525346050666,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 31.450336551947746, 0.0, 0.0, 0.304195712617264 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.000000000000001, 0.038890228006652 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.075926055386349, -0.195404537461088, -0.195404537461088, 171.144499184308415 ],
+					"covariance_determinant" : 184.100642975184769,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.929624668434087, 0.001061400624698, 0.001061400624698, 0.005844227581168 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 6.32854169168058, 156.845668165203364 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 4.082168153393978, -163.248853607121816, -163.248853607121816, 6709.152847608544107 ],
+					"covariance_determinant" : 737.701886720629091,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 9.094666786651896, 0.221293799766226, 0.221293799766226, 0.005533628457344 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.860158263144285, 210.723356187998832 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 8.64235774705395, -56.215648604605811, -56.215648604605811, 895.244781150724634 ],
+					"covariance_determinant" : 4576.826521851063262,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.195603826554617, 0.012282669735507, 0.012282669735507, 0.001888286065857 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 3.644818672089817, 90.579985504634521 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.031796428516465, 0.000006255151957, 0.000006255151957, 2849.143350335714786 ],
+					"covariance_determinant" : 90.592582872071716,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 31.450073063476601, -0.000000069047065, -0.000000069047065, 0.000350982690949 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 10.999999733611912, 134.964754163306935 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.03179637017668, 0.000002499517424, 0.000002499517424, 142.960864226453936 ],
+					"covariance_determinant" : 4.545636559716109,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 31.450130767907751, -0.000000549871815, -0.000000549871815, 0.006994921340272 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 5.000000013970339, 446.028150121442707 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.118233659537182, 79.665158217931079, 79.665158217931079, 9436.74557368888054 ],
+					"covariance_determinant" : 4205.94910309943316,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 2.243666136315056, -0.018941065682232, -0.018941065682232, 0.000265869517706 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 1.419205433459118, 546.285262493027631 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 4.357185503349675, -12.848656706137589, -12.848656706137589, 220.009934267137623 ],
+					"covariance_determinant" : 793.536117029512525,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.277252578106606, 0.016191647021984, 0.016191647021984, 0.005490847120683 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.295617890188374, 513.267694447404665 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 4.689075556986995, -121.759663853605446, -121.759663853605446, 3310.75021545845857 ],
+					"covariance_determinant" : 698.942168852694067,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 4.736801359249821, 0.174205634285126, 0.174205634285126, 0.006708817647509 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 5.506067094915934, 480.298760571458672 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.090801827441183, -16.288090011431382, -16.288090011431382, 229.852817038507425 ],
+					"covariance_determinant" : 215.274813686124531,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 1.067718109251916, 0.075661846978438, 0.075661846978438, 0.009712245439402 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 7.400155756730724, 572.353979079759711 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.139568709770258, 7.991901035134156, 7.991901035134156, 2394.112400627019269 ],
+					"covariance_determinant" : 2664.385097272129769,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.898560948669986, -0.002999529250977, -0.002999529250977, 0.000427704204973 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 1.909298973465764, 416.105424062403074 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 3.610698338844487, 101.805775574070921, 101.805775574070921, 4710.867604700952143 ],
+					"covariance_determinant" : 6645.105894571940553,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.708922879400466, -0.015320414330377, -0.015320414330377, 0.000543362046614 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 3.391989629812315, 494.449496021859716 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 1.870304200081495, -0.621545100246339, -0.621545100246339, 126.524605031716177 ],
+					"covariance_determinant" : 236.253181892830753,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.535546670813138, 0.002630843298137, 0.002630843298137, 0.007916524912371 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 8.147543983791504, 334.732594383687854 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 0.031796678543321, -0.000003880824103, -0.000003880824103, 12142.929080428208181 ],
+					"covariance_determinant" : 386.104812544708466,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 31.449825762071107, 0.000000010051219, 0.000000010051219, 0.000082352453298 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 3.99999979126889, 439.799366042886106 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.060638876438557, 25.212683467808294, 25.212683467808294, 817.431930950045285 ],
+					"covariance_determinant" : 1048.752608110007714,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.779432560766802, -0.024040639587295, -0.024040639587295, 0.001964847439237 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 2.704341642446673, 502.955920503323739 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 3.587319074275046, -70.856258779901367, -70.856258779901367, 1427.123105243020063 ],
+					"covariance_determinant" : 98.936528492570375,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 14.424632913516765, 0.716178946840876, 0.716178946840876, 0.036258792671753 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 8.33330030733239, 1175.409068820793209 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 2.546993178973854, 38.587791911427111, 38.587791911427111, 890.698353725648076 ],
+					"covariance_determinant" : 779.584946862867469,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 1.142528928130171, -0.049497866867118, -0.049497866867118, 0.003267114365437 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 3.109653447669949, 507.997155482518679 ],
+					"output_covariance" : [  ]
+				}
+, 				{
+					"bimodal" : 0,
+					"covariance" : [ 5.237003241593166, 186.044936785678885, 186.044936785678885, 8677.43067389553471 ],
+					"covariance_determinant" : 10831.014064303624764,
+					"covariance_determinant_input" : 0,
+					"covariance_mode" : 0,
+					"dimension" : 2,
+					"dimension_input" : 0,
+					"inverse_covariance" : [ 0.801165119201001, -0.01717705615385, -0.01717705615385, 0.00048351919871 ],
+					"inverse_covariance_input" : [  ],
+					"mean" : [ 4.958799774916098, 538.647425568488302 ],
+					"output_covariance" : [  ]
+				}
+ ],
+			"label" : "1",
+			"mixture_coeffs" : [ 0.050317712128162, 0.129702195525169, 0.00064502103487, 0.055521070957184, 0.036552183330059, 0.018060810863972, 0.012021692469716, 0.018113972619176, 0.005735457874835, 0.000251227145782, 0.026079561561346, 0.021028969436884, 0.116104558110237, 0.014107002876699, 0.028254413977265, 0.063630044460297, 0.029019847512245, 0.011920764110982, 0.073990941047668, 0.018652064725757, 0.051947720348835, 0.021094065159559, 0.096226423978806, 0.000231596583035, 0.02218770980835, 0.04566327854991, 0.004948453512043, 0.00903603900224, 0.018749509006739, 0.000205699689104 ],
+			"parameters" : 			{
+				"absolute_regularization" : 0.001,
+				"covariance_mode" : 0,
+				"gaussians" : 30,
+				"relative_regularization" : 0.01
+			}
+
+		}
+ ],
+	"shared_parameters" : 	{
+		"bimodal" : 0,
+		"column_names" : [ "PitchClass", "HarmonicSpectralCentroidMean" ],
+		"dimension" : 2,
+		"dimension_input" : 0,
+		"em_algorithm_max_iterations" : 0,
+		"em_algorithm_min_iterations" : 10,
+		"em_algorithm_percent_chg" : 0.01,
+		"likelihood_window" : 1
+	}
+
+}
