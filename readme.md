@@ -1,6 +1,6 @@
-# Dicy2 library for Max
+# Dicy2 for Max
 
-__Dicy2__ (formerly "DYCI2") is a collection of agents and tools using machine-learning for the interactive generation of structured musical sequences. It can be integrated into musical setups ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. It is available as a [plugin for Ableton Live](https://forum.ircam.fr/projects/detail/dicy2-for-live/) and a [library for Max](https://forum.ircam.fr/projects/detail/dicy2/).
+__Dicy2 for Max__ is a Max package implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our [plugin for Ableton Live](https://forum.ircam.fr/projects/detail/dicy2-for-live/) !
 
 
 To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https://discussion.forum.ircam.fr/c/dicy2/
