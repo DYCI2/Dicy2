@@ -13,12 +13,12 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 * Mac OS >= High Sierra
 * Max 8
 
-### Installation for users (using the [Release](https://forum.ircam.fr/projects/releases/dicy2/)).
+### Installation for users: use the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/))
 * Download the [last Dicy2 Release](https://forum.ircam.fr/projects/releases/dicy2/).
 * Drag the Dicy2 directory in your Max packages.
 * Install "Mubu for Max" __>=1.10.5__ to use the audio use case: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 
-### Installation for developpers (using the source code)
+### Installation for developpers: use the source code 
 * Clone the repository and initialize submodules: `git clone --recurse-submodules git@github.com:DYCI2/Dicy2.git` 
 * Follow the installation / building procedure in the Readme of the [Python-source-code submodule](https://github.com/DYCI2/Dicy2-python)
 * Move the `dicy2_server.app` you built in `Dicy2/misc`
