@@ -1,6 +1,6 @@
 # Dicy2 for Max
 
-__[Dicy2 for Max](https://forum.ircam.fr/projects/detail/dicy2/)__ is a Max package implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our [plugin for Ableton Live](https://forum.ircam.fr/projects/detail/dicy2-for-live/) !
+__[Dicy2 for Max](https://forum.ircam.fr/projects/detail/dicy2/)__ (formerly DYCI2) is a Max package implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our [plugin for Ableton Live](https://forum.ircam.fr/projects/detail/dicy2-for-live/) !
 
 <img src="https://github.com/DYCI2/Dicy2/blob/master/icon.png" alt="Dicy2 for Max" width="200"/>
 
@@ -19,19 +19,19 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 * Drag the Dicy2 directory in your Max packages.
 * Install "Mubu for Max" __>=1.10.5__ to use the audio use case: Open Max, File / Show Package Manager, Search "Mubu for Max", Install.
 
+
 <details><summary>Installation for developpers: click here to unfold</summary>
 The generative core of Dicy2, `dicy2_server.app` is already in `Dicy2/misc`, and ready to play in the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/)! See "Installation for developpers" in the section "More" at the end of this document to build your own version from the [python source code repository](https://github.com/DYCI2/Dicy2-python).
 </details>
 
-### Quick start
+
+------
+
+## Quick Start
 * See the "Dyci2 for Max user guide" that comes with the library.
 * Have a look at "extras/Dicy2_Overview.maxpat"
 * Tutorials and examples are in "examples" and "examples/Performance Strategies"
 * __[Video tutorial on Ircam's Youtube channel](https://forum.ircam.fr/article/detail/dicy2-tutorials/)__
-
-------
-
-
 
 ------
 
@@ -74,7 +74,7 @@ Contributions / thanks : Serge Lemouton, Jean Bresson, Thibaut Carpentier, Georg
 ## More
 
 ### Contact us
-Please write to `jerome.nika@ircam.fr` and `augustin.muller@ircam.fr` for any question, or to share with us your projects using Dicy2 !
+Please write to <jerome.nika@ircam.fr> and <augustin.muller@ircam.fr> for any question, or to share with us your projects using Dicy2!
 
 ### Installation for developpers: use the source code 
 The generative core of Dicy2 was developped in Python and its sources are available in the [python source code repository](https://github.com/DYCI2/Dicy2-python). It has to be built as `dicy2_server.app` from the Python sources and installed in `Dicy2/misc`.
