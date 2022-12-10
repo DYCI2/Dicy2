@@ -1,3 +1,6 @@
 [submodule "Dicy2-python"]
 	path = Dicy2-python
 	url = git@github.com:DYCI2/Dicy2-python.git
+[submodule "Dicy2-python-source"]
+	path = Dicy2-python-source
+	url = https://github.com/DYCI2/Dicy2-python.git
