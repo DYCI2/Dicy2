@@ -1,0 +1,2 @@
+maxosc>=0.0.6
+python-osc
