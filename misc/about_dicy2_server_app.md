@@ -1,4 +1,4 @@
-# About Dicy2 generative core
+# About  `dicy2_server.app`, Dicy2 generative core
 
 ### __Recommended for users:__ using the [Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/).
 
