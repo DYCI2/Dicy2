@@ -1,0 +1,3 @@
+[submodule "Dicy2-python"]
+	path = misc/Dicy2-python
+	url = git@github.com:DYCI2/Dicy2-python.git
