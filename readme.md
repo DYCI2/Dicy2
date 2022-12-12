@@ -22,8 +22,8 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
  *__RELEASE NOTE: The current release of Dicy2 has been tested with MuBu v1.10.5 [which can be found here](https://forum.ircam.fr/projects/releases/mubu/) in case of hypothetical problems with a later version installed from the Package Manager. Dicy2 will of course be tested and updated along with the various MuBu releases.__*
 
 
-<details><summary>Installation for developpers: click here to unfold</summary>
-The generative core of Dicy2, `dicy2_server.app` is already in `Dicy2/misc`, and ready to play in the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/)! See "Installation for developpers" in the section "More" at the end of this document to build your own version from the [python source code repository](https://github.com/DYCI2/Dicy2-python).
+<details><summary>Installation from the code repository for developpers: click here to unfold</summary>
+We recommend to use the [release version of the Max library](https://forum.ircam.fr/projects/releases/dicy2/). The associated repository is available [here](https://github.com/DYCI2/Dicy2). In addition, the generative core of Dicy2, `dicy2_server.app` is already in `Dicy2/misc`, and ready to play in the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/)! See "Installation for developpers" in the section "More" at the end of this document to build your own version from the [python source code repository](https://github.com/DYCI2/Dicy2-python).
 </details>
 
 
@@ -81,7 +81,7 @@ Please write to `jerome.nika@ircam.fr` and `augustin.muller@ircam.fr` for any qu
 
 ### Installation for developpers: use the source code 
 
-* We recommend to use the [release version of the Max library](https://forum.ircam.fr/projects/releases/dicy2/), however, for information the associated repository is available [here](https://github.com/DYCI2/Dicy2).
+* We recommend to use the [release version of the Max library](https://forum.ircam.fr/projects/releases/dicy2/). For information, the associated repository is available [here](https://github.com/DYCI2/Dicy2).
 
 * The generative core of Dicy2 was developped in Python and its sources are available in the [python source code repository](https://github.com/DYCI2/Dicy2-python). It has to be built as `dicy2_server.app` from the Python sources and installed in `Dicy2/misc`.
 
