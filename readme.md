@@ -17,7 +17,7 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 ### Standard installation
 * Download the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/).
 * Drag the Dicy2 directory in your Max packages.
-* Install "MuBu for Max" __>=1.10.5__ from the Package Manager in Max: File / Show Package Manager, Search "Mubu for Max", Install.
+* Install Dicy2 dependency "MuBu for Max" __>=1.10.5__ from the [Ircam Forum Webpage](https://forum.ircam.fr/projects/releases/mubu/) (or from the Package Manager in Max as soon as it is available).
     
  *__RELEASE NOTE: The current release of Dicy2 has been tested with MuBu v1.10.5 [which can be found here](https://forum.ircam.fr/projects/releases/mubu/) in case of hypothetical problems with a later version installed from the Package Manager. Dicy2 will of course be tested and updated along with the various MuBu releases.__*
 
