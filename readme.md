@@ -67,7 +67,7 @@ This distribution includes agents and sound files from past productions with our
 
 ## Authors
 
-Dicy2 is a library of the Ircam Musical Representations team, designed and developed by [Jérôme Nika](https://jeromenika.com/), Augustin Muller (Max library), Joakim Borg (Python generative engine / [Gig RepMus API](https://github.com/DYCI2/gig)), and Matthew Ostrowski (tutorial patchers and videos, abstractions) in the framework of the projects [ANR-DYCI2](http://repmus.ircam.fr/dyci2), [ANR-MERCI](http://repmus.ircam.fr/merci), [ERC-REACH](http://repmus.ircam.fr/reach) directed by Gérard Assayag, and the UPI-CompAI Ircam project.
+Dicy2 is a library of the Ircam Musical Representations team, designed and developed by [Jérôme Nika](https://jeromenika.com/), Augustin Muller (Max library), Joakim Borg (Python generative engine), and Matthew Ostrowski (tutorial patchers and videos, abstractions) in the framework of the projects [ANR-DYCI2](http://repmus.ircam.fr/dyci2), [ANR-MERCI](http://repmus.ircam.fr/merci), [ERC-REACH](http://repmus.ircam.fr/reach) directed by Gérard Assayag, and the UPI-CompAI Ircam project.
 The audio use cases have been designed and developed with Diemo Schwarz and Riccardo Borghesi, and use the MuBu and CatArt environments of the ISMM team of Ircam. Max4Live plugin by Manuel Poletti.
 Contributions / thanks : Serge Lemouton, Jean Bresson, Thibaut Carpentier, Georges Bloch, Mikhaïl Malt, Axel Chemla--Romeu-Santos, Vincent Cusson, Tommy Davis, Dionysios Papanicolaou, Greg Beller, Markus Noisternig.
 
