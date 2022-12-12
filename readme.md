@@ -40,7 +40,8 @@ The generative core of Dicy2, `dicy2_server.app` is already in `Dicy2/misc`, and
 ## About Dicy2
 
 ### Some references
-If using Dicy2, please quote: __Nika, J., Déguernel, K., Chemla, A., Vincent, E., & Assayag, G. (2017, October). Dyci2 agents: merging the" free"," reactive", and" scenario-based" music generation paradigms. In International Computer Music Conference. [(Article)](https://hal.archives-ouvertes.fr/hal-01583089/document).__
+If using Dicy2, please quote:
+__Nika, J., Muller, A., Borg, J., Ostrowski, M., \& Assayag, G. (2022, December). Dicy2 for Max. Ircam. 2022__ or __Nika, J., Déguernel, K., Chemla, A., Vincent, E., & Assayag, G. (2017, October). Dyci2 agents: merging the" free"," reactive", and" scenario-based" music generation paradigms. In International Computer Music Conference. [(Article)](https://hal.archives-ouvertes.fr/hal-01583089/document).__
 
 * __[Video presentation about Dicy2 in French](https://youtu.be/Co_9xZTFPEs)__
 
