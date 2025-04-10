@@ -2,42 +2,20 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"openrect" : [ 39.0, 117.0, 1712.0, 969.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
 		"default_fontsize" : 14.0,
-		"default_fontface" : 0,
 		"default_fontname" : "Monaco",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
 		"devicewidth" : 1712.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
 		"subpatcher_template" : "monaco_template",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 0,
@@ -48,7 +26,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 984.073067665100098, 239.60904165577989, 107.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "convert bpm to ms"
 				}
 
@@ -63,7 +40,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1131.191502451896667, 617.04932279113882, 224.0, 100.0 ],
+					"patching_rect" : [ 1131.191502451896667, 617.04932279113882, 229.0, 100.0 ],
 					"text" : "NB: the word \"beat\" is an approximation here, in fact we listen for a reference to a click with the periodicity of the beat but there is no guarantee that its phase (in relation to the number of subdivisions of the beat) actually corresponds to that of the beat."
 				}
 
@@ -79,42 +56,17 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
 						"subpatcher_template" : "monaco_template",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-57",
@@ -250,17 +202,11 @@
 								}
 
 							}
- ]
+ ],
+						"originid" : "pat-4732"
 					}
 ,
 					"patching_rect" : [ 1093.958333373069763, 514.063104269536552, 123.0, 24.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p listen_click_beat"
 				}
 
@@ -307,7 +253,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.572549019607843, 0.450980392156863, 0.450980392156863, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-19",
@@ -323,7 +269,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.572549019607843, 0.450980392156863, 0.450980392156863, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-16",
@@ -339,7 +285,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.572549019607843, 0.450980392156863, 0.450980392156863, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-2",
@@ -411,7 +357,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.572549019607843, 0.450980392156863, 0.450980392156863, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
 					"id" : "obj-120",
@@ -512,6 +458,7 @@
 							"parameter_longname" : "level",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "level",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -616,42 +563,16 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 910.0, 372.0, 519.0, 486.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
+						"rect" : [ 365.0, 483.0, 519.0, 486.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -771,7 +692,7 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
 									"patching_rect" : [ 182.0, 268.0, 69.0, 22.0 ],
-									"text" : "counter 0 4"
+									"text" : "counter 1 4"
 								}
 
 							}
@@ -919,17 +840,11 @@
 								}
 
 							}
- ]
+ ],
+						"originid" : "pat-4734"
 					}
 ,
 					"patching_rect" : [ 820.691488981246948, 526.063104269536552, 173.0, 24.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p quantization example"
 				}
 
@@ -1170,6 +1085,7 @@
 							"parameter_longname" : "output[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "agent",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1245,42 +1161,16 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 34.0, 87.0, 1724.0, 1026.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 1.0, 0.694117647058824, 0.0, 1.0 ],
@@ -1371,17 +1261,11 @@
 								}
 
 							}
- ]
+ ],
+						"originid" : "pat-4846"
 					}
 ,
 					"patching_rect" : [ 967.073067665100098, 128.333332180976868, 104.0, 24.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p launch_agent"
 				}
 
@@ -1952,6 +1836,7 @@
 
 			}
  ],
+		"originid" : "pat-4730",
 		"parameters" : 		{
 			"obj-27" : [ "level", "level", 0 ],
 			"obj-47" : [ "output[3]", "agent", 0 ],
@@ -1969,43 +1854,43 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "dicy2.agent.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/core",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/core",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dicy2.easy_analyzer-identifier.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/easy",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/easy",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dicy2.easy_loader.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/easy",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/easy",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dicy2.easy_scenario-maker.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/easy",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/easy",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dicy2.easy_sequencer-renderer.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/easy",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/easy",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dicy2.server.maxpat",
-				"bootpath" : "~/Documents/Max 8/clients/IRCAM documentation/fork repository/dyci2_upi/Dicy2_Library/Dicy2_Abstractions/core",
-				"patcherrelativepath" : "../../Dicy2_Library/Dicy2_Abstractions/core",
+				"bootpath" : "~/Documents/GitHub/Dicy2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

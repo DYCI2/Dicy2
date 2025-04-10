@@ -12,15 +12,15 @@ To discuss __Dicy2 for Max__ features, use the Forum discussion groups at https:
 
 ### Requirements
 * Mac OS >= High Sierra
-* Max 8
+* Max >= 8
 
 ### Standard installation
 * Download the [last Dicy2 release](https://forum.ircam.fr/projects/releases/dicy2/).
 * Drag the Dicy2 directory in your Max packages.
-* Install the dependency "MuBu for Max" __>=1.10.5__ from the [Ircam Forum Webpage](https://forum.ircam.fr/projects/releases/mubu/).
+* Install the dependency "MuBu for Max" __>=1.10.12__ from the [Ircam Forum Webpage](https://forum.ircam.fr/projects/releases/mubu/).
 
     
- *__RELEASE NOTE: The current release of Dicy2 has been tested with MuBu v1.10.5 [which can be found here](https://forum.ircam.fr/projects/releases/mubu/) in case of hypothetical problems with a later version installed from the Package Manager. Dicy2 will of course be tested and updated along with the various MuBu releases.__*
+ *__RELEASE NOTE: The current release of Dicy2 has been checked with MuBu v1.10.5 [which can be found here](https://forum.ircam.fr/projects/releases/mubu/) in case of hypothetical problems with a later version installed from the Package Manager. Dicy2 will of course be tested and updated along with the various MuBu releases.__*
 
 
 <details><summary>Installation from the code repository for developpers: click here to unfold</summary>
@@ -31,7 +31,7 @@ We recommend to use the [release version of the Max library](https://forum.ircam
 ------
 
 ## Quick Start
-* See the "Dyci2 for Max user guide" that comes with the library.
+* See the "Dicy2 for Max user guide" that comes with the library.
 * Have a look at "extras/Dicy2_Overview.maxpat"
 * Tutorials and examples are in "examples" and "examples/Performance Strategies"
 * __[Video tutorial on Ircam's Youtube channel](https://forum.ircam.fr/article/detail/dicy2-tutorials/)__
