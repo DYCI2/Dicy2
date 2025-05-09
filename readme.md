@@ -86,8 +86,8 @@ Feedback is very important to us! And sharing your setups and projects will make
 
 ### Other Medias
 
-*    [YouTube playlist of video tutorials](https://img.youtube.com/vi/xt8-rlqMIQM/0.jpg)(https://www.youtube.com/watch?v=xt8-rlqMIQM&list=PL-C_JLZNFAGco5OO3loQkBRIiNrs0tCkt&index=1)
-*    [Some didactic examples of Dicy2 audio agents](https://img.youtube.com/vi/i87scN-mtUE/0.jpg)(https://www.youtube.com/watch?v=i87scN-mtUE)
+*    [YouTube playlist of video tutorials](https://www.youtube.com/watch?v=xt8-rlqMIQM&list=PL-C_JLZNFAGco5OO3loQkBRIiNrs0tCkt&index=1)
+*    [Some didactic examples of Dicy2 audio agents](https://www.youtube.com/watch?v=i87scN-mtUE)
         
 
 ### License
