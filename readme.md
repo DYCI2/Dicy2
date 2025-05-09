@@ -84,19 +84,10 @@ Feedback is very important to us! And sharing your setups and projects will make
     
 *   Move your `dicy2_server.app` in `Dicy2/misc`.
 
-### Medias
+### Other Medias
 
-[Dicy2 for Max](https://forum.ircam.fr/logo_small.png)
-*Dicy2 for Max**
-
-
-*[![YouTube playlist of video tutorials](https://img.youtube.com/vi/xt8-rlqMIQM/0.jpg)](https://www.youtube.com/watch?v=xt8-rlqMIQM&list=PL-C_JLZNFAGco5OO3loQkBRIiNrs0tCkt&index=1)
-
-_YouTube playlist of video tutorials_
-
-[![Some didactic examples of Dicy2 audio agents](https://img.youtube.com/vi/i87scN-mtUE/0.jpg)](https://www.youtube.com/watch?v=i87scN-mtUE)
-
-_Some didactic examples of Dicy2 audio agents_
+*    [YouTube playlist of video tutorials](https://img.youtube.com/vi/xt8-rlqMIQM/0.jpg)(https://www.youtube.com/watch?v=xt8-rlqMIQM&list=PL-C_JLZNFAGco5OO3loQkBRIiNrs0tCkt&index=1)
+*    [Some didactic examples of Dicy2 audio agents](https://img.youtube.com/vi/i87scN-mtUE/0.jpg)(https://www.youtube.com/watch?v=i87scN-mtUE)
         
 
 ### License
